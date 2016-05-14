@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>移动端问卷</title>
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible"content="IE=Edge"/>
+<meta name="renderer"content="webkit"/>
+<meta name="viewport"content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="format-detection"content="telephone=no"/>
+<link rel="stylesheet" href="lib/css/common.css">
+<link rel="stylesheet" href="lib/css/mobile.css">
+</head>
+<body>
+<div class="bg"></div>
+<div class="logo">
+	<!-- 右下角logo -->
+</div>
+<div class="wrap">
+	<div class="page in">1</div>
+	<div class="page">2</div>
+	<div class="page">3</div>
+	<div class="page">4</div>
+	<div class="page">5</div>
+	<div class="page">6</div>
+	<div class="page">7</div>
+	<div class="page">8</div>
+	<div class="page">9</div>
+	<div class="page">10</div>
+</div>
+<div class="step">
+	<!-- 左下角当前是第几题的提示 -->
+</div>
+<div class="star">
+	<!-- 左上角星星 -->
+</div>
+<div class="music"><audio src="lib/music/music.mp3" id="music-audio"></audio>
+	<!-- 音乐 -->
+</div>
+<div class="go">
+	<!-- 点击进入下一题 -->
+</div>
+<script src="lib/js/zepto.min.js"></script>
+<script>
+var UI={
+	pages:$(".page"),
+	step:$(".step"),
+	star:$(".star"),
+	goBtn:$(".go"),
+	pageCount:function(){
+		return this.pages.length();
+	},
+	wxShare:function(){
+
+	},
+	pageNext:function(){
+		// 下一题
+		var _this = this,
+				pageCurrent = $(".page.in"),
+				pageNext = pageCurrent.next();
+		pageCurrent.addClass("out");
+		pageNext.addClass("in");
+	},
+	music:function(){
+		// 音乐
+		var musicBtn = $(".music"),
+				musicAudio = $("#music-audio"),
+				musicPlaying = false,
+				toggleMusic=function(playing){
+					if(playing){
+						musicAudio.pause();
+						musicPlaying = false;
+						musicBtn.removeClass("music-playing");
+					}else{
+						musicAudio.play();
+						musicPlaying = true;
+						musicBtn.removeClass("music-playing");
+					}
+				};
+		musicBtn.on("click",toggleMusic);
+		$(document).one("touchstart",function(){
+			toggleMusic();
+		});
+	},
+	init:function(){
+		// UI初始化
+		// gobtn也可以在外部绑定事件，完成数据的操作后回调UI.pageNext();
+		var _this = this;
+		goBtn.on("click",function(){
+			// 数据逻辑操作，然后
+			_this.pageNext();
+		})
+	}
+}
+</script>
+</body>
+</html>
