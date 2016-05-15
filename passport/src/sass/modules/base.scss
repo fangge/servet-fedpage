@@ -13,38 +13,19 @@ strong{font-weight: normal;}
 body{font-size:16px;-webkit-tap-highlight-color:rgba(0,0,0,0);}
 [hidden]{display:none;}
 button {
-	cursor: pointer;
+    cursor: pointer;
 
-	&[disabled] {
-		cursor: not-allowed;
-	}
+    &[disabled] {
+        cursor: not-allowed;
+    }
 }
 
 
 body{
-	background-color:#f4f5f9;
-	font: 14px/1.5 $global-font-family;
-	color: #333;
-	min-width: 960px;
+    background-color:#f4f5f9;
+    font: 14px/1.5 $global-font-family;
+    color: #333;
+    min-width: 960px;
 }
 
-#wrap{
-	overflow:hidden;
-	min-width:1270px;
-	margin:0 auto;
-}
-
-.main{
-	position:relative;
-	width:1270px;
-	margin:0 auto;
-
-	&:after{
-		content:'';
-		display:block;
-		width:100%;
-		visibility:hidden;
-		clear:both;
-	}
-}
 
