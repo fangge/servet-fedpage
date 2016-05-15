@@ -1,0 +1,30 @@
+// 
+// 缓存已经引入过的内容，保证没有重复引用，import-once。
+// 
+// 修补sass没有requrie的功能，使用场景：模块A被模块B、C、D等依赖，当存在B和C模块同时被引用时会存在重复引用的问题。
+// 
+// @param    {string}    $name          需要export的模块的名字
+// @param    {string}    $existPrint    如果存在模块已经被引用，是否继续进行操作，默认为否
+// 
+// @example    @inclue exprot('_reset') { @import './_reset'}
+// 
+// @date     2016/4/11
+// @author   mss.huang
+// 
+// 
+
+// 设置公共变量存储被引用的模块名称
+$imported-modules : () !default;
+
+@mixin export($name, $existPrint:'false') {
+	// 如果不存在改名称的模块已经被引用，则执行content的操作
+    @if (index($imported-modules, $name) == null) {
+    	// 记录已经被引用的模块名称
+        $imported-modules: append($imported-modules, $name) !global;
+        @content;
+    }
+    // 即使模块已经被引用也要执行content的操作
+    @else if ($existPrint == 'true') {
+        @content;
+    }
+}

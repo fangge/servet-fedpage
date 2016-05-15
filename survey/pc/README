@@ -1,0 +1,23 @@
+gulp 简单用法
+
+1、首先安装node（http://nodejs.cn/download/）
+
+2、然后在当前目录打开命令行工具，输入npm install
+ （如果网速太慢的话，可以使用cnpm，按照tabobao的方法安装：http://npm.taobao.org/。PS：如果sass安装报错，九成是网络问题，重复这个操作即可）
+
+3、安装完毕后，在命令行输入gulp即可。
+   src/sass ==> css
+
+
+------------------------------------------------
+sprite 用法
+
+运行sprite自动拼图，只需要把图片放在src/images里面，命令行运行 gulp sprite 即可。
+
+sass引用方法：
+    @import 'mixin/sprite.scss';
+
+    .test {
+        @include sprite($+图片名字); //详细其他方法请查看sprite.scss本身
+    }
+
