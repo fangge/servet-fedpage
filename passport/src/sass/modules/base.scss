@@ -1,0 +1,50 @@
+// @use: base
+// @author: 蕉皮
+// @last modify date: 2016-4-24
+// 
+@import '../mixin/index';
+
+article,aside,audio,bdi,canvas,command,datalist,details,figcaption,figure,footer,header,hgroup,keygen,mark,meter,nav,output,progress,rp,rt,ruby,section,source,summary,time,track,video,title {display:block}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,input,button,textarea,p,th,td,figure{padding:0;margin:0;}
+fieldset,img{border:0;}
+ol,ul,li {list-style:none;}
+table {border-collapse:collapse;border-spacing:0;}
+strong{font-weight: normal;}
+body{font-size:16px;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+[hidden]{display:none;}
+button {
+	cursor: pointer;
+
+	&[disabled] {
+		cursor: not-allowed;
+	}
+}
+
+
+body{
+	background-color:#f4f5f9;
+	font: 14px/1.5 $global-font-family;
+	color: #333;
+	min-width: 960px;
+}
+
+#wrap{
+	overflow:hidden;
+	min-width:1270px;
+	margin:0 auto;
+}
+
+.main{
+	position:relative;
+	width:1270px;
+	margin:0 auto;
+
+	&:after{
+		content:'';
+		display:block;
+		width:100%;
+		visibility:hidden;
+		clear:both;
+	}
+}
+
