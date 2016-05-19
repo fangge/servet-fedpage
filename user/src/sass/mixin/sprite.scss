@@ -1,0 +1,129 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$icon-heart-name: 'icon-heart';
+$icon-heart-x: 22px;
+$icon-heart-y: 26px;
+$icon-heart-offset-x: -22px;
+$icon-heart-offset-y: -26px;
+$icon-heart-width: 18px;
+$icon-heart-height: 17px;
+$icon-heart-total-width: 44px;
+$icon-heart-total-height: 50px;
+$icon-heart-image: '../images/sprite.png';
+$icon-heart: (22px, 26px, -22px, -26px, 18px, 17px, 44px, 50px, '../images/sprite.png', 'icon-heart', );
+$icon-lock-open-name: 'icon-lock-open';
+$icon-lock-open-x: 0px;
+$icon-lock-open-y: 0px;
+$icon-lock-open-offset-x: 0px;
+$icon-lock-open-offset-y: 0px;
+$icon-lock-open-width: 20px;
+$icon-lock-open-height: 22px;
+$icon-lock-open-total-width: 44px;
+$icon-lock-open-total-height: 50px;
+$icon-lock-open-image: '../images/sprite.png';
+$icon-lock-open: (0px, 0px, 0px, 0px, 20px, 22px, 44px, 50px, '../images/sprite.png', 'icon-lock-open', );
+$icon-lock-name: 'icon-lock';
+$icon-lock-x: 24px;
+$icon-lock-y: 0px;
+$icon-lock-offset-x: -24px;
+$icon-lock-offset-y: 0px;
+$icon-lock-width: 20px;
+$icon-lock-height: 22px;
+$icon-lock-total-width: 44px;
+$icon-lock-total-height: 50px;
+$icon-lock-image: '../images/sprite.png';
+$icon-lock: (24px, 0px, -24px, 0px, 20px, 22px, 44px, 50px, '../images/sprite.png', 'icon-lock', );
+$icon-user-name: 'icon-user';
+$icon-user-x: 0px;
+$icon-user-y: 26px;
+$icon-user-offset-x: 0px;
+$icon-user-offset-y: -26px;
+$icon-user-width: 18px;
+$icon-user-height: 24px;
+$icon-user-total-width: 44px;
+$icon-user-total-height: 50px;
+$icon-user-image: '../images/sprite.png';
+$icon-user: (0px, 26px, 0px, -26px, 18px, 24px, 44px, 50px, '../images/sprite.png', 'icon-user', );
+$spritesheet-width: 44px;
+$spritesheet-height: 50px;
+$spritesheet-image: '../images/sprite.png';
+$spritesheet-sprites: ($icon-heart, $icon-lock-open, $icon-lock, $icon-user, );
+$spritesheet: (44px, 50px, '../images/sprite.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

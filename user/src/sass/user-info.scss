@@ -1,0 +1,35 @@
+@import 'mixin/sprite';
+@include sprites($spritesheet-sprites);
+[class|='icon'] {
+    display: inline-block;
+}
+
+$global-font-family: tahoma,arial,Hiragino Sans GB,WenQuanYi Micro Hei,\5FAE\8F6F\96C5\9ED1,\5B8B\4F53,sans-serif!global;
+
+@mixin colorWhite {
+    color: #c2bdbd;
+    color: rgba(255,255,255,.5);
+}
+
+html,
+body {
+    height: 100%;
+}
+
+p {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font: 14px/1.5 $global-font-family;
+    background: #141212 url(../images/login-bg.jpg) center top no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.g-wrap {
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+}

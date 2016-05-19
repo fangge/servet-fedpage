@@ -1,0 +1,90 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+.icon-heart {
+  background-image: url(../images/sprite.png);
+  background-position: -22px -26px;
+  width: 18px;
+  height: 17px; }
+
+.icon-lock-open {
+  background-image: url(../images/sprite.png);
+  background-position: 0px 0px;
+  width: 20px;
+  height: 22px; }
+
+.icon-lock {
+  background-image: url(../images/sprite.png);
+  background-position: -24px 0px;
+  width: 20px;
+  height: 22px; }
+
+.icon-user {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -26px;
+  width: 18px;
+  height: 24px; }
+
+[class|='icon'] {
+  display: inline-block; }
+
+html,
+body {
+  height: 100%; }
+
+p {
+  margin: 0; }
+
+body {
+  margin: 0;
+  font: 14px/1.5 tahoma, arial, Hiragino Sans GB, WenQuanYi Micro Hei, \5FAE\8F6F\96C5\9ED1, \5B8B\4F53, sans-serif;
+  background: #141212 url(../images/login-bg.jpg) center top no-repeat;
+  background-attachment: fixed;
+  background-size: cover; }
+
+.g-wrap {
+  width: 960px;
+  margin: 0 auto;
+  overflow: hidden; }
