@@ -1,0 +1,187 @@
+@import 'mixin/sprite';
+@include sprites($spritesheet-sprites);
+[class|='icon'] {
+    display: inline-block;
+}
+
+$global-font-family: tahoma,arial,Hiragino Sans GB,WenQuanYi Micro Hei,\5FAE\8F6F\96C5\9ED1,\5B8B\4F53,sans-serif!global;
+
+@mixin colorWhite {
+    color: #c2bdbd;
+    color: rgba(255,255,255,.5);
+}
+
+html,
+body {
+    height: 100%;
+}
+
+p {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font: 14px/1.5 $global-font-family;
+    background: #141212 url(../images/login-bg.jpg) center top no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.g-wrap {
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.u-logo {
+    background: url(../images/login-logo.png) left top no-repeat;
+    width: 161px;
+    height: 131px;
+    margin: 74px auto 65px;
+    font-size: 0;
+}
+
+.m-form {
+    width: 304px;
+    margin: 0 auto;
+}
+
+.m-form-item {
+    position: relative;
+    margin-bottom: 24px;
+    padding: 2px;
+    zoom: 1;
+
+    label {
+        position: absolute;
+        left: 22px;
+        top: 11px;
+    }
+
+    .icon-eye {
+        position: absolute;
+        top: 17px;
+        right: 19px;
+        visibility: hidden;
+        cursor: pointer;
+    }
+}
+
+.u-input {
+    display: block;
+    width: 100%;
+    padding-left: 63px;
+    padding-right: 40px;
+    height: 42px;
+    background: #342d29;
+    background: rgba(0,0,0,.5);
+    border-radius: 21px;
+    border: 0 none;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: $global-font-family;
+    outline: none;
+    @include colorWhite;
+
+    &::-ms-clear {
+        display: none;
+    }
+
+    &:focus,
+    &.focus {
+        border: 2px solid #00ddf3;
+        height: 46px;
+        margin: -2px;
+    }
+    
+    &.z-input + .icon-eye,
+    &:valid + .icon-eye {
+        visibility: visible;
+    }
+}
+
+.m-form-other-contorl {
+    margin-top: -12px;
+    margin-bottom: 15px;
+    @include colorWhite;
+
+    .forget {
+        float: right;
+        margin-top: -21px;
+        text-decoration: none;
+        @include colorWhite;
+    }
+}
+
+.u-option-agree {
+    padding-left: 4px;
+    user-select: none;
+
+    input[type=checkbox] {
+        display: none;
+
+        &.checked + label .icon-radio,
+        &:checked + label .icon-radio {
+            @include sprite-position($icon-radio-checked);
+        }
+    }
+
+    .icon-radio {
+        margin-right: 11px;
+        vertical-align: -1px;
+    }
+}
+
+.u-validate-tips {
+    text-align: center;
+    color: #ff3f1f;
+    margin-bottom: 10px;
+    height: 21px;
+}
+
+.u-submit-btn {
+    display: block;
+    width: 100%;
+    height: 49px;
+    border-radius: 25px;
+    border: 0 none;
+    background: #33babe;
+    font-size: 20px;
+    font-family: $global-font-family;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 16px;
+}
+
+.u-form-tips {
+    color: #fff;
+    margin-bottom: 14px;
+}
+
+.u-link {
+    color: #00ddf3;
+    text-decoration: none;
+}
+
+.u-email-send-tips {
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+
+    strong {
+        display: block;
+        margin-top: 7px;
+        font-size: 14px;
+        font-weight: normal;
+    }
+}
+
+.u-activate-email {
+    margin-top: 17px;
+    margin-bottom: 38px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+}

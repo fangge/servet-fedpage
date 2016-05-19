@@ -1,0 +1,227 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+.icon-eye {
+  background-image: url(../images/sprite.png);
+  background-position: -48px 0px;
+  width: 23px;
+  height: 14px; }
+
+.icon-lock-open {
+  background-image: url(../images/sprite.png);
+  background-position: 0px 0px;
+  width: 20px;
+  height: 22px; }
+
+.icon-lock {
+  background-image: url(../images/sprite.png);
+  background-position: -24px 0px;
+  width: 20px;
+  height: 22px; }
+
+.icon-radio-checked {
+  background-image: url(../images/sprite.png);
+  background-position: -48px -18px;
+  width: 14px;
+  height: 14px; }
+
+.icon-radio {
+  background-image: url(../images/sprite.png);
+  background-position: -48px -36px;
+  width: 14px;
+  height: 14px; }
+
+.icon-user {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -26px;
+  width: 18px;
+  height: 24px; }
+
+[class|='icon'] {
+  display: inline-block; }
+
+html,
+body {
+  height: 100%; }
+
+p {
+  margin: 0; }
+
+body {
+  margin: 0;
+  font: 14px/1.5 tahoma, arial, Hiragino Sans GB, WenQuanYi Micro Hei, \5FAE\8F6F\96C5\9ED1, \5B8B\4F53, sans-serif;
+  background: #141212 url(../images/login-bg.jpg) center top no-repeat;
+  background-attachment: fixed;
+  background-size: cover; }
+
+.g-wrap {
+  width: 960px;
+  margin: 0 auto;
+  overflow: hidden; }
+
+.u-logo {
+  background: url(../images/login-logo.png) left top no-repeat;
+  width: 161px;
+  height: 131px;
+  margin: 74px auto 65px;
+  font-size: 0; }
+
+.m-form {
+  width: 304px;
+  margin: 0 auto; }
+
+.m-form-item {
+  position: relative;
+  margin-bottom: 24px;
+  padding: 2px;
+  zoom: 1; }
+  .m-form-item label {
+    position: absolute;
+    left: 22px;
+    top: 11px; }
+  .m-form-item .icon-eye {
+    position: absolute;
+    top: 17px;
+    right: 19px;
+    visibility: hidden;
+    cursor: pointer; }
+
+.u-input {
+  display: block;
+  width: 100%;
+  padding-left: 63px;
+  padding-right: 40px;
+  height: 42px;
+  background: #342d29;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 21px;
+  border: 0 none;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: tahoma, arial, Hiragino Sans GB, WenQuanYi Micro Hei, \5FAE\8F6F\96C5\9ED1, \5B8B\4F53, sans-serif;
+  outline: none;
+  color: #c2bdbd;
+  color: rgba(255, 255, 255, 0.5); }
+  .u-input::-ms-clear {
+    display: none; }
+  .u-input:focus, .u-input.focus {
+    border: 2px solid #00ddf3;
+    height: 46px;
+    margin: -2px; }
+  .u-input.z-input + .icon-eye,
+  .u-input:valid + .icon-eye {
+    visibility: visible; }
+
+.m-form-other-contorl {
+  margin-top: -12px;
+  margin-bottom: 15px;
+  color: #c2bdbd;
+  color: rgba(255, 255, 255, 0.5); }
+  .m-form-other-contorl .forget {
+    float: right;
+    margin-top: -21px;
+    text-decoration: none;
+    color: #c2bdbd;
+    color: rgba(255, 255, 255, 0.5); }
+
+.u-option-agree {
+  padding-left: 4px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+  .u-option-agree input[type=checkbox] {
+    display: none; }
+    .u-option-agree input[type=checkbox].checked + label .icon-radio,
+    .u-option-agree input[type=checkbox]:checked + label .icon-radio {
+      background-position: -48px -18px; }
+  .u-option-agree .icon-radio {
+    margin-right: 11px;
+    vertical-align: -1px; }
+
+.u-validate-tips {
+  text-align: center;
+  color: #ff3f1f;
+  margin-bottom: 10px;
+  height: 21px; }
+
+.u-submit-btn {
+  display: block;
+  width: 100%;
+  height: 49px;
+  border-radius: 25px;
+  border: 0 none;
+  background: #33babe;
+  font-size: 20px;
+  font-family: tahoma, arial, Hiragino Sans GB, WenQuanYi Micro Hei, \5FAE\8F6F\96C5\9ED1, \5B8B\4F53, sans-serif;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 16px; }
+
+.u-form-tips {
+  color: #fff;
+  margin-bottom: 14px; }
+
+.u-link {
+  color: #00ddf3;
+  text-decoration: none; }
+
+.u-email-send-tips {
+  text-align: center;
+  color: #fff;
+  font-size: 24px; }
+  .u-email-send-tips strong {
+    display: block;
+    margin-top: 7px;
+    font-size: 14px;
+    font-weight: normal; }
+
+.u-activate-email {
+  margin-top: 17px;
+  margin-bottom: 38px;
+  text-align: center;
+  color: #fff;
+  font-size: 18px; }

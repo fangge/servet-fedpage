@@ -19,7 +19,7 @@ gulp.task('watchsass',function () {
         gulp.src(['src/sass/**/*.scss','!src/sass/mixin/**','!src/sass/modules/**'])
             .pipe(plumber()) // 兼容错误补丁
             .pipe(sass())
-            .pipe(autoprefixer('not ie <= 8'))
+            .pipe(autoprefixer('>1%'))
             .pipe(gulp.dest(paths.distDir))
     })
 })
@@ -28,7 +28,7 @@ gulp.task('sass', function() {
     gulp.src(['src/sass/**/*.scss','!src/sass/mixin/**','!src/sass/modules/**'])
         .pipe(plumber()) // 兼容错误补丁
         .pipe(sass()) // sass语法
-        .pipe(autoprefixer('not ie <= 8')) // autoprefix增加前缀，兼容> 1% 浏览器
+        .pipe(autoprefixer('>1%')) // autoprefix增加前缀，兼容> 1% 浏览器
         .pipe(gulp.dest('./css/')) // 输出文件夹
 });
 
