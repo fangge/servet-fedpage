@@ -131,10 +131,9 @@ body {
 .u-input {
   display: block;
   width: 100%;
-  padding-left: 63px;
-  padding-right: 40px;
-  height: 42px;
+  padding: 14px 40px 14px 63px;
   background: #342d29;
+  line-height: 1;
   background: rgba(0, 0, 0, 0.5);
   border-radius: 21px;
   border: 0 none;
@@ -148,7 +147,6 @@ body {
     display: none; }
   .u-input:focus, .u-input.focus {
     border: 2px solid #00ddf3;
-    height: 46px;
     margin: -2px; }
   .u-input.z-input + .icon-eye,
   .u-input:valid + .icon-eye {
