@@ -51,6 +51,48 @@ html, body {
   user-select: none;
 }
 
+/* widget */
+.item{
+  /* 文字选项 */
+  display:block;
+  height:40px;
+  border-radius:21px;
+  overflow:hidden;
+  border:1px solid #00f;
+}
+.itemWithImg{
+  /* 图文选项 */
+  float:left;
+  height:auto;
+}
+.item-img{
+  display:block;
+  width:100px;
+  height:100px;
+  margin-bottom:5px;
+}
+.item-input{
+  position:absolute;top:-9999px;left:-9999px;
+}
+.item-fakeInput{
+  float:left;
+  width:20px;
+  height:20px;
+  margin:10px 10px 0 10px;
+  background:red;
+}
+.item-input:checked + .item-fakeInput{
+  background:green;
+}
+.item-text{
+  display:block;
+  height:40px;
+  line-height:40px;
+  padding-right:10px;
+  overflow:hidden;
+}
+
+
 /* page */
 .bg,.wrap,.page{
   position: absolute;top: 0;right: 0;bottom: 0;left: 0;
