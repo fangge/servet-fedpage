@@ -15,36 +15,36 @@
 <!-- 右下角logo -->
 </div>
 <div class="wrap">
-	<div class="page page-in">1</div>
+	<div class="page page_in">1</div>
 	<div class="page">
 		<!-- 文字单选 -->
 		<label class="answer">
-			<input class="answer-input" type="radio" name="q1" value="radio1" onfocus="console.log(this.value)"><i class="answer-fakeInput"></i>
-      <span class="answer-text">文案文案文案</span>
+			<input class="answer_radio" type="radio" name="q1" value="radio1" onfocus="console.log(this.value)"><i class="answer_fakeInput"></i>
+      <span class="answer_text">文案文案文案</span>
 		</label>
 	</div>
 	<div class="page">
 		<!-- 文字多选 -->
 		<label class="answer">
-			<input class="answer-input" type="checkbox" value="checkbox1" onfocus="console.log(this.value)"><i class="answer-fakeInput"></i>
-      <span class="answer-text">文案文案文案</span>
+			<input class="answer_checkbox" type="checkbox" value="checkbox1" onfocus="console.log(this.value)"><i class="answer_fakeInput"></i>
+      <span class="answer_text">文案文案文案</span>
 		</label>
   </div>
 	<div class="page">
     <!-- 图文单选 -->
 		<label class="answer answer_WithImg">
-      <img class="answer-img" src="" alt="" />
-			<input class="answer-input" type="radio" name="q3" value="radio1" onfocus="console.log(this.value)"><i class="answer-fakeInput"></i>
-      <span class="answer-text">文案文案文案</span>
+      <img class="answer_img" src="" alt="" />
+			<input class="answer_radio" type="radio" name="q3" value="radio1" onfocus="console.log(this.value)"><i class="answer_fakeInput"></i>
+      <span class="answer_text">文案文案文案</span>
 		</label>
   </div>
 	<div class="page">
     <!-- 图文多选 -->
 		<label class="answer answer_WithImg">
-      <img class="answer-img" src="" alt="" />
-			<input class="answer-input" type="checkbox" value="checkbox1" onfocus="console.log(this.value)">
-      <i class="answer-fakeInput"></i>
-      <span class="answer-text">文案文案文案</span>
+      <img class="answer_img" src="" alt="" />
+			<input class="answer_checkbox" type="checkbox" value="checkbox1" onfocus="console.log(this.value)">
+      <i class="answer_fakeInput"></i>
+      <span class="answer_text">文案文案文案</span>
 		</label>
   </div>
 	<div class="page">
@@ -58,13 +58,13 @@
 		</div>
 	</div>
 	<div class="page">
-		<!-- 评级 -->
-		<div class="rank">
-			<div class="rank_item"></div>
-			<div class="rank_item"></div>
-			<div class="rank_item"></div>
-			<div class="rank_item"></div>
-			<div class="rank_item"></div>
+		<!-- 心型 -->
+		<div class="heart">
+			<div class="heart_item"></div>
+			<div class="heart_item"></div>
+			<div class="heart_item"></div>
+			<div class="heart_item"></div>
+			<div class="heart_item"></div>
 		</div>
 	</div>
 	<div class="page">
@@ -166,11 +166,11 @@ var go = document.querySelector(".go"),
 		pages = document.querySelectorAll(".page");
 go.addEventListener("click",function(){
 	console.log("go")
-	var now = document.querySelector(".page-in"),
+	var now = document.querySelector(".page_in"),
 			next = now.nextElementSibling;
-	now.classList.add("page-out");
-	now.classList.remove("page-in")
-	next.classList.add("page-in")
+	now.classList.add("page_out");
+	now.classList.remove("page_in")
+	next.classList.add("page_in")
 });
 </script>
 </body>

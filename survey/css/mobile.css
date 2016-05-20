@@ -62,41 +62,110 @@ html, body {
 *
 */
 /* widget */
-.item {
+/* answer */
+.answer {
   /* 文字选项 */
   display: block;
-  height: 40px;
-  border-radius: 21px;
-  overflow: hidden;
-  border: 1px solid #00f; }
-  .itemWithImg {
-    /* 图文选项 */
-    float: left;
-    height: auto; }
-  .item-img {
-    display: block;
-    width: 100px;
-    height: 100px;
-    margin-bottom: 5px; }
-  .item-input {
+  margin-bottom: 6px; }
+  .answer_checkbox, .answer_radio {
     position: absolute;
     top: -9999px;
-    left: -9999px; }
-  .item-fakeInput {
-    float: left;
+    left: -9999px;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none; }
+  .answer_checkbox + .answer_fakeInput {
+    position: absolute;
+    top: 13px;
+    left: 10px;
+    width: 16px;
+    height: 16px;
+    background-image: url(../images/ddxk_off.png); }
+  .answer_checkbox:checked + .answer_fakeInput {
+    background-image: url(../images/ddxk_on.png); }
+  .answer_radio + .answer_fakeInput {
+    position: absolute;
+    top: 11px;
+    left: 10px;
     width: 20px;
     height: 20px;
-    margin: 10px 10px 0 10px;
-    background: red; }
-  .item-input:checked + .item-fakeInput {
-    background: green; }
-  .item-text {
+    background-image: url(../images/dxk_off.png); }
+  .answer_radio:checked + .answer_fakeInput {
+    background-image: url(../images/dxk_on.png); }
+  .answer_text {
     display: block;
-    height: 40px;
-    line-height: 40px;
-    padding-right: 10px;
-    overflow: hidden; }
+    line-height: 42px;
+    padding: 0 10px 0 54px;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.5);
+    height: 42px;
+    border-radius: 21px; }
+  .answer_radio:checked + .answer_fakeInput + .answer_text,
+  .answer_checkbox:checked + .answer_fakeInput + .answer_text {
+    box-shadow: 0 0 2px #28e8fd; }
 
+.answer_WithImg {
+  /* 图文选项 */
+  float: left;
+  width: 130px;
+  height: auto;
+  border-radius: 5px; }
+  .answer_WithImg .answer_img {
+    display: block;
+    width: 130px;
+    height: 130px; }
+  .answer_WithImg .answer_text {
+    padding: 0 24px;
+    text-align: center;
+    height: 24px;
+    line-height: 24px;
+    font-size: 13px; }
+
+/* mood */
+.mood {
+  overflow: hidden; }
+  .mood_item {
+    float: left;
+    width: 63px;
+    height: 63px;
+    margin-right: 20px;
+    background: 0 0 no-repeat;
+    background-size: 100% 100%; }
+    .mood_item:last-child {
+      margin-right: 0; }
+    .mood_item_1 {
+      background-image: url(../images/mood/1.png); }
+    .mood_item_2 {
+      background-image: url(../images/mood/2.png); }
+    .mood_item_3 {
+      background-image: url(../images/mood/3.png); }
+    .mood_item_4 {
+      background-image: url(../images/mood/4.png); }
+    .mood_item_5 {
+      background-image: url(../images/mood/5.png); }
+    .mood_item_Selected {
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      -webkit-transition: all 0.4s;
+      transition: all 0.4s; }
+
+/* heart */
+.heart {
+  overflow: hidden; }
+  .heart_item {
+    float: left;
+    margin-right: 42px;
+    width: 42px;
+    height: 41px;
+    background: url(../images/heart.png) 100% 0 no-repeat; }
+    .heart_item:last-child {
+      margin-right: 0; }
+    .heart_item_Selected {
+      background-position: 0 0; }
+
+/* points */
 /* page */
 .bg, .wrap, .page {
   position: absolute;
@@ -117,17 +186,15 @@ html, body {
   transition: transform 0.2s, opacity 0.2s, -webkit-transform 0.2s;
   opacity: 0;
   visibility: hidden; }
-
-.page-in {
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-  opacity: 1;
-  visibility: visible; }
-
-.page-out {
-  -webkit-transform: translate3d(0, -100%, 0);
-          transform: translate3d(0, -100%, 0);
-  opacity: 0; }
+  .page_in {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    opacity: 1;
+    visibility: visible; }
+  .page_out {
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+    opacity: 0; }
 
 .go {
   position: absolute;

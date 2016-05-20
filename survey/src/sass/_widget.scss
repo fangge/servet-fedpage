@@ -5,52 +5,62 @@
 */
 
 /* widget */
-
-/* radio */
-
-/* checkbox */
+$radioSize: 20px;
+$checkBoxSize: 16px;
 
 /* answer */
+$answerTextHeight: 42px;
+$answerImgHeight: 130px;
+$answerImgTextHeight: 24px;
+
 .answer {
-  $answerTextHeight: 42px;
   /* 文字选项 */
   display: block;
   margin-bottom: 6px;
-  height: $answerTextHeight;
-  border-radius: $answerTextHeight / 2;
-  overflow: hidden;
-  background: rgba(0, 0, 0, 0.5);
-  &_Selected{
-    box-shadow: 0 0 2px #28e8fd;
-  }
-  &_input {
+  &_checkbox,
+  &_radio {
     position: absolute;
     top: -9999px;
     left: -9999px;
     appearance: none;
   }
-  &_fakeInput {
-    position: absolute
-    width: 20px;
-    height: 20px;
-    top: 10px;
+  &_checkbox + &_fakeInput {
+    position: absolute;
+    top: ($answerTextHeight - $checkBoxSize)/2;
     left: 10px;
-    background: #fff;
+    width: $checkBoxSize;
+    height: $checkBoxSize;
+    background-image: url(../images/ddxk_off.png);
   }
-  &_input:checked + &_fakeInput {
-    background: green;
+  &_checkbox:checked + &_fakeInput {
+    background-image: url(../images/ddxk_on.png);
+  }
+  &_radio + &_fakeInput {
+    position: absolute;
+    top: ($answerTextHeight - $radioSize)/2;
+    left: 10px;
+    width: $radioSize;
+    height: $radioSize;
+    background-image: url(../images/dxk_off.png);
+  }
+  &_radio:checked + &_fakeInput {
+    background-image: url(../images/dxk_on.png);
   }
   &_text {
     display: block;
-    height: $answerTextHeight;
     line-height: $answerTextHeight;
     padding: 0 10px 0 54px;
     overflow: hidden;
+    background: rgba(0,0,0,0.5);
+    height: $answerTextHeight;
+    border-radius: $answerTextHeight / 2;
+  }
+  &_radio:checked + &_fakeInput + &_text,
+  &_checkbox:checked + &_fakeInput + &_text{
+    box-shadow: 0 0 2px #28e8fd;
   }
 }
 .answer_WithImg{
-  $answerImgHeight: 130px;
-  $answerImgTextHeight: 24px;
   /* 图文选项 */
   float: left;
   width: $answerImgHeight;
@@ -63,7 +73,7 @@
   }
   .answer_text{
     padding: 0 $answerImgTextHeight;
-    text-align: center
+    text-align: center;
     height: $answerImgTextHeight;
     line-height: $answerImgTextHeight;
     font-size: 13px;
@@ -72,7 +82,7 @@
 
 /* mood */
 .mood{
-  overflow: hidden
+  overflow: hidden;
   &_item{
     float: left;
     width: 63px;
@@ -96,19 +106,20 @@
   }
 }
 
-/* rank */
-.rank{
+/* heart */
+.heart{
   overflow: hidden;
   &_item{
     float: left;
     margin-right: 42px;
     width: 42px;
-    height: 42px;
+    height: 41px;
+    background: url(../images/heart.png) 100% 0 no-repeat; 
     &:last-child{
       margin-right: 0;
     }
     &_Selected{
-
+      background-position: 0 0;
     }
   }
 }
