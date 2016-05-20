@@ -1,0 +1,46 @@
+/*
+*
+* 公用控件
+*
+*/
+
+/* widget */
+.item{
+  /* 文字选项 */
+  display:block;
+  height:40px;
+  border-radius:21px;
+  overflow:hidden;
+  border:1px solid #00f;
+  &WithImg{
+    /* 图文选项 */
+    float:left;
+    height:auto;
+  }
+  &-img{
+    display:block;
+    width:100px;
+    height:100px;
+    margin-bottom:5px;
+  }
+  &-input{
+    position:absolute;top:-9999px;left:-9999px;
+  }
+  &-fakeInput{
+    float:left;
+    width:20px;
+    height:20px;
+    margin:10px 10px 0 10px;
+    background:red;
+  }
+  &-input:checked + &-fakeInput{
+    background:green;
+  }
+  &-text{
+    display:block;
+    height:40px;
+    line-height:40px;
+    padding-right:10px;
+    overflow:hidden;
+  }
+}
