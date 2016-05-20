@@ -7,8 +7,7 @@
 <meta name="renderer"content="webkit"/>
 <meta name="viewport"content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 <meta name="format-detection"content="telephone=no"/>
-<link rel="stylesheet"href="../res/css/common.css">
-<link rel="stylesheet"href="../res/css/mobile.css">
+<link rel="stylesheet"href="../css/mobile.css">
 </head>
 <body>
 <div class="bg"></div>
@@ -19,97 +18,134 @@
 	<div class="page page-in">1</div>
 	<div class="page">
 		<!-- 文字单选 -->
-		<label class="item">
-			<input class="item-input" type="radio" name="q1" value="radio1" onfocus="console.log(this.value)"><i class="item-fakeInput"></i>
-      <span class="item-text">文案文案文案</span>
-		</label>
-		<label class="item">
-			<input class="item-input" type="radio" name="q1" value="radio2" onfocus="console.log(this.value)"><i class="item-fakeInput"></i>
-      <span class="item-text">文案文案文案</span>
-		</label>
-		<label class="item">
-			<input class="item-input" type="radio" name="q1" value="radio3" onfocus="console.log(this.value)"><i class="item-fakeInput"></i>
-      <span class="item-text">文案文案文案</span>
-		</label>
-		<label class="item">
-			<input class="item-input" type="radio" name="q1" value="radio4" onfocus="console.log(this.value)"><i class="item-fakeInput"></i>
-      <span class="item-text">文案文案文案</span>
+		<label class="answer">
+			<input class="answer-input" type="radio" name="q1" value="radio1" onfocus="console.log(this.value)"><i class="answer-fakeInput"></i>
+      <span class="answer-text">文案文案文案</span>
 		</label>
 	</div>
 	<div class="page">
 		<!-- 文字多选 -->
-		<label class="item">
-			<input class="item-input" type="checkbox" value="checkbox1" onfocus="console.log(this.value)"><i class="item-fakeInput"></i>
-      <span class="item-text">文案文案文案</span>
-		</label>
-		<label class="item">
-			<input class="item-input" type="checkbox" value="checkbox2" onfocus="console.log(this.value)"><i class="item-fakeInput"></i>
-      <span class="item-text">文案文案文案</span>
-		</label>
-		<label class="item">
-			<input class="item-input" type="checkbox" value="checkbox3" onfocus="console.log(this.value)"><i class="item-fakeInput"></i>
-      <span class="item-text">文案文案文案</span>
-		</label>
-		<label class="item">
-			<input class="item-input" type="checkbox" value="checkbox4" onfocus="console.log(this.value)"><i class="item-fakeInput"></i>
-      <span class="item-text">文案文案文案</span>
+		<label class="answer">
+			<input class="answer-input" type="checkbox" value="checkbox1" onfocus="console.log(this.value)"><i class="answer-fakeInput"></i>
+      <span class="answer-text">文案文案文案</span>
 		</label>
   </div>
 	<div class="page">
     <!-- 图文单选 -->
-		<label class="item itemWithImg">
-      <img class="item-img" src="" alt="" />
-			<input class="item-input" type="radio" name="q3" value="radio1" onfocus="console.log(this.value)"><i class="item-fakeInput"></i>
-      <span class="item-text">文案文案文案</span>
-		</label>
-		<label class="item itemWithImg">
-      <img class="item-img" src="" alt="" />
-			<input class="item-input" type="radio" name="q3" value="radio2" onfocus="console.log(this.value)"><i class="item-fakeInput"></i>
-      <span class="item-text">文案文案文案</span>
-		</label>
-		<label class="item itemWithImg">
-      <img class="item-img" src="" alt="" />
-			<input class="item-input" type="radio" name="q3" value="radio3" onfocus="console.log(this.value)"><i class="item-fakeInput"></i>
-      <span class="item-text">文案文案文案</span>
-		</label>
-		<label class="item itemWithImg">
-      <img class="item-img" src="" alt="" />
-			<input class="item-input" type="radio" name="q3" value="radio4" onfocus="console.log(this.value)"><i class="item-fakeInput"></i>
-      <span class="item-text">文案文案文案</span>
+		<label class="answer answer_WithImg">
+      <img class="answer-img" src="" alt="" />
+			<input class="answer-input" type="radio" name="q3" value="radio1" onfocus="console.log(this.value)"><i class="answer-fakeInput"></i>
+      <span class="answer-text">文案文案文案</span>
 		</label>
   </div>
 	<div class="page">
     <!-- 图文多选 -->
-		<label class="item itemWithImg">
-      <img class="item-img" src="" alt="" />
-			<input class="item-input" type="checkbox" value="checkbox1" onfocus="console.log(this.value)">
-      <i class="item-fakeInput"></i>
-      <span class="item-text">文案文案文案</span>
-		</label>
-		<label class="item itemWithImg">
-      <img class="item-img" src="" alt="" />
-			<input class="item-input" type="checkbox" value="checkbox2" onfocus="console.log(this.value)">
-      <i class="item-fakeInput"></i>
-      <span class="item-text">文案文案文案</span>
-		</label>
-		<label class="item itemWithImg">
-      <img class="item-img" src="" alt="" />
-			<input class="item-input" type="checkbox" value="checkbox3" onfocus="console.log(this.value)">
-      <i class="item-fakeInput"></i>
-      <span class="item-text">文案文案文案</span>
-		</label>
-		<label class="item itemWithImg">
-      <img class="item-img" src="" alt="" />
-			<input class="item-input" type="checkbox" value="checkbox4" onfocus="console.log(this.value)">
-      <i class="item-fakeInput"></i>
-      <span class="item-text">文案文案文案</span>
+		<label class="answer answer_WithImg">
+      <img class="answer-img" src="" alt="" />
+			<input class="answer-input" type="checkbox" value="checkbox1" onfocus="console.log(this.value)">
+      <i class="answer-fakeInput"></i>
+      <span class="answer-text">文案文案文案</span>
 		</label>
   </div>
-	<div class="page">6</div>
-	<div class="page">7</div>
-	<div class="page">8</div>
-	<div class="page">9</div>
-	<div class="page">10</div>
+	<div class="page">
+		<!-- 心情 -->
+		<div class="mood">
+			<span class="mood_item mood_item_1"></span>
+			<span class="mood_item mood_item_2"></span>
+			<span class="mood_item mood_item_3"></span>
+			<span class="mood_item mood_item_4"></span>
+			<span class="mood_item mood_item_5"></span>
+		</div>
+	</div>
+	<div class="page">
+		<!-- 评级 -->
+		<div class="rank">
+			<div class="rank_item"></div>
+			<div class="rank_item"></div>
+			<div class="rank_item"></div>
+			<div class="rank_item"></div>
+			<div class="rank_item"></div>
+		</div>
+	</div>
+	<div class="page">
+		<!-- 评分 -->
+		<div class="points">
+			<span class="points_good">非常满意</span>
+			<span class="points_bad">很不满意</span>
+			<div class="points_num">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10</div>
+			<div class="points_bar">
+				<div class="points_bar_handler"></div>
+			</div>
+		</div>
+	</div>
+	<div class="page">
+		<!-- 满意度 -->
+		<div class="satisfaction">
+			<div class="satisfaction_item">非常满意<span class="satisfaction_item_num">5</span></div>
+			<div class="satisfaction_item">满意<span class="satisfaction_item_num">4</span></div>
+			<div class="satisfaction_item">一般<span class="satisfaction_item_num">3</span></div>
+			<div class="satisfaction_item">不满意<span class="satisfaction_item_num">2</span></div>
+			<div class="satisfaction_item">非常不满意<span class="satisfaction_item_num">1</span></div>
+		</div>
+	</div>
+	<div class="page">
+		<!-- 表格 <-->
+			<table class="table">
+				<tr>
+					<td class="noBg"></td>
+					<td class="noBg">文字</td>
+					<td class="noBg">文字</td>
+					<td class="noBg">文字</td>
+					<td class="noBg">文字</td>
+					<td class="noBg">文字</td>
+				</tr>
+				<tr>
+					<td class="noBg">文字</td>
+					<td><div class="radio"><input type="radio"></div></td>
+					<td><div class="radio"><input type="radio"></div></td>
+					<td><div class="radio"><input type="radio"></div></td>
+					<td><div class="radio"><input type="radio"></div></td>
+					<td><div class="radio"><input type="radio"></div></td>
+				</tr>
+				<tr>
+					<td class="noBg">文字</td>
+					<td><div class="radio"><input type="radio"></div></td>
+					<td><div class="radio"><input type="radio"></div></td>
+					<td><div class="radio"><input type="radio"></div></td>
+					<td><div class="radio"><input type="radio"></div></td>
+					<td><div class="radio"><input type="radio"></div></td>
+				</tr>
+				<tr>
+					<td class="noBg">文字</td>
+					<td><div class="radio"><input type="radio"></div></td>
+					<td><div class="radio"><input type="radio"></div></td>
+					<td><div class="radio"><input type="radio"></div></td>
+					<td><div class="radio"><input type="radio"></div></td>
+					<td><div class="radio"><input type="radio"></div></td>
+				</tr>
+			</table>
+	</div>
+	<div class="page">
+		<!-- 自动提示输入框 -->
+		<div class="input">
+			<input type="text">
+			<ul class="input_hint">
+				<li class="input_hint_item">文字</li>
+				<li class="input_hint_item">文字</li>
+				<li class="input_hint_item">文字</li>
+				<li class="input_hint_item">文字</li>
+			</ul>
+		</div>
+	</div>
+	<div class="page">
+		<!-- 大输入框 -->
+		<div class="textarea">
+			<textarea></textarea>
+		</div>
+	</div>
+	<div class="page"></div>
+	<div class="page"></div>
+	<div class="page"></div>
 </div>
 <div class="step">
 <!-- 左下角提示当前是第几题 -->
@@ -123,66 +159,19 @@
 <div class="go">
 <!-- 点击进入下一题 -->
 </div>
-<script src="../res/js/zepto.min.js"></script>
 <script>
-var UI= {
-	pages:$(".page"), step:$(".step"), star:$(".star"), goBtn:$(".go"), pageNow:0, pageCount:function() {
-		return this.pages.length;
-	}
-	, wxShare:function() {
-	}
-	, pageNext:function() {
-		// 下一题
-		var _this = this;
-		_this.pageNow++;
-
-		if(_this.pageNow>=_this.pageCount()) {
-			_this.pageEnd();
-		}
-		else {
-			var _this = this, pageCurrent = $(".page-in"), pageNext = pageCurrent.next();
-			pageCurrent.addClass("page-out");
-			pageNext.addClass("page-in");
-		}
-	}
-	, pageEnd:function() {
-		alert("end")
-	}
-	, music:function() {
-		// 音乐
-		var musicBtn = $(".music"), musicAudio = $("#music-audio"), musicPlaying = false, toggleMusic=function(playing) {
-			if(playing) {
-				musicAudio.pause();
-				musicPlaying = false;
-				musicBtn.removeClass("music-playing");
-			}
-			else {
-				musicAudio.play();
-				musicPlaying = true;
-				musicBtn.removeClass("music-playing");
-			}
-		}
-		;
-		musicBtn.on("click", toggleMusic);
-
-		$(document).one("touchstart", function() {
-			toggleMusic();
-		}
-		);
-	}
-	, init:function() {
-		// UI初始化
-		// gobtn也可以在外部绑定事件，完成数据的操作后回调UI.pageNext();
-		var _this = this;
-
-		_this.goBtn.on("click", function() {
-			// 数据逻辑操作，然后
-			_this.pageNext();
-		}
-		)
-	}
-}
-UI.init();
+// 页面切换示例
+var go = document.querySelector(".go"),
+		now = 0,
+		pages = document.querySelectorAll(".page");
+go.addEventListener("click",function(){
+	console.log("go")
+	var now = document.querySelector(".page-in"),
+			next = now.nextElementSibling;
+	now.classList.add("page-out");
+	now.classList.remove("page-in")
+	next.classList.add("page-in")
+});
 </script>
 </body>
 </html>

@@ -5,42 +5,115 @@
 */
 
 /* widget */
-.item{
+
+/* radio */
+
+/* checkbox */
+
+/* answer */
+.answer {
+  $answerTextHeight: 42px;
   /* 文字选项 */
-  display:block;
-  height:40px;
-  border-radius:21px;
-  overflow:hidden;
-  border:1px solid #00f;
-  &WithImg{
-    /* 图文选项 */
-    float:left;
-    height:auto;
+  display: block;
+  margin-bottom: 6px;
+  height: $answerTextHeight;
+  border-radius: $answerTextHeight / 2;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.5);
+  &_Selected{
+    box-shadow: 0 0 2px #28e8fd;
   }
-  &-img{
-    display:block;
-    width:100px;
-    height:100px;
-    margin-bottom:5px;
+  &_input {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    appearance: none;
   }
-  &-input{
-    position:absolute;top:-9999px;left:-9999px;
+  &_fakeInput {
+    position: absolute
+    width: 20px;
+    height: 20px;
+    top: 10px;
+    left: 10px;
+    background: #fff;
   }
-  &-fakeInput{
-    float:left;
-    width:20px;
-    height:20px;
-    margin:10px 10px 0 10px;
-    background:red;
+  &_input:checked + &_fakeInput {
+    background: green;
   }
-  &-input:checked + &-fakeInput{
-    background:green;
+  &_text {
+    display: block;
+    height: $answerTextHeight;
+    line-height: $answerTextHeight;
+    padding: 0 10px 0 54px;
+    overflow: hidden;
   }
-  &-text{
-    display:block;
-    height:40px;
-    line-height:40px;
-    padding-right:10px;
-    overflow:hidden;
+}
+.answer_WithImg{
+  $answerImgHeight: 130px;
+  $answerImgTextHeight: 24px;
+  /* 图文选项 */
+  float: left;
+  width: $answerImgHeight;
+  height: auto;
+  border-radius: 5px;
+  .answer_img {
+    display: block;
+    width: $answerImgHeight;
+    height: $answerImgHeight;
   }
+  .answer_text{
+    padding: 0 $answerImgTextHeight;
+    text-align: center
+    height: $answerImgTextHeight;
+    line-height: $answerImgTextHeight;
+    font-size: 13px;
+  }
+}
+
+/* mood */
+.mood{
+  overflow: hidden
+  &_item{
+    float: left;
+    width: 63px;
+    height: 63px;
+    margin-right: 20px;
+    background: 0 0 no-repeat;
+    background-size: 100% 100%;
+    &:last-child{
+      margin-right: 0;
+    }
+    @for $i from 1 through 5{
+      &_#{$i}{
+        background-image: url(../images/mood/#{$i}.png);
+      }
+    }
+    &_Selected{
+      transform:scale(1.2);
+      transform-origin: 50% 50%;
+      transition: all 0.4s;
+    }
+  }
+}
+
+/* rank */
+.rank{
+  overflow: hidden;
+  &_item{
+    float: left;
+    margin-right: 42px;
+    width: 42px;
+    height: 42px;
+    &:last-child{
+      margin-right: 0;
+    }
+    &_Selected{
+
+    }
+  }
+}
+
+/* points */
+.points{
+
 }
