@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 *
 * reset, 全局设定, 变量
@@ -33,6 +34,7 @@ h1, h2, h3, h4 {
 }
 input, textarea, select, button {
   font-size: inherit;
+  font-family: inherit;
 }
 a, a:hover {
   text-decoration: none;
@@ -41,13 +43,17 @@ a, a:hover {
   outline: none;
 }
 
+/* vars */
+$colorWhite: #fff;
+$colorHighlight: #28e8fd;
+
 /*base*/
 html, body {
   height: 100%;
   font-size: 12px;
   line-height: 1;
-  font-family: Arial, sans-serif;
-  color: #000;
+  font-family: "Microsoft Yahei",SimSun, Arial, sans-serif;
+  color: $colorWhite;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
@@ -55,4 +61,19 @@ html, body {
   -webkit-overflow-scrolling: touch;
   -webkit-font-smoothing: antialiased;
   user-select: none;
+}
+
+/* functional */
+%clr:after{
+  content:"";
+  display: block;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  visibility: hidden;
+}
+%ellipsis{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;;
 }

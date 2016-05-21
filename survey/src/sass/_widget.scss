@@ -1,120 +1,199 @@
+@charset "UTF-8";
 /*
 *
 * 公用控件
 *
 */
 
-/* widget */
-$radioSize: 20px;
-$checkBoxSize: 16px;
+/* var */
+$radioSize: 13px;
+$checkBoxSize: 11px;
 
-/* answer */
-$answerTextHeight: 42px;
-$answerImgHeight: 130px;
-$answerImgTextHeight: 24px;
 
-.answer {
-  /* 文字选项 */
+/* 文字答案选项 */
+$answerNormalTextHeight: 38px;
+$answerNormalTextWidth: 216px;
+.answer{
   display: block;
-  margin-bottom: 6px;
-  &_checkbox,
-  &_radio {
+  width: $answerNormalTextWidth;
+  margin: 0 auto 11px;
+  input{
     position: absolute;
     top: -9999px;
     left: -9999px;
-    appearance: none;
   }
-  &_checkbox + &_fakeInput {
-    position: absolute;
-    top: ($answerTextHeight - $checkBoxSize)/2;
-    left: 10px;
-    width: $checkBoxSize;
-    height: $checkBoxSize;
-    background-image: url(../images/ddxk_off.png);
+  &_cell{
+    position: relative;
+    height: $answerNormalTextHeight;
+    border-radius: $answerNormalTextHeight / 2;
+    padding-left: 31px;
+    background: rgba(0,0,0,0.5);
+    &:before{
+      content:"";
+      position: absolute;
+      left: 12px;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
   }
-  &_checkbox:checked + &_fakeInput {
-    background-image: url(../images/ddxk_on.png);
+  &_text{
+    display: block;
+    padding-right: 20px;
+    height: $answerNormalTextHeight;
+    line-height: $answerNormalTextHeight;
+    @extend %ellipsis;
+    font-size: 13px;
+    color: $colorWhite;
   }
-  &_radio + &_fakeInput {
-    position: absolute;
-    top: ($answerTextHeight - $radioSize)/2;
-    left: 10px;
+  input[type="radio"] + &_cell:before{
     width: $radioSize;
     height: $radioSize;
-    background-image: url(../images/dxk_off.png);
+    background: url(../images/radio.png) 0 100% no-repeat;
+    background-size: $radioSize;
   }
-  &_radio:checked + &_fakeInput {
-    background-image: url(../images/dxk_on.png);
+  input[type="checkbox"] + &_cell:before{
+    width: $checkBoxSize;
+    height: $checkBoxSize;
+    background: url(../images/cb.png) 0 100% no-repeat;
+    background-size: $checkBoxSize;
   }
-  &_text {
-    display: block;
-    line-height: $answerTextHeight;
-    padding: 0 10px 0 54px;
-    overflow: hidden;
-    background: rgba(0,0,0,0.5);
-    height: $answerTextHeight;
-    border-radius: $answerTextHeight / 2;
+  input:checked + &_cell{
+    box-shadow: 0 0 0 1px $colorHighlight; 
   }
-  &_radio:checked + &_fakeInput + &_text,
-  &_checkbox:checked + &_fakeInput + &_text{
-    box-shadow: 0 0 2px #28e8fd;
-  }
-}
-.answer_WithImg{
-  /* 图文选项 */
-  float: left;
-  width: $answerImgHeight;
-  height: auto;
-  border-radius: 5px;
-  .answer_img {
-    display: block;
-    width: $answerImgHeight;
-    height: $answerImgHeight;
-  }
-  .answer_text{
-    padding: 0 $answerImgTextHeight;
-    text-align: center;
-    height: $answerImgTextHeight;
-    line-height: $answerImgTextHeight;
-    font-size: 13px;
+  input[type="radio"]:checked + &_cell:before,
+  input[type="checkbox"]:checked + &_cell:before,{
+    background-position: 0 0;
   }
 }
 
-/* mood */
+
+/* 图片答案选项 */
+$itemInnerPadding: 1px;
+$itemImgSize: 118px;
+$itemTextHeight: 24px;
+$itemCornerRadius: 5px;
+$itemSpacingHorizontal: 21px;
+.itemset{
+  width: ($itemImgSize + $itemInnerPadding*2)*2 + $itemSpacingHorizontal;
+  margin: 0 auto;
+}
+.item{
+  float: left;
+  margin-right: 21px;
+  margin-bottom: 15px;
+  &:nth-child(even){
+    margin-right: 0;
+  }
+  input{
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  &_cell{
+    padding: $itemInnerPadding;
+    border-radius: $itemCornerRadius;
+    width: $itemImgSize;
+    overflow: hidden;
+  }
+  &_img{
+    display: block;
+    width: $itemImgSize;
+    height: $itemImgSize;
+    border-top-left-radius:$itemCornerRadius;
+    border-top-right-radius:$itemCornerRadius;
+  }
+  &_text{
+    position: relative;
+    display: block;
+    padding: 0 20px;
+    height: $itemTextHeight;
+    line-height: $itemTextHeight;
+    text-align: center;
+    font-size: 13px;
+    color: $colorWhite;
+    background: rgba(0,0,0,0.5);
+    border-bottom-left-radius:$itemCornerRadius;
+    border-bottom-right-radius:$itemCornerRadius;
+    @extend %ellipsis;
+    &:before{
+      content:"";
+      position: absolute;
+      left: 5px;
+      top: 1px;
+      bottom: 0;
+      margin: auto;
+    }
+  }
+  input[type="radio"] + &_cell &_text:before{
+    width: $radioSize;
+    height: $radioSize;
+    background: url(../images/radio.png) 0 100% no-repeat;
+    background-size: $radioSize;
+  }
+  input[type="checkbox"] + &_cell &_text:before{
+    width: $checkBoxSize;
+    height: $checkBoxSize;
+    background: url(../images/cb.png) 0 100% no-repeat;
+    background-size: $checkBoxSize;
+  }
+  input:checked + &_cell{
+    box-shadow: 0 0 0 2px $colorHighlight; 
+  }
+  input[type="radio"]:checked + &_cell &_text:before,
+  input[type="checkbox"]:checked + &_cell &_text:before,{
+    background-position: 0 0;
+  }
+}
+
+/* 五个表情 */
+$moodIconCount: 5;
+$moodIconSize: 32px;
+$moodIconSpacing: 12px;
 .mood{
-  overflow: hidden;
-  &_item{
+  padding: 15px 0 0;
+  @extend %clr;
+  width: ($moodIconSize + $moodIconSpacing)*$moodIconCount - $moodIconSpacing;
+  margin: 0 auto;
+  &_icon{
     float: left;
-    width: 63px;
-    height: 63px;
-    margin-right: 20px;
+    width: $moodIconSize;
+    height: $moodIconSize;
+    margin-right: $moodIconSpacing;
     background: 0 0 no-repeat;
-    background-size: 100% 100%;
+    background-size: contain;
     &:last-child{
       margin-right: 0;
     }
     @for $i from 1 through 5{
       &_#{$i}{
-        background-image: url(../images/mood/#{$i}.png);
+        background-image: url(../images/mood_#{$i}.png);
       }
     }
     &_Selected{
-      transform:scale(1.2);
+      transform:scale(1.4);
       transform-origin: 50% 50%;
       transition: all 0.4s;
     }
   }
 }
 
-/* heart */
+/* 心形 */
+$heartIconCount: 5;
+$heartIconWidth: 29px;
+$heartIconHeight: 27px;
+$heartIconSpacing: 24px;
 .heart{
-  overflow: hidden;
-  &_item{
+  @extend %clr;
+  width: ($heartIconWidth + $heartIconSpacing)*$heartIconCount - $heartIconSpacing;
+  margin: 0 auto;
+  &_icon{
     float: left;
-    margin-right: 42px;
-    width: 42px;
-    height: 41px;
-    background: url(../images/heart.png) 100% 0 no-repeat; 
+    margin-right: $heartIconSpacing;
+    width: $heartIconWidth;
+    height: $heartIconHeight;
+    background: url(../images/heart.png) 100% 0 no-repeat;
+    background-size: 82px 27px;
     &:last-child{
       margin-right: 0;
     }
@@ -124,7 +203,171 @@ $answerImgTextHeight: 24px;
   }
 }
 
-/* points */
+/* 垂直打分 */
+$pointsPaddingTop: 21px;
+$pointsHeight: 270px;
+$pointsTextLineHeight: 18px;
+$pointsNumMarginBottom: 10px;
+$pointsBarWidth: 21px;
+$pointsBarHandlerSize: 36px;
 .points{
+  position: relative;
+  height: $pointsHeight;
+  line-height: $pointsTextLineHeight;
+  font-size: 12px;
+  padding-left: 5em;
+  padding-top: $pointsPaddingTop;
+  width: 120px;
+  margin: 0 auto;
+  &_good,
+  &_bad{
+    position: absolute;
+    left: 0;
+  }
+  &_good{
+    top: $pointsPaddingTop;
+  }
+  &_bad{
+    bottom: 0;
+  }
+  &_num{
+    float: left;
+    height: $pointsHeight;
+    text-align: right;
+    padding-right: 21px;
+    span{
+      display: block;
+      line-height: $pointsTextLineHeight;
+      margin-bottom: $pointsNumMarginBottom;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+  &_bar{
+    position: relative;
+    float: left;
+    height: $pointsHeight;
+    width: $pointsBarWidth;
+    background: url(../images/points.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    &_handler{
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: $pointsBarHandlerSize;
+      height: $pointsBarHandlerSize;
+      margin-top: -($pointsBarHandlerSize - $pointsTextLineHeight)/2 ;
+      margin-left: -$pointsBarHandlerSize/2;
+      border-radius: $pointsBarHandlerSize/2;
+      background: linear-gradient(75deg, #d7d7d7 0%, #fff 100%);
+      opacity: 0.9;
+      box-shadow: 0 0 20px 2px rgba(0,0,0,0.2);
+    }
+  }
+}
 
+/* 满意度 */
+$satisfactionHeight: 36px;
+.satisfaction{
+  padding-top: 15px;
+  width: 118px;
+  margin: 0 auto;
+  &_item{
+    position: relative;
+    height: $satisfactionHeight;
+    line-height: $satisfactionHeight;
+    margin-bottom: 24px;
+    text-align: right;
+    padding-right: 57px;
+    &:after{
+      content:"";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: $satisfactionHeight;
+      height: $satisfactionHeight;
+      font-size: 13px;
+      text-align: center;
+      background: url(../images/satisfaction.png) no-repeat;
+      background-size: $satisfactionHeight;
+    }
+    @for $i from 1 through 5{
+      &:nth-child(#{$i}):after{
+        content:"#{$i}";
+        background-position: 0 (1 - $i)*$satisfactionHeight;
+      }
+    }
+  }
+}
+
+/* 表格 */
+$tableRadioSize: 13px;
+.table{
+  td{
+    width: 125px;
+    height: 53px;
+    background: rgba(0,0,0,0.3);
+    text-align: center;
+    vertical-align: middle;
+    &.noBg{
+      background: none;
+    }
+  }
+  &_input{
+    input{
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+    span{
+      display: inline-block;
+      width: $tableRadioSize;
+      height: $tableRadioSize;
+      background: url(../images/tableradio.png) 100% 0 no-repeat;
+      background-size: $tableRadioSize*2 $tableRadioSize;
+    }
+    input:checked + span{
+      background-position: 0 0;
+    }
+  }
+}
+
+/* 下拉提示输入框 */
+$dropdownInputHeight: 38px;
+$dropdownInputWidth: 257px;
+%dropdownInputItem{
+    display: block;
+    width: $dropdownInputWidth;
+    height: $dropdownInputHeight;
+    line-height: $dropdownInputHeight;
+    padding: 0 18px;
+    box-sizing: border-box;
+    font-size: 13px;
+    color: #fff;
+}
+.dropdownInput{
+  position: relative;
+  width: $dropdownInputWidth;
+  margin: 0 auto;
+  overflow: hidden;
+  input{
+    position: absolute;
+    z-index: 2;
+    @extend %dropdownInputItem;
+    border-radius: $dropdownInputHeight / 2;
+    background: rgba(0,0,0,0.6);
+    border: none;
+  }
+  &_list{
+    margin-top: $dropdownInputHeight / 2;
+    padding-top: 22px;
+    background: rgba(0,0,0,0.6);
+    border-bottom-left-radius: $dropdownInputHeight / 2;
+    border-bottom-right-radius: $dropdownInputHeight / 2;
+    overflow: hidden;
+    li{
+      @extend %dropdownInputItem;
+    }
+  }
 }

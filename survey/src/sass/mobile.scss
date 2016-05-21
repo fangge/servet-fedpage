@@ -1,8 +1,10 @@
+@charset "UTF-8";
+
 @import "_base";
 @import "_widget";
 
-/* page */
-.bg, .wrap, .page {
+/* 框架 */
+.wrap, .page {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -14,27 +16,99 @@
 }
 .page {
 	transform: translate3d(0, 100%, 0);
-	transition: transform 0.2s, opacity 0.2s;
-	opacity: 0;
-	visibility: hidden;
-
+	transition: transform 0.2s;
+	background: center center no-repeat;
+	background-size: cover;
 	&_in {
 		transform: translate3d(0, 0, 0);
-		opacity: 1;
-		visibility: visible;
 	}
 	&_out {
 		transform: translate3d(0, -100%, 0);
-		opacity: 0;
 	}
+}
+.center{
+	// 用来居中
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform:translate(-50%,-50%);
 }
 .go {
 	position: absolute;
-	bottom: 100px;
+	bottom: 0;
 	right: 0;
 	left: 0;
 	margin: auto;
-	width: 100px;
-	height: 100px;
+	width: 20px;
+	height: 20px;
 	background-color: red;
+}
+
+/* 四周元素 */
+.copyright{
+	background: url(../images/copyright.png) 0 0 no-repeat;
+	width: 165px;
+	height: 45px;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+}
+
+/* 页面细节 */
+.title{
+	font-size: 20px;
+	line-height: 30px;
+	color: $colorWhite;
+	text-align: center;
+	min-width: 288px;
+	margin: 0 16px 15px;
+}
+.desc{
+	font-size: 12px;
+	line-height: 14px;
+	color: $colorWhite;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.start{
+	color: $colorWhite;
+	.logo{
+		display: block;
+		margin: 68px auto 45px;
+		width: 53px;
+		height: 109px;
+		text-indent: -9999px;
+		background: url(../images/logo.png) 0 0 no-repeat;
+		background-size: contain;
+	}
+	h1{
+		font-size: 20px;
+		line-height: 20px;
+		text-align: center;
+		margin-bottom: 16px;
+	}
+	p{
+		line-height: 24px;
+		font-size: 13px;
+		margin:0 34px 14px;
+	}
+	.friend{
+		position: absolute;
+		bottom: 50px;
+		left: 37px;
+		right: 25px;
+		&_avatar{
+			float: left;
+			width: 35px;
+			left: 35px;
+			margin-right: 13px;
+			margin-top: -4px;
+		}
+		&_msg{
+			line-height: 25px;
+			font-size: 13px;
+			color: $colorWhite;
+			overflow: hidden;
+		}
+	}
 }

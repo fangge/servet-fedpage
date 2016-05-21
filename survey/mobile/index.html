@@ -10,168 +10,308 @@
 <link rel="stylesheet"href="../css/mobile.css">
 </head>
 <body>
-<div class="bg"></div>
-<div class="logo">
-<!-- 右下角logo -->
-</div>
 <div class="wrap">
-	<div class="page page_in">1</div>
-	<div class="page">
-		<!-- 文字单选 -->
-		<label class="answer">
-			<input class="answer_radio" type="radio" name="q1" value="radio1" onfocus="console.log(this.value)"><i class="answer_fakeInput"></i>
-      <span class="answer_text">文案文案文案</span>
-		</label>
-	</div>
-	<div class="page">
-		<!-- 文字多选 -->
-		<label class="answer">
-			<input class="answer_checkbox" type="checkbox" value="checkbox1" onfocus="console.log(this.value)"><i class="answer_fakeInput"></i>
-      <span class="answer_text">文案文案文案</span>
-		</label>
-  </div>
-	<div class="page">
-    <!-- 图文单选 -->
-		<label class="answer answer_WithImg">
-      <img class="answer_img" src="" alt="" />
-			<input class="answer_radio" type="radio" name="q3" value="radio1" onfocus="console.log(this.value)"><i class="answer_fakeInput"></i>
-      <span class="answer_text">文案文案文案</span>
-		</label>
-  </div>
-	<div class="page">
-    <!-- 图文多选 -->
-		<label class="answer answer_WithImg">
-      <img class="answer_img" src="" alt="" />
-			<input class="answer_checkbox" type="checkbox" value="checkbox1" onfocus="console.log(this.value)">
-      <i class="answer_fakeInput"></i>
-      <span class="answer_text">文案文案文案</span>
-		</label>
-  </div>
-	<div class="page">
-		<!-- 心情 -->
-		<div class="mood">
-			<span class="mood_item mood_item_1"></span>
-			<span class="mood_item mood_item_2"></span>
-			<span class="mood_item mood_item_3"></span>
-			<span class="mood_item mood_item_4"></span>
-			<span class="mood_item mood_item_5"></span>
+	<!--  -->
+	<div class="page start page_in" style="background-image:url(../images/mbg0.jpg)">
+		<div class="logo">Survet</div>
+		<h1>欢迎参与调查</h1>
+		<p>这是一次关于中国互联网产品发展状况的调查，你的手机里到底装了哪些神奇好用的APP，哪些APP占据了你你一屏的位置.</p>
+		<p>已经有 47656 位用户完成调查<br>平均用时 30 分钟<br>答完奖励 10 积分</p>
+		<div class="friend">
+			<img src="../images/head.png" alt="" class="friend_avatar">
+			<p class="friend_msg">这个调查很有趣，可以知道自己和别人有什么不同</p>
 		</div>
 	</div>
-	<div class="page">
-		<!-- 心型 -->
-		<div class="heart">
-			<div class="heart_item"></div>
-			<div class="heart_item"></div>
-			<div class="heart_item"></div>
-			<div class="heart_item"></div>
-			<div class="heart_item"></div>
+	<div class="page" style="background-image:url(../images/mbg0.jpg)">
+
+		<div class="center">
+			<h2 class="title">单选题</h2>
+			<p class="desc">描述</p>
+
+			<label class="answer">
+				<input type="radio">
+				<div class="answer_cell">
+					<span class="answer_text">文案文案文案</span>
+				</div>
+			</label>
+			<label class="answer">
+				<input type="radio">
+				<div class="answer_cell">
+					<span class="answer_text">文案文案文案</span>
+				</div>
+			</label>
+			<label class="answer">
+				<input type="radio">
+				<div class="answer_cell">
+					<span class="answer_text">文案文案文案</span>
+				</div>
+			</label>
 		</div>
+
 	</div>
-	<div class="page">
-		<!-- 评分 -->
-		<div class="points">
-			<span class="points_good">非常满意</span>
-			<span class="points_bad">很不满意</span>
-			<div class="points_num">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10</div>
-			<div class="points_bar">
-				<div class="points_bar_handler"></div>
+	<div class="page" style="background-image:url(../images/mbg0.jpg)">
+
+		<div class="center">
+			<h2 class="title">多选题</h2>
+			<p class="desc">描述</p>
+
+			<label class="answer">
+				<input type="checkbox">
+				<div class="answer_cell">
+					<span class="answer_text">文案文案文案</span>
+				</div>
+			</label>
+			<label class="answer">
+				<input type="checkbox">
+				<div class="answer_cell">
+					<span class="answer_text">文案文案文案</span>
+				</div>
+			</label>
+			<label class="answer">
+				<input type="checkbox">
+				<div class="answer_cell">
+					<span class="answer_text">文案文案文案</span>
+				</div>
+			</label>
+		</div>
+
+	</div>
+	<div class="page" style="background-image:url(../images/mbg0.jpg)">
+
+		<div class="center">
+			<h2 class="title">图片单选</h2>
+			<p class="desc">描述</p>
+			
+			<div class="itemset">
+				<label class="item">
+					<input type="radio">
+					<div class="item_cell">
+						<img src="../images/pic.jpg" alt="" class="item_img"></span>
+						<span class="item_text">文案文案文案</span>
+					</div>
+				</label>
+				<label class="item">
+					<input type="radio">
+					<div class="item_cell">
+						<img src="../images/pic.jpg" alt="" class="item_img"></span>
+						<span class="item_text">文案文案文案</span>
+					</div>
+				</label>
+				<label class="item">
+					<input type="radio">
+					<div class="item_cell">
+						<img src="../images/pic.jpg" alt="" class="item_img"></span>
+						<span class="item_text">文案文案文案</span>
+					</div>
+				</label>
+				<label class="item">
+					<input type="radio">
+					<div class="item_cell">
+						<img src="../images/pic.jpg" alt="" class="item_img"></span>
+						<span class="item_text">文案文案文案</span>
+					</div>
+				</label>
+			</div>
+		</div>
+
+	</div>
+	<div class="page" style="background-image:url(../images/mbg0.jpg)">
+
+		<div class="center">
+			<h2 class="title">图片多选</h2>
+			<p class="desc">描述</p>
+			
+			<div class="itemset">
+				<label class="item">
+					<input type="checkbox">
+					<div class="item_cell">
+						<img src="../images/pic.jpg" alt="" class="item_img"></span>
+						<span class="item_text">文案文案文案</span>
+					</div>
+				</label>
+				<label class="item">
+					<input type="checkbox">
+					<div class="item_cell">
+						<img src="../images/pic.jpg" alt="" class="item_img"></span>
+						<span class="item_text">文案文案文案</span>
+					</div>
+				</label>
+				<label class="item">
+					<input type="checkbox">
+					<div class="item_cell">
+						<img src="../images/pic.jpg" alt="" class="item_img"></span>
+						<span class="item_text">文案文案文案</span>
+					</div>
+				</label>
+				<label class="item">
+					<input type="checkbox">
+					<div class="item_cell">
+						<img src="../images/pic.jpg" alt="" class="item_img"></span>
+						<span class="item_text">文案文案文案</span>
+					</div>
+				</label>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="page" style="background-image:url(../images/mbg0.jpg)">
+		
+		<div class="center">
+			<h2 class="title">这是五个表情的印象选项</h2>
+
+			<div class="mood">
+				<div class="mood_icon mood_icon_1 mood_icon_Selected"></div>
+				<div class="mood_icon mood_icon_2"></div>
+				<div class="mood_icon mood_icon_3"></div>
+				<div class="mood_icon mood_icon_4"></div>
+				<div class="mood_icon mood_icon_5"></div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="page" style="background-image:url(../images/mbg0.jpg)">
+		
+		<div class="center">
+			<h2 class="title">这是五个心形的选项</h2>
+			<p class="desc">5分表示非常好，1分表示最差</p>
+			<div class="heart">
+				<div class="heart_icon heart_icon_Selected"></div>
+				<div class="heart_icon heart_icon_Selected"></div>
+				<div class="heart_icon heart_icon_Selected"></div>
+				<div class="heart_icon"></div>
+				<div class="heart_icon"></div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="page" style="background-image:url(../images/mbg0.jpg)">
+		<div class="center">
+			<div class="h2 title">对这个设计你打几分？</div>
+			<div class="points">
+				<span class="points_good">非常满意</span>
+				<span class="points_bad">很不满意</span>
+				<div class="points_num">
+					<span>10</span>
+					<span>9</span>
+					<span>8</span>
+					<span>7</span>
+					<span>6</span>
+					<span>5</span>
+					<span>4</span>
+					<span>3</span>
+					<span>2</span>
+					<span>1</span>
+				</div>
+				<div class="points_bar">
+					<div class="points_bar_handler" style="top:110px;"></div>
+					<!-- 监听滑动事件改变handler的top，范围为0~250，如：
+					<div class="points_bar_handler" style="top:110px;"></div>
+					 -->
+				</div>
 			</div>
 		</div>
 	</div>
-	<div class="page">
-		<!-- 满意度 -->
-		<div class="satisfaction">
-			<div class="satisfaction_item">非常满意<span class="satisfaction_item_num">5</span></div>
-			<div class="satisfaction_item">满意<span class="satisfaction_item_num">4</span></div>
-			<div class="satisfaction_item">一般<span class="satisfaction_item_num">3</span></div>
-			<div class="satisfaction_item">不满意<span class="satisfaction_item_num">2</span></div>
-			<div class="satisfaction_item">非常不满意<span class="satisfaction_item_num">1</span></div>
+
+	<div class="page" style="background-image:url(../images/mbg0.jpg)">
+
+		<div class="center">
+			<div class="h2 title">满意度调查，满意么</div>
+			<div class="satisfaction">
+				<div class="satisfaction_item">非常满意</div>
+				<div class="satisfaction_item">满意</div>
+				<div class="satisfaction_item">一般</div>
+				<div class="satisfaction_item">不满意</div>
+				<div class="satisfaction_item">非常不满意</div>
+			</div>
 		</div>
 	</div>
-	<div class="page">
+	<div class="page" style="background-image:url(../images/mbg0.jpg)">
 		<!-- 表格 <-->
-			<table class="table">
-				<tr>
-					<td class="noBg"></td>
-					<td class="noBg">文字</td>
-					<td class="noBg">文字</td>
-					<td class="noBg">文字</td>
-					<td class="noBg">文字</td>
-					<td class="noBg">文字</td>
-				</tr>
-				<tr>
-					<td class="noBg">文字</td>
-					<td><div class="radio"><input type="radio"></div></td>
-					<td><div class="radio"><input type="radio"></div></td>
-					<td><div class="radio"><input type="radio"></div></td>
-					<td><div class="radio"><input type="radio"></div></td>
-					<td><div class="radio"><input type="radio"></div></td>
-				</tr>
-				<tr>
-					<td class="noBg">文字</td>
-					<td><div class="radio"><input type="radio"></div></td>
-					<td><div class="radio"><input type="radio"></div></td>
-					<td><div class="radio"><input type="radio"></div></td>
-					<td><div class="radio"><input type="radio"></div></td>
-					<td><div class="radio"><input type="radio"></div></td>
-				</tr>
-				<tr>
-					<td class="noBg">文字</td>
-					<td><div class="radio"><input type="radio"></div></td>
-					<td><div class="radio"><input type="radio"></div></td>
-					<td><div class="radio"><input type="radio"></div></td>
-					<td><div class="radio"><input type="radio"></div></td>
-					<td><div class="radio"><input type="radio"></div></td>
-				</tr>
-			</table>
+		<h2 class="title">表格样式待定</h2>
+		<table class="table">
+			<tr>
+				<td width="125" class="noBg"></td>
+				<td width="125" class="noBg">文字</td>
+				<td width="125" class="noBg">文字</td>
+				<td width="125" class="noBg">文字</td>
+				<td width="125" class="noBg">文字</td>
+				<td width="125" class="noBg">文字</td>
+			</tr>
+			<tr>
+				<td class="noBg">文字</td>
+				<td><label class="table_input"><input type="radio"><span></span></label></td>
+				<td><label class="table_input"><input type="radio"><span></span></label></td>
+				<td><label class="table_input"><input type="radio"><span></span></label></td>
+				<td><label class="table_input"><input type="radio"><span></span></label></td>
+				<td><label class="table_input"><input type="radio"><span></span></label></td>
+			</tr>
+			<tr>
+				<td class="noBg">文字</td>
+				<td><label class="table_input"><input type="radio"><span></span></label></td>
+				<td><label class="table_input"><input type="radio"><span></span></label></td>
+				<td><label class="table_input"><input type="radio"><span></span></label></td>
+				<td><label class="table_input"><input type="radio"><span></span></label></td>
+				<td><label class="table_input"><input type="radio"><span></span></label></td>
+			</tr>
+			<tr>
+				<td class="noBg">文字</td>
+				<td><label class="table_input"><input type="radio"><span></span></label></td>
+				<td><label class="table_input"><input type="radio"><span></span></label></td>
+				<td><label class="table_input"><input type="radio"><span></span></label></td>
+				<td><label class="table_input"><input type="radio"><span></span></label></td>
+				<td><label class="table_input"><input type="radio"><span></span></label></td>
+			</tr>
+		</table>
 	</div>
-	<div class="page">
-		<!-- 自动提示输入框 -->
-		<div class="input">
-			<input type="text">
-			<ul class="input_hint">
-				<li class="input_hint_item">文字</li>
-				<li class="input_hint_item">文字</li>
-				<li class="input_hint_item">文字</li>
-				<li class="input_hint_item">文字</li>
-			</ul>
+
+	<div class="page" style="background-image:url(../images/mbg0.jpg)">
+		<div class="center">
+			<h2 class="title">自动提示输入框</h2>
+
+			<div class="dropdownInput">
+				<input type="text" value="啊啊啊啊啊啊啊啊啊">
+				<ul class="dropdownInput_list">
+					<li>南京</li>
+					<li>南昌</li>
+					<li>南宁</li>
+				</ul>
+			</div>
 		</div>
 	</div>
-	<div class="page">
+
+	<div class="page" style="background-image:url(../images/mbg0.jpg)">
 		<!-- 大输入框 -->
 		<div class="textarea">
 			<textarea></textarea>
 		</div>
 	</div>
-	<div class="page"></div>
-	<div class="page"></div>
-	<div class="page"></div>
+	<div class="page" style="background-image:url(../images/mbg0.jpg)"></div>
+	<div class="page" style="background-image:url(../images/mbg0.jpg)"></div>
+	<div class="page" style="background-image:url(../images/mbg0.jpg)"></div>
 </div>
+<div class="copyright"></div>
 <div class="step">
-<!-- 左下角提示当前是第几题 -->
+	<!-- 左下角提示当前是第几题 -->
 </div>
 <div class="star">
-<!-- 左上角星星 -->
+	<!-- 左上角星星 -->
 </div>
-<div class="music"><audio src="../res/music/music.mp3"id="music-audio"></audio>
-<!-- 音乐 -->
+<div class="music">
+	<audio src="../res/music/music.mp3" id="music-audio"></audio>
+	<!-- 音乐 -->
 </div>
 <div class="go">
-<!-- 点击进入下一题 -->
+	<!-- 点击进入下一题 -->
 </div>
 <script>
 // 页面切换示例
-var go = document.querySelector(".go"),
-		now = 0,
-		pages = document.querySelectorAll(".page");
-go.addEventListener("click",function(){
-	console.log("go")
-	var now = document.querySelector(".page_in"),
-			next = now.nextElementSibling;
-	now.classList.add("page_out");
-	now.classList.remove("page_in")
-	next.classList.add("page_in")
-});
-</script>
+var go = document.querySelector(".go"), now = 0, pages = document.querySelectorAll(".page");
+go.addEventListener("click", function() { console.log("go")
+	var now = document.querySelector(".page_in"), next = now.nextElementSibling; now.classList.add("page_out"); now.classList.remove("page_in")
+next.classList.add("page_in") }
+); </script>
 </body>
 </html>
