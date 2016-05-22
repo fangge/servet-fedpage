@@ -4,25 +4,39 @@
 @import "_widget";
 
 /* 框架 */
-.wrap, .page {
+.wrap,.page {
 	position: absolute;
 	top: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
 }
-.wrap {
-	overflow: hidden;
-}
 .page {
-	transform: translate3d(0, 100%, 0);
-	transition: transform 0.2s;
+	transform: translate3d(0, -100%, 0);
 	background: center center no-repeat;
 	background-size: cover;
+	overflow: hidden;
 	&_in {
-		transform: translate3d(0, 0, 0);
+		animation: pageIn 0.2s both;
+		overflow-y: auto;
 	}
 	&_out {
+		animation: pageOut 0.2s both;
+	}
+}
+@keyframes pageIn{
+	from{
+		transform: translate3d(0, 100%, 0);
+	}
+	to{
+		transform: translate3d(0, 0, 0);
+	}
+}
+@keyframes pageOut{
+	from{
+		transform: translate3d(0, 0, 0);
+	}
+	to{
 		transform: translate3d(0, -100%, 0);
 	}
 }
@@ -35,23 +49,106 @@
 }
 .go {
 	position: absolute;
-	bottom: 0;
+	bottom: 40px;
 	right: 0;
 	left: 0;
 	margin: auto;
-	width: 20px;
-	height: 20px;
-	background-color: red;
+	width: 44px;
+	height: 33px;
+	background: url(../images/go.png) 0 0 no-repeat;
+	background-size: 100%;
 }
 
 /* 四周元素 */
-.copyright{
-	background: url(../images/copyright.png) 0 0 no-repeat;
-	width: 165px;
-	height: 45px;
+.music{
 	position: fixed;
-	bottom: 10px;
 	right: 10px;
+	top: 10px;
+	width: 29px;
+	height: 29px;
+	background: url(../images/musicoff.png) 0 0 no-repeat;
+	background-size: 100%;
+}
+.feedback{
+	position: fixed;
+	right: 48px;
+	top: 10px;
+	width: 29px;
+	height: 29px;
+	background: url(../images/feedback.png) 0 0 no-repeat;
+	background-size: 100%;
+}
+.bottomgradient{
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	height: 129px;
+	background: url(../images/bottomgradient.png) 0 0 repeat-x;
+	background-size: 1px 129px;
+	pointer-events: none;
+}
+.bottom{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: $bottomBarHeight;
+	line-height: $bottomBarHeight;
+	background: rgba(0,0,0,0.2);
+	.step{
+		float: left;
+		font-size: 14px;
+		margin-left: 13px;
+	}
+	.copyright{
+		float: right;
+		background: url(../images/copyright.png) 0 0 no-repeat;
+		background-size: 100%;
+		width: 78px;
+		height: 16px;
+		margin-right: 8px;
+		margin-top: 6px;
+	}
+}
+.star{
+	position: fixed;
+	top: 18px;
+	left: 0;
+	padding-left: 33px;
+	padding-right: 12px;
+	height: 16px;
+	line-height: 16px;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	background-color: rgba(0,0,0,0.2);
+	font-size: 12px;
+	&_img{
+		position: absolute;
+		top: -2px;
+		left: 11px;
+		width: 17px;
+		height: 19px;
+		background: url(../images/star.png) 0 0 no-repeat;
+		background-size: contain;
+		&_forAnim{
+			opacity: 0;
+		}
+		&_scale{
+			animation: starScale 0.4s both;
+		}
+	}
+}
+@keyframes starScale{
+	0%{
+		transform: scale(1);
+	}
+	35%{
+		transform: scale(1.5);
+	}
+	100%{
+		transform: scale(1);
+	}
 }
 
 /* 页面细节 */
@@ -60,8 +157,8 @@
 	line-height: 30px;
 	color: $colorWhite;
 	text-align: center;
-	min-width: 288px;
-	margin: 0 16px 15px;
+	min-width: 266px;
+	margin: 0 27px 15px;
 }
 .desc{
 	font-size: 12px;
@@ -90,13 +187,25 @@
 	p{
 		line-height: 24px;
 		font-size: 13px;
-		margin:0 34px 14px;
+		margin:0 $startPaddingHorizontal 14px;
 	}
 	.friend{
-		position: absolute;
-		bottom: 50px;
-		left: 37px;
-		right: 25px;
+		position: relative;
+		margin: 42px $startPaddingHorizontal;
+		padding-top: 18px;
+		&:after{
+			content:"";
+			position: absolute;
+			top: 0;
+			right: 0;
+			left: 0;
+			height: 1px;
+			background-color: #827e7b;
+			@media only screen and (-webkit-min-device-pixel-ratio: 2){
+				transform:scaleY(0.5);
+				transform-origin: 0 0;
+			}
+		}
 		&_avatar{
 			float: left;
 			width: 35px;
@@ -109,6 +218,102 @@
 			font-size: 13px;
 			color: $colorWhite;
 			overflow: hidden;
+			padding: 0;
+			margin: 0;
+		}
+	}
+}
+
+.end{
+	text-align: center;
+	h2{
+		margin-top: 120px;
+		width: auto;
+		white-space: nowrap;
+	}
+	p{
+		font-size: 13px;
+		line-height: 25px;
+		margin: 0 35px 26px;
+		text-align: left;
+	}
+	.state{
+		font-size: 13px;
+		line-height: 25px;
+	}
+	.btn{
+		vertical-align: top;
+		margin-bottom: 32px;
+	}
+	.signup{
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		margin-bottom: $bottomBarHeight;
+		height: 50px;
+		line-height: 50px;
+		text-align: center;
+		font-size: 14px;
+		background-color: rgba(0,0,0,0.7);
+		@media only screen and (max-height: 506px){
+			position: static;
+		}
+	}
+}
+
+.result{
+	min-height: 100%;
+	background: url(../images/mbg0.jpg) center top no-repeat;
+	background-size: cover;
+	h1{
+		font-size: 24px;
+		line-height: 36px;
+		padding-top: 98px;
+		text-align: center;
+		margin-bottom: 21px;
+	}
+	.data{
+		text-align: center;
+		line-height: 27px;
+		font-size: 12px;
+		margin-bottom: 47px;
+		.line{
+			display: inline-block;
+			vertical-align: top;
+			width: 15px;
+			height: 27px;
+			background: url(../images/line.png) 0 0 no-repeat;
+			background-size: 100%;
+			margin: 0 15px;
+		}
+		em{
+			font-style: normal;
+			font-size: 21px;
+			color: #35b7c4;
+			vertical-align: -1px;
+		}
+	}
+	.retest{
+		display: block;
+		width: 123px;
+		height: 38px;
+		line-height: 38px;
+		border-radius: 20px;
+		text-align: center;
+		border: 1px solid #fff;
+		font-size: 15px;
+		margin: 0 auto 70px;
+		color: #fff;
+	}
+	.textarea{
+		width: auto;
+		margin: 0 8px 12px;
+		textarea{
+			box-shadow: 0 0 10px 0 rgba(191,206,253,0.2);
+		    textarea:focus{
+		      box-shadow: 0 0 0 1px $colorHighlight;
+		    }
 		}
 	}
 }

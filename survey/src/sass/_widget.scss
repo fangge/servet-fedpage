@@ -2,12 +2,43 @@
 /*
 *
 * 公用控件
+* 控件的变量写在这个文件里
 *
 */
 
 /* var */
 $radioSize: 13px;
 $checkBoxSize: 11px;
+
+input[type="text"],
+textarea{
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  &:focus{
+    box-shadow: 0 0 0 1px $colorHighlight;
+  }
+}
+
+/* 按钮 */
+$btnHeight:32px;
+.btn{
+  display: inline-block;
+  height: $btnHeight;
+  line-height: $btnHeight;
+  min-width: 52px;
+  text-align: center;
+  padding: 0 16px;
+  font-size: 13px;
+  border-radius: $btnHeight / 2;
+  background-color: #2bb7c5;
+  color: #fff;
+  &_positive{
+    background-color: #26bc9b;
+  }
+  &_negative{
+    background-color: #ea436a;
+  }
+}
 
 
 /* 文字答案选项 */
@@ -170,7 +201,7 @@ $moodIconSpacing: 12px;
         background-image: url(../images/mood_#{$i}.png);
       }
     }
-    &_Selected{
+    &_selected{
       transform:scale(1.4);
       transform-origin: 50% 50%;
       transition: all 0.4s;
@@ -197,7 +228,7 @@ $heartIconSpacing: 24px;
     &:last-child{
       margin-right: 0;
     }
-    &_Selected{
+    &_selected{
       background-position: 0 0;
     }
   }
@@ -350,17 +381,17 @@ $dropdownInputWidth: 257px;
   position: relative;
   width: $dropdownInputWidth;
   margin: 0 auto;
-  overflow: hidden;
+  padding-top: $dropdownInputHeight / 2;
   input{
     position: absolute;
+    top: 0;
+    left: 0;
     z-index: 2;
     @extend %dropdownInputItem;
     border-radius: $dropdownInputHeight / 2;
-    background: rgba(0,0,0,0.6);
     border: none;
   }
   &_list{
-    margin-top: $dropdownInputHeight / 2;
     padding-top: 22px;
     background: rgba(0,0,0,0.6);
     border-bottom-left-radius: $dropdownInputHeight / 2;
@@ -368,6 +399,140 @@ $dropdownInputWidth: 257px;
     overflow: hidden;
     li{
       @extend %dropdownInputItem;
+      &.selected{
+        background: $colorHighlight;
+      }
     }
   }
+}
+
+/* 上传 */
+$uploadInputWidth: 222px;
+$uploadInputHeight: 38px;
+.upload{
+  padding-top: 12px;
+  width: $uploadInputWidth;
+  margin: 0 auto;
+  &_btn{
+    position: relative;
+    width: $uploadInputWidth;
+    height: $uploadInputHeight;
+    border-radius: $uploadInputHeight / 2;
+    background-color: rgba(255,255,255,0.7);
+    margin-bottom: 22px;
+    input{
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      opacity: 0;
+    }
+    &:after{
+      content:"";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      width: 14px;
+      height: 14px;
+      background: url(../images/add.png) 0 0 no-repeat;
+      background-size: contain;
+    }
+  }
+  &_desc{
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+/* textarea */
+$textareaWidth: 267px;
+$textareaHeight: 159px;
+.textarea{
+  padding-top: 7px;
+  width: $textareaWidth;
+  margin: 0 auto;
+  text-align: center;
+  textarea{
+    display: block;
+    width: 100%;
+    height: $textareaHeight;
+    padding: 10px 13px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 12px;
+    resize: none;
+    font-size: 20px;
+    margin-bottom: 12px;
+    text-align-last: auto;
+  }
+}
+
+/* 纯文本 */
+.puretext{
+  font-size: 13px;
+  line-height: 24px;
+  padding: 22px 35px;
+}
+
+/* 大图展示 */
+$bigpicImgWidth: 183px;
+$bigpicImgHeight: 248px;
+.bigpic{
+  margin: 0 auto;
+  width: 183px;
+  padding-top: 32px;
+  overflow: hidden;
+  &_img{
+    display: block;
+    width: 183px;
+    height: 248px;
+  }
+}
+
+/* 意见反馈弹层 */
+.feedbackPopup{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(../images/feedbackpopupbg.png) 0 100% repeat-x;
+  background-size: auto 100%;
+  display: none;
+  &_inner{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding-bottom: 38px;
+    text-align: center;
+  }
+  .textarea{
+    width: auto;
+    margin-left: 8px;
+    margin-right: 8px;
+    textarea:focus{
+      box-shadow: 0 0 0 1px $colorHighlight;
+    }
+  }
+}
+
+/* 文本提示 */
+.toast{
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,0);
+  padding: 20px;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 18px 10px;
+  white-space: nowrap; 
+  background-color: rgba(0,0,0,0.8);
+  border-radius: 2px;
+  display: none;
 }
