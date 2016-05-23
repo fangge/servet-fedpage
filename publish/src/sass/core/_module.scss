@@ -1,0 +1,198 @@
+.m-box{
+    padding: 36px 0 40px 0;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.m-box-item {
+    position: relative;
+    width: 686px;
+    margin: 0 auto 30px auto;
+
+    .u-box-item-logo {
+        position: absolute;
+        width: 34px;
+        height: 34px;
+    }
+
+    .m-box-item-center {
+        width: 550px;
+        margin-left: 48px;
+    }
+
+    .u-box-item-button {
+        position: absolute;
+        width: 64px;
+        height: 26px;
+        top: 5px;
+        right: 0;
+        border: solid 1px #ccd2d6;
+        border-radius: 15px;
+        font: 12px $global-font-family;
+        color: #4b5668;
+        background: #fff;
+        outline: none;
+        cursor: pointer;
+    }
+
+    .u-box-item-url {
+        height: 34px;
+        font: 12px/34px $global-font-family;
+        color: #929ea6;
+    }
+
+    .u-box-item-textarea {
+        position: relative;
+
+        textarea {
+            width: 527px;
+            height: 75px;
+            padding: 10px;
+            border: solid 1px #ccd2d6;
+            border-radius: 5px;
+            font: 13px $global-font-family;
+            color: #4b5668;
+            outline: none;
+            resize: none;
+        }
+
+        .web {
+            height: 155px;
+        }
+
+        span {
+            position: absolute;
+            bottom: 7px;
+            right: 15px;
+            font: 12px $global-font-family;
+            color: #c0cbd2;
+        }
+    }
+
+    .u-box-item-icon {
+        position: absolute;
+        width: 64px;
+        height: 18px;
+        right: 0;
+        
+        i {
+            vertical-align: middle;
+        }
+
+        span {
+            position: absolute;
+            left: 24px;
+            font: 12px/18px $global-font-family;
+            color: #4f6a7b;
+        }
+    }
+
+    .eye-pos {
+        top: 50px;
+    }
+
+    .pen-pos {
+        top: 75px;
+
+        i {
+            margin-left: 3px;
+        }
+    }
+
+    .u-box-item-input {
+        width: 527px;
+        height: 24px;
+        margin-bottom: 10px;
+        padding: 5px 10px 5px 10px;
+        border: solid 1px #ccd2d6;
+        border-radius: 5px;
+        font: 13px $global-font-family;
+        outline: none;
+    }
+
+    .m-box-item-url {
+        margin-bottom: 35px;
+
+        .u-box-item-url {
+            display: inline-block;
+        }
+
+        .u-box-item-input {
+            width: 340px;
+            margin: 0;
+        }
+    }
+}
+
+.m-form {
+    width: 700px;
+    margin: 0 auto;
+
+    .m-form-item {
+        position: relative;
+        height: 35px;
+        margin-bottom: 14px;
+
+        label {
+            display: inline-block;
+            height: 100%;
+            font: 13px/35px $global-font-family;
+            color: #4b5668;
+            vertical-align: middle;
+        }
+
+        select {
+            appearance: none;
+            display: inline-block;
+            position: absolute;
+            width: 185px;
+            height: 100%;
+            margin-left: 15px;
+            border: solid 1px #ccd2d6;
+            font: 13px $global-font-family;
+            text-indent: 18px;
+            color: #4b5668;
+            background: url(../images/icon-arrow.png) no-repeat scroll 160px center transparent;
+            outline: none;
+        }
+
+        input {
+            display: inline-block;
+            position: absolute;
+            width: 420px;
+            height: 20px;
+            margin-left: 15px;
+            padding: 5px 10px 5px 18px;
+            border: solid 1px #ccd2d6;
+            border-radius: 5px;
+            font: 13px $global-font-family;
+            outline: none;
+        }
+
+        .u-form-tips {
+            margin-top: 5px;
+            padding-left: 65px;
+            font: 12px $global-font-family;
+            color: #929ea6;
+        }
+    }
+
+    .u-submit-button {
+        width: 80px;
+        height: 25px;
+        margin-left: 65px;
+        border: solid 1px #ccd2d6;
+        border-radius: 25px;
+        font: 13px $global-font-family;
+        color: #4b5668;
+        background: #fff;
+        outline: none;
+    }
+
+    .m-form-item-tips {
+        height: auto;
+        margin-bottom: 25px;
+    }
+}
+
+

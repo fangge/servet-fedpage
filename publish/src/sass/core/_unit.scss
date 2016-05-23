@@ -1,0 +1,46 @@
+.u-logo {
+    position: fixed;
+    top: 15px;
+    left: 31px;
+    width: 77px;
+    height: 37px;
+    background: url(../images/logo.png) no-repeat;
+}
+
+.u-history {
+    position: fixed;
+    top:19px;
+    right: 35px;
+    height: 18px;
+    font: bold 13px/18px $global-font-family;
+    text-indent: 28px;
+    color: #4b5668;
+    i {
+        position: absolute;
+        left: 0;
+    }
+    
+}
+
+.u-title {
+    margin: 70px auto 60px auto;
+    text-align: center;
+    h2 {
+        margin-bottom: 12px;
+        font: 13px/13px $global-font-family;
+        color: #929ea6;
+    }
+    h1 {
+        font: bold 28px/28px $global-font-family;
+        color: #151515;
+    }
+}
+
+.u-copyright {
+    width: 145px;
+    height: 35px;
+    margin: 0 auto 50px auto;
+    background: url(../images/copyright.png) no-repeat;
+}
+
+
