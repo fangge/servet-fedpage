@@ -475,8 +475,36 @@ textarea {
     width: 183px;
     height: 248px; }
 
+/* 盖住整页的图片 */
+.coverpic {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: center center no-repeat;
+  background-size: cover; }
+
+/* 底部文案加两个按钮的层 */
+.bottomaction {
+  position: absolute;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  bottom: 28px;
+  padding-bottom: 13px; }
+  .bottomaction_text {
+    padding: 10px 14px 0;
+    font-size: 16px;
+    line-height: 22px; }
+  .bottomaction_btnwrap {
+    padding-top: 12px;
+    text-align: center; }
+    .bottomaction_btnwrap .btn {
+      margin: 0 20px; }
+
 /* 意见反馈弹层 */
-.feedbackPopup {
+.feedbackpopup {
   position: fixed;
   top: 0;
   right: 0;
@@ -485,18 +513,18 @@ textarea {
   background: url(../images/feedbackpopupbg.png) 0 100% repeat-x;
   background-size: auto 100%;
   display: none; }
-  .feedbackPopup_inner {
+  .feedbackpopup_inner {
     position: absolute;
     bottom: 0;
     right: 0;
     left: 0;
     padding-bottom: 38px;
     text-align: center; }
-  .feedbackPopup .textarea {
+  .feedbackpopup .textarea {
     width: auto;
     margin-left: 8px;
     margin-right: 8px; }
-    .feedbackPopup .textarea textarea:focus {
+    .feedbackpopup .textarea textarea:focus {
       box-shadow: 0 0 0 1px #28e8fd; }
 
 /* 文本提示 */
@@ -514,6 +542,39 @@ textarea {
   background-color: rgba(0, 0, 0, 0.8);
   border-radius: 2px;
   display: none; }
+
+/*点击放大图片的碳层*/
+.imgpopup {
+  position: fixed;
+  top: -9999px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transition: opacity 0.4s, -webkit-transform 0.4s;
+  transition: opacity 0.4s, -webkit-transform 0.4s;
+  transition: opacity 0.4s, transform 0.4s;
+  transition: opacity 0.4s, transform 0.4s, -webkit-transform 0.4s; }
+  .imgpopup_img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    max-width: 100%; }
+  .imgpopup_show {
+    top: 0;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: scale(1);
+            transform: scale(1); }
 
 /* 框架 */
 .wrap, .page {
@@ -594,8 +655,10 @@ textarea {
   top: 10px;
   width: 29px;
   height: 29px;
-  background: url(../images/musicoff.png) 0 0 no-repeat;
+  background: url(../images/musicon.png) 0 0 no-repeat;
   background-size: 100%; }
+  .music_off {
+    background-image: url(../images/musicoff.png); }
 
 .feedback {
   position: fixed;
@@ -614,7 +677,8 @@ textarea {
   height: 129px;
   background: url(../images/bottomgradient.png) 0 0 repeat-x;
   background-size: 1px 129px;
-  pointer-events: none; }
+  pointer-events: none;
+  display: none; }
 
 .bottom {
   position: fixed;
@@ -785,6 +849,8 @@ textarea {
         position: static; } }
 
 .result {
+  position: relative;
+  display: none;
   min-height: 100%;
   background: url(../images/mbg0.jpg) center top no-repeat;
   background-size: cover; }

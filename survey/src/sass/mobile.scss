@@ -66,8 +66,11 @@
 	top: 10px;
 	width: 29px;
 	height: 29px;
-	background: url(../images/musicoff.png) 0 0 no-repeat;
+	background: url(../images/musicon.png) 0 0 no-repeat;
 	background-size: 100%;
+	&_off{
+		background-image: url(../images/musicoff.png);
+	}
 }
 .feedback{
 	position: fixed;
@@ -87,6 +90,7 @@
 	background: url(../images/bottomgradient.png) 0 0 repeat-x;
 	background-size: 1px 129px;
 	pointer-events: none;
+	display: none;
 }
 .bottom{
 	position: fixed;
@@ -263,6 +267,8 @@
 }
 
 .result{
+	position: relative;
+	display: none;
 	min-height: 100%;
 	background: url(../images/mbg0.jpg) center top no-repeat;
 	background-size: cover;

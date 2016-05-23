@@ -10,8 +10,11 @@
 <link rel="stylesheet"href="../css/mobile.css">
 </head>
 <body>
+
 <div class="wrap">
-	<!--  -->
+	<!-- 
+	每一个page为一页，背景图写在div.page上面的style为了方便套数据
+	 -->
 	<div class="page start page_in" style="background-image:url(../images/mbg0.jpg)">
 		<div class="logo">Survet</div>
 		<h1>欢迎参与调查</h1>
@@ -268,6 +271,20 @@
 	</div>
 
 	<div class="page" style="background-image:url(../images/mbg0.jpg)">
+		
+		<div class="coverpic" style="background-image:url(../images/coverpic.jpg)"></div>
+
+		<div class="bottomaction">
+			<div class="bottomaction_text">请购买一款新款的kindle peperwhite</div>
+			<div class="bottomaction_btnwrap">
+				<a href="" class="btn btn_positive">完成</a>
+				<a href="" class="btn btn_negative">放弃</a>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="page" style="background-image:url(../images/mbg0.jpg)">
 		<div class="center">
 			<h2 class="title">自动提示输入框</h2>
 
@@ -344,7 +361,7 @@
 	10
 </div>
 <div class="feedback"></div>
-<div class="music music_on">
+<div class="music"><!-- 关掉则加上 music_off -->
 	<audio src="../res/music/music.mp3" id="music-audio" autoplay></audio>
 	<!-- 音乐 -->
 </div>
@@ -364,8 +381,8 @@
 </div>
 
 <!-- 建议反馈弹层 -->
-<div class="feedbackPopup">
-	<div class="feedbackPopup_inner">
+<div class="feedbackpopup">
+	<div class="feedbackpopup_inner">
 		<div class="textarea">
 			<textarea name="" id="" cols="30" rows="10"></textarea>
 			<a href="" class="btn">发送</a>
@@ -374,7 +391,12 @@
 </div>
 <!-- 文本提示 -->
 <div class="toast">文本提示</div>
-
+<!-- 点击查看大图的弹层
+加上imgpopup_show让它出现：<div class="imgpopup imgpopup_show"></div>
+ -->
+<div class="imgpopup">
+	<img class="imgpopup_img" src="http://cdn.v2ex.co/gravatar/e717df6de20bb696c6304a29355f475c?s=73&d=retro" alt="">
+</div>
 
 <script>
 // 页面切换示例
