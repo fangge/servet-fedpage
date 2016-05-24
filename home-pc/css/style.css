@@ -30,7 +30,7 @@ a{text-decoration:none;outline: none;color:#000;cursor:pointer;}
 /* Commonly Used
 ================================================================================================= */
 .fp-tableCell{  vertical-align: top;}
-.box{width:100%;min-width:960px;text-align: center;}
+.box{width:100%;min-width:960px;text-align: center;position: relative;}
 .item,.footer-item{width:960px;margin:0 auto;position: relative;}
 
 .screen1{background:url(../img/bg-screen1.jpg) no-repeat top center;}
@@ -41,7 +41,7 @@ a{text-decoration:none;outline: none;color:#000;cursor:pointer;}
 .screen6{background:#ffffff;}
 
 .screen1 .item{height:720px;}
-.screen2 .item{height:542px;}
+.screen2 .item{height:542px;position: absolute;top:50%;left:50%;margin-top:-290px;margin-left:-480px;}
 .screen3 .item{height:913px;}
 .screen4 .item{height:861px;}
 .screen5 .item{height:739px;}
@@ -93,7 +93,6 @@ a{text-decoration:none;outline: none;color:#000;cursor:pointer;}
 .screen6 .font1{font-family: "PingFang SC";font-weight: lighter;padding-top:75px;font-size: 33px;color:#4b5668;}
 .screen6 .font2{font-family: "PingFang SC";font-weight: lighter;margin-top:40px;font-size: 14px;color:#4f6a7b;}
 .screen6 .free-reg{margin-top:69px;}
-/*.screen6 .img1{margin-top:88px;}*/
 /*幻灯片*/
 .mod_slide{}
 .mod-slide-s2{position:relative;width:772px;height:431px;border:0px;margin:0 auto;margin-top:88px;}
@@ -109,7 +108,6 @@ a{text-decoration:none;outline: none;color:#000;cursor:pointer;}
 .mod-slide-s2 .mod-slide-trigger li{cursor:pointer;float:left;margin:0px;margin-right:23px;width:10px;height:10px;background:none;background-image:url(../img/dot.png);background-position:0px 0px;}
 .mod-slide-s2 .mod-slide-trigger li.selected{width:10px;height:10px;background:none;background-image:url(../img/dot.png);background-position:-10px 0px}
 /*幻灯片*/
-
 /*第六屏结束*/
 
 /*底部*/
@@ -117,3 +115,4 @@ a{text-decoration:none;outline: none;color:#000;cursor:pointer;}
 .copyright{float:right;height:16px;line-height:16px;margin-top:50px;}
 .copyright .font1{color:#929ea6;font-size:13px;font-family: "Seravek";margin-right:8px;}
 .copyright .font2{color:#ffffff;font-size:13px;font-family: "Adobe 黑体 Std";}
+/*底部*/
