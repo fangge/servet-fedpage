@@ -1,0 +1,119 @@
+@charset "utf-8";
+/*
+ * somei 2016 05
+ */
+
+/* Reset
+================================================================================================= */
+html{background: #fff}
+body{color:#000;font-size:12px;line-height:2em;cursor:default;}
+body{font-family:"Microsoft Yahei",simsun,arial,sans-serif;}
+h1,h2,h3{font-size:100%;}
+body,h1,h2,h3,h4,ul,li,p,img,div{margin:0;padding:0;border:0;}
+img{margin:0;line-height:normal;}
+em,i{font-style:normal;text-decoration:none}
+ul{list-style:none;}
+table{border-collapse:collapse;border-spacing:0;}
+
+/* Base Used
+================================================================================================= */
+a{text-decoration:none;outline: none;color:#000;cursor:pointer;}
+.fl{float: left;_display: inline}
+.fr{float: right;_display: inline}
+.cs-clear{+zoom:1;}
+.cs-clear:before,
+.cs-clear:after{clear:both;content:".";font-size:0;display:block;height:0;overflow:hidden;visibility:hidden;}
+.mt110{margin-top:110px;}
+.mt30{margin-top:30px;}
+.mt100{margin-top:100px;}
+
+/* Commonly Used
+================================================================================================= */
+.fp-tableCell{  vertical-align: top;}
+.box{width:100%;min-width:960px;text-align: center;}
+.item,.footer-item{width:960px;margin:0 auto;position: relative;}
+
+.screen1{background:url(../img/bg-screen1.jpg) no-repeat top center;}
+.screen2{background:#ffffff;}
+.screen3{background:#f8f8f8;}
+.screen4{background:#ffffff;}
+.screen5{background:#d9e9f3;}
+.screen6{background:#ffffff;}
+
+.screen1 .item{height:720px;}
+.screen2 .item{height:542px;}
+.screen3 .item{height:913px;}
+.screen4 .item{height:861px;}
+.screen5 .item{height:739px;}
+.screen6 .item{height:866px;}
+.footer{width:100%;height:109px;background:#1a1c27;}
+
+/*第一屏开始*/
+.topbar{position: relative;}
+.topbar a:hover{color:#33babe;}
+.logo{float:left;margin-left:10px;margin-top:20px;}
+.link{float:left;display:inline-block;color:#fff;font-size:14px;margin-right:60px;margin-top:39px;}
+.link-font1{margin-left:215px;}
+.reg{float:left;display:inline-block;width:62px;height:29px;line-height:29px;margin-left:126px;margin-top:39px;color:#fff;font-size:14px;}
+.login{float:left;display:inline-block;width:62px;height:29px;line-height:29px;margin-left:9px;margin-top:39px;border:1px #33babe solid; border-radius: 13px;color:#33babe;font-size:14px;}
+.login:hover{color:#49dfe3;border:1px #49dfe3 solid;}
+.theme{width:420px;position: absolute;left:420px;top:218px;}
+.theme .font1{color:#ffffff;font-family: "Seravek";font-size:74px;line-height:88px;font-weight: lighter;}
+.theme .font2{color:#ffffff;font-family: "PingFang SC";font-size:30px;height:116px;line-height:98px;font-weight:lighter;}
+.free-reg{width:227px;height:50px;display: inline-block;background: url(../img/btn-reg.png) no-repeat;
+	filter: alpha(opacity=100);-moz-opacity:1;-khtml-opacity:1;opacity:1;
+}
+.free-reg:hover{filter: alpha(opacity=90);-moz-opacity:0.9;-khtml-opacity:0.9;opacity:0.9;}
+/*第一屏结束*/
+
+/*第二屏开始*/
+.screen2 .font1{font-family: "PingFang SC";font-weight: lighter;font-size:20px;line-height:20px;color:#4b5668;}
+.screen2 .font2{font-family: "PingFang SC";font-weight: lighter;font-size:74px;line-height:74px;color:#4b5668;}
+/*第二屏结束*/
+
+/*第三屏开始*/
+.screen3 .font1{font-family: normal;font-weight: lighter;font-size:33px;line-height:55px;padding-top:100px;color:#4b5668;}
+.screen3 .font2{font-family: "PingFang SC";font-weight: lighter;font-size:14px;line-height:30px;margin-top:26px;color:#4f6a7b;}
+.screen3 .img1{margin-top:59px;}
+/*第三屏结束*/
+
+/*第四屏开始*/
+.screen4 .font1{font-family: "PingFang SC";font-weight: lighter;padding-top:112px;font-size: 33px;color:#4b5668;}
+.screen4 .font2{font-family: "PingFang SC";font-weight: lighter;margin-top:45px;font-size: 14px;color:#4f6a7b;}
+.screen4 .img1{margin-top:56px;}
+/*第四屏结束*/
+
+/*第五屏开始*/
+.screen5 .font1{font-family: "PingFang SC";font-weight: lighter;padding-top:112px;font-size: 33px;color:#4b5668;}
+.screen5 .font2{font-family: "PingFang SC";font-weight: lighter;margin-top:45px;font-size: 14px;color:#4f6a7b;}
+.screen5 .img1{margin-top:70px;}
+/*第五屏结束*/
+
+/*第六屏开始*/
+.screen6 .font1{font-family: "PingFang SC";font-weight: lighter;padding-top:75px;font-size: 33px;color:#4b5668;}
+.screen6 .font2{font-family: "PingFang SC";font-weight: lighter;margin-top:40px;font-size: 14px;color:#4f6a7b;}
+.screen6 .free-reg{margin-top:69px;}
+/*.screen6 .img1{margin-top:88px;}*/
+/*幻灯片*/
+.mod_slide{}
+.mod-slide-s2{position:relative;width:772px;height:431px;border:0px;margin:0 auto;margin-top:88px;}
+.mod-slide-s2 .mod-slide-content{height:389px;}
+.mod-slide-s2 .mod-slide-content ul{width:100%;left:0px;position:absolute;}
+.mod-slide-s2 .mod-slide-content ul li{width:100%;position:relative;float:left;clear:both;}
+.mod-slide-s2 .mod-slide-content a, .mod-slide-s2 .mod-slide-content img{display:block;width:100%;height:389px;}/*height:100%;*/
+.mod-slide-s2 .mod-slide-content .trans{position:absolute;width:100%;height:40px;left:0px;bottom:0px;display:inline-block;z-index:2;
+	background:#412721;filter:alpha(opacity=75);-moz-opacity:0.75;-khtml-opacity: 0.75;opacity: 0.75;}
+.mod-slide-s2 .mod-slide-content .text{position:absolute;width:100%;height:40px;line-height:40px;left:0px;bottom:0px;display:inline-block;z-index:3;text-align:left;color:#ffffff;}
+.mod-slide-s2 .mod-slide-content .text span{padding-left:20px;}
+.mod-slide-s2 .mod-slide-trigger{position:absolute;bottom:0px;right:326px;z-index:11;}
+.mod-slide-s2 .mod-slide-trigger li{cursor:pointer;float:left;margin:0px;margin-right:23px;width:10px;height:10px;background:none;background-image:url(../img/dot.png);background-position:0px 0px;}
+.mod-slide-s2 .mod-slide-trigger li.selected{width:10px;height:10px;background:none;background-image:url(../img/dot.png);background-position:-10px 0px}
+/*幻灯片*/
+
+/*第六屏结束*/
+
+/*底部*/
+.footer .logo{margin-top:30px;}
+.copyright{float:right;height:16px;line-height:16px;margin-top:50px;}
+.copyright .font1{color:#929ea6;font-size:13px;font-family: "Seravek";margin-right:8px;}
+.copyright .font2{color:#ffffff;font-size:13px;font-family: "Adobe 黑体 Std";}
