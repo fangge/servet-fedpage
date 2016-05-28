@@ -58,6 +58,9 @@ html, body {
       -ms-user-select: none;
           user-select: none; }
 
+a {
+  color: #fff; }
+
 /* functional */
 .mood:after, .heart:after {
   content: "";

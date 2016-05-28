@@ -1,0 +1,141 @@
+@charset "UTF-8";
+/*
+*
+* reset, 全局设定, 变量
+*
+*/
+/* vars */
+/* #reset */
+body, dl, dd, h1, h2, h3, h4, h5, h6, p, pre, form, fieldset, legend {
+  margin: 0; }
+
+ul, ol, fieldset {
+  margin: 0;
+  padding: 0; }
+
+th, td {
+  padding: 0; }
+
+table {
+  font-size: inherit; }
+
+fieldset, img {
+  border: none; }
+
+ul, ol, li {
+  list-style: none; }
+
+h1, h2, h3, h4 {
+  font-size: 18px;
+  font-weight: normal; }
+
+input, textarea, select, button {
+  font-size: inherit;
+  font-family: inherit; }
+
+a, a:hover {
+  text-decoration: none; }
+
+:focus {
+  outline: none; }
+
+/* vars */
+/*base*/
+html, body {
+  height: 100%;
+  font-size: 12px;
+  line-height: 1;
+  font-family: "Microsoft Yahei",SimSun, Arial, sans-serif;
+  color: #fff;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-font-size-adjust: none;
+  -webkit-overflow-scrolling: touch;
+  -webkit-font-smoothing: antialiased;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+
+a {
+  color: #fff; }
+
+/* functional */
+.wrap {
+  padding-bottom: 78px;
+  min-height: 100%;
+  box-sizing: border-box;
+  background: url(../images/mbg0.jpg) 0 0 no-repeat;
+  background-attachment: fixed; }
+
+.title {
+  padding: 32px 16px 15px 44px;
+  font-size: 20px; }
+
+.desc {
+  font-size: 13px;
+  line-height: 20px;
+  padding: 0 16px 40px 44px; }
+
+.question {
+  margin-bottom: 50px; }
+  .question_title {
+    font-size: 14px;
+    margin: 0 26px 15px; }
+    .question_title_num {
+      margin-right: 8px; }
+
+.ratebar {
+  position: relative;
+  margin-left: 44px;
+  margin-bottom: 8px;
+  width: 229px;
+  height: 20px;
+  box-sizing: border-box;
+  line-height: 20px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.6); }
+  .ratebar:last-child {
+    margin-bottom: 0; }
+  .ratebar_highlight {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+    background: #4d4c6a; }
+  .ratebar_text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0 14px; }
+
+.ratebar_selected .ratebar_highlight {
+  background: #2bb7c5; }
+
+.bottom {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+  .bottom .copyright {
+    height: 28px;
+    background-color: #000; }
+    .bottom .copyright:after {
+      content: "";
+      float: right;
+      width: 78px;
+      height: 100%;
+      background: url(../images/copyright.png) right center no-repeat;
+      background-size: 78px 16px;
+      margin-right: 8px; }
+  .bottom .signup {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.9); }

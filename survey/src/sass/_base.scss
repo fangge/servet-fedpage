@@ -64,6 +64,9 @@ html, body {
   -webkit-font-smoothing: antialiased;
   user-select: none;
 }
+a{
+  color: $colorWhite;
+}
 
 /* functional */
 %clr:after{

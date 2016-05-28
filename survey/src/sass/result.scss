@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+@import "_base";
+
+// 页面
+
+$resultBottomCopyrightHeight: 28px;
+$resultBottomSignUpHeight: 50px;
+
+.wrap{
+	padding-bottom: $resultBottomCopyrightHeight + $resultBottomSignUpHeight;
+	min-height: 100%;
+	box-sizing: border-box;
+	background: url(../images/mbg0.jpg) 0 0 no-repeat;
+	background-attachment: fixed;
+}
+.title{
+	padding: 32px 16px 15px 44px;
+	font-size: 20px;
+}
+.desc{
+	font-size: 13px;
+	line-height: 20px;
+	padding: 0 16px 40px 44px;
+}
+.question{
+	margin-bottom: 50px;
+	&_title{
+		font-size: 14px;
+		margin: 0 26px 15px;
+		&_num{
+			margin-right: 8px;
+		}
+	}
+}
+.ratebar{
+	position: relative;
+	margin-left: 44px;
+	margin-bottom: 8px;
+	width: 229px;
+	height: 20px;
+	box-sizing: border-box;
+	line-height: 20px;
+	border-radius: 10px;
+	background-color: rgba(0,0,0,0.6);
+	&:last-child{
+		margin-bottom: 0;
+	}
+	&_highlight{
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		border-radius: 10px;
+		background:#4d4c6a;
+	}
+	&_text{
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		padding: 0 14px;
+	}
+}
+.ratebar_selected .ratebar_highlight{
+	background: #2bb7c5;
+}
+
+.bottom{
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	.copyright{
+		height: $resultBottomCopyrightHeight;
+		background-color: #000;
+		&:after{
+			content:"";
+			float: right;
+			width: 78px;
+			height: 100%;
+			background: url(../images/copyright.png) right center no-repeat;
+			background-size: 78px 16px;
+			margin-right: 8px;
+		}
+	}
+	.signup{
+		display: block;
+		height: $resultBottomSignUpHeight;
+		line-height: $resultBottomSignUpHeight;
+		text-align: center;
+		font-size: 14px;
+		background-color: rgba(0,0,0,0.9);
+	}
+}
