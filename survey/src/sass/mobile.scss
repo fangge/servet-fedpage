@@ -81,17 +81,6 @@
 	background: url(../images/feedback.png) 0 0 no-repeat;
 	background-size: 100%;
 }
-.bottomgradient{
-	position: fixed;
-	bottom: 0;
-	right: 0;
-	left: 0;
-	height: 129px;
-	background: url(../images/bottomgradient.png) 0 0 repeat-x;
-	background-size: 1px 129px;
-	pointer-events: none;
-	display: none;
-}
 .bottom{
 	position: fixed;
 	bottom: 0;
@@ -99,7 +88,7 @@
 	right: 0;
 	height: $bottomBarHeight;
 	line-height: $bottomBarHeight;
-	background: rgba(0,0,0,0.2);
+	background: rgba(0,0,0,0.9);
 	.step{
 		float: left;
 		font-size: 14px;

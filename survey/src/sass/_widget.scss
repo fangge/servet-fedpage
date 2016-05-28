@@ -39,6 +39,12 @@ $btnHeight:32px;
     background-color: #ea436a;
   }
 }
+.zoom{
+  width: 18px;
+  height: 18px;
+  background:url(../images/zoom.png) 0 0 no-repeat;
+  background-size: contain;
+}
 
 
 /* 文字答案选项 */
@@ -102,7 +108,7 @@ $answerNormalTextWidth: 216px;
 /* 图片答案选项 */
 $itemInnerPadding: 1px;
 $itemImgSize: 118px;
-$itemTextHeight: 24px;
+$itemTextHeight: 25px;
 $itemCornerRadius: 5px;
 $itemSpacingHorizontal: 21px;
 .itemset{
@@ -110,6 +116,7 @@ $itemSpacingHorizontal: 21px;
   margin: 0 auto;
 }
 .item{
+  position: relative;
   float: left;
   margin-right: 21px;
   margin-bottom: 15px;
@@ -174,6 +181,11 @@ $itemSpacingHorizontal: 21px;
   input[type="radio"]:checked + &_cell &_text:before,
   input[type="checkbox"]:checked + &_cell &_text:before,{
     background-position: 0 0;
+  }
+  .zoom{
+    position: absolute;
+    bottom: 5px;
+    right: 3px;
   }
 }
 
@@ -482,6 +494,7 @@ $textareaHeight: 159px;
 $bigpicImgWidth: 183px;
 $bigpicImgHeight: 248px;
 .bigpic{
+  position: relative;
   margin: 0 auto;
   width: 183px;
   padding-top: 32px;
@@ -490,6 +503,11 @@ $bigpicImgHeight: 248px;
     display: block;
     width: 183px;
     height: 248px;
+  }
+  .zoom{
+    position: absolute;
+    right: 2px;
+    bottom: 6px;
   }
 }
 
@@ -509,7 +527,7 @@ $bigpicImgHeight: 248px;
   position: absolute;
   right: 0;
   left: 0;
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0,0,0,0.8);
   bottom: $bottomBarHeight;
   padding-bottom: 13px;
   &_text{
