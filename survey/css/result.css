@@ -17,7 +17,8 @@ th, td {
   padding: 0; }
 
 table {
-  font-size: inherit; }
+  font-size: inherit;
+  border-collapse: collapse; }
 
 fieldset, img {
   border: none; }

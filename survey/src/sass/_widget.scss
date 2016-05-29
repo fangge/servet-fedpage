@@ -345,16 +345,41 @@ $satisfactionHeight: 36px;
 }
 
 /* 表格 */
+$tableCellHeight: 53px;
+$tableCellWidth: 125px;
+$tableCellThHeight: 42px;
 $tableRadioSize: 13px;
 .table{
-  td{
-    width: 125px;
-    height: 53px;
-    background: rgba(0,0,0,0.3);
-    text-align: center;
-    vertical-align: middle;
-    &.noBg{
-      background: none;
+  overflow: hidden;
+  &_column{
+    float: left;
+    width: 104px;
+    padding-top: $tableCellThHeight;
+    span{
+      display: block;
+      height: $tableCellHeight;
+      text-align: right;
+      padding-right: 15px;
+      box-sizing: border-box;
+      font-size: 13px;
+    }
+  }
+  &_main{
+    overflow: hidden;
+    overflow-x: scroll;
+    table{
+      border-collapse: separate;
+      border-spacing: 1px;
+      background: rgba(0,0,0,0.4);
+    }
+    th{
+      height: $tableCellThHeight;
+    }
+    td{
+      height: $tableCellHeight;
+      min-width: $tableCellWidth;
+      background:rgba(0,0,0,0.3);
+      text-align: center;
     }
   }
   &_input{
