@@ -1,0 +1,71 @@
+.g-wapper {
+    position: relative;
+    width: 798px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.g-navigator {
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.g-box {
+    margin-bottom: 36px;
+    border-radius: 10px;
+    color: #929ea6;
+    font-size: 0;
+    overflow: hidden;
+    background: #fff;
+
+    .col-01 {
+        width: 40px;
+    }
+
+    .col-02 {
+        width: 90px;
+    }
+
+    .col-03 {
+        width: 180px;
+    }
+
+    .col-04 {
+        width: 180px;
+    }
+
+    .col-05 {
+        width: 90px;
+    }
+
+    .col-06 {
+        width: 105px;
+    }
+
+    .col-07 {
+        width: 110px;
+    }
+}
+
+.g-toast {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 140px;
+    height: 60px;
+    margin-left: -70px;
+    margin-top: -30px;
+    border-radius: 10px;
+    font: 14px/60px $global-font-family;
+    text-align: center;
+    color: #fff;
+    background: #000;
+    opacity: .8;
+    filter: alpha(opacity=80)\0;
+    z-index: 100;
+}
+
+.z-on {
+    display: block;
+}

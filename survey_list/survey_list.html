@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>已答问卷列表</title>
+    <link rel="stylesheet" href="css/survey_list.css">
+</head>
+<body>
+    <div class="g-wapper">
+        <a href="javascript:;" class="u-logo"></a>
+        <button class="u-output">导出列表</button>
+        <div class="u-title">
+            <h2>2016年用户最喜欢的APP</h2>
+            <h1>278</h1>
+        </div>
+        <div class="g-navigator">
+            <div class="m-select m-select-01 j-select">
+                <span class="u-select j-select-click">全部渠道</span>
+                <div class="u-option j-select-option">
+                    <div class="option">微信</div>
+                    <div class="option">微博</div>
+                    <div class="option">邮箱</div>
+                    <div class="option">短信</div>
+                    <div class="option">facebook</div>
+                    <div class="option">大学校园（自定义）</div>
+                </div>
+            </div>
+            <div class="m-select m-select-02 j-select">
+                <span class="u-select j-select-click">有效问卷</span>
+                <div class="u-option j-select-option">
+                    <div class="option">全部问卷</div>
+                    <div class="option">有效问卷</div>
+                    <div class="option">作废问卷</div>
+                </div>
+            </div>
+            <div class="m-select m-select-03 j-select">
+                <span class="u-select j-select-click">广东广州</span>
+                <div class="u-option j-select-option">
+                    <div class="option">广东广州</div>
+                    <div class="option">广东深圳</div>
+                    <div class="option">广东佛山</div>
+                </div>
+            </div>
+            <div class="u-navigator-search-wrapper">
+                <input class="u-navigator-search" type="text" placeholder="搜索">
+            </div>
+        </div>
+        <div class="g-box">
+            <div class="m-box-header">
+                <div class="u-box-header-column col-01"></div>
+                <div class="u-box-header-column col-02">序号</div>
+                <div class="u-box-header-column col-03">昵称</div>
+                <div class="u-box-header-column col-04">开始时间</div>
+                <div class="u-box-header-column col-05">用时</div>
+                <div class="u-box-header-column col-06">区域</div>
+                <div class="u-box-header-column col-07">状态</div>
+            </div>
+            <div class="m-box-content" id="j-box-content">
+                <div class="u-box-content-row j-box-content-row">
+                    <div class="u-box-content-column col-01"></div>
+                    <div class="u-box-content-column col-02">1</div>
+                    <div class="u-box-content-column col-03">Suddenly Liu</div>
+                    <div class="u-box-content-column col-04">2016.10.27  09:40:28</div>
+                    <div class="u-box-content-column col-05">03:25</div>
+                    <div class="u-box-content-column col-06">广东广州</div>
+                    <div class="u-box-content-column col-07">
+                        作废
+                        <div class="m-checkbox">
+                            <label class="u-checkbox-label j-checkbox-label">
+                                <input type="checkbox">
+                                <span>
+                                    <div></div>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="u-box-content-row j-box-content-row">
+                    <div class="u-box-content-column col-01"></div>
+                    <div class="u-box-content-column col-02">2</div>
+                    <div class="u-box-content-column col-03">Suddenly Liu</div>
+                    <div class="u-box-content-column col-04">2016.10.27  09:40:28</div>
+                    <div class="u-box-content-column col-05">03:25</div>
+                    <div class="u-box-content-column col-06">广东广州</div>
+                    <div class="u-box-content-column col-07">
+                        作废
+                        <div class="m-checkbox">
+                            <label class="u-checkbox-label j-checkbox-label">
+                                <input type="checkbox">
+                                <span>
+                                    <div></div>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="u-copyright"></div>
+    </div>
+    <div class="g-toast" id="j-toast">已作废问卷</div>
+
+    <script text="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script>
+        (function($) {
+            $('.j-select').each(function(i) {
+                var _$self = $(this),
+                    $select = _$self.find('.j-select-click'),
+                    $optionWrapper = _$self.find('.j-select-option'),
+                    $option = $optionWrapper.find('.option');
+                _$self.on('click', '.j-select-click', function(e) {
+                    $select.addClass('click');
+                    $optionWrapper.addClass('on');
+                }).on('mouseleave', function(e) {
+                    if($('div.m-select.j-select')[0] === e.toElement || $('div.option')[0] === e.toElement) {
+                        return;
+                    }
+                    $select.removeClass('click');
+                    $optionWrapper.removeClass('on');
+
+                });
+                $option.each(function(i) {
+                    $(this).on('mouseenter', function() {
+                        $(this).addClass('hover');
+                    }).on('mouseleave', function() {
+                        $(this).removeClass('hover');
+                    }).on('click', function(e) {
+                        $select.html($(this).html());
+                        $select.removeClass('click');
+                        $optionWrapper.removeClass('on')
+                    });
+                });
+            });
+
+            $('#j-box-content').on('mouseenter', '.j-box-content-row', function(e) {
+                $(this).addClass('hover');
+            }).on('mouseleave', '.j-box-content-row', function(e) {
+                $(this).removeClass('hover');
+            });
+
+            $('.j-checkbox-label').each(function(i) {
+                var _$self = $(this),
+                    _checkbox = _$self.find('span');
+                _$self.on('click', 'span', function(e) {
+                    if(_checkbox.hasClass('checked')) {
+                        _checkbox.removeClass('checked');
+                    } else {
+                        _checkbox.addClass('checked');
+                        toastShow();
+                    }
+                })
+            });
+
+            function toastShow() {
+                $('#j-toast').fadeIn(300);
+                setTimeout(function() {
+                    $('#j-toast').fadeOut(300);
+                }, 800);
+            }
+        })(jQuery);
+    </script>
+</body>
+</html>

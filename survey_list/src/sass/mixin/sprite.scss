@@ -1,0 +1,206 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$icon-close-name: 'icon-close';
+$icon-close-x: 38px;
+$icon-close-y: 76px;
+$icon-close-offset-x: -38px;
+$icon-close-offset-y: -76px;
+$icon-close-width: 24px;
+$icon-close-height: 24px;
+$icon-close-total-width: 127px;
+$icon-close-total-height: 110px;
+$icon-close-image: '../images/sprite.png';
+$icon-close: (38px, 76px, -38px, -76px, 24px, 24px, 127px, 110px, '../images/sprite.png', 'icon-close', );
+$icon-email-name: 'icon-email';
+$icon-email-x: 76px;
+$icon-email-y: 0px;
+$icon-email-offset-x: -76px;
+$icon-email-offset-y: 0px;
+$icon-email-width: 34px;
+$icon-email-height: 34px;
+$icon-email-total-width: 127px;
+$icon-email-total-height: 110px;
+$icon-email-image: '../images/sprite.png';
+$icon-email: (76px, 0px, -76px, 0px, 34px, 34px, 127px, 110px, '../images/sprite.png', 'icon-email', );
+$icon-eye-name: 'icon-eye';
+$icon-eye-x: 90px;
+$icon-eye-y: 76px;
+$icon-eye-offset-x: -90px;
+$icon-eye-offset-y: -76px;
+$icon-eye-width: 18px;
+$icon-eye-height: 9px;
+$icon-eye-total-width: 127px;
+$icon-eye-total-height: 110px;
+$icon-eye-image: '../images/sprite.png';
+$icon-eye: (90px, 76px, -90px, -76px, 18px, 9px, 127px, 110px, '../images/sprite.png', 'icon-eye', );
+$icon-facebook-name: 'icon-facebook';
+$icon-facebook-x: 0px;
+$icon-facebook-y: 38px;
+$icon-facebook-offset-x: 0px;
+$icon-facebook-offset-y: -38px;
+$icon-facebook-width: 34px;
+$icon-facebook-height: 34px;
+$icon-facebook-total-width: 127px;
+$icon-facebook-total-height: 110px;
+$icon-facebook-image: '../images/sprite.png';
+$icon-facebook: (0px, 38px, 0px, -38px, 34px, 34px, 127px, 110px, '../images/sprite.png', 'icon-facebook', );
+$icon-history-name: 'icon-history';
+$icon-history-x: 66px;
+$icon-history-y: 76px;
+$icon-history-offset-x: -66px;
+$icon-history-offset-y: -76px;
+$icon-history-width: 20px;
+$icon-history-height: 18px;
+$icon-history-total-width: 127px;
+$icon-history-total-height: 110px;
+$icon-history-image: '../images/sprite.png';
+$icon-history: (66px, 76px, -66px, -76px, 20px, 18px, 127px, 110px, '../images/sprite.png', 'icon-history', );
+$icon-pen-name: 'icon-pen';
+$icon-pen-x: 114px;
+$icon-pen-y: 0px;
+$icon-pen-offset-x: -114px;
+$icon-pen-offset-y: 0px;
+$icon-pen-width: 13px;
+$icon-pen-height: 11px;
+$icon-pen-total-width: 127px;
+$icon-pen-total-height: 110px;
+$icon-pen-image: '../images/sprite.png';
+$icon-pen: (114px, 0px, -114px, 0px, 13px, 11px, 127px, 110px, '../images/sprite.png', 'icon-pen', );
+$icon-sina-name: 'icon-sina';
+$icon-sina-x: 76px;
+$icon-sina-y: 38px;
+$icon-sina-offset-x: -76px;
+$icon-sina-offset-y: -38px;
+$icon-sina-width: 34px;
+$icon-sina-height: 34px;
+$icon-sina-total-width: 127px;
+$icon-sina-total-height: 110px;
+$icon-sina-image: '../images/sprite.png';
+$icon-sina: (76px, 38px, -76px, -38px, 34px, 34px, 127px, 110px, '../images/sprite.png', 'icon-sina', );
+$icon-sms-name: 'icon-sms';
+$icon-sms-x: 0px;
+$icon-sms-y: 76px;
+$icon-sms-offset-x: 0px;
+$icon-sms-offset-y: -76px;
+$icon-sms-width: 34px;
+$icon-sms-height: 34px;
+$icon-sms-total-width: 127px;
+$icon-sms-total-height: 110px;
+$icon-sms-image: '../images/sprite.png';
+$icon-sms: (0px, 76px, 0px, -76px, 34px, 34px, 127px, 110px, '../images/sprite.png', 'icon-sms', );
+$icon-twitter-name: 'icon-twitter';
+$icon-twitter-x: 38px;
+$icon-twitter-y: 38px;
+$icon-twitter-offset-x: -38px;
+$icon-twitter-offset-y: -38px;
+$icon-twitter-width: 34px;
+$icon-twitter-height: 34px;
+$icon-twitter-total-width: 127px;
+$icon-twitter-total-height: 110px;
+$icon-twitter-image: '../images/sprite.png';
+$icon-twitter: (38px, 38px, -38px, -38px, 34px, 34px, 127px, 110px, '../images/sprite.png', 'icon-twitter', );
+$icon-web-name: 'icon-web';
+$icon-web-x: 38px;
+$icon-web-y: 0px;
+$icon-web-offset-x: -38px;
+$icon-web-offset-y: 0px;
+$icon-web-width: 34px;
+$icon-web-height: 34px;
+$icon-web-total-width: 127px;
+$icon-web-total-height: 110px;
+$icon-web-image: '../images/sprite.png';
+$icon-web: (38px, 0px, -38px, 0px, 34px, 34px, 127px, 110px, '../images/sprite.png', 'icon-web', );
+$icon-weixin-name: 'icon-weixin';
+$icon-weixin-x: 0px;
+$icon-weixin-y: 0px;
+$icon-weixin-offset-x: 0px;
+$icon-weixin-offset-y: 0px;
+$icon-weixin-width: 34px;
+$icon-weixin-height: 34px;
+$icon-weixin-total-width: 127px;
+$icon-weixin-total-height: 110px;
+$icon-weixin-image: '../images/sprite.png';
+$icon-weixin: (0px, 0px, 0px, 0px, 34px, 34px, 127px, 110px, '../images/sprite.png', 'icon-weixin', );
+$spritesheet-width: 127px;
+$spritesheet-height: 110px;
+$spritesheet-image: '../images/sprite.png';
+$spritesheet-sprites: ($icon-close, $icon-email, $icon-eye, $icon-facebook, $icon-history, $icon-pen, $icon-sina, $icon-sms, $icon-twitter, $icon-web, $icon-weixin, );
+$spritesheet: (127px, 110px, '../images/sprite.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
