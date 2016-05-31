@@ -29,12 +29,12 @@ a{text-decoration:none;outline: none;color:#000;cursor:pointer;}
 
 /* Commonly Used
 ================================================================================================= */
-.fp-tableCell{  vertical-align: top;}
+/*.fp-tableCell{  vertical-align: top;}*/
 .box{width:100%;min-width:960px;text-align: center;position: relative;}
 .item,.footer-item{width:960px;margin:0 auto;position: relative;}
 
 .screen1{background:url(../img/bg-screen1.jpg) no-repeat top center;}
-.screen2{background:#ffffff;}
+.screen2{height:542px;background:#ffffff;}
 .screen3{background:#f8f8f8;}
 .screen4{background:#ffffff;}
 .screen5{background:#d9e9f3;}
@@ -85,8 +85,8 @@ a{text-decoration:none;outline: none;color:#000;cursor:pointer;}
 
 /*第五屏开始*/
 .screen5 .font1{font-family: "PingFang SC";font-weight: lighter;padding-top:112px;font-size: 33px;color:#4b5668;}
-.screen5 .font2{font-family: "PingFang SC";font-weight: lighter;margin-top:45px;font-size: 14px;color:#4f6a7b;}
-.screen5 .img1{margin-top:70px;}
+.screen5 .font2{font-family: "PingFang SC";font-weight: lighter;margin-top:35px;font-size: 14px;color:#4f6a7b;}
+.screen5 .img1{margin-top:52px;}
 /*第五屏结束*/
 
 /*第六屏开始*/
