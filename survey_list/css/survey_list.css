@@ -588,7 +588,9 @@ a {
     position: relative;
     width: 100%;
     margin-top: 8px;
+    border: solid 1px #d9dee1;
     border-radius: 5px;
+    box-shadow: 0 0 10px #d9dee1;
     overflow: hidden;
     background: #fff; }
     .m-select .u-option .option {
