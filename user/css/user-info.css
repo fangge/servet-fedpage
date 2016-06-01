@@ -43,27 +43,45 @@ The `sprites` mixin generates identical output to the CSS template
 
 @include sprites($spritesheet-sprites);
 */
+.icon-footer {
+  background-image: url(../images/sprite.png);
+  background-position: 0px 0px;
+  width: 144px;
+  height: 32px; }
+
 .icon-heart {
   background-image: url(../images/sprite.png);
-  background-position: -22px -26px;
+  background-position: -24px -77px;
   width: 18px;
   height: 17px; }
 
 .icon-lock-open {
   background-image: url(../images/sprite.png);
-  background-position: 0px 0px;
+  background-position: -120px -36px;
   width: 20px;
   height: 22px; }
 
 .icon-lock {
   background-image: url(../images/sprite.png);
-  background-position: -24px 0px;
+  background-position: 0px -77px;
   width: 20px;
   height: 22px; }
 
+.icon-logo {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -36px;
+  width: 77px;
+  height: 37px; }
+
+.icon-plus {
+  background-image: url(../images/sprite.png);
+  background-position: -81px -36px;
+  width: 35px;
+  height: 35px; }
+
 .icon-user {
   background-image: url(../images/sprite.png);
-  background-position: 0px -26px;
+  background-position: 0px -103px;
   width: 18px;
   height: 24px; }
 
@@ -74,17 +92,258 @@ html,
 body {
   height: 100%; }
 
+h1,
+h2 {
+  margin: 0;
+  font-weight: normal; }
+
 p {
   margin: 0; }
 
 body {
   margin: 0;
   font: 14px/1.5 tahoma, arial, Hiragino Sans GB, WenQuanYi Micro Hei, \5FAE\8F6F\96C5\9ED1, \5B8B\4F53, sans-serif;
-  background: #141212 url(../images/login-bg.jpg) center top no-repeat;
+  background: #e9eff3;
   background-attachment: fixed;
-  background-size: cover; }
+  background-size: cover;
+  margin-left: calc(100vw - 100%); }
+  body .f-hide {
+    display: none; }
 
 .g-wrap {
   width: 960px;
   margin: 0 auto;
   overflow: hidden; }
+
+.u-logo {
+  position: absolute;
+  top: 15px;
+  left: 30px; }
+
+.g-header {
+  padding-top: 62px;
+  text-align: center;
+  padding-bottom: 36px; }
+  .u-title {
+    line-height: 44px;
+    font-size: 24px;
+    color: #4b5668; }
+  .u-page-tip {
+    font-size: 12px;
+    color: #aaa; }
+
+.g-content {
+  width: 798px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+  min-height: 575px;
+  overflow: hidden; }
+
+.u-header {
+  display: block;
+  width: 105px;
+  height: 105px;
+  margin: 49px auto 0;
+  border-radius: 50%; }
+
+.u-modify-header {
+  font-size: 13px;
+  color: #4b5668;
+  border: 1px solid #ccd2d6;
+  padding: 0 14px;
+  height: 30px;
+  background: #fff;
+  border-radius: 15px;
+  display: block;
+  margin: 23px auto 50px; }
+
+.u-modify-password {
+  float: right;
+  font-size: 12px;
+  color: #4b5668;
+  border: 1px solid #ccd2d6;
+  padding: 0 20px;
+  height: 24px;
+  border-radius: 12px;
+  background: #fff;
+  margin-top: 6px; }
+
+.m-info-item {
+  width: 264px;
+  margin: 0 auto 18px;
+  font-size: 0; }
+  .m-info-item label {
+    display: inline-block;
+    width: 29px;
+    vertical-align: middle; }
+  .m-info-item [class|='icon'] {
+    vertical-align: top; }
+  .m-info-item .u-input {
+    height: 40px;
+    border: 1px solid #fff;
+    text-indent: 10px;
+    width: 234px;
+    color: #4b5668;
+    padding: 12px 0;
+    box-sizing: border-box;
+    vertical-align: middle;
+    outline: none; }
+    .m-info-item .u-input[type='password'] {
+      width: 150px; }
+    .m-info-item .u-input:disabled {
+      background: #fff; }
+    .m-info-item .u-input:focus, .m-info-item .u-input.z-focus {
+      border-color: #b5b5b5; }
+
+.g-footer {
+  margin-top: 36px;
+  text-align: center; }
+
+.u-mask {
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .3;
+  filter: alpha(opacity=30); }
+
+.m-dialog {
+  position: fixed;
+  width: 420px;
+  height: 280px;
+  top: 50%;
+  left: 50%;
+  margin-left: -210px;
+  margin-top: -140px;
+  z-index: 101;
+  background: #f0f3f7;
+  border-radius: 10px; }
+  .m-dialog.m-dialog-large {
+    width: 925px;
+    height: 468px;
+    margin-left: -462.5px;
+    margin-top: -234px; }
+
+.m-dialog-header {
+  padding-top: 7px;
+  background: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom: 1px solid #e4e6ea;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1); }
+  .m-dialog-header button {
+    background: none;
+    border: 0 none;
+    height: 42px;
+    font-size: 13px;
+    color: #2bb7c5;
+    cursor: pointer; }
+  .m-dialog-header .u-left-btn {
+    float: left;
+    padding-left: 22px; }
+  .m-dialog-header .u-right-btn {
+    float: right;
+    padding-right: 22px; }
+  .u-dialog-title {
+    font-size: 16px;
+    line-height: 42px;
+    color: #4b5668;
+    text-align: center; }
+
+.m-form-item {
+  width: 275px;
+  margin: 0 auto; }
+  .m-form-item label {
+    display: inline-block;
+    width: 29px;
+    vertical-align: middle; }
+  .m-form-item [class|='icon'] {
+    vertical-align: top; }
+  .m-form-item .u-input {
+    height: 40px;
+    border: 1px solid #b5b5b5;
+    text-indent: 10px;
+    width: 234px;
+    color: #4b5668;
+    padding: 12px 0;
+    box-sizing: border-box;
+    vertical-align: middle;
+    outline: none;
+    background: none;
+    font-size: 14px; }
+
+.m-form {
+  padding-top: 23px; }
+
+.u-validate-tips {
+  width: 275px;
+  margin: 0 auto;
+  height: 23px;
+  line-height: 23px;
+  color: red;
+  font-size: 12px;
+  padding-bottom: 4px;
+  text-indent: 29px;
+  white-space: nowrap;
+  overflow: hidden; }
+
+.u-upload-range {
+  float: left;
+  width: 450px;
+  height: 360px;
+  background: #fff;
+  margin-top: 28px;
+  margin-left: 105px;
+  margin-right: 84px;
+  font-size: 24px;
+  color: #525f79;
+  text-align: center;
+  line-height: 1;
+  overflow: hidden;
+  cursor: pointer; }
+  .u-upload-range:before {
+    content: '';
+    display: block;
+    margin: 125px auto 26px;
+    background-image: url(../images/sprite.png);
+    background-position: -81px -36px;
+    width: 35px;
+    height: 35px; }
+
+.u-upload-file {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  outline: none; }
+
+.m-upload-preview {
+  padding-top: 28px;
+  overflow: hidden;
+  font-size: 14px;
+  color: #525f79; }
+
+.u-preview-img-large {
+  margin-top: 38px;
+  margin-bottom: 64px; }
+
+.u-preview-img-small {
+  margin-top: 12px; }
+
+.u-toast {
+  position: fixed;
+  z-index: 101;
+  left: 50%;
+  top: 50%;
+  margin-left: -70px;
+  margin-top: -30px;
+  width: 140px;
+  line-height: 60px;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  color: #fff;
+  text-align: center; }

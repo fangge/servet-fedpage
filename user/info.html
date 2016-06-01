@@ -2,35 +2,80 @@
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <title>忘记密码</title>
+    <title>个人信息</title>
     <link rel="stylesheet" href="css/user-info.css">
 </head>
 <body>
+    <a href="#" class="u-logo"><i class="icon-logo"></i></a>
     <div class="g-wrap">
-        <h1 class="u-logo">survet</h1>
-        <form action="/" class="m-form">
-            <p class="u-form-tips">请输入邮箱地址，并前往邮箱验证~！</p>
-            <div class="m-form-item"><label for="account"><i class="icon-user"></i></label><input type="text" class="u-input" name="account" id="account" placeholder="邮箱" tabindex="1" required></div>
-            <p class="u-validate-tips">邮箱不存在</p>
-            <button type="submit" class="u-submit-btn" tabindex="1">发送（53）</button>
-        </form>
-        <!-- 这是分割线 -->
-        <br><br><br><br>
-        <!-- 这是分割线 -->
-        <form action="/" class="m-form">
-            <p class="u-email-send-tips">已发送至以下邮箱<strong>406325948@qq.com</strong></p>
-            <p class="u-activate-email">请立即<a href="https://mail.qq.com" target="_blank" class="u-link">前往邮箱</a>激活畅游赛问网哟~！</p>
-            <button type="submit" class="u-submit-btn" tabindex="1">再发一次</button>
-        </form>
-        <!-- 这是分割线 -->
-        <br><br><br><br>
-        <!-- 这是分割线 -->
-        <form action="/" class="m-form">
-            <div class="m-form-item"><label for="account"><i class="icon-lock-open"></i></label><input type="password" class="u-input" name="account" id="account" placeholder="新密码（不少于6位数字字符）" tabindex="1" required></div>
-            <div class="m-form-item"><label for="password"><i class="icon-lock-open"></i></label><input type="password" class="u-input" name="password" id="password" placeholder="重复新密码" tabindex="1" required></div>
-            <p class="u-validate-tips">两次的密码不一致</p>
-            <button type="submit" class="u-submit-btn" tabindex="1">确定</button>
-        </form>
+        <div class="g-header">
+            <h1 class="u-title">个人信息</h1>
+            <p class="u-page-tip">您可以修改头像、昵称、心情和密码</p>
+        </div>
+        <div class="g-content">
+            <img src="http://placehold.it/105x105" width="105" height="105" alt="" class="u-header">
+            <button class="u-modify-header">修改头像</button>
+            <div class="m-info-item">
+                <label for="nickName"><i class="icon-user"></i></label>
+                <input type="text" class="u-input" id="nickName" name="nickName" value="MSSSSSSSSSSSSSSSSSSS">
+            </div>
+            <div class="m-info-item">
+                <label for="signature"><i class="icon-heart"></i></label>
+                <input type="text" class="u-input" id="signature" name="signature" value="一年从心何为怂">
+            </div>
+            <div class="m-info-item">
+                <label for="password"><i class="icon-lock"></i></label>
+                <input type="password" class="u-input" id="password" name="password" value="asfsafasfsa" readonly disabled>
+                <button class="u-modify-password">修改</button>
+            </div>
+        </div>
+        <div class="g-footer">
+            <i class="icon-footer"></i>
+        </div>
+
+        <!-- 屏幕遮罩 -->
+        <div class="u-mask f-hide"></div>
+
+        <!-- 修改密码弹窗 -->
+        <div class="m-dialog f-hide">
+            <div class="m-dialog-header">
+                <button class="u-left-btn">取消</button>
+                <button class="u-right-btn">确定</button>
+                <h2 class="u-dialog-title">修改密码</h2>
+            </div>
+            <div class="m-dialog-content">
+                <form action="/" class="m-form">
+                    <div class="m-form-item"><label for="account"><i class="icon-lock"></i></label><input type="password" class="u-input" name="account" id="account" placeholder="旧密码" tabindex="1" required></div>
+                    <p class="u-validate-tips">两次的密码不一致</p>
+                    <div class="m-form-item"><label for="modal-password"><i class="icon-lock-open"></i></label><input type="password" class="u-input" name="modal-password" id="modal-password" placeholder="新密码（不少于6位数字字符）" tabindex="1" required></div>
+                    <p class="u-validate-tips">两次的密码不一致</p>
+                    <div class="m-form-item"><label for="modal-again-password"><i class="icon-lock-open"></i></label><input type="password" class="u-input" name="modal-again-password" id="modal-again-password" placeholder="重复新密码" tabindex="1" required></div>
+                    <p class="u-validate-tips">两次的密码不一致</p>
+                </form>
+            </div>
+        </div>
+
+        <!-- 上传图片弹窗 -->
+        <div class="m-dialog m-dialog-large f-hide">
+            <div class="m-dialog-header">
+                <button class="u-left-btn">取消</button>
+                <button class="u-right-btn">确定</button>
+                <h2 class="u-dialog-title">上传图片</h2>
+            </div>
+            <div class="m-dialog-content">
+                <label for="upload" class="u-upload-range">选择图片</label>
+                <input type="file" name="upload" id="upload" class="u-upload-file">
+                <div class="m-upload-preview">
+                    <p class="u-preview-title">预览105*105</p>
+                    <img src="images/upload-placeholder.png" width="105" height="105" alt="" class="u-preview-img-large">
+                    <p class="u-preview-title">预览57*57</p>
+                    <img src="images/upload-placeholder.png" width="57" height="57" alt="" class="u-preview-img-small">
+                </div>
+            </div>
+        </div>
+        
+        <!-- 页面提示 -->
+        <div class="u-toast f-hide">上传成功</div>
     </div>
 </body>
 </html>
