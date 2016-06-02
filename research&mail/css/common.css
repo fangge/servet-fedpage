@@ -718,6 +718,7 @@ button {
     margin-left: 199px;
     padding: 30px 24px 0 38px;
     background: #e9eff3;
+    overflow-x: hidden;
 }
 
 .main-header { 
