@@ -259,9 +259,11 @@
 /* line 94, E:/servet-fedpage/edit/src/sass/module/aside.scss */
 .right-nav .panel-group {
   margin-left: 1px;
+  padding-top: 25px;
+  background: #F3F6F8;
 }
 
-/* line 97, E:/servet-fedpage/edit/src/sass/module/aside.scss */
+/* line 99, E:/servet-fedpage/edit/src/sass/module/aside.scss */
 .right-nav .panel-group .panel {
   border-radius: 0;
   margin-top: 0;
@@ -270,14 +272,14 @@
   margin-bottom: -1px;
 }
 
-/* line 104, E:/servet-fedpage/edit/src/sass/module/aside.scss */
+/* line 106, E:/servet-fedpage/edit/src/sass/module/aside.scss */
 .right-nav .panel-heading {
   background: none;
   border: 0;
   padding: 0;
 }
 
-/* line 108, E:/servet-fedpage/edit/src/sass/module/aside.scss */
+/* line 110, E:/servet-fedpage/edit/src/sass/module/aside.scss */
 .right-nav .panel-heading h4 {
   font-size: 12px;
   color: #4b5668;
@@ -290,18 +292,18 @@
   position: relative;
 }
 
-/* line 118, E:/servet-fedpage/edit/src/sass/module/aside.scss */
+/* line 120, E:/servet-fedpage/edit/src/sass/module/aside.scss */
 .right-nav .panel-heading h4 i {
   position: absolute;
   right: 20px;
 }
 
-/* line 122, E:/servet-fedpage/edit/src/sass/module/aside.scss */
+/* line 124, E:/servet-fedpage/edit/src/sass/module/aside.scss */
 .right-nav .panel-heading h4.panel-title {
   background: #e2e5e7;
 }
 
-/* line 124, E:/servet-fedpage/edit/src/sass/module/aside.scss */
+/* line 126, E:/servet-fedpage/edit/src/sass/module/aside.scss */
 .right-nav .panel-heading h4.panel-title i {
   top: 20px;
   width: 10px;
@@ -309,12 +311,12 @@
   background: url(../slice/collapsed.png) no-repeat;
 }
 
-/* line 129, E:/servet-fedpage/edit/src/sass/module/aside.scss */
+/* line 131, E:/servet-fedpage/edit/src/sass/module/aside.scss */
 .right-nav .panel-heading h4.collapsed {
   background: #f3f6f8;
 }
 
-/* line 131, E:/servet-fedpage/edit/src/sass/module/aside.scss */
+/* line 133, E:/servet-fedpage/edit/src/sass/module/aside.scss */
 .right-nav .panel-heading h4.collapsed i {
   top: 22px;
   width: 5px;
@@ -322,33 +324,33 @@
   background: url(../slice/collapse.png) no-repeat;
 }
 
-/* line 138, E:/servet-fedpage/edit/src/sass/module/aside.scss */
+/* line 140, E:/servet-fedpage/edit/src/sass/module/aside.scss */
 .right-nav .panel-collapse .panel-body {
   border-top: 0 !important;
 }
 
-/* line 141, E:/servet-fedpage/edit/src/sass/module/aside.scss */
+/* line 143, E:/servet-fedpage/edit/src/sass/module/aside.scss */
 .right-nav .panel-collapse {
   background: #e2e5e7;
 }
 
-/* line 145, E:/servet-fedpage/edit/src/sass/module/aside.scss */
+/* line 147, E:/servet-fedpage/edit/src/sass/module/aside.scss */
 .theme {
   width: 123px;
   margin: 0 auto;
 }
 
-/* line 148, E:/servet-fedpage/edit/src/sass/module/aside.scss */
+/* line 150, E:/servet-fedpage/edit/src/sass/module/aside.scss */
 .theme li {
   width: 123px;
 }
 
-/* line 150, E:/servet-fedpage/edit/src/sass/module/aside.scss */
+/* line 152, E:/servet-fedpage/edit/src/sass/module/aside.scss */
 .theme li a {
   display: block;
 }
 
-/* line 153, E:/servet-fedpage/edit/src/sass/module/aside.scss */
+/* line 155, E:/servet-fedpage/edit/src/sass/module/aside.scss */
 .theme li p {
   color: #878787;
   font-size: 12px;
@@ -358,7 +360,7 @@
   margin-top: 5px;
 }
 
-/* line 161, E:/servet-fedpage/edit/src/sass/module/aside.scss */
+/* line 163, E:/servet-fedpage/edit/src/sass/module/aside.scss */
 .theme li img {
   display: block;
   width: 123px;
@@ -368,19 +370,19 @@
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.51);
 }
 
-/* line 172, E:/servet-fedpage/edit/src/sass/module/aside.scss */
+/* line 174, E:/servet-fedpage/edit/src/sass/module/aside.scss */
 .sp-container {
   background: none !important;
   border: 0 !important;
   margin-left: 36px;
 }
 
-/* line 177, E:/servet-fedpage/edit/src/sass/module/aside.scss */
+/* line 179, E:/servet-fedpage/edit/src/sass/module/aside.scss */
 .sp-picker-container {
   border: 0 !important;
 }
 
-/* line 180, E:/servet-fedpage/edit/src/sass/module/aside.scss */
+/* line 182, E:/servet-fedpage/edit/src/sass/module/aside.scss */
 .set-bg {
   width: 177px;
   height: 26px;
@@ -391,19 +393,19 @@
   border: 1px solid #8b8b8b;
 }
 
-/* line 187, E:/servet-fedpage/edit/src/sass/module/aside.scss */
+/* line 189, E:/servet-fedpage/edit/src/sass/module/aside.scss */
 .set-bg li {
   float: left;
   width: 50%;
   height: 26px;
 }
 
-/* line 192, E:/servet-fedpage/edit/src/sass/module/aside.scss */
+/* line 194, E:/servet-fedpage/edit/src/sass/module/aside.scss */
 .set-bg li.active a {
   background: #8b8b8b;
 }
 
-/* line 194, E:/servet-fedpage/edit/src/sass/module/aside.scss */
+/* line 196, E:/servet-fedpage/edit/src/sass/module/aside.scss */
 .set-bg li a {
   display: block;
   height: 24px;
@@ -414,19 +416,19 @@
   -moz-transition: all .5s ease-in-out;
 }
 
-/* line 201, E:/servet-fedpage/edit/src/sass/module/aside.scss */
+/* line 203, E:/servet-fedpage/edit/src/sass/module/aside.scss */
 .set-bg li a.set-bg1 {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
 
-/* line 205, E:/servet-fedpage/edit/src/sass/module/aside.scss */
+/* line 207, E:/servet-fedpage/edit/src/sass/module/aside.scss */
 .set-bg li a.set-bg2 {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
 
-/* line 209, E:/servet-fedpage/edit/src/sass/module/aside.scss */
+/* line 211, E:/servet-fedpage/edit/src/sass/module/aside.scss */
 .set-bg li a i {
   display: block;
   margin: 0 auto;
@@ -434,19 +436,19 @@
   top: 3px;
 }
 
-/* line 214, E:/servet-fedpage/edit/src/sass/module/aside.scss */
+/* line 216, E:/servet-fedpage/edit/src/sass/module/aside.scss */
 .set-bg li a i.icon-setbg {
   top: 5px;
 }
 
-/* line 221, E:/servet-fedpage/edit/src/sass/module/aside.scss */
+/* line 223, E:/servet-fedpage/edit/src/sass/module/aside.scss */
 .icon-setcolor {
   width: 17px;
   height: 17px;
   background: url(../slice/color.png) no-repeat;
 }
 
-/* line 224, E:/servet-fedpage/edit/src/sass/module/aside.scss */
+/* line 226, E:/servet-fedpage/edit/src/sass/module/aside.scss */
 .icon-setbg {
   width: 16px;
   height: 14px;
