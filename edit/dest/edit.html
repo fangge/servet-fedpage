@@ -106,6 +106,14 @@
               </div>
               <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                 <div class="panel-body">
+                  <ul class="set-bg">
+                    <li role="presentation" class="active"><a href="#setcolor" aria-controls="setcolor" role="tab" data-toggle="tab" class="set-bg1"><i class="icon-setcolor">设置颜色</i></a></li>
+                    <li role="presentation"><a href="#setbg" aria-controls="setbg" role="tab" data-toggle="tab"  class="set-bg2"><i class="icon-setbg">设置图片</i></a></li>
+                  </ul>
+                  <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="setcolor"><input type='text' id="flat" /></div>
+                    <div role="tabpanel" class="tab-pane" id="setbg"></div>
+                  </div>
 
                 </div>
               </div>
@@ -121,6 +129,15 @@
     
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-
+    <script src="js/spectrum.js"></script>
+    <script>
+      $("#flat").spectrum({
+        preferredFormat: "hex6",
+        flat: true,
+        showInput: true,
+        allowEmpty:true,
+        showAlpha: true
+      });
+    </script>
   </body>
 </html>
