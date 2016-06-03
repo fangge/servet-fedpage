@@ -1,4 +1,16 @@
 @charset "utf-8";
+@mixin  ani{
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+}
+@mixin navsprite($width,$height,$bg){
+  width: $width;
+  height: $height;
+  background: url(../slice/#{$bg}) no-repeat;
+}
+@import "module/header";
+@import "module/aside";
 body {
   padding-top: 52px;
   font-size: 13px;
@@ -30,57 +42,16 @@ button {
   float: right;
   margin-right: 0;
 }
-
+.g-thide{
+  text-indent: -9999rem;
+}
 .txt-center {
   text-align: center;
 }
 
-.navbar-fixed-top {
-  border: 0;
-}
-
-.navbar {
-  height: 52px;
-  -webkit-box-shadow: 0 3px 6px 0 rgba(0,0,0,.3);
-  box-shadow: 0 3px 6px 0 rgba(0,0,0,.3);
-}
-.navbar-bac {
-  background: #502d89;
-}
-
-.logo {
-  padding: 0;
-  height: 52px;
-}
-
-@media (max-width: 768px) {
-  .container-fluid {
-    padding-right: 0;
-  }
-
-  .navbar-header {
-    float: left;
-  }
-
-  .navbar-right {
-    float: right;
-    margin-right: 0;
-  }
-}
-
-.sidebar {
-  position: fixed;
-  top: 52px;
-  bottom: 0;
-  left: 0;
-  width: 199px;
-  z-index: 1000;
-  display: block;
-  overflow: hidden;
-  background: #f3f6f8;
-  border-right: 1px solid #ccd2d6;
-}
-
-.active {
-  display: block;
+.main {
+  margin-left: 199px;
+  padding: 30px 24px 0 38px;
+  background: #e9eff3;
+  overflow-x: hidden;
 }

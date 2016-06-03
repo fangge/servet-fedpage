@@ -1,0 +1,8 @@
+{
+    "edit": {
+        "path_to_layout": "src/edit.html",
+        "path_to_data": [
+            "src/data/global.json"
+        ]
+    }
+}

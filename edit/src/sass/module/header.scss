@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+.navbar-fixed-top {
+  border: 0;
+}
+
+.navbar {
+  height: 52px;
+  -webkit-box-shadow: 0 3px 6px 0 rgba(0,0,0,.3);
+  box-shadow: 0 3px 6px 0 rgba(0,0,0,.3);
+}
+.navbar-bac {
+  background: #502d89;
+}
+
+.logo {
+  padding: 0;
+  height: 52px;
+}
+@media (max-width: 768px) {
+  .container-fluid {
+    padding-right: 0;
+  }
+  .navbar-header {
+    float: left;
+  }
+  .navbar-right {
+    float: right;
+    margin-right: 0;
+  }
+}
+.navbar-right-btn{
+  display: block;
+  float:right;
+  height: 52px;
+  line-height: 52px;
+  margin-left:25px;
+  font-size: 12px;
+  color: #fff;
+  &:hover{
+    color: #fff;
+    text-decoration: none;
+  }
+}
+.navbar-right-btn1{
+  width: 56px;
+  height: 31px;
+  box-sizing: border-box;
+  border:1px solid #3d92c7;
+  -webkit-border-radius:31px;;
+  -moz-border-radius:31px;;
+  border-radius:31px;
+  text-align: center;
+  line-height: 31px;
+  color: #2bb7c5;
+  margin-top:10px;
+  margin-right:20px;
+  &:hover{
+    color: #2bb7c5;
+  }
+}
+.navbar-right-btn3{
+  @include navsprite(19px,20px,'tool.png');
+  margin-top:16px;
+}
+.navbar-right-btn4{
+  @include navsprite(23px,19px,'music.png');
+  margin-top:16px;
+}
+.topic{
+  display: block;
+  @include navsprite(19px,19px,'topic.png');
+  position: absolute;
+  left:205px;
+  top:18px;
+}
