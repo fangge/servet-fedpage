@@ -1,9 +1,8 @@
-@charset "UTF-8";
 /* line 2, E:/servet-fedpage/edit/src/sass/research.scss */
 body {
   padding-top: 52px;
   font-size: 13px;
-  font-family: "宋体",Arial,sans-serif;
+  font-family: "Microsoft YaHei",simSun,"Lucida Grande","Lucida Sans Unicode",Arial,sans-serif;
   color: #4b5668;
   background: #e9eff3;
 }
@@ -65,7 +64,7 @@ button {
 
 /* line 55, E:/servet-fedpage/edit/src/sass/research.scss */
 .navbar-right:hover .navbar-message {
-  background: url("../img/icon_top_message_hover.png") no-repeat;
+  background: url("../slice/icon_top_message_hover.png") no-repeat;
 }
 
 /* line 59, E:/servet-fedpage/edit/src/sass/research.scss */
@@ -78,7 +77,7 @@ button {
   display: block;
   width: 51px;
   height: 52px;
-  background: url("../img/icon_top_message.png") no-repeat;
+  background: url("../slice/icon_top_message.png") no-repeat;
 }
 
 @media (max-width: 768px) {
@@ -415,7 +414,7 @@ button {
   display: inline-block;
   width: 61px;
   height: 67px;
-  background: url("../img/icon_delete_tip.png") no-repeat;
+  background: url("../slice/icon_delete_tip.png") no-repeat;
 }
 
 /* line 377, E:/servet-fedpage/edit/src/sass/research.scss */
@@ -449,7 +448,7 @@ button {
   right: -15px;
   width: 29px;
   height: 29px;
-  background: url("../img/icon_close_btn_01.png") no-repeat;
+  background: url("../slice/icon_close_btn_01.png") no-repeat;
   /*-webkit-box-shadow: 0 0 2px 2px rgba(0,0,0,.08);
     box-shadow: 0 0 2px 2px rgba(0,0,0,.08);*/
   cursor: default;
@@ -501,7 +500,7 @@ button {
   width: 34px;
   height: 34px;
   vertical-align: middle;
-  background: url("../img/icon_send_mail.png") no-repeat;
+  background: url("../slice/icon_send_mail.png") no-repeat;
 }
 
 /* line 452, E:/servet-fedpage/edit/src/sass/research.scss */
@@ -554,7 +553,7 @@ button {
   height: 28px;
   line-height: 28px\9;
   color: #929ea6;
-  background: url("../img/icon_seach.png") 8px center no-repeat;
+  background: url("../slice/icon_seach.png") 8px center no-repeat;
   background-color: #f0f3f7;
   border: 0;
   outline: none;
@@ -674,7 +673,7 @@ button {
   width: 14px;
   height: 14px;
   border: 0;
-  background: url("../img/icon_checked.png") no-repeat;
+  background: url("../slice/icon_checked.png") no-repeat;
 }
 
 /* line 613, E:/servet-fedpage/edit/src/sass/research.scss */
@@ -917,28 +916,28 @@ button {
 .icon-report {
   width: 16px;
   height: 16px;
-  background: url("../img/icon_survey_hover01.png") no-repeat;
+  background: url("../slice/icon_survey_hover01.png") no-repeat;
 }
 
 /* line 826, E:/servet-fedpage/edit/src/sass/research.scss */
 .icon-copy {
   width: 16px;
   height: 18px;
-  background: url("../img/icon_survey_hover02.png") no-repeat;
+  background: url("../slice/icon_survey_hover02.png") no-repeat;
 }
 
 /* line 832, E:/servet-fedpage/edit/src/sass/research.scss */
 .icon-delete {
   width: 15px;
   height: 18px;
-  background: url("../img/icon_survey_hover03.png") no-repeat;
+  background: url("../slice/icon_survey_hover03.png") no-repeat;
 }
 
 /* line 838, E:/servet-fedpage/edit/src/sass/research.scss */
 .icon-stop {
   width: 9px;
   height: 15px;
-  background: url("../img/icon_survey_hover04.png") no-repeat;
+  background: url("../slice/icon_survey_hover04.png") no-repeat;
 }
 
 /* line 844, E:/servet-fedpage/edit/src/sass/research.scss */
@@ -1028,7 +1027,7 @@ button {
   margin-right: 8px;
   width: 11px;
   height: 12px;
-  background: url("../img/icon_like_num.png") no-repeat;
+  background: url("../slice/icon_like_num.png") no-repeat;
 }
 
 /* line 927, E:/servet-fedpage/edit/src/sass/research.scss */
@@ -1038,7 +1037,7 @@ button {
   margin-right: 8px;
   width: 10px;
   height: 17px;
-  background: url("../img/icon_used_num.png") no-repeat;
+  background: url("../slice/icon_used_num.png") no-repeat;
 }
 
 /* line 936, E:/servet-fedpage/edit/src/sass/research.scss */
