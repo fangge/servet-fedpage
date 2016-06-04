@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reseach</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/research.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!--头部开始-->
+    <header class="navbar navbar-fixed-top navbar-bac">
+      <div class="container-fluid">
+        <div class="navbar-header">          
+          <a class="navbar-brand logo" href="#">
+            <img src="img/logo.png" alt="">
+          </a>
+        </div>
+        <div class="navbar-right">
+          <button class="navbar-message"></button>
+          <div class="right-side">
+            <ul class="right-side-tab clx">
+              <li class="active" data-show="#note-cont">批注</li>
+              <li data-show="#comment-cont">评论</li>
+              <li data-show="#invite-cont">邀请</li>
+            </ul>
+            <div class="right-side-cont">
+              <div id="note-cont" class="cont-part" style="display:block">
+                <div class="cont-list">
+                  <div class="cont-user">
+                    <img src="img/icon_small_reseacher.png" alt="">
+                    <span>Louis:</span> 
+                    <span class="cont-date">6小时前</span>
+                  </div>
+                  <div class="cont-article">答案是不是少了一项？</div>
+                  <div class="cont-origin"><span>批注于 </span>Survet年度调查问卷 题8</div>
+                </div> 
+                <div class="cont-list">
+                  <div class="cont-user">
+                    <img src="img/icon_small_reseacher.png" alt="">
+                    <span>何大威:</span>
+                    <span class="cont-date">昨天</span>
+                  </div>
+                  <div class="cont-article">这里建议用比较有趣的提问方式，这样更能提高用户的答题兴趣？ </div>
+                  <div class="cont-origin"><span>批注于 </span>健康硬件产品研究 题12</div>
+                </div>
+                <div class="cont-list">
+                  <div class="cont-user">
+                    <img src="img/icon_small_reseacher.png" alt="">
+                    <span>Corner:</span>
+                    <span class="cont-date">昨天</span>
+                  </div>
+                  <div class="cont-article">建议删除此题 </div>
+                  <div class="cont-origin"><span>批注于 </span>健康硬件产品研究 题13</div>
+                </div>  
+              </div>
+              <div id="comment-cont" class="cont-part">
+                <div class="cont-list">
+                  <div class="cont-user">
+                    <img src="img/icon_small_reseacher.png" alt="">
+                    <span>cat_rabit:</span>
+                    <span class="cont-date">6小时前</span>
+                  </div>
+                  <div class="cont-article">这个问卷太有趣了.It's always worth sticking around until sunset. #TLPic</div>
+                  <div class="cont-origin"><span>评论于 </span>Survet年度调查问卷 题8</div>
+                </div> 
+                <div class="cont-list">
+                  <div class="cont-user">
+                    <img src="img/icon_small_reseacher.png" alt="">
+                    <span>Fantasy interactive:</span>
+                    <span class="cont-date">昨天</span>
+                  </div>
+                  <div class="cont-article">这里建议用比较有趣的提问方式，这样更能提高用户的答题兴趣？ </div>
+                  <div class="cont-origin"><span>评论于 </span>健康硬件产品研究 题12</div>
+                </div>
+                <div class="cont-list">
+                  <div class="cont-user">
+                    <img src="img/icon_small_reseacher.png" alt="">
+                    <span>Jack:</span>
+                    <span class="cont-date">昨天</span>
+                  </div>
+                  <div class="cont-article">建议删除此题 </div>
+                  <div class="cont-origin"><span>评论于 </span>健康硬件产品研究 题13</div>
+                </div>    
+              </div>
+              <div id="invite-cont" class="cont-part">
+                <div class="cont-list">
+                  <div class="cont-user">
+                    <img src="img/icon_small_reseacher.png" alt="">
+                    <span>EI captain</span>
+                    <span class="cont-date">6小时前</span>
+                  </div>
+                  <div class="invite-article">邀请你加入群组</div>
+                  <div class="invite-origin">Survet设计组</div>
+                </div> 
+                <div class="cont-list">
+                  <div class="cont-user">
+                    <img src="img/icon_small_reseacher.png" alt="">
+                    <span>旧天堂</span>
+                    <span class="cont-date">6小时前</span>
+                  </div>
+                  <div class="invite-article">邀请你加入群组</div>
+                  <div class="invite-origin">电信项目组</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--头部结束-->
+    <!--内容开始-->
+    <div class="container-fluid">
+      <div class="row">
+        <!--左侧开始-->
+        <div class="sidebar">
+          <div class="user">
+            <div class="user-photo">
+              <img src="img/icon_reseacher.png" alt="">
+            </div>
+            <p class="user-name">旧天堂</p>
+            <p class="user-description">中国电信资深用户体验设计师SUPA荣誉会员...</p>
+          </div>
+          <div class="group">
+            <div class="group-header">群组<button class="add-group-btn" data-toggle="modal" data-target="#add-group"></button></div>                         
+            <div class="group-member">
+              <div class="display-btn">消费者研究</div>
+              <ul>                
+                <li><img class="avatar" src="img/icon_small_reseacher.png" alt="">Louis<i class="delete-member-btn"></i></li>
+                <li><img class="avatar" src="img/icon_small_reseacher.png" alt="">Old Cai<i class="delete-member-btn"></i></li>
+                <li><img class="avatar" src="img/icon_small_reseacher.png" alt="">Shawn<i class="delete-member-btn"></i></li>
+                <li><img class="avatar" src="img/icon_small_reseacher.png" alt="">孽定锷的猫<i class="delete-member-btn"></i></li>   
+                <li class="add-new-member"><a href="#"><em class="avatar"></em>添加新人</a></li>         
+              </ul>              
+            </div> 
+            <div class="group-member">
+              <div class="display-btn">健康硬件产品研究</div>
+              <ul>                
+                <li><img class="avatar" src="img/icon_small_reseacher.png" alt="">Louis<i class="delete-member-btn"></i></li>
+                <li><img class="avatar" src="img/icon_small_reseacher.png" alt="">Old Cai<i class="delete-member-btn"></i></li>
+                <li><img class="avatar" src="img/icon_small_reseacher.png" alt="">Shawn<i class="delete-member-btn"></i></li>
+                <li><img class="avatar" src="img/icon_small_reseacher.png" alt="">孽定锷的猫<i class="delete-member-btn"></i></li> 
+                <li class="add-new-member"><a href="#"><em class="avatar"></em>添加新人</a></li>           
+              </ul>              
+            </div> 
+            <div class="group-member">
+              <div class="display-btn">金融软件产品研究</div>
+              <ul>                
+                <li><img class="avatar" src="img/icon_small_reseacher.png" alt="">Louis<i class="delete-member-btn"></i></li>
+                <li><img class="avatar" src="img/icon_small_reseacher.png" alt="">Old Cai<i class="delete-member-btn"></i></li>
+                <li><img class="avatar" src="img/icon_small_reseacher.png" alt="">Shawn<i class="delete-member-btn"></i></li>
+                <li><img class="avatar" src="img/icon_small_reseacher.png" alt="">孽定锷的猫<i class="delete-member-btn"></i></li> 
+                <li class="add-new-member"><a href="#"><em class="avatar"></em>添加新人</a></li>           
+              </ul>              
+            </div>            
+          </div>                   
+        </div>
+        <!-- 添加群组Modal -->
+        <div class="modal fade" id="add-group" tabindex="-1" role="dialog" aria-labelledby="group-title-label">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">取消</span></button>
+                <h4 class="modal-title" id="group-title-label">创建群组</h4>
+                <button type="" class="confirm">确定</button>
+              </div>
+              <div class="modal-body">
+                <div class="part-a">
+                  <input id="group-name" type="text" placeholder="群组名称">
+                  <p>除了可将已有组中的成员纳入新组，还可邀请外部人员加入</p>
+                  <div class="send-email">
+                    <i class="icon-email"></i>
+                    <input type="text" id="email-input" placeholder="邮箱邀请（未注册的）">
+                    <button type="button" class="send-email-btn">发送</button>
+                  </div>
+                </div>
+                <div class="part-b clx">
+                  <div class="seach-panel"><input id="seach-input" type="text" placeholder="搜索"></div>
+                  <div class="seach-content">
+                    <div class="seach-group">
+                      <div class="seach-group-name group-name-sel">健康研究小组</div>
+                      <div class="seach-group-name">Survet开发级</div>
+                      <div class="seach-group-name">用户体验报告组</div>
+                      <div class="seach-group-name">前端组</div>
+                      <div class="seach-group-name">IOS开发组</div>
+                    </div>
+                    <div class="seach-result">
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr>                            
+                            <th class="first-row" width=219><input type="checkbox" id="seach-name"><label for="seach-name"></label>姓名</th>
+                            <th width=381>邮箱</th>
+                            <th>问卷数</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>                            
+                            <td class="first-row"><input type="checkbox" id="123"><label for="123"></label>Suddenly Liu</td>
+                            <td>SuddenlyLiu@gmail.com</td>
+                            <td>8</td>
+                          </tr>
+                          <tr>                            
+                            <td class="first-row"><input type="checkbox" id="456"><label for="456"></label>Xi Xiang</td>
+                            <td>XiXiang@qq.com</td>
+                            <td>20</td>
+                          </tr>
+                          <tr>                            
+                            <td class="first-row"><input type="checkbox" id="789"><label for="789"></label>Jenny</td>
+                            <td>Jenny29475@sina.com</td>
+                            <td>18</td>
+                          </tr>
+                          <tr>                            
+                            <td class="first-row"><input type="checkbox" id="001"><label for="001"></label>向曦</td>
+                            <td>adesigner@163.com</td>
+                            <td>8</td>
+                          </tr>
+                          <tr>                            
+                            <td class="first-row"><input type="checkbox" id="002"><label for="002"></label>刘胜强</td>
+                            <td>JungleTea@survet.com</td>
+                            <td>20</td>
+                          </tr>
+                          <tr>                            
+                            <td class="first-row"><input type="checkbox" id="003"><label for="003"></label>Mike</td>
+                            <td>MikeChung@hkprice.com</td>
+                            <td>18</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>              
+            </div>
+          </div>
+        </div>
+        <!--左侧结束-->
+        <!--列表开始-->
+        <div class="main">
+          <div class="main-header">
+            <span><strong>5</strong>份问卷</span><span><strong>28,556</strong>人参与</span><span>还剩3次试用机会</span><a href="#">立刻升级</a><button data-toggle="modal" data-target="#add-new-reseach">新建调查</button>            
+          </div>
+          <!-- 新建调查Modal -->
+          <div class="modal fade" id="add-new-reseach" tabindex="-1" role="dialog" aria-labelledby="new-reseach-label">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">取消</span></button>
+                  <h4 class="modal-title" id="new-reseach-label">新建调查</h4>
+                </div>
+                <div class="modal-body">
+                  <div class="reseach-tab" role="tablist"><button class="reseach-tab-sel reseach-tab-left" data-show="#moban">模板</button><button class="reseach-tab-right" data-show="#wenjuanku">问卷库</button></div>
+                  <div>
+                    <ul id="moban" class="reseach-list clx active">
+                    <li>
+                      <a href="#">
+                        <img src="img/add_new_reseach.png" alt="">
+                        <p class="reseach-list-name">空白</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img src="img/survey_02.png" alt="">
+                        <p class="reseach-list-name">产品满意度问卷</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img src="img/survey_03.png" alt="">
+                        <p class="reseach-list-name">用户特征调查</p>
+                      </a>
+                    </li>
+                    <li class="list-col-4">
+                      <a href="#">
+                        <img src="img/survey_04.png" alt="">
+                        <p class="reseach-list-name">产品体验在线测试</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img src="img/survey_05.png" alt="">
+                        <p class="reseach-list-name">员工幸福度调查</p>
+                      </a>
+                    </li>                   
+                  </ul>
+                  <ul id="wenjuanku" class="reseach-list clx">
+                    <li>
+                      <a href="#">
+                        <img src="img/add_new_reseach.png" alt="">
+                        <p class="reseach-list-name">空白</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img src="img/survey_01.png" alt="">
+                        <p class="reseach-list-name">产品满意度问卷</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img src="img/survey_03.png" alt="">
+                        <p class="reseach-list-name">用户特征调查</p>
+                      </a>
+                    </li>
+                    <li class="list-col-4">
+                      <a href="#">
+                        <img src="img/survey_04.png" alt="">
+                        <p class="reseach-list-name">产品体验在线测试</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img src="img/survey_05.png" alt="">
+                        <p class="reseach-list-name">员工幸福度调查</p>
+                      </a>
+                    </li>                   
+                  </ul>
+                  </div>                  
+                </div>                
+              </div>
+            </div>
+          </div>
+          <ul class="main-list clx">
+            <li>
+              <div class="list-detail">
+                <div class="list-img">
+                  <img src="img/survey_01.png" alt="">
+                  <div class="list-img-hover">
+                    <button class="icon-report"></button>
+                    <button class="icon-copy" data-title="互联网行业调查" data-toggle="modal" data-target="#copy-reseach"></button>
+                    <button class="icon-delete" data-toggle="modal" data-target="#delete-reseach"></button>
+                    <button class="icon-stop"></button>
+                  </div>
+                </div>                
+                <div class="list-detail-des">
+                  <p class="list-state"><i class="icon-testing"></i>测试中</p>
+                  <p></p>
+                  <p><i class="icon-member"></i>169 / 218</p>
+                  <p>8题</p>
+                  <p class="list-number">SU_39584</p>
+                </div>
+              </div>
+              <div class="list-description">
+                <p>互联网行业调查</p>
+                <p>2014-03-19</p>
+              </div>
+            </li>
+            <li>
+              <div class="list-detail">
+                <div class="list-img">
+                  <img src="img/survey_02.png" alt="">
+                  <div class="list-img-hover">
+                    <button class="icon-report"></button>
+                    <button class="icon-copy" data-title="健康硬件产品研究1" data-toggle="modal" data-target="#copy-reseach"></button>
+                    <button class="icon-delete" data-toggle="modal" data-target="#delete-reseach"></button>
+                    <button class="icon-stop"></button>
+                  </div>
+                </div>                
+                <div class="list-detail-des">
+                  <p class="list-state"><i class="icon-checking"></i>审核中</p>
+                  <p></p>
+                  <p><i class="icon-member"></i>169 / 218</p>
+                  <p>8题</p>
+                  <p class="list-number">SU_39584</p>
+                  <em class="list-new-message">3</em>
+                </div>
+              </div>
+              <div class="list-description">
+                <p>健康硬件产品研究1</p>
+                <p>2014-03-19</p>
+              </div>
+            </li>
+            <li>
+              <div class="list-detail">
+                <div class="list-img">
+                  <img src="img/survey_03.png" alt="">
+                  <div class="list-img-hover">
+                    <button class="icon-report"></button>
+                    <button class="icon-copy" data-title="金融软件产品研究" data-toggle="modal" data-target="#copy-reseach"></button>
+                    <button class="icon-delete" data-toggle="modal" data-target="#delete-reseach"></button>
+                    <button class="icon-stop"></button>
+                  </div>
+                </div>                
+                <div class="list-detail-des">
+                  <p class="list-state"><i class="icon-checking"></i>审核中</p>
+                  <p><i class="icon-like"></i>4565</p>
+                  <p><i class="icon-member"></i>169 / 218</p>
+                  <p>8题</p>
+                  <p class="list-number">SU_39584</p>
+                </div>
+              </div>
+              <div class="list-description">
+                <p>金融软件产品研究</p>
+                <p>2014-03-19</p>
+              </div>
+            </li>
+            <li>
+              <div class="list-detail">
+                <div class="list-img">
+                  <img src="img/survey_04.png" alt="">
+                  <div class="list-img-hover">
+                    <button class="icon-report"></button>
+                    <button class="icon-copy" data-title="2016艺术家生存报告" data-toggle="modal" data-target="#copy-reseach"></button>
+                    <button class="icon-delete" data-toggle="modal" data-target="#delete-reseach"></button>
+                    <button class="icon-stop"></button>
+                  </div>
+                </div>                
+                <div class="list-detail-des">
+                  <p class="list-state"><i class="icon-recovering"></i>回收中</p>
+                  <p></p>
+                  <p><i class="icon-member"></i>169 / 218</p>
+                  <p>8题</p>
+                  <p class="list-number">SU_39584</p>
+                </div>
+              </div>
+              <div class="list-description">
+                <p>2016艺术家生存报告</p>
+                <p>2014-03-19</p>
+              </div>
+            </li>
+            <li>
+              <div class="list-detail">
+                <div class="list-img">
+                  <img src="img/survey_05.png" alt="">
+                  <div class="list-img-hover">
+                    <button class="icon-report"></button>
+                    <button class="icon-copy" data-title="健康硬件产品研究2" data-toggle="modal" data-target="#copy-reseach"></button>
+                    <button class="icon-delete" data-toggle="modal" data-target="#delete-reseach"></button>
+                    <button class="icon-stop"></button>
+                  </div>
+                </div>                
+                <div class="list-detail-des">
+                  <p class="list-state"><i class="icon-checking"></i>审核中</p>
+                  <p><i class="icon-like"></i>4565</p>
+                  <p><i class="icon-member"></i>169 / 218</p>
+                  <p>8题</p>
+                  <p class="list-number">SU_39584</p>
+                </div>
+              </div>
+              <div class="list-description">
+                <p>健康硬件产品研究2</p>
+                <p>2014-03-19</p>
+              </div>
+            </li>
+          </ul>
+          <!-- 复制问卷Modal -->
+          <div class="modal fade" id="copy-reseach" tabindex="-1" role="dialog" aria-labelledby="copy-reseach-panel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">取消</span></button>
+                  <h4 class="modal-title" id="copy-reseach-panel">复制问卷</h4>
+                  <button class="confirm">确定</button>
+                </div>
+                <div class="modal-body">
+                  <input id="copy-name" type="text" value="产品体验在线测试（复制1）">
+                </div>                      
+              </div>
+            </div>
+          </div>
+          <!-- 删除问卷Modal -->
+          <div class="modal fade" id="delete-reseach" tabindex="-1" role="dialog" aria-labelledby="delete-reseach-panel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">                      
+                <div class="modal-body">
+                  <i class="icon-cry"></i>
+                  <p class="delete-tips">您确定要删除~吗？</p>
+                  <button>确定</button>
+                  <i data-dismiss="modal" class="delete-close-btn"></i>
+                </div>                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      $(function(){ 
+        var $copyItem = $('.icon-copy'),
+            $copyInput = $('#copy-name');
+        
+        $copyItem.on('click', function(){          
+          $copyInput.val($(this).attr('data-title') + '(复制1)');
+        });
+
+        $copyInput.on('click', function(){
+          $(this).select();
+        });
+        
+
+        $(document).on('click', '.display-btn', function(e){
+          
+          if($(this).parent('.group-member').hasClass('group-selected')){
+            $(this).parent('.group-member').removeClass('group-selected');
+            $(this).next().slideUp("slow");
+          } else {
+            $(this).parent('.group-member').siblings().removeClass('group-selected').find('ul').slideUp("slow");
+            $(this).parent('.group-member').addClass('group-selected');
+            $(this).next().slideDown("slow");
+          }
+        });         
+
+        var $ele = $('.seach-group-name');
+
+        $ele.on('click', function(e) {
+          if(!$(this).hasClass('group-name-sel')) {
+            $(this).addClass('group-name-sel').siblings().removeClass('group-name-sel');
+          }
+        });
+
+        var $button = $('.reseach-tab button');
+
+        $button.on('click', function(){
+          $($(this).attr('data-show')).show().siblings().hide();
+          if(!$(this).hasClass('reseach-tab-sel')) {
+            $(this).addClass('reseach-tab-sel').siblings().removeClass('reseach-tab-sel');
+          }          
+        });
+
+        var $li = $('.right-side-tab li');
+
+        $li.on('click', function(){
+          $($(this).attr('data-show')).show().siblings().hide();
+          if(!$(this).hasClass('active')) {
+            $(this).addClass('active').siblings().removeClass('active');
+          }          
+        });
+      });
+    </script>
+  </body>
+</html>

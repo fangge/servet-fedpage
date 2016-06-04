@@ -4,5 +4,11 @@
         "path_to_data": [
             "src/data/global.json"
         ]
+    },
+    "reseach": {
+        "path_to_layout": "src/reseach.html",
+        "path_to_data": [
+            "src/data/global.json"
+        ]
     }
 }

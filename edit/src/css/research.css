@@ -1,0 +1,1181 @@
+@charset "UTF-8";
+/* line 2, E:/servet-fedpage/edit/src/sass/research.scss */
+body {
+  padding-top: 52px;
+  font-size: 13px;
+  font-family: "宋体",Arial,sans-serif;
+  color: #4b5668;
+  background: #e9eff3;
+}
+
+/* line 9, E:/servet-fedpage/edit/src/sass/research.scss */
+ol, ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 15, E:/servet-fedpage/edit/src/sass/research.scss */
+button {
+  border: none;
+  outline: 0;
+}
+
+/* line 20, E:/servet-fedpage/edit/src/sass/research.scss */
+.clx:after {
+  content: "";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+
+/* line 28, E:/servet-fedpage/edit/src/sass/research.scss */
+.flr {
+  float: right;
+  margin-right: 0;
+}
+
+/* line 33, E:/servet-fedpage/edit/src/sass/research.scss */
+.txt-center {
+  text-align: center;
+}
+
+/* line 37, E:/servet-fedpage/edit/src/sass/research.scss */
+.navbar-fixed-top {
+  border: 0;
+}
+
+/* line 41, E:/servet-fedpage/edit/src/sass/research.scss */
+.navbar {
+  height: 52px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* line 46, E:/servet-fedpage/edit/src/sass/research.scss */
+.navbar-bac {
+  background: #502d89;
+}
+
+/* line 50, E:/servet-fedpage/edit/src/sass/research.scss */
+.logo {
+  padding: 0;
+  height: 52px;
+}
+
+/* line 55, E:/servet-fedpage/edit/src/sass/research.scss */
+.navbar-right:hover .navbar-message {
+  background: url("../img/icon_top_message_hover.png") no-repeat;
+}
+
+/* line 59, E:/servet-fedpage/edit/src/sass/research.scss */
+.navbar-right:hover .right-side {
+  display: block;
+}
+
+/* line 63, E:/servet-fedpage/edit/src/sass/research.scss */
+.navbar-message {
+  display: block;
+  width: 51px;
+  height: 52px;
+  background: url("../img/icon_top_message.png") no-repeat;
+}
+
+@media (max-width: 768px) {
+  /* line 71, E:/servet-fedpage/edit/src/sass/research.scss */
+  .container-fluid {
+    padding-right: 0;
+  }
+  /* line 75, E:/servet-fedpage/edit/src/sass/research.scss */
+  .navbar-header {
+    float: left;
+  }
+  /* line 79, E:/servet-fedpage/edit/src/sass/research.scss */
+  .navbar-right {
+    float: right;
+    margin-right: 0;
+  }
+}
+
+/* line 85, E:/servet-fedpage/edit/src/sass/research.scss */
+.right-side {
+  display: none;
+  position: fixed;
+  top: 52px;
+  right: 0;
+  bottom: 0;
+  width: 269px;
+  color: #4b5668;
+  border-left: 1px solid #dae0e4;
+  background: #fff;
+}
+
+/* line 97, E:/servet-fedpage/edit/src/sass/research.scss */
+.right-side-tab {
+  padding: 0 17px;
+}
+
+/* line 101, E:/servet-fedpage/edit/src/sass/research.scss */
+.right-side-tab li {
+  float: left;
+  width: 77px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 14px;
+  color: #929ea6;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+/* line 112, E:/servet-fedpage/edit/src/sass/research.scss */
+.right-side-tab li:hover, .right-side-tab .active {
+  color: #4b5668;
+  border-bottom: 2px solid #2bb7c5;
+  cursor: default;
+}
+
+/* line 118, E:/servet-fedpage/edit/src/sass/research.scss */
+.right-side-cont {
+  overflow-y: auto;
+  height: 100%;
+}
+
+/* line 123, E:/servet-fedpage/edit/src/sass/research.scss */
+.cont-list {
+  margin-top: 25px;
+  padding: 0 17px;
+}
+
+/* line 128, E:/servet-fedpage/edit/src/sass/research.scss */
+.cont-user {
+  height: 30px;
+  line-height: 30px;
+}
+
+/* line 133, E:/servet-fedpage/edit/src/sass/research.scss */
+.cont-user img {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+}
+
+/* line 143, E:/servet-fedpage/edit/src/sass/research.scss */
+.cont-date {
+  float: right;
+  margin-right: 5px;
+  color: #929ea6;
+}
+
+/* line 149, E:/servet-fedpage/edit/src/sass/research.scss */
+.cont-article {
+  position: relative;
+  margin: 7px 0 8px;
+  padding: 15px 13px;
+  background: #f3f0f7;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* line 160, E:/servet-fedpage/edit/src/sass/research.scss */
+.cont-article:after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 45px;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-color: transparent transparent #f3f0f7 transparent;
+}
+
+/* line 171, E:/servet-fedpage/edit/src/sass/research.scss */
+.cont-origin span {
+  margin-left: 5px;
+  color: #929ea6;
+}
+
+/* line 176, E:/servet-fedpage/edit/src/sass/research.scss */
+.cont-part {
+  display: none;
+}
+
+/* line 180, E:/servet-fedpage/edit/src/sass/research.scss */
+#invite-cont {
+  margin-top: 15px;
+}
+
+/* line 184, E:/servet-fedpage/edit/src/sass/research.scss */
+#invite-cont .cont-list {
+  margin-top: 0;
+}
+
+/* line 188, E:/servet-fedpage/edit/src/sass/research.scss */
+#invite-cont .cont-user {
+  padding-top: 10px;
+}
+
+/* line 192, E:/servet-fedpage/edit/src/sass/research.scss */
+.invite-article {
+  padding-left: 38px;
+  margin-bottom: 10px;
+  margin-top: 8px;
+  color: #929ea6;
+}
+
+/* line 199, E:/servet-fedpage/edit/src/sass/research.scss */
+.invite-origin {
+  padding-left: 38px;
+  padding-bottom: 20px;
+}
+
+/* line 204, E:/servet-fedpage/edit/src/sass/research.scss */
+#invite-cont .cont-list:nth-child(even) {
+  background: #f3f0f7;
+}
+
+/* line 208, E:/servet-fedpage/edit/src/sass/research.scss */
+.sidebar {
+  position: fixed;
+  top: 52px;
+  bottom: 0;
+  left: 0;
+  width: 199px;
+  z-index: 1000;
+  display: block;
+  overflow: hidden;
+  background: #f3f6f8;
+  border-right: 1px solid #ccd2d6;
+}
+
+/* line 221, E:/servet-fedpage/edit/src/sass/research.scss */
+.user {
+  margin: 23px 22px 26px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+/* line 226, E:/servet-fedpage/edit/src/sass/research.scss */
+.user-photo {
+  text-align: center;
+  background: url("../img/icon_reseacher.png") center no-repeat;
+}
+
+/* line 231, E:/servet-fedpage/edit/src/sass/research.scss */
+.user-photo img {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  -o-border-radius: 40px;
+  border-radius: 40px;
+}
+
+/* line 241, E:/servet-fedpage/edit/src/sass/research.scss */
+.user-name {
+  margin-top: 14px;
+  margin-bottom: 18px;
+  text-align: center;
+  font-size: 14px;
+  color: #4b5668;
+}
+
+/* line 249, E:/servet-fedpage/edit/src/sass/research.scss */
+.user-description {
+  margin-bottom: 20px;
+  font-size: 12px;
+  color: #4f6a7b;
+}
+
+/* line 255, E:/servet-fedpage/edit/src/sass/research.scss */
+.group {
+  top: 230px;
+  position: absolute;
+  bottom: 0;
+  width: 199px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* line 264, E:/servet-fedpage/edit/src/sass/research.scss */
+.group-header {
+  padding: 0 14px 0 22px;
+  margin-bottom: 14px;
+  font-size: 12px;
+}
+
+/* line 270, E:/servet-fedpage/edit/src/sass/research.scss */
+.add-group-btn {
+  display: block;
+  float: right;
+  width: 10px;
+  height: 18px;
+  background: url("../img/icon_list_item_01.png") center no-repeat;
+}
+
+/* line 278, E:/servet-fedpage/edit/src/sass/research.scss */
+#add-group .modal-dialog {
+  width: 935px;
+  margin-top: 130px;
+}
+
+/* line 283, E:/servet-fedpage/edit/src/sass/research.scss */
+#copy-reseach .modal-dialog, #delete-reseach .modal-dialog {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -140px;
+  margin-left: -210px;
+  margin-bottom: 0;
+  width: 420px;
+  height: 282px;
+}
+
+/* line 294, E:/servet-fedpage/edit/src/sass/research.scss */
+#add-new-reseach .modal-dialog {
+  width: 930px;
+  margin-top: 130px;
+}
+
+/* line 299, E:/servet-fedpage/edit/src/sass/research.scss */
+.modal-content {
+  background: #fff;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* line 307, E:/servet-fedpage/edit/src/sass/research.scss */
+.modal-header {
+  position: relative;
+  padding: 14px;
+  height: 48px;
+  line-height: 48px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.08);
+}
+
+/* line 316, E:/servet-fedpage/edit/src/sass/research.scss */
+#add-group .close, #add-new-reseach .close, #copy-reseach .close {
+  position: absolute;
+  margin: 0;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  top: 20px;
+  left: 21px;
+  font-size: 13px;
+  color: #2bb7c5;
+  text-shadow: none;
+  font-weight: normal;
+}
+
+/* line 329, E:/servet-fedpage/edit/src/sass/research.scss */
+#add-group .confirm, #copy-reseach .confirm {
+  position: absolute;
+  padding: 0;
+  line-height: 1;
+  top: 20px;
+  right: 21px;
+  font-size: 13px;
+  background: none;
+  color: #2bb7c5;
+  text-shadow: none;
+}
+
+/* line 341, E:/servet-fedpage/edit/src/sass/research.scss */
+.modal-title {
+  text-align: center;
+}
+
+/* line 345, E:/servet-fedpage/edit/src/sass/research.scss */
+.modal-body {
+  padding: 0;
+  -o-border-radius: 0 0 10px 10px;
+  border-radius: 0 0 10px 10px;
+}
+
+/* line 353, E:/servet-fedpage/edit/src/sass/research.scss */
+#copy-reseach .modal-body {
+  padding: 55px 28px 0;
+  height: 233px;
+  background: #f0f3f7;
+}
+
+/* line 359, E:/servet-fedpage/edit/src/sass/research.scss */
+#delete-reseach .modal-body {
+  position: relative;
+  padding-top: 89px;
+  width: 420px;
+  height: 282px;
+  text-align: center;
+}
+
+/* line 367, E:/servet-fedpage/edit/src/sass/research.scss */
+#delete-reseach .icon-cry {
+  position: absolute;
+  top: 53px;
+  left: 76px;
+  display: inline-block;
+  width: 61px;
+  height: 67px;
+  background: url("../img/icon_delete_tip.png") no-repeat;
+}
+
+/* line 377, E:/servet-fedpage/edit/src/sass/research.scss */
+#delete-reseach .delete-tips {
+  margin-bottom: 75px;
+  text-align: center;
+  text-indent: 22px;
+  font-size: 20px;
+  color: #4b5668;
+}
+
+/* line 385, E:/servet-fedpage/edit/src/sass/research.scss */
+#delete-reseach button {
+  padding: 0;
+  width: 143px;
+  height: 45px;
+  line-height: 45px;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  background: #33babe;
+  -o-border-radius: 25px;
+  border-radius: 25px;
+}
+
+/* line 400, E:/servet-fedpage/edit/src/sass/research.scss */
+#delete-reseach .delete-close-btn {
+  display: block;
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  width: 29px;
+  height: 29px;
+  background: url("../img/icon_close_btn_01.png") no-repeat;
+  /*-webkit-box-shadow: 0 0 2px 2px rgba(0,0,0,.08);
+    box-shadow: 0 0 2px 2px rgba(0,0,0,.08);*/
+  cursor: default;
+}
+
+/* line 413, E:/servet-fedpage/edit/src/sass/research.scss */
+#add-group .part-a {
+  padding: 43px 64px 64px;
+  background: #f0f3f7;
+}
+
+/* line 418, E:/servet-fedpage/edit/src/sass/research.scss */
+#group-name, #copy-name {
+  padding: 5px;
+  width: 100%;
+  font-size: 24px;
+  color: #9da4af;
+  border: none;
+  border-bottom: 1px solid #ccd2d6;
+  background: transparent;
+  outline: 0;
+}
+
+/* line 429, E:/servet-fedpage/edit/src/sass/research.scss */
+#copy-name {
+  font-size: 14px;
+}
+
+/* line 433, E:/servet-fedpage/edit/src/sass/research.scss */
+#copy-name::-moz-selection {
+  color: #fff;
+  background: #3399ff;
+}
+#copy-name::selection {
+  color: #fff;
+  background: #3399ff;
+}
+
+/* line 438, E:/servet-fedpage/edit/src/sass/research.scss */
+.part-a p {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  color: #aaa;
+}
+
+/* line 444, E:/servet-fedpage/edit/src/sass/research.scss */
+#add-group .icon-email {
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  vertical-align: middle;
+  background: url("../img/icon_send_mail.png") no-repeat;
+}
+
+/* line 452, E:/servet-fedpage/edit/src/sass/research.scss */
+#email-input {
+  padding: 8px 15px;
+  margin-left: 8px;
+  margin-right: 10px;
+  width: 350px;
+  padding-top: 0\9;
+  padding-bottom: 0\9;
+  height: 34px\9;
+  line-height: 34px\9;
+  background: #fff;
+  vertical-align: middle;
+  color: #bcc0c7;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #ccd2d6;
+  outline: none;
+}
+
+/* line 472, E:/servet-fedpage/edit/src/sass/research.scss */
+#add-group .send-email-btn {
+  padding: 5px 22px;
+  vertical-align: middle;
+  border: 1px solid #ccd2d6;
+  color: #4b5668;
+  -o-border-radius: 18px;
+  border-radius: 18px;
+  background: transparent;
+}
+
+/* line 484, E:/servet-fedpage/edit/src/sass/research.scss */
+.seach-panel {
+  height: 40px;
+  line-height: 40px;
+}
+
+/* line 489, E:/servet-fedpage/edit/src/sass/research.scss */
+#seach-input {
+  float: right;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-top: 0\9;
+  padding-bottom: 0\9;
+  padding-left: 36px;
+  margin-right: 18px;
+  margin-top: 7px;
+  width: 172px;
+  height: 28px;
+  line-height: 28px\9;
+  color: #929ea6;
+  background: url("../img/icon_seach.png") 8px center no-repeat;
+  background-color: #f0f3f7;
+  border: 0;
+  outline: none;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* line 512, E:/servet-fedpage/edit/src/sass/research.scss */
+.seach-content {
+  border-top: 1px solid #e5e5e5;
+  color: #878e9a;
+}
+
+/* line 517, E:/servet-fedpage/edit/src/sass/research.scss */
+.seach-group {
+  float: left;
+  width: 200px;
+  overflow: hidden;
+}
+
+/* line 523, E:/servet-fedpage/edit/src/sass/research.scss */
+.seach-group-name {
+  width: 200px;
+  height: 37px;
+  overflow: hidden;
+  line-height: 37px;
+  padding-left: 25px;
+  color: #4b5668;
+}
+
+/* line 532, E:/servet-fedpage/edit/src/sass/research.scss */
+.seach-group-name:hover, .group-name-sel {
+  background: #2bb7c5;
+  color: #fff;
+  cursor: default;
+}
+
+/* line 538, E:/servet-fedpage/edit/src/sass/research.scss */
+.seach-result {
+  float: right;
+  width: 733px;
+}
+
+/* line 543, E:/servet-fedpage/edit/src/sass/research.scss */
+.seach-result .table {
+  border: 0;
+  color: #4b5668;
+}
+
+/* line 548, E:/servet-fedpage/edit/src/sass/research.scss */
+.seach-result .table thead th {
+  padding-left: 17px;
+  border: 0;
+  border-bottom: 1px solid #d8dade;
+  background: #f0f3f7;
+  color: #b1bac1;
+  font-weight: normal;
+}
+
+/* line 557, E:/servet-fedpage/edit/src/sass/research.scss */
+.seach-result .table thead th:first-child {
+  border-left: 1px solid #f0f3f7;
+}
+
+/* line 561, E:/servet-fedpage/edit/src/sass/research.scss */
+.seach-result .table td {
+  padding-left: 17px;
+  border-color: #f0f3f7;
+}
+
+/* line 566, E:/servet-fedpage/edit/src/sass/research.scss */
+.seach-result .table td:last-child {
+  border-right: 0;
+}
+
+/* line 570, E:/servet-fedpage/edit/src/sass/research.scss */
+.seach-result .table tr:hover td {
+  color: #2bb7c5;
+}
+
+/* line 574, E:/servet-fedpage/edit/src/sass/research.scss */
+.seach-result .table tbody tr:first-child td {
+  border-top: 0;
+}
+
+/* line 578, E:/servet-fedpage/edit/src/sass/research.scss */
+.seach-result .table thead th.first-row, .seach-result .table td.first-row {
+  padding-left: 27px;
+}
+
+/* line 582, E:/servet-fedpage/edit/src/sass/research.scss */
+.first-row input {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+  vertical-align: middle;
+}
+
+/* line 589, E:/servet-fedpage/edit/src/sass/research.scss */
+.first-row label {
+  display: block;
+  margin-top: 1px;
+  float: left;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #9c9c9c;
+  margin-right: 18px;
+  vertical-align: middle;
+  background: #fff;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* line 605, E:/servet-fedpage/edit/src/sass/research.scss */
+.first-row input:checked + label {
+  margin-top: 1px;
+  width: 14px;
+  height: 14px;
+  border: 0;
+  background: url("../img/icon_checked.png") no-repeat;
+}
+
+/* line 613, E:/servet-fedpage/edit/src/sass/research.scss */
+.group:hover .add-group-btn {
+  background: url("../img/icon_list_item_02.png") center no-repeat;
+}
+
+/* line 617, E:/servet-fedpage/edit/src/sass/research.scss */
+.group-member {
+  background: #f3f6f8;
+  border-top: 1px solid #ccd2d6;
+}
+
+/* line 622, E:/servet-fedpage/edit/src/sass/research.scss */
+.group-member ul {
+  display: none;
+  margin-bottom: 0;
+}
+
+/* line 627, E:/servet-fedpage/edit/src/sass/research.scss */
+.display-btn {
+  margin: 0 14px 0 22px;
+  height: 58px;
+  line-height: 58px;
+  font-size: 13px;
+  font-weight: normal;
+  background: url("../img/icon_list_item_03.png") right center no-repeat;
+  cursor: default;
+}
+
+/* line 637, E:/servet-fedpage/edit/src/sass/research.scss */
+.group-member li {
+  margin-bottom: 5px;
+}
+
+/* line 641, E:/servet-fedpage/edit/src/sass/research.scss */
+.group-member li, .add-new-member {
+  padding: 0 14px 0 22px;
+  height: 35px;
+  line-height: 35px;
+}
+
+/* line 647, E:/servet-fedpage/edit/src/sass/research.scss */
+.group-member li:hover {
+  background: #e3e4eb;
+}
+
+/* line 651, E:/servet-fedpage/edit/src/sass/research.scss */
+.delete-member-btn {
+  display: none;
+  float: right;
+  height: 35px;
+  width: 18px;
+  background: url("../img/icon_list_item_05.png") center no-repeat;
+}
+
+/* line 659, E:/servet-fedpage/edit/src/sass/research.scss */
+.delete-member-btn:hover {
+  cursor: default;
+  background: url("../img/icon_list_item_06.png") center no-repeat;
+}
+
+/* line 664, E:/servet-fedpage/edit/src/sass/research.scss */
+.group-member li:hover i {
+  display: block;
+}
+
+/* line 668, E:/servet-fedpage/edit/src/sass/research.scss */
+.avatar {
+  margin-right: 10px;
+  width: 28px;
+  height: 28px;
+  -o-border-radius: 14px;
+  border-radius: 14px;
+}
+
+/* line 678, E:/servet-fedpage/edit/src/sass/research.scss */
+.group-selected {
+  padding-bottom: 24px;
+  background: #ebeef0;
+}
+
+/* line 683, E:/servet-fedpage/edit/src/sass/research.scss */
+.group-selected .display-btn {
+  background: url("../img/icon_list_item_04.png") right center no-repeat;
+}
+
+/* line 687, E:/servet-fedpage/edit/src/sass/research.scss */
+.add-new-member {
+  color: #929ea6;
+}
+
+/* line 691, E:/servet-fedpage/edit/src/sass/research.scss */
+.add-new-member:hover {
+  background: none !important;
+}
+
+/* line 695, E:/servet-fedpage/edit/src/sass/research.scss */
+.add-new-member a {
+  display: block;
+  height: 35px;
+  line-height: 35px;
+}
+
+/* line 701, E:/servet-fedpage/edit/src/sass/research.scss */
+.add-new-member a:hover {
+  text-decoration: none;
+  color: #00ddf3;
+}
+
+/* line 706, E:/servet-fedpage/edit/src/sass/research.scss */
+.add-new-member em {
+  display: inline-block;
+  float: left;
+  height: 35px;
+  background: url("../img/icon_list_item_07.png") left center no-repeat;
+}
+
+/* line 713, E:/servet-fedpage/edit/src/sass/research.scss */
+.add-new-member:hover em {
+  background: url("../img/icon_list_item_08.png") left center no-repeat;
+}
+
+/* line 717, E:/servet-fedpage/edit/src/sass/research.scss */
+.main {
+  margin-left: 199px;
+  padding: 30px 24px 0 38px;
+  background: #e9eff3;
+  overflow-x: hidden;
+}
+
+/* line 724, E:/servet-fedpage/edit/src/sass/research.scss */
+.main-header {
+  padding-bottom: 18px;
+  border-bottom: 1px solid #dbe0e4;
+}
+
+/* line 729, E:/servet-fedpage/edit/src/sass/research.scss */
+.main-header span {
+  color: #4b5668;
+}
+
+/* line 733, E:/servet-fedpage/edit/src/sass/research.scss */
+.main-header span:first-child {
+  margin-right: 34px;
+}
+
+/* line 737, E:/servet-fedpage/edit/src/sass/research.scss */
+.main-header span:nth-child(2) {
+  margin-right: 58px;
+}
+
+/* line 741, E:/servet-fedpage/edit/src/sass/research.scss */
+.main-header strong {
+  font-size: 24px;
+}
+
+/* line 745, E:/servet-fedpage/edit/src/sass/research.scss */
+.main-header a {
+  margin-left: 5px;
+  color: #2bb7c5;
+  text-decoration: none;
+}
+
+/* line 751, E:/servet-fedpage/edit/src/sass/research.scss */
+.main-header button {
+  float: right;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  text-indent: 35px;
+  padding-right: 26px;
+  color: #fff;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+  background: url("../img/icon_list_item_09.png") 26px center no-repeat;
+  background-color: #2bb7c5;
+}
+
+/* line 767, E:/servet-fedpage/edit/src/sass/research.scss */
+.main-list {
+  margin-top: 28px;
+  margin-right: -32px;
+}
+
+/* line 772, E:/servet-fedpage/edit/src/sass/research.scss */
+.main-list li {
+  float: left;
+  margin-right: 32px;
+  margin-bottom: 28px;
+  width: 344px;
+}
+
+/* line 779, E:/servet-fedpage/edit/src/sass/research.scss */
+.list-detail {
+  width: 344px;
+  height: 144px;
+  box-shadow: 2px -2px 4px 0 rgba(0, 0, 0, 0.08);
+}
+
+/* line 786, E:/servet-fedpage/edit/src/sass/research.scss */
+.list-img {
+  position: relative;
+  float: left;
+  width: 200px;
+  height: 144px;
+  line-height: 144px;
+  box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.08);
+}
+
+/* line 796, E:/servet-fedpage/edit/src/sass/research.scss */
+.list-img img {
+  display: block;
+  width: 200px;
+  height: 144px;
+}
+
+/* line 802, E:/servet-fedpage/edit/src/sass/research.scss */
+.list-img:hover .list-img-hover {
+  display: block;
+}
+
+/* line 806, E:/servet-fedpage/edit/src/sass/research.scss */
+.list-img-hover {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* line 816, E:/servet-fedpage/edit/src/sass/research.scss */
+.list-img-hover button {
+  margin-left: 25px;
+}
+
+/* line 820, E:/servet-fedpage/edit/src/sass/research.scss */
+.icon-report {
+  width: 16px;
+  height: 16px;
+  background: url("../img/icon_survey_hover01.png") no-repeat;
+}
+
+/* line 826, E:/servet-fedpage/edit/src/sass/research.scss */
+.icon-copy {
+  width: 16px;
+  height: 18px;
+  background: url("../img/icon_survey_hover02.png") no-repeat;
+}
+
+/* line 832, E:/servet-fedpage/edit/src/sass/research.scss */
+.icon-delete {
+  width: 15px;
+  height: 18px;
+  background: url("../img/icon_survey_hover03.png") no-repeat;
+}
+
+/* line 838, E:/servet-fedpage/edit/src/sass/research.scss */
+.icon-stop {
+  width: 9px;
+  height: 15px;
+  background: url("../img/icon_survey_hover04.png") no-repeat;
+}
+
+/* line 844, E:/servet-fedpage/edit/src/sass/research.scss */
+.list-detail p {
+  min-height: 18px;
+  margin-bottom: 4px;
+  font-size: 12px;
+  color: #4f6a7b;
+}
+
+/* line 851, E:/servet-fedpage/edit/src/sass/research.scss */
+.list-detail i {
+  display: inline-block;
+}
+
+/* line 855, E:/servet-fedpage/edit/src/sass/research.scss */
+.list-detail-des {
+  position: relative;
+  float: left;
+  padding-top: 14px;
+  padding-left: 25px;
+  width: 144px;
+  height: 144px;
+  background: #fff;
+}
+
+/* line 865, E:/servet-fedpage/edit/src/sass/research.scss */
+.list-new-message {
+  position: absolute;
+  display: block;
+  top: -11px;
+  right: -11px;
+  width: 22px;
+  height: 22px;
+  background: #f7941e;
+  border: 2px solid #e9eff3;
+  -o-border-radius: 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-style: normal;
+  text-align: center;
+  line-height: 20px;
+  color: #fff;
+}
+
+/* line 885, E:/servet-fedpage/edit/src/sass/research.scss */
+.list-detail .list-state {
+  margin-bottom: 18px;
+  font-size: 12px;
+  color: #4f6a7b;
+}
+
+/* line 891, E:/servet-fedpage/edit/src/sass/research.scss */
+.list-detail .list-number {
+  color: #929ea6;
+}
+
+/* line 895, E:/servet-fedpage/edit/src/sass/research.scss */
+.list-state i {
+  margin-right: 5px;
+  margin-left: 5px;
+  width: 7px;
+  height: 7px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 906, E:/servet-fedpage/edit/src/sass/research.scss */
+.icon-testing {
+  background: #3dc52b;
+}
+
+/* line 910, E:/servet-fedpage/edit/src/sass/research.scss */
+.icon-checking {
+  background: #f7941e;
+}
+
+/* line 914, E:/servet-fedpage/edit/src/sass/research.scss */
+.icon-recovering {
+  background: #9e72e6;
+}
+
+/* line 918, E:/servet-fedpage/edit/src/sass/research.scss */
+.icon-like {
+  position: relative;
+  top: 2px;
+  margin-right: 8px;
+  width: 11px;
+  height: 12px;
+  background: url("../img/icon_like_num.png") no-repeat;
+}
+
+/* line 927, E:/servet-fedpage/edit/src/sass/research.scss */
+.icon-member {
+  position: relative;
+  top: 5px;
+  margin-right: 8px;
+  width: 10px;
+  height: 17px;
+  background: url("../img/icon_used_num.png") no-repeat;
+}
+
+/* line 936, E:/servet-fedpage/edit/src/sass/research.scss */
+.list-description {
+  margin-top: 10px;
+}
+
+/* line 940, E:/servet-fedpage/edit/src/sass/research.scss */
+.list-description p:first-child {
+  margin-bottom: 2px;
+  font-size: 14px;
+  color: #4b5668;
+}
+
+/* line 946, E:/servet-fedpage/edit/src/sass/research.scss */
+.list-description p:last-child {
+  margin-bottom: 0;
+  font-size: 12px;
+  color: #929ea6;
+}
+
+/* line 952, E:/servet-fedpage/edit/src/sass/research.scss */
+.list-author-mes {
+  display: inline-block;
+  color: #4b5668;
+  font-size: 14px;
+}
+
+/* line 958, E:/servet-fedpage/edit/src/sass/research.scss */
+.list-author-mes img {
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* line 968, E:/servet-fedpage/edit/src/sass/research.scss */
+.list-author-mes i {
+  margin-right: 5px;
+  font-size: 12px;
+  color: #929ea6;
+  font-style: normal;
+}
+
+/* line 975, E:/servet-fedpage/edit/src/sass/research.scss */
+#add-new-reseach .modal-body {
+  background: #f0f3f7;
+}
+
+/* line 979, E:/servet-fedpage/edit/src/sass/research.scss */
+.reseach-tab {
+  padding-top: 20px;
+  padding-bottom: 29px;
+  text-align: center;
+}
+
+/* line 985, E:/servet-fedpage/edit/src/sass/research.scss */
+.reseach-tab button {
+  padding: 0;
+  width: 80px;
+  height: 25px;
+  line-height: 25px;
+  background: transparent;
+  border: 1px solid #74787e;
+  color: #4b5668;
+}
+
+/* line 995, E:/servet-fedpage/edit/src/sass/research.scss */
+.reseach-tab .reseach-tab-left {
+  -wekbit-border-radius: 15px 0 0 15px;
+  -o-border-radius: 15px 0 0 15px;
+  border-radius: 15px 0 0 15px;
+}
+
+/* line 1002, E:/servet-fedpage/edit/src/sass/research.scss */
+.reseach-tab .reseach-tab-right {
+  -wekbit-border-radius: 0 15px 15px 0;
+  -o-border-radius: 0 15px 15px 0;
+  border-radius: 0 15px 15px 0;
+}
+
+/* line 1009, E:/servet-fedpage/edit/src/sass/research.scss */
+.reseach-tab button.reseach-tab-sel {
+  background: #74787e;
+  color: #fff;
+}
+
+/* line 1014, E:/servet-fedpage/edit/src/sass/research.scss */
+.reseach-list {
+  display: none;
+  margin-left: 27px;
+  margin-right: 27px;
+  padding-bottom: 20px;
+}
+
+/* line 1021, E:/servet-fedpage/edit/src/sass/research.scss */
+.reseach-list li {
+  float: left;
+  margin-right: 40px;
+  margin-bottom: 30px;
+  width: 188px;
+  text-align: center;
+}
+
+/* line 1029, E:/servet-fedpage/edit/src/sass/research.scss */
+.reseach-list li.list-col-4 {
+  margin-right: 0;
+}
+
+/* line 1033, E:/servet-fedpage/edit/src/sass/research.scss */
+.reseach-list li a {
+  text-decoration: none;
+}
+
+/* line 1037, E:/servet-fedpage/edit/src/sass/research.scss */
+.reseach-list li img {
+  display: block;
+  width: 188px;
+  height: 107px;
+  border: 2px solid #f0f3f7;
+}
+
+/* line 1044, E:/servet-fedpage/edit/src/sass/research.scss */
+.reseach-list li img:hover {
+  border: 2px solid #15afff;
+}
+
+/* line 1048, E:/servet-fedpage/edit/src/sass/research.scss */
+.reseach-list-name {
+  margin-top: 10px;
+  margin-bottom: 0;
+  color: #5a7383;
+}
+
+/* line 1054, E:/servet-fedpage/edit/src/sass/research.scss */
+.active {
+  display: block;
+}
+/*# sourceMappingURL=research.css.map */
