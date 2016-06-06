@@ -23,6 +23,17 @@
     }
   }
 }
+.edit-title{
+  display: block;
+  width: 348px;
+  height: 28px;
+  background: url(../slice/edit-title.png) no-repeat center bottom;
+  border: 0;
+  text-align: center;
+  color: #535353;
+  margin: 0 auto 20px;
+  font-size: 16px;
+}
 .edit-col-num{
   display: block;
   width: 30px;
@@ -59,4 +70,43 @@
 }
 .icon-delete{
   @include navsprite(15px,18px,'delete.png');
+}
+.edit-col-comment{
+  height: 23px;
+  line-height: 23px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  position: absolute;
+  z-index: 100;
+  right:20px;
+  bottom:15px;
+}
+.icon-comment{
+  display: block;
+  float:left;
+  @include navsprite(23px,23px,'comment.png');
+  margin-right: 10px;
+}
+.edit-col-cont{
+  position: relative;
+  z-index: 100;
+  padding-top:65px;
+}
+.upload-img{
+  display: block;
+  width: 125px;
+  height: 125px;
+  line-height:23px;
+  border-radius: 100%;
+  border:3px dotted #fff;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  padding-top:40px;
+  margin: 0 auto;
+  span{
+    font-size: 32px;
+    font-weight: 600;
+  }
 }

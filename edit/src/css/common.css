@@ -2292,6 +2292,19 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
 }
 
 /* line 26, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+.edit-title {
+  display: block;
+  width: 348px;
+  height: 28px;
+  background: url(../slice/edit-title.png) no-repeat center bottom;
+  border: 0;
+  text-align: center;
+  color: #535353;
+  margin: 0 auto 20px;
+  font-size: 16px;
+}
+
+/* line 37, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .edit-col-num {
   display: block;
   width: 30px;
@@ -2308,7 +2321,7 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   z-index: 100;
 }
 
-/* line 41, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 52, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .edit-col-icon {
   position: absolute;
   z-index: 100;
@@ -2316,36 +2329,87 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   top: 20px;
 }
 
-/* line 46, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 57, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .edit-col-icon a {
   display: inline-block;
   margin-right: 30px;
 }
 
-/* line 49, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 60, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .edit-col-icon a:last-child {
   margin-right: 0;
 }
 
-/* line 54, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 65, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .icon-mobile {
   width: 12px;
   height: 18px;
   background: url(../slice/mobile.png) no-repeat;
 }
 
-/* line 57, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 68, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .icon-blank {
   width: 16px;
   height: 18px;
   background: url(../slice/blank.png) no-repeat;
 }
 
-/* line 60, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 71, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .icon-delete {
   width: 15px;
   height: 18px;
   background: url(../slice/delete.png) no-repeat;
+}
+
+/* line 74, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+.edit-col-comment {
+  height: 23px;
+  line-height: 23px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  position: absolute;
+  z-index: 100;
+  right: 20px;
+  bottom: 15px;
+}
+
+/* line 85, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+.icon-comment {
+  display: block;
+  float: left;
+  width: 23px;
+  height: 23px;
+  background: url(../slice/comment.png) no-repeat;
+  margin-right: 10px;
+}
+
+/* line 91, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+.edit-col-cont {
+  position: relative;
+  z-index: 100;
+  padding-top: 65px;
+}
+
+/* line 96, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+.upload-img {
+  display: block;
+  width: 125px;
+  height: 125px;
+  line-height: 23px;
+  border-radius: 100%;
+  border: 3px dotted #fff;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  padding-top: 40px;
+  margin: 0 auto;
+}
+
+/* line 108, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+.upload-img span {
+  font-size: 32px;
+  font-weight: 600;
 }
 
 /* line 17, E:/servet-fedpage/edit/src/sass/common.scss */
