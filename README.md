@@ -17,10 +17,11 @@ gulp 对应文件夹名字  ==> gulp passport 即监听passport里面的
 ##  项目结构
 
     1. home-pc 首页pc版
-    2. passport 登陆注册
-    3. publish 问卷发布
-    4. mail 邮件
-    5. survey 问卷页面（pc和mobile）
-    6. user 用户信息页
-    7. edit 后台管理页面
-    8. servey_list 已答问卷列表
+    2. home-mobile 首页mobile版
+    3. passport 登陆注册
+    4. publish 问卷发布
+    5. mail 邮件
+    6. survey 问卷页面（pc和mobile）
+    7. user 用户信息页
+    8. edit 后台管理页面
+    9. servey_list 已答问卷列表

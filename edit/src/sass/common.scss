@@ -13,6 +13,7 @@
 @import "module/aside";
 @import "module/spectrum";
 @import "module/research";
+@import "module/edit";
 body {
   padding-top: 52px;
   font-size: 13px;
@@ -53,7 +54,7 @@ button {
 
 .main {
   margin-left: 199px;
-  padding: 30px 24px 0 38px;
+  padding: 30px 240px 0 38px;
   background: #e9eff3;
   overflow-x: hidden;
 }

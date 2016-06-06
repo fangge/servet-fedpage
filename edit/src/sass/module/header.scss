@@ -14,8 +14,17 @@
 }
 
 .logo {
-  padding: 0;
+  display: block;
+  width: 120px;
   height: 52px;
+  padding: 8px 20px 0;
+  &:hover{
+    background: #4b2a81;
+  }
+  em{
+    display: block;
+    @include navsprite(72px,35px,'logo.png');
+  }
 }
 @media (max-width: 768px) {
   .container-fluid {
@@ -72,5 +81,12 @@
   @include navsprite(19px,19px,'topic.png');
   position: absolute;
   left:205px;
+  top:18px;
+}
+.save{
+  display: block;
+  @include navsprite(17px,16px,'save.png');
+  position: absolute;
+  left:158px;
   top:18px;
 }
