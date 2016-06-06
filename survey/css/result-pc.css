@@ -67,47 +67,35 @@ a {
   padding-bottom: 78px;
   min-height: 100%;
   box-sizing: border-box;
-  background:url(../images/bg_q0.jpg) center center no-repeat;
-  background-size:cover;
+  background: url(../images/mbg0.jpg) 0 0 no-repeat;
   background-attachment: fixed; }
 
 .title {
-  width:806px;
-  margin:0 auto;
-  padding: 66px 0 26px 66px;
-  font-size: 24px; 
-  letter-spacing:6px;}
+  padding: 32px 16px 15px 44px;
+  font-size: 20px; }
 
 .desc {
-  width:806px;
-  margin:0 auto;
-  font-size: 14px;
-  line-height: 30px;
-  padding: 0 0 16px 66px; }
+  font-size: 13px;
+  line-height: 20px;
+  padding: 0 16px 40px 44px; }
 
 .question {
-  width:850px;
-  margin:0 auto;
-  margin-bottom: 50px;
-  padding-left:22px;}
+  margin-bottom: 50px; }
   .question_title {
-    font-size: 18px;
-    margin-bottom:26px;}
+    font-size: 14px;
+    margin: 0 26px 15px; }
     .question_title_num {
-	  display:block;
-	  float:left;
-	  width:20px;
-      margin-right: 24px; }
+      margin-right: 8px; }
 
 .ratebar {
   position: relative;
-  margin-left: 46px;
-  margin-bottom: 12px;
-  width: 685px;
-  height: 28px;
+  margin-left: 44px;
+  margin-bottom: 8px;
+  width: 229px;
+  height: 20px;
   box-sizing: border-box;
-  line-height: 28px;
-  border-radius: 14px;
+  line-height: 20px;
+  border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.6); }
   .ratebar:last-child {
     margin-bottom: 0; }
@@ -135,22 +123,20 @@ a {
   right: 0;
   bottom: 0; }
   .bottom .copyright {
-      position:absolute;
-	  top:0;
-	  right:26px;
-      width: 165px;
-      height: 45px;
-      background:url(../images/pc/copyright.png) right 3px no-repeat;}
+    height: 28px;
+    background-color: #000; }
+    .bottom .copyright:after {
+      content: "";
+      float: right;
+      width: 78px;
+      height: 100%;
+      background: url(../images/copyright.png) right center no-repeat;
+      background-size: 78px 16px;
+      margin-right: 8px; }
   .bottom .signup {
     display: block;
-    height: 48px;
-    line-height: 48px;
+    height: 50px;
+    line-height: 50px;
     text-align: center;
-    font-size: 16px;
-    background-color: rgba(0, 0, 0, 0.78); }
-  .bottom .signup .sign_word{
-	  width:210px;
-	  margin:0 auto;
-	  padding-right:20px;
-      background:url(../images/pc/rec.png) right 15px no-repeat;
-  }
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.9); }
