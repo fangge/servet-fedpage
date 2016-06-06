@@ -1,0 +1,160 @@
+@charset "utf-8";
+/*
+ * somei 2016 05
+ * less:rem表示基准值公式：rem = document.documentElement.clientWidth * dpr / 10
+ * 非less：rem=设计稿px/60
+ */
+
+/* Reset
+================================================================================================= */
+body,ul,ol,p,h1,h2,h3,h4,h5,dl,dd,form,input,textarea,
+td,th,button,strong,em,select,video,canvas{margin:0;padding:0;}
+li{list-style:none;vertical-align:top;}
+table{ border-collapse:collapse;}
+textarea{resize:none;overflow:auto;}
+img{ border:none; vertical-align:middle;}
+em{ font-style:normal;}
+a{ text-decoration:none;}
+a,input{
+-webkit-appearance: none;/*屏蔽阴影*/
+-webkit-tap-highlight-color:rgba(0,0,0,0);
+/*ios android去除自带阴影的样式*/
+}
+a, img {
+/* 禁止长按链接与图片弹出菜单 */
+-webkit-touch-callout: none; 
+ 
+}
+html, body {
+/* 禁止选中文本(如无文本选中需求,此为必选项) */
+-webkit-user-select: none;  
+user-select: none;
+}
+/*public*/
+html {
+font-size : 20px;
+}
+@media only screen and (min-width: 321px){
+html {
+font-size: 23px !important;
+}
+}
+@media only screen and (min-width: 401px){
+html {
+font-size: 25px !important;
+}
+}
+@media only screen and (min-width: 428px){
+html {
+font-size: 26.75px !important;
+}
+}
+@media only screen and (min-width: 481px){
+html {
+font-size: 30px !important; 
+}
+}
+@media only screen and (min-width: 569px){
+html {
+font-size: 35px !important; 
+}
+}
+@media only screen and (min-width: 641px){
+html {
+font-size: 45px !important; 
+}
+}
+body{font-family: "Helvetica Neue", Helvetica, "STHeiTi", sans-serif; 
+overflow-x:hidden; overflow-y:auto; font-size:0.7rem;
+}
+
+.viewport{ max-width:640px; margin:0 auto; overflow-x:hidden;}
+
+/* Base Used
+================================================================================================= */
+a{text-decoration:none;outline: none;color:#4b5668;}
+.fl{float: left;_display: inline}
+.fr{float: right;_display: inline}
+.cs-clear{+zoom:1;}
+.cs-clear:before,
+.cs-clear:after{clear:both;content:".";font-size:0;display:block;height:0;overflow:hidden;visibility:hidden;}
+.pd110{padding-top:4.8rem;}/*110px*/
+.pd30{padding-top:1.36rem;}/*30px*/
+.pd100{padding-top:2.54rem;}/*100px*/
+
+/* Commonly Used
+================================================================================================= */
+.fp-tableCell{  vertical-align: top;}
+.box{width:100%;min-width:320px;text-align: center;position: relative;}
+.item,.footer-item{width:90%;margin:0 auto;position: relative;}
+
+.screen1{background:url(../img/m-bg-screen1.jpg);background-size:100% auto;background-repeat:no-repeat;}
+.screen2{background:#ffffff;}
+.screen3{background:#f8f8f8;}
+.screen4{background:#ffffff;}
+.screen5{background:#d9e9f3;}
+.screen6{background:#ffffff;}
+
+/*第一屏开始*/
+.topbar{position: relative;}
+.logo{float:left;width: 4.16rem;margin-left:0.3rem;margin-top:1rem;}
+.theme{width:100%;margin: 0 auto;margin-top: 1.96rem;}
+.theme .font1{color:#ffffff;font-family: "Seravek";font-size:1.85rem;line-height:2.2rem;font-weight: lighter;}
+.theme .font2{color:#ffffff;font-family: "PingFang SC";font-size: 0.84rem;height: 2.9rem;line-height: 1.90rem;font-weight:lighter;}
+/*第一屏结束*/
+
+/*第二屏开始*/
+.screen2 .font1{font-family: "PingFang SC";font-weight: lighter;font-size:0.7rem;line-height:0.3rem;color:#4b5668;}
+.screen2 .font2{font-family: "PingFang SC";font-weight: lighter;font-size:1.85rem;line-height:1.14rem;color:#4b5668;}
+/*第二屏结束*/
+
+/*第三屏开始*/
+.screen3 .font1{font-family: normal;font-weight: lighter;font-size:1.38rem;line-height:1.84rem;padding-top:2.4rem;color:#4b5668;}
+.screen3 .font2{font-family: "PingFang SC";font-weight: lighter;font-size:0.7rem;line-height:0.95rem;margin-top:1.1rem;color:#4f6a7b;}
+.screen3 .img1{width:90%;margin-top:2.3rem;}
+/*第三屏结束*/
+
+/*第四屏开始*/
+.screen4 .font1{font-family: "PingFang SC";font-weight: lighter;padding-top:2.4rem;font-size: 1.38rem;line-height:1.84rem;color:#4b5668;}
+.screen4 .font2{font-family: "PingFang SC";font-weight: lighter;margin-top:1rem;font-size: 0.7rem;line-height:0.95rem;color:#4f6a7b;}
+.screen4 .img1{width:90%;margin-top:1.4rem;}
+/*第四屏结束*/
+
+/*第五屏开始*/
+.screen5 .font1{font-family: "PingFang SC";font-weight: lighter;padding-top:2.4rem;font-size: 1.38rem;line-height:1.84rem;color:#4b5668;}
+.screen5 .font2{font-family: "PingFang SC";font-weight: lighter;margin-top:1rem;font-size: 0.7rem;line-height:0.95rem;color:#4f6a7b;}
+.screen5 .img1{width:80%;margin-top:1.4rem;}
+/*第五屏结束*/
+
+/*第六屏开始*/
+.screen6 .item .font1{font-family: "PingFang SC";font-weight: lighter;padding-top:2.4rem;font-size: 1.38rem;line-height:1.84rem;color:#4b5668;}
+.screen6 .item .font2{font-family: "PingFang SC";font-weight: lighter;margin-top:1rem;font-size: 0.7rem;line-height:0.95rem;color:#4f6a7b;}
+.screen6 .item .free-reg{margin-top:1.4rem;}
+/*.screen6 .img1{margin-top:88px;}*/
+/*幻灯片*/
+.mod_slide{}
+.mod-slide-s2{position:relative;width:80%;height:9rem;border:0px;margin:0 auto;margin-top:1.4rem;}
+.mod-slide-s2 .mod-slide-content{height:6.6rem;}
+.mod-slide-s2 .mod-slide-content ul{width:100%;left:0px;position:absolute;}
+.mod-slide-s2 .mod-slide-content ul li{width:100%;position:relative;float:left;clear:both;}
+.mod-slide-s2 .mod-slide-content a, .mod-slide-s2 .mod-slide-content img{display:block;width:100%;height:6.6rem;}/*height:100%;*/
+.mod-slide-s2 .mod-slide-content .trans{position:absolute;width:100%;height:0.6rem;left:0px;bottom:0px;display:inline-block;z-index:2;
+	background:#412721;filter:alpha(opacity=75);-moz-opacity:0.75;-khtml-opacity: 0.75;opacity: 0.75;}
+.mod-slide-s2 .mod-slide-content .text{position:absolute;width:100%;height:0.6rem;line-height:0.6rem;left:0px;bottom:0px;display:inline-block;z-index:3;text-align:left;color:#ffffff;}
+.mod-slide-s2 .mod-slide-content .text span{padding-left:0.3rem;}
+.mod-slide-s2 .mod-slide-trigger{width:100%;position:absolute;top:7.5rem;left:50%;margin-left: -0.8rem;z-index:11;}
+.mod-slide-s2 .mod-slide-trigger li{cursor:pointer;float:left;margin:0px;margin-right:0.35rem;border-radius:0.1rem;width:0.21rem;height:0.21rem;background:#000;}
+.mod-slide-s2 .mod-slide-trigger li.selected{background:red;}
+/*幻灯片*/
+
+/*第六屏结束*/
+
+/*底部*/
+.footer{width:100%;height:9.7rem;background:#1a1c27;position:absolute;}/*bottom:0px;*/
+.footer-item{text-align: left;}
+.footer .logo{float: none;width:5rem;margin-top:1.6rem;margin-left:1.25rem;}
+.copyright{height:0.84rem;line-height:0.84rem;margin-top:0.3rem;margin-left:3.4rem;}
+.copyright .font{width:100%;display:inline-block;color:#4f6a7b;font-size:0.6rem;}
+.copyright .font1{font-family: "Seravek";}
+.copyright .font2{font-family: "PingFang SC";}
+.copyright .font3{font-family: "Adobe 黑体 Std";margin-top:1.4rem;}

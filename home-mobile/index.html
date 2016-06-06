@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <meta charset="utf-8">
+    <title></title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+    <meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/jquery-1.8.3.min.js"></script>
+</head>
+<body>
+	<div id="dowebok">
+		<div class="section screen1 box">
+			<div class="item">
+				<div class="topbar cs-clear">
+					<img class="logo" src="img/logo.png"/>
+				</div>
+				<div class="theme cs-clear">
+					<p class="font1">Fun.  Simple. <br> Professional.</p>
+					<p class="font2">创新的、互动式的调查平台</p>
+				</div>
+			</div>
+		</div>
+		<div class="section screen2 box">
+			<div class="item">
+				<p class="font1 pd110">在赛问网上参与调查的用户数量</p>
+				<p class="font2 pd30">85,729,457</p>
+				<p class="font1 pd100">通过赛问网发布的调查数量</p>
+				<p class="font2 pd30">658,909</p>
+			</div>
+		</div>
+		<div class="section screen3 box">
+			<div class="item">
+				<p class="font1">富有设计感与互动<br>性的答题体验<br>大幅提升数据质量<br>与回收速度</p>
+				<p class="font2">答题体验不在枯燥无趣，而是充满互动<br>性和设计感，用户填写完问卷即可了解<br>调查结果，更好的体验也促使用户乐于<br>传播，提升用户答题率40%，缩短70%<br>回收时间，并且数据质量显著提升</p>
+				<img class="img1" src="img/img-screen1.jpg"/>
+			</div>
+		</div>
+		<div class="section screen4 box">
+			<div class="item">
+				<p class="font1">所见即所得的问<br>卷设计</p>
+				<p class="font2">创新的可拖拽的题卡，可以轻松设计出<br>富有设计感的、精美互动的问卷，而且<br>是所见即所得</p>
+				<img class="img1" src="img/img-screen2.jpg"/>
+			</div>
+		</div>
+		<div class="section screen5 box">
+			<div class="item">
+				<p class="font1">多种问卷模版，<br>轻松制作专业问卷</p>
+				<p class="font2">支持市场调查、用户体验测试、管理和<br>课程调查等常用模版，可以方便的制作<br>出专业的问卷</p>
+				<img class="img1" src="img/img-screen3.jpg"/>
+			</div>
+		</div>
+		<div class="section screen6 box">
+			<div class="item screen6-item">
+				<p class="font1">专业的问卷数据<br>分析与研究简报</p>
+				<p class="font2">图表化的数据分析，报告样式的呈现，支<br>持热点图／转化率漏斗／交叉分析等更专<br>业的数据可视化方式
+</p>
+				<!-- mod 头图 -->
+				<div class="mod-slide-s2" id="slider3">
+					<div class="mod-slide-content">
+						<ul class="J_content">
+							<li><a href="/1601/317659153772.html" target="_blank"><img alt="代言人" src="img/img-screen4.jpg"></a></li>
+							<li><a href="/1601/317659153772.html" target="_blank"><img alt="代言人" src="http://img2.dwstatic.com/yyjyjh/tp/724x328.jpg"></a></li>
+							<li><a href="/1601/317659153772.html" target="_blank"><img alt="代言人" src="http://img2.dwstatic.com/yyjyjh/tp/724x328.jpg"></a></li>
+                 		</ul>
+					</div>
+				    <ul class="mod-slide-trigger J_nav cs-clear">
+						<li class="selected"></li>
+						<li class=""></li>
+						<li class=""></li>
+                    </ul>
+				</div>
+				<script src="js/lego.js"></script>
+				<script>
+					LEGO.slide("#slider3", {effect: "fade"});
+				</script>
+				<!-- mod 头图 -->
+				<a href="" class="free-reg" title="免费注册使用" target="_blank"></a>
+			</div>
+			<div class="footer">
+				<div class="footer-item">
+					<img class="logo" src="img/logo.png"/>
+					<p class="copyright">
+						<span class="font font1">@2016  All right reserved  Survet.com</span>
+						<span class="font font2">粤ICP备24553</span>
+						<span class="font font3">服务协议</span>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+	$(document).ready(function() {  
+		setHeight("screen1",1080,1855);
+		setHeight("screen2",1080,1162);
+		setHeight("screen3",1080,1936);
+		setHeight("screen4",1080,1446);
+		setHeight("screen5",1080,1326);
+		setHeight("screen6-item",972,1344);
+	}); 
+	function setHeight(className,wImg,hImg){
+		var obj=$("."+className);
+		var w=obj.width();
+		obj.css("height",w*hImg/wImg);
+	}
+
+	</script>
+</body>
+</html>
