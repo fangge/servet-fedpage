@@ -12,31 +12,16 @@
 	left: 0;
 }
 .page {
-	transform: translate3d(0, -100%, 0);
+	transform: translate3d(0, 100%, 0);
+	transition: transform 0.2s;
 	background: center center no-repeat;
 	background-size: cover;
 	overflow: hidden;
 	&_in {
-		animation: pageIn 0.2s both;
+		transform: translate3d(0, 0, 0);
 		overflow-y: auto;
 	}
 	&_out {
-		animation: pageOut 0.2s both;
-	}
-}
-@keyframes pageIn{
-	from{
-		transform: translate3d(0, 100%, 0);
-	}
-	to{
-		transform: translate3d(0, 0, 0);
-	}
-}
-@keyframes pageOut{
-	from{
-		transform: translate3d(0, 0, 0);
-	}
-	to{
 		transform: translate3d(0, -100%, 0);
 	}
 }

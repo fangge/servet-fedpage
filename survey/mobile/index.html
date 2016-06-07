@@ -32,19 +32,19 @@
 			<p class="desc">描述</p>
 
 			<label class="answer">
-				<input type="radio">
+				<input type="radio" name="radio1">
 				<div class="answer_cell">
 					<span class="answer_text">文案文案文案</span>
 				</div>
 			</label>
 			<label class="answer">
-				<input type="radio">
+				<input type="radio" name="radio1">
 				<div class="answer_cell">
 					<span class="answer_text">文案文案文案</span>
 				</div>
 			</label>
 			<label class="answer">
-				<input type="radio">
+				<input type="radio" name="radio1">
 				<div class="answer_cell">
 					<span class="answer_text">文案文案文案</span>
 				</div>
@@ -88,7 +88,7 @@
 			<div class="itemset">
 				<div class="item">
 					<label>
-						<input type="radio">
+						<input type="radio" name="radio2">
 						<div class="item_cell">
 							<img src="../images/pic.jpg" alt="" class="item_img"></span>
 							<span class="item_text">文案文案文案</span>
@@ -98,7 +98,7 @@
 				</div>
 				<div class="item">
 					<label>
-						<input type="radio">
+						<input type="radio" name="radio2">
 						<div class="item_cell">
 							<img src="../images/pic.jpg" alt="" class="item_img"></span>
 							<span class="item_text">文案文案文案</span>
@@ -108,7 +108,7 @@
 				</div>
 				<div class="item">
 					<label>
-						<input type="radio">
+						<input type="radio" name="radio2">
 						<div class="item_cell">
 							<img src="../images/pic.jpg" alt="" class="item_img"></span>
 							<span class="item_text">文案文案文案</span>
@@ -118,7 +118,7 @@
 				</div>
 				<div class="item">
 					<label>
-						<input type="radio">
+						<input type="radio" name="radio2">
 						<div class="item_cell">
 							<img src="../images/pic.jpg" alt="" class="item_img"></span>
 							<span class="item_text">文案文案文案</span>
@@ -416,13 +416,52 @@
 <script>
 // 页面切换示例
 var go = document.querySelector(".go"), 
-	now = 0, pages = document.querySelectorAll(".page");
-go.addEventListener("click", function() {
-	var now = document.querySelector(".page_in"),
-		next = now.nextElementSibling;
-	now.classList.add("page_out");
-	now.classList.remove("page_in");
-	next.classList.add("page_in");
+	now = 0,
+	pages = document.querySelectorAll(".page"),
+	length = pages.length,
+	y0,y1;
+function touchStart(e){
+	y0 = e.changedTouches[0].clientY;
+}
+function touchMove(e){
+	e.preventDefault();
+}
+function touchEnd(e){
+	y1 = e.changedTouches[0].clientY;
+	if(Math.abs(y1 - y0)>50){
+		if(y1 > y0){
+			if(now>0)prev();
+		}else{
+			if(now<length-1)next();
+		}
+	}
+}
+function next(){
+	var pagenow = pages[now],
+			pagenext = pages[now+1];
+	pagenow.classList.add("page_out");
+	pagenow.classList.remove("page_in");
+	pagenext.classList.add("page_in");
+	now++;
+}
+function prev(){
+	var pagenow = pages[now],
+			pageprev = pages[now-1];
+			console.log(pagenow)
+			console.log(pageprev)
+	pagenow.classList.remove("page_in");
+	pageprev.classList.add("page_in");
+	pageprev.classList.remove("page_out");
+	now--;
+}
+document.addEventListener('touchstart',function(e){
+	touchStart(e);
+});
+document.addEventListener('touchmove',function(e){
+	touchMove(e);
+});
+document.addEventListener('touchend',function(e){
+	touchEnd(e);
 });
 
 // 左上角星星动画示例
