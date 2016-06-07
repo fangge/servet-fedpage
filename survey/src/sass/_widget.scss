@@ -367,10 +367,13 @@ $tableRadioSize: 13px;
   &_main{
     overflow: hidden;
     overflow-x: scroll;
+    border-radius: 8px;
+    padding: 8px;
+    padding-top: 0;
+    background: rgba(0,0,0,0.4);
     table{
       border-collapse: separate;
       border-spacing: 1px;
-      background: rgba(0,0,0,0.4);
     }
     th{
       height: $tableCellThHeight;
@@ -383,6 +386,16 @@ $tableRadioSize: 13px;
     }
   }
   &_input{
+    display: block;
+    height: 100%;
+    &:before{
+      content: "";
+      display: inline-block;
+      width: 0;
+      font-size: 0;
+      height: 100%;
+      vertical-align: middle;
+    }
     input{
       position: absolute;
       top: -9999px;
@@ -390,6 +403,7 @@ $tableRadioSize: 13px;
     }
     span{
       display: inline-block;
+      vertical-align: middle;
       width: $tableRadioSize;
       height: $tableRadioSize;
       background: url(../images/tableradio.png) 100% 0 no-repeat;

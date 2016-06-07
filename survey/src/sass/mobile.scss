@@ -44,11 +44,9 @@
 	// 用来居中
 	position: absolute;
 	top: 50%;
-	left: 50%;
-	transform:translate(-50%,-50%);
-}
-.centerInMinWidth{
-	// 
+	left: 0;
+	right: 0;
+	transform:translate(0,-50%);
 }
 .go {
 	position: absolute;
@@ -91,7 +89,7 @@
 	right: 0;
 	height: $bottomBarHeight;
 	line-height: $bottomBarHeight;
-	background: rgba(0,0,0,0.9);
+	background: rgba(0,0,0,0.5);
 	.step{
 		float: left;
 		font-size: 14px;

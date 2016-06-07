@@ -377,11 +377,14 @@ textarea {
       font-size: 13px; }
   .table_main {
     overflow: hidden;
-    overflow-x: scroll; }
+    overflow-x: scroll;
+    border-radius: 8px;
+    padding: 8px;
+    padding-top: 0;
+    background: rgba(0, 0, 0, 0.4); }
     .table_main table {
       border-collapse: separate;
-      border-spacing: 1px;
-      background: rgba(0, 0, 0, 0.4); }
+      border-spacing: 1px; }
     .table_main th {
       height: 42px; }
     .table_main td {
@@ -389,18 +392,29 @@ textarea {
       min-width: 125px;
       background: rgba(0, 0, 0, 0.3);
       text-align: center; }
-  .table_input input {
-    position: absolute;
-    top: -9999px;
-    left: -9999px; }
-  .table_input span {
-    display: inline-block;
-    width: 13px;
-    height: 13px;
-    background: url(../images/tableradio.png) 100% 0 no-repeat;
-    background-size: 26px 13px; }
-  .table_input input:checked + span {
-    background-position: 0 0; }
+  .table_input {
+    display: block;
+    height: 100%; }
+    .table_input:before {
+      content: "";
+      display: inline-block;
+      width: 0;
+      font-size: 0;
+      height: 100%;
+      vertical-align: middle; }
+    .table_input input {
+      position: absolute;
+      top: -9999px;
+      left: -9999px; }
+    .table_input span {
+      display: inline-block;
+      vertical-align: middle;
+      width: 13px;
+      height: 13px;
+      background: url(../images/tableradio.png) 100% 0 no-repeat;
+      background-size: 26px 13px; }
+    .table_input input:checked + span {
+      background-position: 0 0; }
 
 /* 下拉提示输入框 */
 .dropdownInput input, .dropdownInput_list li {
@@ -669,9 +683,10 @@ textarea {
 .center {
   position: absolute;
   top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%); }
+  left: 0;
+  right: 0;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%); }
 
 .go {
   position: absolute;
@@ -712,7 +727,7 @@ textarea {
   right: 0;
   height: 28px;
   line-height: 28px;
-  background: rgba(0, 0, 0, 0.9); }
+  background: rgba(0, 0, 0, 0.5); }
   .bottom .step {
     float: left;
     font-size: 14px;
