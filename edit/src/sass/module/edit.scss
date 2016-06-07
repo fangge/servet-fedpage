@@ -461,3 +461,51 @@ span.points_num_select{
 .satisfaction_item:nth-child(5):after {
   content: "5";
   background-position: 0 -180px; }
+
+/* 表格 */
+.table {
+
+  padding-right:105px;
+  overflow: hidden;
+color: #fff;
+td,th{
+  text-align: center;
+}}
+.table_column {
+  float: left;
+  width: 104px;
+  padding-top: 42px; }
+.table_column span {
+  display: block;
+  height: 55px;
+  line-height:55px;
+  text-align: right;
+  padding-right: 15px;
+  box-sizing: border-box;
+  font-size: 13px; }
+.table_main {
+  overflow: hidden;
+  overflow-x: scroll; }
+.table_main table {
+  border-collapse: separate;
+  border-spacing: 1px;
+  background: rgba(0, 0, 0, 0.4); }
+.table_main th {
+  height: 42px; }
+.table_main td {
+  height: 53px;
+  min-width: 125px;
+  background: rgba(0, 0, 0, 0.3);
+  text-align: center; }
+.table_input input {
+  position: absolute;
+  top: -9999px;
+  left: -9999px; }
+.table_input span {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background: url(../img/tableradio.png) 100% 0 no-repeat;
+  background-size: 26px 13px; }
+.table_input input:checked + span {
+  background-position: 0 0; }
