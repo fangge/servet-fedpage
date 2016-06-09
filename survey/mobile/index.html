@@ -418,24 +418,7 @@
 var go = document.querySelector(".go"), 
 	now = 0,
 	pages = document.querySelectorAll(".page"),
-	length = pages.length,
-	y0,y1;
-function touchStart(e){
-	y0 = e.changedTouches[0].clientY;
-}
-function touchMove(e){
-	e.preventDefault();
-}
-function touchEnd(e){
-	y1 = e.changedTouches[0].clientY;
-	if(Math.abs(y1 - y0)>50){
-		if(y1 > y0){
-			if(now>0)prev();
-		}else{
-			if(now<length-1)next();
-		}
-	}
-}
+	length = pages.length;
 function next(){
 	var pagenow = pages[now],
 			pagenext = pages[now+1];
@@ -454,15 +437,6 @@ function prev(){
 	pageprev.classList.remove("page_out");
 	now--;
 }
-document.addEventListener('touchstart',function(e){
-	touchStart(e);
-});
-document.addEventListener('touchmove',function(e){
-	touchMove(e);
-});
-document.addEventListener('touchend',function(e){
-	touchEnd(e);
-});
 
 // 左上角星星动画示例
 function starAnim(currentX, currentY){
