@@ -3185,13 +3185,12 @@ textarea:focus {
   bottom: 0;
   left: 0;
   margin: auto;
-  width: 14px;
-  height: 14px;
-  background: url(../slice/add.png) 0 0 no-repeat;
-  background-size: contain;
+  width: 15px;
+  height: 16px;
+  background: url(../slice/add.png) no-repeat;
 }
 
-/* line 653, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 650, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .upload_desc {
   font-size: 14px;
   line-height: 21px;
