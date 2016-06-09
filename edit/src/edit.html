@@ -416,17 +416,17 @@
                     <a href="" class="edit-btn">点击编辑</a>
                     <div class="table">
                         <div class="table_column">
-                            <span>Apple</span>
-                            <span>Sumsung</span>
-                            <span>Huawei</span>
+                            <span>Apple <a class="icon-delete2"></a></span>
+                            <span>Sumsung <a class="icon-delete2"></a></span>
+                            <span>Huawei <a class="icon-delete2"></a></span>
                         </div>
                         <div class="table_main">
                             <table>
                                 <tr>
-                                    <th>大屏幕</th>
-                                    <th>超长待机</th>
-                                    <th>大屏幕</th>
-                                    <th>超长待机</th>
+                                    <th>大屏幕<a class="icon-delete2"></a></th>
+                                    <th>超长待机<a class="icon-delete2"></a></th>
+                                    <th>大屏幕<a class="icon-delete2"></a></th>
+                                    <th>超长待机<a class="icon-delete2"></a></th>
                                 </tr>
                                 <tr>
                                     <td><label class="table_input"><input type="radio"><span></span></label></td>
@@ -447,31 +447,72 @@
                                     <td><label class="table_input"><input type="radio"><span></span></label></td>
                                 </tr>
                             </table>
+                            <a class="add-table add-row">+</a>
+                            <a class="add-table add-col">+</a>
                         </div>
                     </div>
                 </div>
             </div>
             <!--}表格-->
-            <!--矩阵题{-->
-            <div class="edit-col  cur" style="background: url(img/bg.jpg) no-repeat;background-size:cover ">
+            <!--输入框{-->
+            <div class="edit-col  cur" style="background: url(img/bg6.jpg) no-repeat;background-size:cover ">
                 <span class="edit-col-num">5</span>
                 <div class="edit-col-icon">
                     <a href="" class="icon-mobile"></a>
                     <a href="" class="icon-blank"></a>
                     <a href="" class="icon-delete"></a>
                 </div>
+                <div class="edit-col-comment"><i class="icon-comment"></i>123</div>
+                <div class="logic-area">
+                    <a class="icon-jump"></a>
+                    <div class="logic-tip">逻辑跳转</div>
+                </div>
+                <div class="edit-col-cont edit-col-cont5">
+                    <p class="edit-title2">在购买手机的时候你更倾向于？</p>
+                    <a href="" class="edit-btn">点击编辑</a>
+                    <div class="dropdownInput">
+                        <input type="text" value="南京">
+                        <ul class="dropdownInput_list" style="opacity: 0;">
+                            <li class="selected">南京</li>
+                            <li>南昌</li>
+                            <li>南昌</li>
+                            <li>南昌</li>
+                            <li>南昌</li>
+                            <li>南京</li>
+                            <li>南昌</li>
+                            <li>南昌</li>
+                            <li>南昌</li>
+                            <li>南昌</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <!--}矩阵题-->
-            <!--打分题{-->
-            <div class="edit-col cur" style="background: url(img/bg.jpg) no-repeat;background-size:cover ">
+            <!--}输入框-->
+            <!--上传图{-->
+            <div class="edit-col cur" style="background: url(img/bg7.jpg) no-repeat;background-size:cover ">
                 <span class="edit-col-num">6</span>
                 <div class="edit-col-icon">
                     <a href="" class="icon-mobile"></a>
                     <a href="" class="icon-blank"></a>
                     <a href="" class="icon-delete"></a>
                 </div>
+                <div class="edit-col-comment"><i class="icon-comment"></i>123</div>
+                <div class="logic-area">
+                    <a class="icon-jump"></a>
+                    <div class="logic-tip">逻辑跳转</div>
+                </div>
+                <div class="edit-col-cont edit-col-cont6">
+                    <p class="edit-title2">在购买手机的时候你更倾向于？</p>
+                    <a href="" class="edit-btn">点击编辑</a>
+                    <div class="upload">
+                        <div class="upload_btn">
+                            <input type="file">
+                        </div>
+                        <p class="upload_desc">上传格式仅限: jpg, bmp, png, 2ord, pdf<br>大小不能超过5M</p>
+                    </div>
+                </div>
             </div>
-            <!--}打分题-->
+            <!--}上传图-->
             <!--满意度{-->
             <div class="edit-col  cur" style="background: url(img/bg.jpg) no-repeat;background-size:cover ">
                 <span class="edit-col-num">7</span>
@@ -538,6 +579,17 @@
         allowEmpty:true,
         showAlpha: true
       });
+      //输入框聚焦
+      $(".dropdownInput input").click(function(){
+          $(".dropdownInput_list").stop().animate({"opacity":1},100);
+      })
+
+      $(".dropdownInput_list li").click(function(){
+          $(".dropdownInput_list li").removeClass("selected");
+          $(this).addClass("selected");
+          $(".dropdownInput input").val($(this).html());
+          $(".dropdownInput_list").stop().animate({"opacity":0},100);
+      })
     </script>
   </body>
 </html>

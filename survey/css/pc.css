@@ -398,7 +398,7 @@ textarea {
 /* 下拉提示输入框 */
 .dropdownInput input, .dropdownInput_list li {
   width:380px;
-  height: 42x;
+  height: 42px;
   line-height: 42px;
   padding: 0 18px;
   box-sizing: border-box;
