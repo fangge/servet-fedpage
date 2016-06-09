@@ -21,11 +21,11 @@ a, a:hover {text-decoration: none; }
 /*base*/
 html, body {
   height: 100%;
-  overflow:hidden;
   font-size: 12px;
   line-height: 1;
   font-family: "Microsoft Yahei",SimSun, Arial, sans-serif;
   color: #fff;
+  overflow:hidden;
   -webkit-tap-highlight-color: transparent;
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
@@ -123,17 +123,15 @@ textarea {
   input[type="radio"] + .answer_cell:before {
     width: 13px;
     height: 13px;
-	margin-left:10px;
     background: url(../images/radio.png) 0 100% no-repeat;
     background-size: 13px; }
   input[type="checkbox"] + .answer_cell:before {
     width: 11px;
     height: 11px;
-	margin-left:10px;
     background: url(../images/cb.png) 0 100% no-repeat;
     background-size: 11px; }
   input:checked + .answer_cell {
-    box-shadow: 0 0 0 2px #28e8fd; }
+    box-shadow: 0 0 0 1px #28e8fd; }
   input[type="radio"]:checked + .answer_cell:before,
   input[type="checkbox"]:checked + .answer_cell:before {
     background-position: 0 0; }
@@ -280,7 +278,8 @@ textarea {
       display: block;
       line-height: 21px;
       margin-bottom: 14px; 
-	  opacity:0.5;}
+	  opacity:0.5;
+	  width:20px;}
       .points_num span:last-child {
         margin-bottom: 0; }
 	  span.points_num_select{
@@ -320,7 +319,11 @@ textarea {
     line-height: 45px;
     margin-bottom: 24px;
     text-align: right;
-    padding-right: 60px; }
+    padding-right: 60px; 
+	opacity: 0.5;}
+	.satisfaction_item_select{
+	  opacity:1;
+	}
     .satisfaction_item:after {
       content: "";
       position: absolute;
@@ -394,7 +397,6 @@ textarea {
 
 /* 下拉提示输入框 */
 .dropdownInput input, .dropdownInput_list li {
-  display: block;
   width:380px;
   height: 42x;
   line-height: 42px;
@@ -419,13 +421,18 @@ textarea {
     border-radius: 21px;
     border: none; }
   .dropdownInput_list {
+	opacity:0;
 	padding-top:42px;
+	height:210px;
 	float:left;
     background: rgba(0, 0, 0, 0.5);
     border-radius: 21px;
     overflow: hidden; }
     .dropdownInput_list li.selected {
       background: #28e8fd; }
+	.dropdownInput_list li:hover{
+		background: #28e8fd;
+	}
 
 /* 上传 */
 .upload {
@@ -617,26 +624,15 @@ textarea {
             transform: scale(1); }
 
 /* 框架 */
-.wrap, .page {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0; }
+.wrap{position:absolute; top:0; left:0; right:0; bottom:0; height:100%; }
 
 .page {
-  -webkit-transform: translate3d(0, -100%, 0);
-          transform: translate3d(0, -100%, 0);
+  position:relative;
+  height:100%;
   background: center center no-repeat;
   background-size: cover;
-  overflow: hidden; }
-  .page_in {
-    -webkit-animation: pageIn 0.2s both;
-            animation: pageIn 0.2s both;
-    overflow-y: auto; }
-  .page_out {
-    -webkit-animation: pageOut 0.2s both;
-            animation: pageOut 0.2s both; }
+  overflow:hidden;}
+  
 
 @-webkit-keyframes pageIn {
   from {

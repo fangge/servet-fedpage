@@ -8,7 +8,7 @@ a{
 .edit-col{
   box-sizing: border-box;
   width: 85%;
-  height: 517px;
+  height: 550px;
   margin: 0 auto 34px;
   position: relative;
   &:after{
@@ -29,7 +29,7 @@ a{
     }
   }
 }
-.edit-title{
+.edit-name{
   display: block;
   width: 348px;
   height: 28px;
@@ -57,7 +57,7 @@ a{
 }
 .edit-col-icon{
   position: absolute;
-  z-index: 100;
+  z-index: 101;
   right:20px;
   top:20px;
   a{
@@ -84,7 +84,7 @@ a{
   font-size: 14px;
   font-weight: 600;
   position: absolute;
-  z-index: 100;
+  z-index: 101;
   right:20px;
   bottom:15px;
 }
@@ -156,7 +156,7 @@ a{
   position: absolute;
   left:30px;
   top:20px;
-  z-index: 100;
+  z-index: 101;
 }
 .icon-jump{
   display: block;
@@ -489,14 +489,21 @@ td,th{
 .table_main table {
   border-collapse: separate;
   border-spacing: 1px;
-  background: rgba(0, 0, 0, 0.4); }
+  }
 .table_main th {
   height: 42px; }
 .table_main td {
-  height: 53px;
-  min-width: 125px;
+  height: 68px;
+  min-width: 160px;
   background: rgba(0, 0, 0, 0.3);
-  text-align: center; }
+  text-align: center;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  border-radius:5px;
+  label{
+    margin-bottom:0;
+  }
+}
 .table_input input {
   position: absolute;
   top: -9999px;

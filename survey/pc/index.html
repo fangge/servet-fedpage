@@ -33,22 +33,22 @@
 			<p class="desc">描述</p>
 
 			<label class="answer">
-				<input type="radio">
+				<input type="radio" name="radio1">
 				<div class="answer_cell">
 					<span class="answer_text">文案文案文案</span>
-		    </div>
+        </div>
 			</label>
 			<label class="answer">
-				<input type="radio">
+				<input type="radio"  name="radio1">
 				<div class="answer_cell">
 					<span class="answer_text">文案文案文案</span>
-		    </div>
+        </div>
 			</label>
 			<label class="answer">
-				<input type="radio">
+				<input type="radio"  name="radio1">
 				<div class="answer_cell">
 					<span class="answer_text">文案文案文案</span>
-		    </div>
+        </div>
 			</label>
 		</div>
 
@@ -63,19 +63,19 @@
 				<input type="checkbox">
 				<div class="answer_cell">
 					<span class="answer_text">文案文案文案</span>
-		    </div>
+        </div>
 			</label>
 			<label class="answer">
 				<input type="checkbox">
 				<div class="answer_cell">
 					<span class="answer_text">文案文案文案</span>
-		    </div>
+        </div>
 			</label>
 			<label class="answer">
 				<input type="checkbox">
 				<div class="answer_cell">
 					<span class="answer_text">文案文案文案</span>
-		    </div>
+        </div>
 			</label>
 		</div>
 
@@ -89,7 +89,7 @@
 			<div class="itemset">
 				<div class="item">
 					<label>
-						<input type="radio" name="radio-test">
+						<input type="radio" name="radio2">
 						<div class="item_cell">
 							<img src="../images/pic.jpg" alt="" class="item_img"></span>
 							<span class="item_text">文案文案文案</span>
@@ -99,7 +99,7 @@
 				</div>
 				<div class="item">
 					<label>
-						<input type="radio" name="radio-test">
+						<input type="radio" name="radio2">
 						<div class="item_cell">
 							<img src="../images/pic.jpg" alt="" class="item_img"></span>
 							<span class="item_text">文案文案文案</span>
@@ -109,7 +109,7 @@
 				</div>
 				<div class="item">
 					<label>
-						<input type="radio" name="radio-test">
+						<input type="radio" name="radio2">
 						<div class="item_cell">
 							<img src="../images/pic.jpg" alt="" class="item_img"></span>
 							<span class="item_text">文案文案文案</span>
@@ -119,7 +119,7 @@
 				</div>
 				<div class="item">
 					<label>
-						<input type="radio" name="radio-test">
+						<input type="radio">
 						<div class="item_cell">
 							<img src="../images/pic.jpg" alt="" class="item_img"></span>
 							<span class="item_text">文案文案文案</span>
@@ -143,28 +143,28 @@
 					<div class="item_cell">
 						<img src="../images/pic.jpg" alt="" class="item_img"></span>
 						<span class="item_text">文案文案文案</span>
-			    </div>
+	        </div>
 				</label>
 				<label class="item">
 					<input type="checkbox">
 					<div class="item_cell">
 						<img src="../images/pic.jpg" alt="" class="item_img"></span>
 						<span class="item_text">文案文案文案</span>
-			    </div>
+	        </div>
 				</label>
 				<label class="item">
 					<input type="checkbox">
 					<div class="item_cell">
 						<img src="../images/pic.jpg" alt="" class="item_img"></span>
 						<span class="item_text">文案文案文案</span>
-			    </div>
+	        </div>
 				</label>
 				<label class="item">
 					<input type="checkbox">
 					<div class="item_cell">
 						<img src="../images/pic.jpg" alt="" class="item_img"></span>
 						<span class="item_text">文案文案文案</span>
-			    </div>
+	        </div>
 				</label>
 			</div>
 		</div>
@@ -193,9 +193,9 @@
 			<h2 class="title">这是五个心形的选项</h2>
 			<p class="desc">5分表示非常好，1分表示最差</p>
 			<div class="heart">
-				<div class="heart_icon heart_icon_selected"></div>
-				<div class="heart_icon heart_icon_selected"></div>
-				<div class="heart_icon heart_icon_selected"></div>
+				<div class="heart_icon"></div>
+				<div class="heart_icon"></div>
+				<div class="heart_icon"></div>
 				<div class="heart_icon"></div>
 				<div class="heart_icon"></div>
 			</div>
@@ -210,7 +210,7 @@
 				<span class="points_good">非常满意</span>
 				<span class="points_bad">很不满意</span>
 				<div class="points_num">
-					<span class="points_num_select">10</span>
+					<span>10</span>
 					<span>9</span>
 					<span>8</span>
 					<span>7</span>
@@ -222,7 +222,7 @@
 					<span>1</span>
 				</div>
 				<div class="points_bar">
-					<div class="points_bar_handler" style="top:110px;"></div>
+					<div class="points_bar_handler" id="drag"></div>
 					<!-- 监听滑动事件改变handler的top，范围为0~250，如：
 					<div class="points_bar_handler" style="top:110px;"></div>
 					 -->
@@ -236,7 +236,7 @@
 		<div class="center">
 			<div class="h2 title">你对Spotify的界面设计满意么？</div>
 			<div class="satisfaction">
-				<div class="satisfaction_item">非常满意</div>
+				<div class="satisfaction_item satisfaction_item_select">非常满意</div>
 				<div class="satisfaction_item">满意</div>
 				<div class="satisfaction_item">一般</div>
 				<div class="satisfaction_item">不满意</div>
@@ -305,13 +305,18 @@
 			<h2 class="title">自动提示输入框</h2>
 
 			<div class="dropdownInput">
-				<input type="text" value="啊啊啊啊啊啊啊啊啊">
+				<input type="text" value="南京">
 				<ul class="dropdownInput_list">
-					<li class="selected">南京</li>
+					<li>南京</li>
 					<li>南昌</li>
                     <li>南昌</li>
                     <li>南昌</li>
-					<li>南宁</li>
+                    <li>南昌</li>
+                    <li>南京</li>
+					<li>南昌</li>
+                    <li>南昌</li>
+                    <li>南昌</li>
+                    <li>南昌</li>
 				</ul>
 			</div>
 		</div>
@@ -370,7 +375,7 @@
 	</div>
 </div>
 <div class="bottom">
-	<div class="copyright"></div>
+<div class="copyright"></div>
 	<div class="step">1/10</div>
 </div>
 <div class="star">
@@ -416,42 +421,8 @@
 <div class="imgpopup">
 	<img class="imgpopup_img" src="http://cdn.v2ex.co/gravatar/e717df6de20bb696c6304a29355f475c?s=73&d=retro" alt="">
 </div>
-
-<script>
-// 页面切换示例
-var go = document.querySelector(".go"), 
-	now = 0, nowPage=0, pages = document.querySelectorAll(".page");
-go.addEventListener("click", function() {
-	var now = document.querySelector(".page_in"),
-		next = now.nextElementSibling;
-	now.classList.add("page_out");
-	now.classList.remove("page_in");
-	next.classList.add("page_in");
-	
-	nowPage++;
-	if(nowPage>0){
-		go.classList.remove("start_go");
-	}else{
-		go.classList.add("start_go");
-	}
-});
-
-// 左上角星星动画示例
-function starAnim(currentX, currentY){
-	// 传入点击事件对象拿到的坐标
-	var starForAnim = document.querySelector(".star_img_forAnim"),
-		starStatic = document.querySelector(".star_static"),
-		starTargetX = starForAnim.offsetLeft,
-		starTargetY = starForAnim.offsetTop;
-	starForAnim.style.cssText = "-webkit-transform:translate("+currentX+"px,"+currentY+"px);transform:translate("+currentX+"px,"+currentY+"px);opacity:1;";
-	setTimeout(function(){
-		starForAnim.style.cssText = "-webkit-transform:translate("+starTargetX+"px,"+starTargetY+"px);transform:translate("+starTargetX+"px,"+starTargetY+"px);opacity:0;-webkit-transition: all 0.8s;transition: all 0.8s;";
-	},200);
-	setTimeout(function(){
-		starStatic.classList.add("star_img_scale");
-	},1000);
-	// 
-}
-</script>
+<script charset="utf-8" type="text/javascript" src="../js/jquery.min.js"></script>
+<script charset="utf-8" type="text/javascript" src="../js/jquery.mousewheel.js"></script>
+<script charset="utf-8" type="text/javascript" src="../js/pc.js"></script>
 </body>
 </html>
