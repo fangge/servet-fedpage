@@ -22,11 +22,12 @@
       <div class="container-fluid">
         <div class="navbar-header">          
           <a class="navbar-brand logo" href="#">
-            <img src="img/logo.png" alt="">
+            <em></em>
           </a>
 
         </div>
-        <a href="" class="topic"></a>
+        <a href="" class="save" title="保存"></a>
+        <a href="" class="topic" title="新建"></a>
         <div class="navbar-right">
           <a href="" class="navbar-right-btn navbar-right-btn1">发布</a>
           <a href="" class="navbar-right-btn navbar-right-btn2">测试</a>
@@ -122,8 +123,448 @@
         </div>
         <!--}右侧-->
         <!--列表开始-->
-        <div class="main">
-         </div>
+        <section class="main">
+            <input type="text" class="edit-name" placeholder="请添加问卷名称">
+            <!--start{-->
+            <div class="edit-col cur" style="background: url(img/bg.jpg) no-repeat;background-size:cover ">
+                <span class="edit-col-num">0</span>
+                <div class="edit-col-icon">
+                    <a href="" class="icon-mobile"></a>
+                </div>
+                <div class="edit-col-comment"><i class="icon-comment"></i>3</div>
+                <div class="edit-col-cont edit-col-cont1">
+                    <div class="upload-img">
+                        <span>+</span><br>LOGO
+                        <input type="file" />
+                    </div>
+                    <div class="edit-title">
+                        <i class="icon-edit"></i>
+                        欢迎参与调查
+                    </div>
+                    <p class="edit-intro">
+                        这是一次关于中国互联网产品发展状况的调查，你的手机里到底装了哪些神奇好用的APP，哪些APP占据了你你一屏的位置，哪些APP是你使用频率最高的手机应用。
+                    </p>
+                </div>
+            </div>
+            <!--}start-->
+            <!--单选题图片{-->
+            <div class="edit-col  cur" style="background: url(img/bg2.jpg) no-repeat;background-size:cover ">
+                <span class="edit-col-num">1</span>
+                <div class="edit-col-icon">
+                    <a href="" class="icon-mobile"></a>
+                    <a href="" class="icon-blank"></a>
+                    <a href="" class="icon-delete"></a>
+                </div>
+                <div class="edit-col-comment"><i class="icon-comment"></i>123</div>
+                <div class="logic-area">
+                    <a class="icon-jump"></a>
+                    <div class="logic-tip">逻辑跳转</div>
+                </div>
+                <div class="edit-col-cont edit-col-cont2">
+                    <p class="edit-title2"><i class="icon-pc"></i><i class="icon-arrow"></i>你在什么时候使用手机最频繁?</p>
+                    <a href="" class="edit-btn">点击编辑</a>
+                    <div class="itemset">
+                        <div class="item">
+                            <label>
+                                <input type="radio" name="radio-test">
+                                <div class="item_cell">
+                                    <img src="img/pic.jpg" alt="" class="item_img"></span>
+                                    <span class="item_text">文案文案文案</span>
+                                </div>
+                            </label>
+                            <div class="zoom" onClick="alert('点击缩放跟选中选项分离')"></div>
+                        </div>
+                        <div class="item">
+                            <label>
+                                <input type="radio" name="radio-test">
+                                <div class="item_cell">
+                                    <img src="img/pic.jpg" alt="" class="item_img"></span>
+                                    <span class="item_text">文案文案文案</span>
+                                </div>
+                            </label>
+                            <div class="zoom" onClick="alert('点击缩放跟选中选项分离')"></div>
+                        </div>
+                        <div class="item">
+                            <label>
+                                <input type="radio" name="radio-test">
+                                <div class="item_cell">
+                                    <img src="img/pic.jpg" alt="" class="item_img"></span>
+                                    <span class="item_text">文案文案文案</span>
+                                </div>
+                            </label>
+                            <div class="zoom" onClick="alert('点击缩放跟选中选项分离')"></div>
+                        </div>
+                        <div class="item">
+                            <label>
+                                <input type="radio" name="radio-test">
+                                <div class="item_cell">
+                                    <img src="img/pic.jpg" alt="" class="item_img"></span>
+                                    <span class="item_text">文案文案文案</span>
+                                </div>
+                            </label>
+                            <div class="zoom" onClick="alert('点击缩放跟选中选项分离')"></div>
+                        </div>
+                        <div class="item">
+                            <a class="add-radio">+</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order">
+                    选项随机顺序
+                    <span class='tg-list-item'>
+                        <input class='tgl tgl-light' id='cb1' type='checkbox'>
+                        <label class='tgl-btn' for='cb1'></label>
+                    </span>
+                </div>
+            </div>
+            <!--}单选题图片-->
+            <!--多选题图片{-->
+            <div class="edit-col  cur" style="background: url(img/bg2.jpg) no-repeat;background-size:cover ">
+                <span class="edit-col-num">1</span>
+                <div class="edit-col-icon">
+                    <a href="" class="icon-mobile"></a>
+                    <a href="" class="icon-blank"></a>
+                    <a href="" class="icon-delete"></a>
+                </div>
+                <div class="edit-col-comment"><i class="icon-comment"></i>123</div>
+                <div class="logic-area">
+                    <a class="icon-jump"></a>
+                    <div class="logic-tip">逻辑跳转</div>
+                </div>
+                <div class="edit-col-cont edit-col-cont2">
+                    <p class="edit-title2"><i class="icon-pc"></i><i class="icon-arrow"></i>你在什么时候使用手机最频繁?</p>
+                    <a href="" class="edit-btn">点击编辑</a>
+                    <div class="itemset">
+                        <label class="item">
+                            <input type="checkbox">
+                            <div class="item_cell">
+                                <img src="img/pic.jpg" alt="" class="item_img"></span>
+                                <span class="item_text">文案文案文案</span>
+                            </div>
+                        </label>
+                        <label class="item">
+                            <input type="checkbox">
+                            <div class="item_cell">
+                                <img src="img/pic.jpg" alt="" class="item_img"></span>
+                                <span class="item_text">文案文案文案</span>
+                            </div>
+                        </label>
+                        <label class="item">
+                            <input type="checkbox">
+                            <div class="item_cell">
+                                <img src="img/pic.jpg" alt="" class="item_img"></span>
+                                <span class="item_text">文案文案文案</span>
+                            </div>
+                        </label>
+                        <label class="item">
+                            <input type="checkbox">
+                            <div class="item_cell">
+                                <img src="img/pic.jpg" alt="" class="item_img"></span>
+                                <span class="item_text">文案文案文案</span>
+                            </div>
+                        </label>
+                        <div class="item">
+                            <a class="add-radio">+</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order">
+                    选项随机顺序
+                    <span class='tg-list-item'>
+                        <input class='tgl tgl-light' id='cb2' type='checkbox'>
+                        <label class='tgl-btn' for='cb2'></label>
+                    </span>
+                </div>
+            </div>
+            <!--}多选题图片-->
+            <!--满意度{-->
+            <div class="edit-col cur" style="background: url(img/bg3.jpg) no-repeat;background-size:cover ">
+                <span class="edit-col-num">2</span>
+                <div class="edit-col-icon">
+                    <a href="" class="icon-mobile"></a>
+                    <a href="" class="icon-blank"></a>
+                    <a href="" class="icon-delete"></a>
+                </div>
+                <div class="edit-col-comment"><i class="icon-comment"></i>123</div>
+                <div class="logic-area">
+                    <a class="icon-jump"></a>
+                    <div class="logic-tip">逻辑跳转</div>
+                </div>
+                <div class="edit-col-cont edit-col-cont3">
+                    <p class="edit-title2">你对Zine的用户体验印象如何？</p>
+                    <a href="" class="edit-btn">点击编辑</a>
+                    <div class="mood">
+                        <div class="mood_icon mood_icon_1 mood_icon_selected"></div>
+                        <div class="mood_icon mood_icon_2"></div>
+                        <div class="mood_icon mood_icon_3"></div>
+                        <div class="mood_icon mood_icon_4"></div>
+                        <div class="mood_icon mood_icon_5"></div>
+                    </div>
+                </div>
+            </div>
+            <!--}满意度-->
+            <!--心形{-->
+            <div class="edit-col cur" style="background: url(img/bg3.jpg) no-repeat;background-size:cover ">
+                <span class="edit-col-num">2</span>
+                <div class="edit-col-icon">
+                    <a href="" class="icon-mobile"></a>
+                    <a href="" class="icon-blank"></a>
+                    <a href="" class="icon-delete"></a>
+                </div>
+                <div class="edit-col-comment"><i class="icon-comment"></i>123</div>
+                <div class="logic-area">
+                    <a class="icon-jump"></a>
+                    <div class="logic-tip">逻辑跳转</div>
+                </div>
+                <div class="edit-col-cont edit-col-cont3">
+                    <p class="edit-title2">你对Zine的用户体验印象如何？</p>
+                    <a href="" class="edit-btn">点击编辑</a>
+                    <div class="heart">
+                        <div class="heart_icon heart_icon_selected"></div>
+                        <div class="heart_icon heart_icon_selected"></div>
+                        <div class="heart_icon heart_icon_selected"></div>
+                        <div class="heart_icon"></div>
+                        <div class="heart_icon"></div>
+                    </div>
+                </div>
+            </div>
+            <!--}心形-->
+            <!--满意度{-->
+            <div class="edit-col cur" style="background: url(img/bg4.jpg) no-repeat;background-size:cover ">
+                <span class="edit-col-num">4</span>
+                <div class="edit-col-icon">
+                    <a href="" class="icon-mobile"></a>
+                    <a href="" class="icon-blank"></a>
+                    <a href="" class="icon-delete"></a>
+                </div>
+                <div class="edit-col-comment"><i class="icon-comment"></i>123</div>
+                <div class="logic-area">
+                    <a class="icon-jump"></a>
+                    <div class="logic-tip">逻辑跳转</div>
+                </div>
+                <div class="edit-col-cont edit-col-cont4">
+                    <p class="edit-title2">你对Zine的用户体验印象如何？</p>
+                    <a href="" class="edit-btn">点击编辑</a>
+                    <div class="points">
+                        <span class="points_good">非常满意</span>
+                        <span class="points_bad">很不满意</span>
+                        <div class="points_num">
+                            <span class="points_num_select">10</span>
+                            <span>9</span>
+                            <span>8</span>
+                            <span>7</span>
+                            <span>6</span>
+                            <span>5</span>
+                            <span>4</span>
+                            <span>3</span>
+                            <span>2</span>
+                            <span>1</span>
+                        </div>
+                        <div class="points_bar">
+                            <div class="points_bar_handler" style="top:110px;"></div>
+                            <!-- 监听滑动事件改变handler的top，范围为0~250，如：
+                            <div class="points_bar_handler" style="top:110px;"></div>
+                             -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--}满意度-->
+            <!--满意度{-->
+            <div class="edit-col cur" style="background: url(img/bg4.jpg) no-repeat;background-size:cover ">
+                <span class="edit-col-num">4</span>
+                <div class="edit-col-icon">
+                    <a href="" class="icon-mobile"></a>
+                    <a href="" class="icon-blank"></a>
+                    <a href="" class="icon-delete"></a>
+                </div>
+                <div class="edit-col-comment"><i class="icon-comment"></i>123</div>
+                <div class="logic-area">
+                    <a class="icon-jump"></a>
+                    <div class="logic-tip">逻辑跳转</div>
+                </div>
+                <div class="edit-col-cont edit-col-cont4">
+                    <p class="edit-title2">你对Zine的用户体验印象如何？</p>
+                    <a href="" class="edit-btn">点击编辑</a>
+                    <div class="satisfaction">
+                        <div class="satisfaction_item">非常满意</div>
+                        <div class="satisfaction_item">满意</div>
+                        <div class="satisfaction_item">一般</div>
+                        <div class="satisfaction_item">不满意</div>
+                        <div class="satisfaction_item">非常不满意</div>
+                    </div>
+                </div>
+            </div>
+            <!--}满意度-->
+            <!--表格{-->
+            <div class="edit-col cur" style="background: url(img/bg5.jpg) no-repeat;background-size:cover ">
+                <span class="edit-col-num">5</span>
+                <div class="edit-col-icon">
+                    <a href="" class="icon-mobile"></a>
+                    <a href="" class="icon-blank"></a>
+                    <a href="" class="icon-delete"></a>
+                </div>
+                <div class="edit-col-comment"><i class="icon-comment"></i>123</div>
+                <div class="logic-area">
+                    <a class="icon-jump"></a>
+                    <div class="logic-tip">逻辑跳转</div>
+                </div>
+                <div class="edit-col-cont edit-col-cont4">
+                    <p class="edit-title2">在购买手机的时候你更倾向于？</p>
+                    <a href="" class="edit-btn">点击编辑</a>
+                    <div class="table">
+                        <div class="table_column">
+                            <span>Apple <a class="icon-delete2"></a></span>
+                            <span>Sumsung <a class="icon-delete2"></a></span>
+                            <span>Huawei <a class="icon-delete2"></a></span>
+                        </div>
+                        <div class="table_main">
+                            <table>
+                                <tr>
+                                    <th>大屏幕<a class="icon-delete2"></a></th>
+                                    <th>超长待机<a class="icon-delete2"></a></th>
+                                    <th>大屏幕<a class="icon-delete2"></a></th>
+                                    <th>超长待机<a class="icon-delete2"></a></th>
+                                </tr>
+                                <tr>
+                                    <td><label class="table_input"><input type="radio"><span></span></label></td>
+                                    <td><label class="table_input"><input type="radio"><span></span></label></td>
+                                    <td><label class="table_input"><input type="radio"><span></span></label></td>
+                                    <td><label class="table_input"><input type="radio"><span></span></label></td>
+                                </tr>
+                                <tr>
+                                    <td><label class="table_input"><input type="radio"><span></span></label></td>
+                                    <td><label class="table_input"><input type="radio"><span></span></label></td>
+                                    <td><label class="table_input"><input type="radio"><span></span></label></td>
+                                    <td><label class="table_input"><input type="radio"><span></span></label></td>
+                                </tr>
+                                <tr>
+                                    <td><label class="table_input"><input type="radio"><span></span></label></td>
+                                    <td><label class="table_input"><input type="radio"><span></span></label></td>
+                                    <td><label class="table_input"><input type="radio"><span></span></label></td>
+                                    <td><label class="table_input"><input type="radio"><span></span></label></td>
+                                </tr>
+                            </table>
+                            <a class="add-table add-row">+</a>
+                            <a class="add-table add-col">+</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--}表格-->
+            <!--输入框{-->
+            <div class="edit-col  cur" style="background: url(img/bg6.jpg) no-repeat;background-size:cover ">
+                <span class="edit-col-num">5</span>
+                <div class="edit-col-icon">
+                    <a href="" class="icon-mobile"></a>
+                    <a href="" class="icon-blank"></a>
+                    <a href="" class="icon-delete"></a>
+                </div>
+                <div class="edit-col-comment"><i class="icon-comment"></i>123</div>
+                <div class="logic-area">
+                    <a class="icon-jump"></a>
+                    <div class="logic-tip">逻辑跳转</div>
+                </div>
+                <div class="edit-col-cont edit-col-cont5">
+                    <p class="edit-title2">在购买手机的时候你更倾向于？</p>
+                    <a href="" class="edit-btn">点击编辑</a>
+                    <div class="dropdownInput">
+                        <input type="text" value="南京">
+                        <ul class="dropdownInput_list" style="opacity: 0;">
+                            <li class="selected">南京</li>
+                            <li>南昌</li>
+                            <li>南昌</li>
+                            <li>南昌</li>
+                            <li>南昌</li>
+                            <li>南京</li>
+                            <li>南昌</li>
+                            <li>南昌</li>
+                            <li>南昌</li>
+                            <li>南昌</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--}输入框-->
+            <!--上传图{-->
+            <div class="edit-col cur" style="background: url(img/bg7.jpg) no-repeat;background-size:cover ">
+                <span class="edit-col-num">6</span>
+                <div class="edit-col-icon">
+                    <a href="" class="icon-mobile"></a>
+                    <a href="" class="icon-blank"></a>
+                    <a href="" class="icon-delete"></a>
+                </div>
+                <div class="edit-col-comment"><i class="icon-comment"></i>123</div>
+                <div class="logic-area">
+                    <a class="icon-jump"></a>
+                    <div class="logic-tip">逻辑跳转</div>
+                </div>
+                <div class="edit-col-cont edit-col-cont6">
+                    <p class="edit-title2">在购买手机的时候你更倾向于？</p>
+                    <a href="" class="edit-btn">点击编辑</a>
+                    <div class="upload">
+                        <div class="upload_btn">
+                            <input type="file">
+                        </div>
+                        <p class="upload_desc">上传格式仅限: jpg, bmp, png, 2ord, pdf<br>大小不能超过5M</p>
+                    </div>
+                </div>
+            </div>
+            <!--}上传图-->
+            <!--任务选项{-->
+            <div class="edit-col  cur" style="background: url(img/bg8.jpg) no-repeat;background-size:cover ">
+                <span class="edit-col-num">7</span>
+                <div class="edit-col-icon">
+                    <a href="" class="icon-mobile"></a>
+                    <a href="" class="icon-blank"></a>
+                    <a href="" class="icon-delete"></a>
+                </div>
+            </div>
+            <!--}任务选项-->
+            <!--产品建议{-->
+            <div class="edit-col cur" style="background: url(img/bg.jpg) no-repeat;background-size:cover ">
+                <span class="edit-col-num">8</span>
+                <div class="edit-col-icon">
+                    <a href="" class="icon-mobile"></a>
+                    <a href="" class="icon-blank"></a>
+                    <a href="" class="icon-delete"></a>
+                </div>
+            </div>
+            <!--}产品建议-->
+            <!--城市选择{-->
+            <div class="edit-col  cur" style="background: url(img/bg.jpg) no-repeat;background-size:cover ">
+                <span class="edit-col-num">9</span>
+                <div class="edit-col-icon">
+                    <a href="" class="icon-mobile"></a>
+                    <a href="" class="icon-blank"></a>
+                    <a href="" class="icon-delete"></a>
+                </div>
+            </div>
+            <!--}城市选择-->
+            <!--上传{-->
+            <div class="edit-col cur" style="background: url(img/bg.jpg) no-repeat;background-size:cover ">
+                <span class="edit-col-num">10</span>
+                <div class="edit-col-icon">
+                    <a href="" class="icon-mobile"></a>
+                    <a href="" class="icon-blank"></a>
+                    <a href="" class="icon-delete"></a>
+                </div>
+            </div>
+            <!--}上传-->
+            <!--任务测试{-->
+            <div class="edit-col" style="background: url(img/bg.jpg) no-repeat;background-size:cover ">
+                <span class="edit-col-num">11</span>
+                <div class="edit-col-icon">
+                    <a href="" class="icon-mobile"></a>
+                    <a href="" class="icon-blank"></a>
+                    <a href="" class="icon-delete"></a>
+                </div>
+            </div>
+            <!--}任务测试-->
+
+         </section>
       </div>
     </div>
     
@@ -138,6 +579,17 @@
         allowEmpty:true,
         showAlpha: true
       });
+      //输入框聚焦
+      $(".dropdownInput input").click(function(){
+          $(".dropdownInput_list").stop().animate({"opacity":1},100);
+      })
+
+      $(".dropdownInput_list li").click(function(){
+          $(".dropdownInput_list li").removeClass("selected");
+          $(this).addClass("selected");
+          $(".dropdownInput input").val($(this).html());
+          $(".dropdownInput_list").stop().animate({"opacity":0},100);
+      })
     </script>
   </body>
 </html>

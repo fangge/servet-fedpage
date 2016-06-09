@@ -7,7 +7,6 @@
 /* line 7, D:/servet-fedpage/edit/src/sass/module/header.scss */
 .navbar {
   height: 52px;
-  -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3);
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3);
 }
 
@@ -74,10 +73,9 @@
 .navbar-right-btn1 {
   width: 56px;
   height: 31px;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   border: 1px solid #3d92c7;
-  -webkit-border-radius: 31px;
-  -moz-border-radius: 31px;
   border-radius: 31px;
   text-align: center;
   line-height: 31px;
@@ -416,6 +414,7 @@
   width: 177px;
   height: 26px;
   margin: 0 auto;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   border-radius: 26px;
   border: 1px solid #8b8b8b;
@@ -511,7 +510,6 @@ License: MIT
 /* line 25, D:/servet-fedpage/edit/src/sass/module/spectrum.scss */
 .sp-container,
 .sp-container * {
-  -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
 }
@@ -637,6 +635,7 @@ License: MIT
   -webkit-user-select: none;
   -moz-user-select: -moz-none;
   -o-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
 
@@ -673,11 +672,6 @@ License: MIT
 /* Gradients for hue, saturation and value instead of images.  Not pretty... but it works */
 /* line 154, D:/servet-fedpage/edit/src/sass/module/spectrum.scss */
 .sp-sat {
-  background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#FFF), to(rgba(204, 154, 129, 0)));
-  background-image: -webkit-linear-gradient(left, #FFF, rgba(204, 154, 129, 0));
-  background-image: -moz-linear-gradient(left, #fff, rgba(204, 154, 129, 0));
-  background-image: -o-linear-gradient(left, #fff, rgba(204, 154, 129, 0));
-  background-image: -ms-linear-gradient(left, #fff, rgba(204, 154, 129, 0));
   background-image: linear-gradient(to right, #fff, rgba(204, 154, 129, 0));
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType = 1, startColorstr=#FFFFFFFF, endColorstr=#00CC9A81)";
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType = 1, startColorstr='#FFFFFFFF', endColorstr='#00CC9A81');
@@ -685,11 +679,6 @@ License: MIT
 
 /* line 164, D:/servet-fedpage/edit/src/sass/module/spectrum.scss */
 .sp-val {
-  background-image: -webkit-gradient(linear, 0 100%, 0 0, from(#000000), to(rgba(204, 154, 129, 0)));
-  background-image: -webkit-linear-gradient(bottom, #000000, rgba(204, 154, 129, 0));
-  background-image: -moz-linear-gradient(bottom, #000, rgba(204, 154, 129, 0));
-  background-image: -o-linear-gradient(bottom, #000, rgba(204, 154, 129, 0));
-  background-image: -ms-linear-gradient(bottom, #000, rgba(204, 154, 129, 0));
   background-image: linear-gradient(to top, #000, rgba(204, 154, 129, 0));
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00CC9A81, endColorstr=#FF000000)";
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00CC9A81', endColorstr='#FF000000');
@@ -697,11 +686,6 @@ License: MIT
 
 /* line 175, D:/servet-fedpage/edit/src/sass/module/spectrum.scss */
 .sp-hue {
-  background: -moz-linear-gradient(top, #ff0000 0%, #ffff00 17%, #00ff00 33%, #00ffff 50%, #0000ff 67%, #ff00ff 83%, #ff0000 100%);
-  background: -ms-linear-gradient(top, #ff0000 0%, #ffff00 17%, #00ff00 33%, #00ffff 50%, #0000ff 67%, #ff00ff 83%, #ff0000 100%);
-  background: -o-linear-gradient(top, #ff0000 0%, #ffff00 17%, #00ff00 33%, #00ffff 50%, #0000ff 67%, #ff00ff 83%, #ff0000 100%);
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff0000), color-stop(0.17, #ffff00), color-stop(0.33, #00ff00), color-stop(0.5, #00ffff), color-stop(0.67, #0000ff), color-stop(0.83, #ff00ff), to(#ff0000));
-  background: -webkit-linear-gradient(top, #ff0000 0%, #ffff00 17%, #00ff00 33%, #00ffff 50%, #0000ff 67%, #ff00ff 83%, #ff0000 100%);
   background: linear-gradient(to bottom, #ff0000 0%, #ffff00 17%, #00ff00 33%, #00ffff 50%, #0000ff 67%, #ff00ff 83%, #ff0000 100%);
 }
 
@@ -825,7 +809,6 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
 /* line 263, D:/servet-fedpage/edit/src/sass/module/spectrum.scss */
 .sp-container, .sp-container button, .sp-container input, .sp-color, .sp-hue, .sp-clear {
   font: normal 12px "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
@@ -1026,10 +1009,6 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
 /* line 422, D:/servet-fedpage/edit/src/sass/module/spectrum.scss */
 .sp-container button {
   background-color: #eeeeee;
-  background-image: -webkit-linear-gradient(top, #eeeeee, #cccccc);
-  background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);
-  background-image: -ms-linear-gradient(top, #eeeeee, #cccccc);
-  background-image: -o-linear-gradient(top, #eeeeee, #cccccc);
   background-image: linear-gradient(to bottom, #eeeeee, #cccccc);
   border: 1px solid #ccc;
   border-bottom: 1px solid #bbb;
@@ -1046,10 +1025,6 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
 /* line 440, D:/servet-fedpage/edit/src/sass/module/spectrum.scss */
 .sp-container button:hover {
   background-color: #dddddd;
-  background-image: -webkit-linear-gradient(top, #dddddd, #bbbbbb);
-  background-image: -moz-linear-gradient(top, #dddddd, #bbbbbb);
-  background-image: -ms-linear-gradient(top, #dddddd, #bbbbbb);
-  background-image: -o-linear-gradient(top, #dddddd, #bbbbbb);
   background-image: linear-gradient(to bottom, #dddddd, #bbbbbb);
   border: 1px solid #bbb;
   border-bottom: 1px solid #999;
@@ -1061,8 +1036,6 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
 .sp-container button:active {
   border: 1px solid #aaa;
   border-bottom: 1px solid #888;
-  -webkit-box-shadow: inset 0 0 5px 2px #aaaaaa, 0 1px 0 0 #eeeeee;
-  -moz-box-shadow: inset 0 0 5px 2px #aaaaaa, 0 1px 0 0 #eeeeee;
   -ms-box-shadow: inset 0 0 5px 2px #aaaaaa, 0 1px 0 0 #eeeeee;
   -o-box-shadow: inset 0 0 5px 2px #aaaaaa, 0 1px 0 0 #eeeeee;
   box-shadow: inset 0 0 5px 2px #aaaaaa, 0 1px 0 0 #eeeeee;
@@ -1189,8 +1162,6 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   display: inline-block;
   width: 30px;
   height: 30px;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
   -o-border-radius: 15px;
   border-radius: 15px;
 }
@@ -1208,8 +1179,6 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   margin: 7px 0 8px;
   padding: 15px 13px;
   background: #f3f0f7;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
   -o-border-radius: 10px;
   border-radius: 10px;
 }
@@ -1302,8 +1271,6 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   display: inline-block;
   width: 80px;
   height: 80px;
-  -webkit-border-radius: 40px;
-  -moz-border-radius: 40px;
   -o-border-radius: 40px;
   border-radius: 40px;
 }
@@ -1377,9 +1344,7 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
 /* line 218, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .modal-content {
   background: #fff;
-  -webkit-border-radius: 10px;
   -o-border-radius: 10px;
-  -moz-border-radius: 10px;
   border-radius: 10px;
 }
 
@@ -1389,7 +1354,6 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   padding: 14px;
   height: 48px;
   line-height: 48px;
-  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.08);
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.08);
 }
 
@@ -1428,9 +1392,7 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
 /* line 264, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .modal-body {
   padding: 0;
-  -webkit-border-radius: 0 0 10px 10px;
   -o-border-radius: 0 0 10px 10px;
-  -moz-border-radius: 0 0 10px 10px;
   border-radius: 0 0 10px 10px;
 }
 
@@ -1480,9 +1442,7 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   text-align: center;
   color: #fff;
   background: #33babe;
-  -webkit-border-radius: 25px;
   -o-border-radius: 25px;
-  -moz-border-radius: 25px;
   border-radius: 25px;
 }
 
@@ -1524,6 +1484,10 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
 }
 
 /* line 352, D:/servet-fedpage/edit/src/sass/module/research.scss */
+.research #copy-name::-moz-selection {
+  color: #fff;
+  background: #3399ff;
+}
 .research #copy-name::selection {
   color: #fff;
   background: #3399ff;
@@ -1558,9 +1522,7 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   background: #fff;
   vertical-align: middle;
   color: #bcc0c7;
-  -webkit-border-radius: 3px;
   -o-border-radius: 3px;
-  -moz-border-radius: 3px;
   border-radius: 3px;
   border: 1px solid #ccd2d6;
   outline: none;
@@ -1572,9 +1534,7 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   vertical-align: middle;
   border: 1px solid #ccd2d6;
   color: #4b5668;
-  -webkit-border-radius: 18px;
   -o-border-radius: 18px;
-  -moz-border-radius: 18px;
   border-radius: 18px;
   background: transparent;
 }
@@ -1603,9 +1563,7 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   background-color: #f0f3f7;
   border: 0;
   outline: none;
-  -webkit-border-radius: 3px;
   -o-border-radius: 3px;
-  -moz-border-radius: 3px;
   border-radius: 3px;
 }
 
@@ -1711,9 +1669,7 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   margin-right: 18px;
   vertical-align: middle;
   background: #fff;
-  -webkit-border-radius: 3px;
   -o-border-radius: 3px;
-  -moz-border-radius: 3px;
   border-radius: 3px;
 }
 
@@ -1796,8 +1752,6 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   margin-right: 10px;
   width: 28px;
   height: 28px;
-  -webkit-border-radius: 14px;
-  -moz-border-radius: 14px;
   -o-border-radius: 14px;
   border-radius: 14px;
 }
@@ -1899,8 +1853,6 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   text-indent: 35px;
   padding-right: 26px;
   color: #fff;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
   -o-border-radius: 15px;
   border-radius: 15px;
   background: url("../img/icon_list_item_09.png") 26px center no-repeat;
@@ -1925,7 +1877,6 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
 .research .list-detail {
   width: 344px;
   height: 144px;
-  -webkit-box-shadow: 2px -2px 4px 0 rgba(0, 0, 0, 0.08);
   box-shadow: 2px -2px 4px 0 rgba(0, 0, 0, 0.08);
 }
 
@@ -1936,7 +1887,6 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   width: 200px;
   height: 144px;
   line-height: 144px;
-  -webkit-box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.08);
   box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.08);
 }
 
@@ -2030,8 +1980,6 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   height: 22px;
   background: #f7941e;
   border: 2px solid #e9eff3;
-  -webkit-border-radius: 12px;
-  -moz-border-radius: 12px;
   -o-border-radius: 12px;
   border-radius: 12px;
   font-size: 12px;
@@ -2059,8 +2007,6 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   margin-left: 5px;
   width: 7px;
   height: 7px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
 }
@@ -2131,8 +2077,6 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   margin-right: 5px;
   width: 20px;
   height: 20px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
   -o-border-radius: 10px;
   border-radius: 10px;
 }
@@ -2171,7 +2115,6 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
 /* line 914, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .reseach-tab .reseach-tab-left {
   -wekbit-border-radius: 15px 0 0 15px;
-  -moz-border-radius: 15px 0 0 15px;
   -o-border-radius: 15px 0 0 15px;
   border-radius: 15px 0 0 15px;
 }
@@ -2179,7 +2122,6 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
 /* line 921, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .reseach-tab .reseach-tab-right {
   -wekbit-border-radius: 0 15px 15px 0;
-  -moz-border-radius: 0 15px 15px 0;
   -o-border-radius: 0 15px 15px 0;
   border-radius: 0 15px 15px 0;
 }
@@ -2268,6 +2210,7 @@ a:hover {
 
 /* line 8, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .edit-col {
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 85%;
   height: 550px;
@@ -2684,6 +2627,9 @@ input[type="checkbox"]:checked + .item_cell .item_text:before {
 }
 
 /* line 299, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+.tgl ::-moz-selection, .tgl :after::-moz-selection, .tgl :before::-moz-selection, .tgl + .tgl-btn::-moz-selection, .tgl::-moz-selection, .tgl:after::-moz-selection, .tgl:before::-moz-selection {
+  background: 0 0;
+}
 .tgl ::selection, .tgl :after::selection, .tgl :before::selection, .tgl + .tgl-btn::selection, .tgl::selection, .tgl:after::selection, .tgl:before::selection {
   background: 0 0;
 }
@@ -2729,7 +2675,6 @@ input[type="checkbox"]:checked + .item_cell .item_text:before {
   background: #f0f0f0;
   border-radius: 12px;
   padding: 2px;
-  -webkit-transition: all .4s ease;
   transition: all .4s ease;
 }
 
@@ -2737,7 +2682,6 @@ input[type="checkbox"]:checked + .item_cell .item_text:before {
 .tgl-light + .tgl-btn:after {
   border-radius: 50%;
   background: #fff;
-  -webkit-transition: all .2s ease;
   transition: all .2s ease;
 }
 
@@ -2809,7 +2753,6 @@ input[type="checkbox"]:checked + .item_cell .item_text:before {
   transform: scale(1.4);
   -webkit-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
-  -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
 
@@ -2923,7 +2866,6 @@ span.points_num_select {
   margin-top: -9px;
   margin-left: -23px;
   border-radius: 23px;
-  background: -webkit-linear-gradient(15deg, #d7d7d7 0%, #fff 100%);
   background: linear-gradient(75deg, #d7d7d7 0%, #fff 100%);
   opacity: 0.9;
   box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.2);
@@ -3019,6 +2961,7 @@ span.points_num_select {
   line-height: 68px;
   text-align: right;
   padding-right: 15px;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   font-size: 13px;
   position: relative;
@@ -3056,6 +2999,7 @@ span.points_num_select {
   position: relative;
   overflow: visible;
   padding-top: 10px;
+  -moz-box-sizing: initial;
   box-sizing: initial;
 }
 
@@ -3080,8 +3024,6 @@ span.points_num_select {
   min-width: 160px;
   background: rgba(0, 0, 0, 0.3);
   text-align: center;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
   border-radius: 5px;
 }
 
@@ -3126,8 +3068,6 @@ span.points_num_select {
   width: 160px;
   background: rgba(0, 0, 0, 0.3);
   text-align: center;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
   border-radius: 5px;
   line-height: 68px;
   color: #fff;
@@ -3160,6 +3100,7 @@ textarea:focus {
   height: 42px;
   line-height: 42px;
   padding: 0 18px;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   font-size: 13px;
   background: rgba(0, 0, 0, 0.3);
@@ -3311,5 +3252,4 @@ button {
   background: #e9eff3;
   overflow-x: hidden;
 }
-
 /*# sourceMappingURL=common.css.map */
