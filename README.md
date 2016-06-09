@@ -25,3 +25,4 @@ gulp 对应文件夹名字  ==> gulp passport 即监听passport里面的
     7. user 用户信息页
     8. edit 后台管理页面
     9. servey_list 已答问卷列表
+    10. tow_dimension&answer_paper 二维、单个用户答卷
