@@ -2353,15 +2353,16 @@ a:hover {
   font-size: 16px;
   padding-top: 40px;
   margin: 0 auto;
+  position: relative;
 }
 
-/* line 113, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 114, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .upload-img span {
   font-size: 32px;
   font-weight: 600;
 }
 
-/* line 117, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 118, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .upload-img input {
   position: absolute;
   opacity: 0;
@@ -2373,7 +2374,7 @@ a:hover {
   cursor: pointer;
 }
 
-/* line 128, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 129, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .edit-title {
   width: 283px;
   height: 65px;
@@ -2387,7 +2388,7 @@ a:hover {
   margin: 34px auto 20px;
 }
 
-/* line 139, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 140, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .edit-title .icon-edit {
   position: absolute;
   display: block;
@@ -2398,7 +2399,7 @@ a:hover {
   left: 0;
 }
 
-/* line 149, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 150, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .edit-intro {
   color: #fff;
   font-size: 14px;
@@ -2407,7 +2408,7 @@ a:hover {
   margin: 0 auto;
 }
 
-/* line 156, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 157, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .logic-area {
   position: absolute;
   left: 30px;
@@ -2415,7 +2416,7 @@ a:hover {
   z-index: 101;
 }
 
-/* line 162, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 163, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .icon-jump {
   display: block;
   width: 22px;
@@ -2424,12 +2425,12 @@ a:hover {
   cursor: pointer;
 }
 
-/* line 165, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 166, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .icon-jump:hover + .logic-tip {
   display: block;
 }
 
-/* line 170, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 171, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .logic-tip {
   width: 69px;
   height: 28px;
@@ -2444,34 +2445,47 @@ a:hover {
   top: 18px;
 }
 
-/* line 181, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 182, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .edit-title2 {
+  display: block;
   color: #fff;
   font-size: 24px;
   line-height: 24px;
   text-align: center;
   letter-spacing: 5px;
+  width: 50%;
+  margin: 0 auto 20px;
+  background: none;
+  height: 30px;
+  border: 0;
+  resize: none;
 }
 
-/* line 188, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 196, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .icon-pc {
   display: inline-block;
   width: 14px;
   height: 12px;
   background: url(../slice/pc.png) no-repeat;
   margin-right: 15px;
+  position: absolute;
+  top: 74px;
+  left: 170px;
 }
 
-/* line 193, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 204, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .icon-arrow {
   display: inline-block;
   width: 17px;
   height: 12px;
   background: url(../slice/arrow.png) no-repeat;
   margin-right: 15px;
+  position: absolute;
+  top: 74px;
+  left: 205px;
 }
 
-/* line 198, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 212, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .edit-btn {
   display: block;
   color: #c4c2c0;
@@ -2480,37 +2494,37 @@ a:hover {
   margin: 14px 0;
 }
 
-/* line 204, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 218, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .edit-btn:hover {
   color: #fff;
 }
 
-/* line 208, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 222, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .itemset {
   width: 650px;
   margin: 0 auto;
 }
 
-/* line 212, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 226, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .item {
   position: relative;
   float: left;
   margin: 0 10px 15px 10px;
 }
 
-/* line 216, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 230, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .item label {
   margin: 0;
 }
 
-/* line 221, D:/servet-fedpage/edit/src/sass/module/edit.scss */
-.item input {
+/* line 235, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+.item input[type="radio"], .item input[type="checkbox"] {
   position: absolute;
   top: -9999px;
   left: -9999px;
 }
 
-/* line 225, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 239, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .item_cell {
   padding: 1px;
   border-radius: 5px;
@@ -2518,7 +2532,7 @@ a:hover {
   overflow: hidden;
 }
 
-/* line 230, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 244, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .item_img {
   display: block;
   width: 140px;
@@ -2527,22 +2541,31 @@ a:hover {
   border-top-right-radius: 5px;
 }
 
-/* line 236, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 250, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .item_text {
+  width: 140px;
   position: relative;
   display: block;
   padding: 0 20px;
   height: 25px;
   line-height: 25px;
-  text-align: center;
-  font-size: 13px;
-  color: #fff;
   background: rgba(0, 0, 0, 0.5);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
 
-/* line 248, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 260, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+.item_text input {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: none;
+  font-size: 13px;
+  color: #fff;
+  text-align: center;
+}
+
+/* line 270, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .item_text:before {
   content: "";
   position: absolute;
@@ -2552,7 +2575,7 @@ a:hover {
   margin: auto;
 }
 
-/* line 255, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 277, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 input[type="radio"] + .item_cell .item_text:before {
   width: 13px;
   height: 13px;
@@ -2560,7 +2583,7 @@ input[type="radio"] + .item_cell .item_text:before {
   background-size: 13px;
 }
 
-/* line 260, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 282, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 input[type="checkbox"] + .item_cell .item_text:before {
   width: 11px;
   height: 11px;
@@ -2568,25 +2591,25 @@ input[type="checkbox"] + .item_cell .item_text:before {
   background-size: 11px;
 }
 
-/* line 265, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 287, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 input:checked + .item_cell {
   box-shadow: 0 0 0 2px #28e8fd;
 }
 
-/* line 267, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 289, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 input[type="radio"]:checked + .item_cell .item_text:before,
 input[type="checkbox"]:checked + .item_cell .item_text:before {
   background-position: 0 0;
 }
 
-/* line 270, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 292, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .item .zoom {
   position: absolute;
   bottom: 9px;
   right: 3px;
 }
 
-/* line 274, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 296, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .zoom {
   width: 18px;
   height: 18px;
@@ -2594,7 +2617,7 @@ input[type="checkbox"]:checked + .item_cell .item_text:before {
   background-size: contain;
 }
 
-/* line 279, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 301, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .add-radio {
   display: block;
   width: 140px;
@@ -2608,7 +2631,7 @@ input[type="checkbox"]:checked + .item_cell .item_text:before {
   cursor: pointer;
 }
 
-/* line 291, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 313, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .order {
   position: absolute;
   left: 20px;
@@ -2618,17 +2641,17 @@ input[type="checkbox"]:checked + .item_cell .item_text:before {
   font-size: 14px;
 }
 
-/* line 299, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 321, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .tgl {
   display: none;
 }
 
-/* line 300, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 322, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .tgl ::-moz-selection, .tgl :after::-moz-selection, .tgl :before::-moz-selection, .tgl + .tgl-btn::-moz-selection, .tgl::-moz-selection, .tgl:after::-moz-selection, .tgl:before::-moz-selection {
   background: 0 0;
 }
 
-/* line 301, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 323, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .tgl ::-moz-selection, .tgl :after::-moz-selection, .tgl :before::-moz-selection, .tgl + .tgl-btn::-moz-selection, .tgl::-moz-selection, .tgl:after::-moz-selection, .tgl:before::-moz-selection {
   background: 0 0;
 }
@@ -2636,7 +2659,7 @@ input[type="checkbox"]:checked + .item_cell .item_text:before {
   background: 0 0;
 }
 
-/* line 302, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 324, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .tgl + .tgl-btn {
   outline: 0;
   display: block;
@@ -2646,7 +2669,7 @@ input[type="checkbox"]:checked + .item_cell .item_text:before {
   cursor: pointer;
 }
 
-/* line 303, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 325, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .tgl + .tgl-btn:after, .tgl + .tgl-btn:before {
   position: relative;
   display: block;
@@ -2657,22 +2680,22 @@ input[type="checkbox"]:checked + .item_cell .item_text:before {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
 }
 
-/* line 304, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 326, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .tgl + .tgl-btn:after {
   left: -3px;
 }
 
-/* line 305, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 327, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .tgl + .tgl-btn:before {
   display: none;
 }
 
-/* line 306, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 328, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .tgl:checked + .tgl-btn:after {
   left: 50%;
 }
 
-/* line 307, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 329, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .tgl-light + .tgl-btn {
   background: #f0f0f0;
   border-radius: 12px;
@@ -2680,19 +2703,19 @@ input[type="checkbox"]:checked + .item_cell .item_text:before {
   transition: all .4s ease;
 }
 
-/* line 308, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 330, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .tgl-light + .tgl-btn:after {
   border-radius: 50%;
   background: #fff;
   transition: all .2s ease;
 }
 
-/* line 309, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 331, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .tgl-light:checked + .tgl-btn {
   background: #42c0f4;
 }
 
-/* line 310, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 332, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .tg-list-item {
   float: right;
   margin-top: 5px;
@@ -2700,14 +2723,14 @@ input[type="checkbox"]:checked + .item_cell .item_text:before {
 }
 
 /*满意度*/
-/* line 316, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 338, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .mood {
   width: 450px;
   height: 104px;
   margin: 60px auto 0;
 }
 
-/* line 320, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 342, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .mood_icon {
   float: left;
   width: 64px;
@@ -2717,37 +2740,37 @@ input[type="checkbox"]:checked + .item_cell .item_text:before {
   background-size: contain;
 }
 
-/* line 328, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 350, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .mood_icon:last-child {
   margin-right: 0;
 }
 
-/* line 330, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 352, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .mood_icon_1 {
   background-image: url(../img/mood_1.png);
 }
 
-/* line 332, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 354, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .mood_icon_2 {
   background-image: url(../img/mood_2.png);
 }
 
-/* line 334, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 356, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .mood_icon_3 {
   background-image: url(../img/mood_3.png);
 }
 
-/* line 336, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 358, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .mood_icon_4 {
   background-image: url(../img/mood_4.png);
 }
 
-/* line 338, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 360, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .mood_icon_5 {
   background-image: url(../img/mood_5.png);
 }
 
-/* line 340, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 362, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .mood_icon_selected {
   margin: 0 20px;
   opacity: 1;
@@ -2759,14 +2782,14 @@ input[type="checkbox"]:checked + .item_cell .item_text:before {
 }
 
 /* 心形 */
-/* line 351, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 373, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .heart {
   width: 474px;
   height: 54px;
   margin: 60px auto 0;
 }
 
-/* line 355, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 377, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .heart_icon {
   float: left;
   margin: 0 21px;
@@ -2775,23 +2798,23 @@ input[type="checkbox"]:checked + .item_cell .item_text:before {
   background: url(../img/heart.png) 100% 0 no-repeat;
 }
 
-/* line 361, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 383, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .heart_icon:last-child {
   margin-right: 0;
 }
 
-/* line 363, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 385, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .heart_icon_selected {
   background-position: 0 0;
 }
 
-/* line 365, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 387, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .edit-col-cont3 {
   padding-top: 100px;
 }
 
 /* 垂直打分 */
-/* line 370, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 392, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .points {
   color: #fff;
   position: relative;
@@ -2804,23 +2827,23 @@ input[type="checkbox"]:checked + .item_cell .item_text:before {
   left: -28px;
 }
 
-/* line 381, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 403, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .points_good, .points_bad {
   position: absolute;
   left: 0;
 }
 
-/* line 384, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 406, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .points_good {
   top: 0;
 }
 
-/* line 386, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 408, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .points_bad {
   bottom: 0;
 }
 
-/* line 388, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 410, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .points_num {
   float: left;
   height: 332px;
@@ -2828,7 +2851,7 @@ input[type="checkbox"]:checked + .item_cell .item_text:before {
   padding-right: 21px;
 }
 
-/* line 393, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 415, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .points_num span {
   display: block;
   line-height: 21px;
@@ -2836,19 +2859,19 @@ input[type="checkbox"]:checked + .item_cell .item_text:before {
   opacity: 0.5;
 }
 
-/* line 399, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 421, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .points_num span:last-child {
   margin-bottom: 0;
 }
 
-/* line 401, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 423, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 span.points_num_select {
   opacity: 1;
   font-size: 18px;
   color: #fff;
 }
 
-/* line 405, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 427, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .points_bar {
   position: relative;
   float: left;
@@ -2858,7 +2881,7 @@ span.points_num_select {
   background-size: 100% 100%;
 }
 
-/* line 412, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 434, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .points_bar_handler {
   position: absolute;
   top: 0;
@@ -2874,7 +2897,7 @@ span.points_num_select {
 }
 
 /* 满意度 */
-/* line 427, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 449, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .satisfaction {
   width: 186px;
   margin: 0 auto;
@@ -2882,7 +2905,7 @@ span.points_num_select {
   color: #fff;
 }
 
-/* line 433, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 455, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .satisfaction_item {
   position: relative;
   height: 45px;
@@ -2892,7 +2915,7 @@ span.points_num_select {
   padding-right: 60px;
 }
 
-/* line 440, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 462, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .satisfaction_item:after {
   content: "";
   position: absolute;
@@ -2906,57 +2929,58 @@ span.points_num_select {
   background-size: 45px;
 }
 
-/* line 451, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 473, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .satisfaction_item:nth-child(1):after {
   content: "1";
   background-position: 0 0px;
 }
 
-/* line 454, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 476, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .satisfaction_item:nth-child(2):after {
   content: "2";
   background-position: 0 -45px;
 }
 
-/* line 457, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 479, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .satisfaction_item:nth-child(3):after {
   content: "3";
   background-position: 0 -90px;
 }
 
-/* line 460, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 482, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .satisfaction_item:nth-child(4):after {
   content: "4";
   background-position: 0 -135px;
 }
 
-/* line 463, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 485, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .satisfaction_item:nth-child(5):after {
   content: "5";
   background-position: 0 -180px;
 }
 
 /* 表格 */
-/* line 468, D:/servet-fedpage/edit/src/sass/module/edit.scss */
-.table {
-  padding-right: 105px;
-  overflow: hidden;
+/* line 490, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+.edit-table {
   color: #fff;
+  overflow-x: scroll;
+  overflow-y: visible;
+  height: 354px;
 }
 
-/* line 473, D:/servet-fedpage/edit/src/sass/module/edit.scss */
-.table td, .table th {
+/* line 495, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+.edit-table td, .edit-table th {
   text-align: center;
 }
 
-/* line 476, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 498, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .table_column {
   float: left;
   width: 104px;
   padding-top: 53px;
 }
 
-/* line 480, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 502, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .table_column span {
   display: block;
   height: 68px;
@@ -2969,7 +2993,7 @@ span.points_num_select {
   position: relative;
 }
 
-/* line 489, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 511, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .table_column span .icon-delete2 {
   position: absolute;
   left: 6px;
@@ -2978,24 +3002,24 @@ span.points_num_select {
   cursor: pointer;
 }
 
-/* line 497, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 519, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .table_column span:hover .icon-delete2 {
   display: block;
 }
 
-/* line 502, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 524, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .table_main {
   position: relative;
-  padding-bottom: 68px;
+  float: left;
 }
 
-/* line 509, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 530, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .table_main table {
   border-collapse: separate;
   border-spacing: 1px;
 }
 
-/* line 513, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 534, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .table_main th {
   height: 42px;
   position: relative;
@@ -3005,7 +3029,7 @@ span.points_num_select {
   box-sizing: initial;
 }
 
-/* line 519, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 540, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .table_main th .icon-delete2 {
   position: absolute;
   left: 50%;
@@ -3015,12 +3039,12 @@ span.points_num_select {
   cursor: pointer;
 }
 
-/* line 528, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 549, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .table_main th:hover .icon-delete2 {
   display: block;
 }
 
-/* line 533, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 554, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .table_main td {
   height: 68px;
   min-width: 160px;
@@ -3029,19 +3053,19 @@ span.points_num_select {
   border-radius: 5px;
 }
 
-/* line 541, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 562, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .table_main td label {
   margin-bottom: 0;
 }
 
-/* line 545, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 566, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .table_input input {
   position: absolute;
   top: -9999px;
   left: -9999px;
 }
 
-/* line 549, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 570, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .table_input span {
   display: inline-block;
   width: 13px;
@@ -3050,12 +3074,12 @@ span.points_num_select {
   background-size: 26px 13px;
 }
 
-/* line 555, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 576, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .table_input input:checked + span {
   background-position: 0 0;
 }
 
-/* line 557, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 578, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .icon-delete2 {
   display: inline-block;
   width: 17px;
@@ -3063,7 +3087,7 @@ span.points_num_select {
   background: url(../slice/icon_close_btn.png) no-repeat;
 }
 
-/* line 561, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 582, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .add-table {
   display: block;
   height: 68px;
@@ -3077,26 +3101,26 @@ span.points_num_select {
   position: absolute;
 }
 
-/* line 575, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 596, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .add-row {
-  left: 104px;
-  bottom: 0px;
+  left: 0;
+  bottom: -68px;
 }
 
-/* line 579, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 600, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .add-col {
-  right: -78px;
-  top: 53px;
+  right: -160px;
+  top: 54px;
 }
 
 /* 下拉提示输入框 */
-/* line 584, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 605, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 input[type="text"]:focus,
 textarea:focus {
   box-shadow: 0 0 0 1px #28e8fd;
 }
 
-/* line 587, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 608, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .dropdownInput input, .dropdownInput_list li {
   width: 380px;
   height: 42px;
@@ -3109,7 +3133,7 @@ textarea:focus {
   color: #fff;
 }
 
-/* line 597, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 618, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .dropdownInput {
   position: relative;
   width: 380px;
@@ -3117,7 +3141,7 @@ textarea:focus {
   padding-top: 0px;
 }
 
-/* line 602, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 623, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .dropdownInput input {
   position: absolute;
   top: 0;
@@ -3127,7 +3151,7 @@ textarea:focus {
   border: none;
 }
 
-/* line 609, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 630, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .dropdownInput_list {
   opacity: 0;
   padding-top: 42px;
@@ -3138,18 +3162,18 @@ textarea:focus {
   overflow: hidden;
 }
 
-/* line 617, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 638, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .dropdownInput_list li.selected {
   background: #28e8fd;
 }
 
-/* line 619, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 640, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .dropdownInput_list li:hover {
   background: #28e8fd;
 }
 
 /* 上传 */
-/* line 623, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 644, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .upload {
   padding-top: 12px;
   width: 260px;
@@ -3157,7 +3181,7 @@ textarea:focus {
   margin-top: 75px;
 }
 
-/* line 628, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 649, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .upload_btn {
   position: relative;
   width: 222px;
@@ -3168,7 +3192,7 @@ textarea:focus {
   margin-bottom: 40px;
 }
 
-/* line 636, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 657, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .upload_btn input {
   position: absolute;
   top: 0;
@@ -3178,7 +3202,7 @@ textarea:focus {
   opacity: 0;
 }
 
-/* line 643, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 664, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .upload_btn:after {
   content: "";
   position: absolute;
@@ -3192,7 +3216,7 @@ textarea:focus {
   background: url(../slice/add.png) no-repeat;
 }
 
-/* line 652, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 673, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .upload_desc {
   font-size: 14px;
   line-height: 21px;
@@ -3200,7 +3224,7 @@ textarea:focus {
 }
 
 /* end */
-/* line 659, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 680, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .result-btn {
   margin-top: 30px;
   width: 178px;
@@ -3214,61 +3238,61 @@ textarea:focus {
   border-radius: 50%;
 }
 
-/* line 671, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 692, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .result-btn a {
   display: block;
   color: #fff;
   text-decoration: none;
 }
 
-/* line 676, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 697, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .result-btn:hover {
   background: #05d3e8;
   opacity: 1;
 }
 
 /* 上传概念图 */
-/* line 682, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 703, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .edit-col-cont13 {
   padding-top: 130px;
 }
 
-/* line 684, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 705, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .pic-upload {
   padding-top: 0;
   margin-top: 0;
 }
 
-/* line 688, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 709, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .pic-upload .upload-img {
   margin-top: 55px;
   margin-bottom: 55px;
 }
 
-/* line 692, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 713, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .pic-upload .upload_desc {
   margin-left: 57px;
 }
 
 /* 附加任务 */
-/* line 697, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 718, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .edit-col-cont12 {
   padding-top: 200px;
 }
 
-/* line 700, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 721, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .edit-col-cont12 .edit-intro {
   width: auto;
   text-align: center;
 }
 
 /* 产品建议 */
-/* line 706, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 727, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .edit-col-cont11 {
   padding-top: 100px;
 }
 
-/* line 711, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 732, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .edit-col-cont11 .edit-area textarea {
   border: none;
   background: #000;
@@ -3285,12 +3309,12 @@ textarea:focus {
 }
 
 /* 购买测试 */
-/* line 729, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 750, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .edit-col-cont10 {
   padding-top: 190px;
 }
 
-/* line 731, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 752, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .edit-task-addr {
   text-align: center;
   width: 600px;
@@ -3298,12 +3322,12 @@ textarea:focus {
   color: #fff;
 }
 
-/* line 737, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 758, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .edit-task-addr .input-group {
   margin-bottom: 5px;
 }
 
-/* line 739, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 760, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .edit-task-addr .input-group input {
   width: 485px;
   border-radius: 20px;
@@ -3314,13 +3338,13 @@ textarea:focus {
   opacity: .6;
 }
 
-/* line 750, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 771, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .add-task-addr-btn {
   margin-top: 15px;
   cursor: default;
 }
 
-/* line 754, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 775, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .add-task-addr-btn i {
   position: relative;
   top: 2px;
