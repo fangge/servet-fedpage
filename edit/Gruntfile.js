@@ -403,7 +403,7 @@ module.exports = function(grunt) {
     grunt.registerTask('dest', ['connect:site_dest']);
 
     // 发布任务
-    grunt.registerTask('release', ['sass', 'clean:build', 'copy:release', 'sprite', 'autoprefixer','cssmin', 'uglify', 'ejs_static:release','concat:trans_css','concat:trans_html','clean:release','connect:site_dest']);
+    grunt.registerTask('release', ['sass', 'clean:build', 'copy:release', 'sprite', 'autoprefixer','cssmin', 'uglify','imagemin', 'ejs_static:release','concat:trans_css','concat:trans_html','clean:release','connect:site_dest']);
     // grunt.registerTask('release', ['sass', 'clean:build', 'copy:release', 'adisprite', 'uglify', 'imagemin', 'ejs_static:release', 'clean:release', 'connect:site_dest']);
 
     // 提交dest到静态文件svn

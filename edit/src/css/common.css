@@ -401,15 +401,14 @@
 .sp-container {
   background: none !important;
   border: 0 !important;
-  margin-left: 36px;
 }
 
-/* line 179, D:/servet-fedpage/edit/src/sass/module/aside.scss */
+/* line 178, D:/servet-fedpage/edit/src/sass/module/aside.scss */
 .sp-picker-container {
   border: 0 !important;
 }
 
-/* line 182, D:/servet-fedpage/edit/src/sass/module/aside.scss */
+/* line 181, D:/servet-fedpage/edit/src/sass/module/aside.scss */
 .set-bg {
   width: 177px;
   height: 26px;
@@ -420,19 +419,19 @@
   border: 1px solid #8b8b8b;
 }
 
-/* line 189, D:/servet-fedpage/edit/src/sass/module/aside.scss */
+/* line 188, D:/servet-fedpage/edit/src/sass/module/aside.scss */
 .set-bg li {
   float: left;
   width: 50%;
   height: 26px;
 }
 
-/* line 194, D:/servet-fedpage/edit/src/sass/module/aside.scss */
+/* line 193, D:/servet-fedpage/edit/src/sass/module/aside.scss */
 .set-bg li.active a {
   background: #8b8b8b;
 }
 
-/* line 196, D:/servet-fedpage/edit/src/sass/module/aside.scss */
+/* line 195, D:/servet-fedpage/edit/src/sass/module/aside.scss */
 .set-bg li a {
   display: block;
   height: 24px;
@@ -443,19 +442,19 @@
   -moz-transition: all .5s ease-in-out;
 }
 
-/* line 203, D:/servet-fedpage/edit/src/sass/module/aside.scss */
+/* line 202, D:/servet-fedpage/edit/src/sass/module/aside.scss */
 .set-bg li a.set-bg1 {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
 
-/* line 207, D:/servet-fedpage/edit/src/sass/module/aside.scss */
+/* line 206, D:/servet-fedpage/edit/src/sass/module/aside.scss */
 .set-bg li a.set-bg2 {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
 
-/* line 211, D:/servet-fedpage/edit/src/sass/module/aside.scss */
+/* line 210, D:/servet-fedpage/edit/src/sass/module/aside.scss */
 .set-bg li a i {
   display: block;
   margin: 0 auto;
@@ -463,19 +462,19 @@
   top: 3px;
 }
 
-/* line 216, D:/servet-fedpage/edit/src/sass/module/aside.scss */
+/* line 215, D:/servet-fedpage/edit/src/sass/module/aside.scss */
 .set-bg li a i.icon-setbg {
   top: 5px;
 }
 
-/* line 223, D:/servet-fedpage/edit/src/sass/module/aside.scss */
+/* line 222, D:/servet-fedpage/edit/src/sass/module/aside.scss */
 .icon-setcolor {
   width: 17px;
   height: 17px;
   background: url(../slice/color.png) no-repeat;
 }
 
-/* line 226, D:/servet-fedpage/edit/src/sass/module/aside.scss */
+/* line 225, D:/servet-fedpage/edit/src/sass/module/aside.scss */
 .icon-setbg {
   width: 16px;
   height: 14px;
@@ -1335,75 +1334,14 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   height: 282px;
 }
 
-/* line 213, D:/servet-fedpage/edit/src/sass/module/research.scss */
-.research #add-new-reseach .modal-dialog {
-  width: 930px;
-  margin-top: 130px;
-}
-
-/* line 218, D:/servet-fedpage/edit/src/sass/module/research.scss */
-.research .modal-content {
-  background: #fff;
-  -o-border-radius: 10px;
-  border-radius: 10px;
-}
-
-/* line 226, D:/servet-fedpage/edit/src/sass/module/research.scss */
-.research .modal-header {
-  position: relative;
-  padding: 14px;
-  height: 48px;
-  line-height: 48px;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.08);
-}
-
-/* line 235, D:/servet-fedpage/edit/src/sass/module/research.scss */
-.research #add-group .close, .research #add-new-reseach .close, .research #copy-reseach .close {
-  position: absolute;
-  margin: 0;
-  opacity: 1;
-  filter: alpha(opacity=100);
-  top: 20px;
-  left: 21px;
-  font-size: 13px;
-  color: #2bb7c5;
-  text-shadow: none;
-  font-weight: normal;
-}
-
-/* line 248, D:/servet-fedpage/edit/src/sass/module/research.scss */
-.research #add-group .confirm, .research #copy-reseach .confirm {
-  position: absolute;
-  padding: 0;
-  line-height: 1;
-  top: 20px;
-  right: 21px;
-  font-size: 13px;
-  background: none;
-  color: #2bb7c5;
-  text-shadow: none;
-}
-
-/* line 260, D:/servet-fedpage/edit/src/sass/module/research.scss */
-.research .modal-title {
-  text-align: center;
-}
-
-/* line 264, D:/servet-fedpage/edit/src/sass/module/research.scss */
-.research .modal-body {
-  padding: 0;
-  -o-border-radius: 0 0 10px 10px;
-  border-radius: 0 0 10px 10px;
-}
-
-/* line 272, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 215, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research #copy-reseach .modal-body {
   padding: 55px 28px 0;
   height: 233px;
   background: #f0f3f7;
 }
 
-/* line 278, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 221, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research #delete-reseach .modal-body {
   position: relative;
   padding-top: 89px;
@@ -1412,7 +1350,7 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   text-align: center;
 }
 
-/* line 286, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 229, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research #delete-reseach .icon-cry {
   position: absolute;
   top: 53px;
@@ -1423,7 +1361,7 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   background: url("../slice/icon_delete_tip.png") no-repeat;
 }
 
-/* line 296, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 239, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research #delete-reseach .delete-tips {
   margin-bottom: 75px;
   text-align: center;
@@ -1432,7 +1370,7 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   color: #4b5668;
 }
 
-/* line 304, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 247, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research #delete-reseach button {
   padding: 0;
   width: 143px;
@@ -1446,7 +1384,7 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   border-radius: 25px;
 }
 
-/* line 319, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 262, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research #delete-reseach .delete-close-btn {
   display: block;
   position: absolute;
@@ -1460,13 +1398,13 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   cursor: default;
 }
 
-/* line 332, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 275, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research #add-group .part-a {
   padding: 43px 64px 64px;
   background: #f0f3f7;
 }
 
-/* line 337, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 280, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research #group-name, .research #copy-name {
   padding: 5px;
   width: 100%;
@@ -1478,12 +1416,12 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   outline: 0;
 }
 
-/* line 348, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 291, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research #copy-name {
   font-size: 14px;
 }
 
-/* line 352, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 295, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research #copy-name::-moz-selection {
   color: #fff;
   background: #3399ff;
@@ -1493,14 +1431,14 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   background: #3399ff;
 }
 
-/* line 357, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 300, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .part-a p {
   margin-top: 50px;
   margin-bottom: 10px;
   color: #aaa;
 }
 
-/* line 363, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 306, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research #add-group .icon-email {
   display: inline-block;
   width: 34px;
@@ -1509,7 +1447,7 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   background: url("../slice/icon_send_mail.png") no-repeat;
 }
 
-/* line 371, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 314, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research #email-input {
   padding: 8px 15px;
   margin-left: 8px;
@@ -1528,7 +1466,7 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   outline: none;
 }
 
-/* line 391, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 334, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research #add-group .send-email-btn {
   padding: 5px 22px;
   vertical-align: middle;
@@ -1539,13 +1477,13 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   background: transparent;
 }
 
-/* line 403, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 346, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .seach-panel {
   height: 40px;
   line-height: 40px;
 }
 
-/* line 408, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 351, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research #seach-input {
   float: right;
   padding-top: 6px;
@@ -1567,20 +1505,20 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   border-radius: 3px;
 }
 
-/* line 431, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 374, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .seach-content {
   border-top: 1px solid #e5e5e5;
   color: #878e9a;
 }
 
-/* line 436, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 379, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .seach-group {
   float: left;
   width: 200px;
   overflow: hidden;
 }
 
-/* line 442, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 385, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .seach-group-name {
   width: 200px;
   height: 37px;
@@ -1590,26 +1528,26 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   color: #4b5668;
 }
 
-/* line 451, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 394, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .seach-group-name:hover, .research .group-name-sel {
   background: #2bb7c5;
   color: #fff;
   cursor: default;
 }
 
-/* line 457, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 400, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .seach-result {
   float: right;
   width: 733px;
 }
 
-/* line 462, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 405, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .seach-result .table {
   border: 0;
   color: #4b5668;
 }
 
-/* line 467, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 410, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .seach-result .table thead th {
   padding-left: 17px;
   border: 0;
@@ -1619,38 +1557,38 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   font-weight: normal;
 }
 
-/* line 476, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 419, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .seach-result .table thead th:first-child {
   border-left: 1px solid #f0f3f7;
 }
 
-/* line 480, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 423, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .seach-result .table td {
   padding-left: 17px;
   border-color: #f0f3f7;
 }
 
-/* line 485, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 428, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .seach-result .table td:last-child {
   border-right: 0;
 }
 
-/* line 489, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 432, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .seach-result .table tr:hover td {
   color: #2bb7c5;
 }
 
-/* line 493, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 436, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .seach-result .table tbody tr:first-child td {
   border-top: 0;
 }
 
-/* line 497, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 440, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .seach-result .table thead th.first-row, .research .seach-result .table td.first-row {
   padding-left: 27px;
 }
 
-/* line 501, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 444, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .first-row input {
   width: 0;
   height: 0;
@@ -1658,7 +1596,7 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   vertical-align: middle;
 }
 
-/* line 508, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 451, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .first-row label {
   display: block;
   margin-top: 1px;
@@ -1673,7 +1611,7 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   border-radius: 3px;
 }
 
-/* line 524, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 467, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .first-row input:checked + label {
   margin-top: 1px;
   width: 14px;
@@ -1682,24 +1620,24 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   background: url("../slice/icon_checked.png") no-repeat;
 }
 
-/* line 532, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 475, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .group:hover .add-group-btn {
   background: url("../img/icon_list_item_02.png") center no-repeat;
 }
 
-/* line 536, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 479, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .group-member {
   background: #f3f6f8;
   border-top: 1px solid #ccd2d6;
 }
 
-/* line 541, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 484, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .group-member ul {
   display: none;
   margin-bottom: 0;
 }
 
-/* line 546, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 489, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .display-btn {
   margin: 0 14px 0 22px;
   height: 58px;
@@ -1710,24 +1648,24 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   cursor: default;
 }
 
-/* line 556, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 499, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .group-member li {
   margin-bottom: 5px;
 }
 
-/* line 560, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 503, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .group-member li, .research .add-new-member {
   padding: 0 14px 0 22px;
   height: 35px;
   line-height: 35px;
 }
 
-/* line 566, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 509, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .group-member li:hover {
   background: #e3e4eb;
 }
 
-/* line 570, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 513, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .delete-member-btn {
   display: none;
   float: right;
@@ -1736,18 +1674,18 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   background: url("../img/icon_list_item_05.png") center no-repeat;
 }
 
-/* line 578, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 521, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .delete-member-btn:hover {
   cursor: default;
   background: url("../img/icon_list_item_06.png") center no-repeat;
 }
 
-/* line 583, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 526, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .group-member li:hover i {
   display: block;
 }
 
-/* line 587, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 530, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .avatar {
   margin-right: 10px;
   width: 28px;
@@ -1756,41 +1694,41 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   border-radius: 14px;
 }
 
-/* line 597, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 540, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .group-selected {
   padding-bottom: 24px;
   background: #ebeef0;
 }
 
-/* line 602, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 545, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .group-selected .display-btn {
   background: url("../img/icon_list_item_04.png") right center no-repeat;
 }
 
-/* line 606, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 549, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .add-new-member {
   color: #929ea6;
 }
 
-/* line 610, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 553, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .add-new-member:hover {
   background: none !important;
 }
 
-/* line 614, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 557, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .add-new-member a {
   display: block;
   height: 35px;
   line-height: 35px;
 }
 
-/* line 620, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 563, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .add-new-member a:hover {
   text-decoration: none;
   color: #00ddf3;
 }
 
-/* line 625, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 568, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .add-new-member em {
   display: inline-block;
   float: left;
@@ -1798,12 +1736,12 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   background: url("../img/icon_list_item_07.png") left center no-repeat;
 }
 
-/* line 632, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 575, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .add-new-member:hover em {
   background: url("../img/icon_list_item_08.png") left center no-repeat;
 }
 
-/* line 636, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 579, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .main {
   margin-left: 199px;
   padding: 30px 24px 0 38px;
@@ -1811,40 +1749,40 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   overflow-x: hidden;
 }
 
-/* line 643, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 586, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .main-header {
   padding-bottom: 18px;
   border-bottom: 1px solid #dbe0e4;
 }
 
-/* line 648, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 591, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .main-header span {
   color: #4b5668;
 }
 
-/* line 652, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 595, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .main-header span:first-child {
   margin-right: 34px;
 }
 
-/* line 656, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 599, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .main-header span:nth-child(2) {
   margin-right: 58px;
 }
 
-/* line 660, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 603, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .main-header strong {
   font-size: 24px;
 }
 
-/* line 664, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 607, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .main-header a {
   margin-left: 5px;
   color: #2bb7c5;
   text-decoration: none;
 }
 
-/* line 670, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 613, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .main-header button {
   float: right;
   height: 30px;
@@ -1859,13 +1797,13 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   background-color: #2bb7c5;
 }
 
-/* line 686, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 629, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .main-list {
   margin-top: 28px;
   margin-right: -32px;
 }
 
-/* line 691, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 634, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .main-list li {
   float: left;
   margin-right: 32px;
@@ -1873,14 +1811,14 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   width: 344px;
 }
 
-/* line 698, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 641, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .list-detail {
   width: 344px;
   height: 144px;
   box-shadow: 2px -2px 4px 0 rgba(0, 0, 0, 0.08);
 }
 
-/* line 705, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 648, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .list-img {
   position: relative;
   float: left;
@@ -1890,19 +1828,19 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.08);
 }
 
-/* line 715, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 658, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .list-img img {
   display: block;
   width: 200px;
   height: 144px;
 }
 
-/* line 721, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 664, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .list-img:hover .list-img-hover {
   display: block;
 }
 
-/* line 725, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 668, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .list-img-hover {
   display: none;
   position: absolute;
@@ -1913,40 +1851,40 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   background: rgba(0, 0, 0, 0.6);
 }
 
-/* line 735, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 678, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .list-img-hover button {
   margin-left: 25px;
 }
 
-/* line 739, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 682, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .icon-report {
   width: 16px;
   height: 16px;
   background: url("../slice/icon_survey_hover01.png") no-repeat;
 }
 
-/* line 745, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 688, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .icon-copy {
   width: 16px;
   height: 18px;
   background: url("../slice/icon_survey_hover02.png") no-repeat;
 }
 
-/* line 751, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 694, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .icon-delete {
   width: 15px;
   height: 18px;
   background: url("../slice/icon_survey_hover03.png") no-repeat;
 }
 
-/* line 757, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 700, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .icon-stop {
   width: 9px;
   height: 15px;
   background: url("../slice/icon_survey_hover04.png") no-repeat;
 }
 
-/* line 763, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 706, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .list-detail p {
   min-height: 18px;
   margin-bottom: 4px;
@@ -1954,12 +1892,12 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   color: #4f6a7b;
 }
 
-/* line 770, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 713, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .list-detail i {
   display: inline-block;
 }
 
-/* line 774, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 717, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .list-detail-des {
   position: relative;
   float: left;
@@ -1970,7 +1908,7 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   background: #fff;
 }
 
-/* line 784, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 727, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .list-new-message {
   position: absolute;
   display: block;
@@ -1989,19 +1927,19 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   color: #fff;
 }
 
-/* line 804, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 747, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .list-detail .list-state {
   margin-bottom: 18px;
   font-size: 12px;
   color: #4f6a7b;
 }
 
-/* line 810, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 753, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .list-detail .list-number {
   color: #929ea6;
 }
 
-/* line 814, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 757, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .list-state i {
   margin-right: 5px;
   margin-left: 5px;
@@ -2011,22 +1949,22 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   border-radius: 5px;
 }
 
-/* line 825, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 768, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .icon-testing {
   background: #3dc52b;
 }
 
-/* line 829, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 772, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .icon-checking {
   background: #f7941e;
 }
 
-/* line 833, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 776, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .icon-recovering {
   background: #9e72e6;
 }
 
-/* line 837, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 780, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .icon-like {
   position: relative;
   top: 2px;
@@ -2036,7 +1974,7 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   background: url("../slice/icon_like_num.png") no-repeat;
 }
 
-/* line 846, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 789, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .icon-member {
   position: relative;
   top: 5px;
@@ -2046,33 +1984,33 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   background: url("../slice/icon_used_num.png") no-repeat;
 }
 
-/* line 855, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 798, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .list-description {
   margin-top: 10px;
 }
 
-/* line 859, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 802, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .list-description p:first-child {
   margin-bottom: 2px;
   font-size: 14px;
   color: #4b5668;
 }
 
-/* line 865, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 808, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .list-description p:last-child {
   margin-bottom: 0;
   font-size: 12px;
   color: #929ea6;
 }
 
-/* line 871, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 814, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .list-author-mes {
   display: inline-block;
   color: #4b5668;
   font-size: 14px;
 }
 
-/* line 877, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 820, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .list-author-mes img {
   margin-right: 5px;
   width: 20px;
@@ -2081,7 +2019,7 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   border-radius: 10px;
 }
 
-/* line 887, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 830, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .list-author-mes i {
   margin-right: 5px;
   font-size: 12px;
@@ -2089,19 +2027,19 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   font-style: normal;
 }
 
-/* line 894, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 837, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research #add-new-reseach .modal-body {
   background: #f0f3f7;
 }
 
-/* line 898, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 841, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .reseach-tab {
   padding-top: 20px;
   padding-bottom: 29px;
   text-align: center;
 }
 
-/* line 904, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 847, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .reseach-tab button {
   padding: 0;
   width: 80px;
@@ -2112,27 +2050,27 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   color: #4b5668;
 }
 
-/* line 914, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 857, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .reseach-tab .reseach-tab-left {
   -wekbit-border-radius: 15px 0 0 15px;
   -o-border-radius: 15px 0 0 15px;
   border-radius: 15px 0 0 15px;
 }
 
-/* line 921, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 864, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .reseach-tab .reseach-tab-right {
   -wekbit-border-radius: 0 15px 15px 0;
   -o-border-radius: 0 15px 15px 0;
   border-radius: 0 15px 15px 0;
 }
 
-/* line 928, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 871, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .reseach-tab button.reseach-tab-sel {
   background: #74787e;
   color: #fff;
 }
 
-/* line 933, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 876, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .reseach-list {
   display: none;
   margin-left: 27px;
@@ -2140,7 +2078,7 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   padding-bottom: 20px;
 }
 
-/* line 940, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 883, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .reseach-list li {
   float: left;
   margin-right: 40px;
@@ -2149,17 +2087,17 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   text-align: center;
 }
 
-/* line 948, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 891, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .reseach-list li.list-col-4 {
   margin-right: 0;
 }
 
-/* line 952, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 895, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .reseach-list li a {
   text-decoration: none;
 }
 
-/* line 956, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 899, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .reseach-list li img {
   display: block;
   width: 188px;
@@ -2167,39 +2105,109 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   border: 2px solid #f0f3f7;
 }
 
-/* line 963, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 906, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .reseach-list li img:hover {
   border: 2px solid #15afff;
 }
 
-/* line 967, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 910, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .reseach-list-name {
   margin-top: 10px;
   margin-bottom: 0;
   color: #5a7383;
 }
 
-/* line 973, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 916, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .active {
   display: block;
 }
 
-/* line 976, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 919, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .navbar-right:hover .navbar-message {
   background: url("../slice/icon_top_message_hover.png") no-repeat;
 }
 
-/* line 980, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 923, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .navbar-right:hover .right-side {
   display: block;
 }
 
-/* line 984, D:/servet-fedpage/edit/src/sass/module/research.scss */
+/* line 927, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .navbar-message {
   display: block;
   width: 51px;
   height: 52px;
   background: url("../slice/icon_top_message.png") no-repeat;
+}
+
+/* line 935, D:/servet-fedpage/edit/src/sass/module/research.scss */
+#add-new-reseach .modal-dialog {
+  width: 930px;
+  margin-top: 130px;
+}
+
+/* line 940, D:/servet-fedpage/edit/src/sass/module/research.scss */
+.modal-content {
+  background: #fff;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* line 948, D:/servet-fedpage/edit/src/sass/module/research.scss */
+.modal-header {
+  position: relative;
+  padding: 14px;
+  height: 48px;
+  line-height: 48px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.08);
+}
+
+/* line 957, D:/servet-fedpage/edit/src/sass/module/research.scss */
+#add-group .close, #add-new-reseach .close, #copy-reseach .close, #add-new-reseach .edit-save {
+  position: absolute;
+  margin: 0;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  top: 18px;
+  left: 21px;
+  font-size: 13px;
+  color: #2bb7c5;
+  text-shadow: none;
+  font-weight: normal;
+}
+
+/* line 969, D:/servet-fedpage/edit/src/sass/module/research.scss */
+#add-new-reseach .edit-save {
+  left: auto;
+  right: 20px;
+  line-height: 1;
+  background: none;
+}
+
+/* line 976, D:/servet-fedpage/edit/src/sass/module/research.scss */
+#add-group .confirm, #copy-reseach .confirm {
+  position: absolute;
+  padding: 0;
+  line-height: 1;
+  top: 20px;
+  right: 21px;
+  font-size: 13px;
+  background: none;
+  color: #2bb7c5;
+  text-shadow: none;
+}
+
+/* line 988, D:/servet-fedpage/edit/src/sass/module/research.scss */
+.modal-title {
+  text-align: center;
+}
+
+/* line 992, D:/servet-fedpage/edit/src/sass/module/research.scss */
+.modal-body {
+  padding: 0;
+  -o-border-radius: 0 0 10px 10px;
+  border-radius: 0 0 10px 10px;
+  overflow: hidden;
 }
 
 /* line 3, D:/servet-fedpage/edit/src/sass/module/edit.scss */
@@ -3350,6 +3358,120 @@ textarea:focus {
   top: 2px;
   font-style: normal;
   font-size: 24px;
+}
+
+/* line 782, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+.modal-search-col {
+  height: 40px;
+  line-height: 40px;
+}
+
+/* line 787, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+.modal-search-input {
+  width: 174px;
+  height: 28px;
+  line-height: 28px;
+  padding-left: 32px;
+  background: #f0f3f7;
+  border: 0;
+  border-radius: 5px;
+  float: right;
+  margin-right: 20px;
+  color: #4b5668;
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+/* line 803, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+.modal-icon-search {
+  display: block;
+  width: 16px;
+  height: 17px;
+  background: url(../slice/modal-search.png) no-repeat;
+  position: absolute;
+  right: 168px;
+  top: 11px;
+}
+
+/* line 811, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+.modal-left-nav a {
+  display: block;
+  color: #4b5668;
+  font-size: 13px;
+  height: 40px;
+  line-height: 40px;
+  text-indent: 25px;
+}
+
+/* line 822, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+.modal-left-table th {
+  height: 37px;
+  line-height: 37px;
+  color: #929ea6;
+  font-size: 13px;
+  border-bottom: 1px solid #d8dce1;
+  background: #f0f3f7;
+}
+
+/* line 830, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+.modal-left-table td {
+  height: 37px;
+  line-height: 37px;
+  color: #4b5668;
+  font-size: 13px;
+  border: 1px solid #f0f3f7;
+  padding-left: 20px !important;
+  border-left: 0;
+}
+
+/* line 840, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+.border-show {
+  border-top: 1px solid #e5e5e5;
+}
+
+/* line 844, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+.modal-content .col-md-9 {
+  padding-left: 0;
+  margin-left: -1px;
+  margin-top: -1px;
+}
+
+/* line 850, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+.modal-right-cont {
+  border-left: 1px solid #f0f3f7;
+}
+
+/* line 853, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+#mobile-show {
+  width: 315px;
+  height: 618px;
+  left: 50%;
+  top: 50%;
+  margin-left: -157px;
+  margin-top: -309px;
+  overflow: hidden;
+}
+
+/* line 855, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+#mobile-show .modal-dialog, #mobile-show .modal-header, #mobile-show .modal-body {
+  width: 315px;
+  padding: 0;
+  background: none;
+  height: auto;
+}
+
+/* line 868, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+#mobile-show .mobile-bar {
+  width: 315px;
+  height: 61px;
+  background: url(../slice/mobile-bar.png) no-repeat;
+}
+
+/* line 873, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+#mobile-show iframe {
+  height: 557px;
+  width: 315px;
+  overflow: hidden;
 }
 
 /* line 17, D:/servet-fedpage/edit/src/sass/common.scss */

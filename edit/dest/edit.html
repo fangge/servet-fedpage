@@ -27,8 +27,8 @@
           </a>
 
         </div>
-        <a href="" class="save" title="保存"></a>
-        <a href="" class="topic" title="新建"></a>
+        <a class="save" title="保存"></a>
+        <a class="topic" title="新建" data-toggle="modal" data-target="#add-new-reseach"></a>
         <div class="navbar-right">
           <a href="" class="navbar-right-btn navbar-right-btn1">发布</a>
           <a href="" class="navbar-right-btn navbar-right-btn2">测试</a>
@@ -66,7 +66,7 @@
               <div class="panel-heading" role="tab" id="headingOne">
                 <h4 class="panel-title collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">主题<i></i></h4>
               </div>
-              <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+              <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                 <div class="panel-body">
                   <ul class="theme">
                     <li><a href=""><img src="" alt="">
@@ -130,7 +130,7 @@
             <div class="edit-col cur" style="background: url(img/bg.jpg) no-repeat;background-size:cover ">
                 <span class="edit-col-num">0</span>
                 <div class="edit-col-icon">
-                    <a href="" class="icon-mobile"></a>
+                    <a class="icon-mobile"  data-toggle="modal" data-target="#mobile-show"></a>
                 </div>
                 <div class="edit-col-comment"><i class="icon-comment"></i>3</div>
                 <div class="edit-col-cont edit-col-cont1">
@@ -633,7 +633,121 @@
          </section>
       </div>
     </div>
-    
+    <div class="modal fade" id="mobile-show" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="mobile-bar"></div>
+                </div>
+                <div class="modal-body">
+                    <iframe src="" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal fade" id="add-new-reseach" tabindex="-1" role="dialog" aria-labelledby="new-reseach-label">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">取消</span></button>
+                    <button type="button" class="edit-save" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">确定</span></button>
+                    <h4 class="modal-title" id="new-reseach-label">新建调查</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-search-col">
+                        <input type="text" class="modal-search-input">
+                        <i class="modal-icon-search"></i>
+                    </div>
+                    <div class="row border-show">
+                        <div class="col-md-3 modal-left-nav">
+                            <ul role="tablist">
+                                <li role="presentation" class="active"><a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">健康研究小组</a></li>
+                                <li role="presentation"><a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">Survet开发级</a></li>
+                                <li role="presentation"><a href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab">用户体验报告组</a></li>
+                                <li role="presentation"><a href="#tab4" aria-controls="tab4" role="tab" data-toggle="tab">前端组</a></li>
+                                <li role="presentation"><a href="#tab5" aria-controls="tab5" role="tab" data-toggle="tab">iOS开发组</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-9 modal-right-cont">
+                            <div class="tab-content  modal-left-table" >
+                                <div role="tabpanel" class="tab-pane active" id="tab1">
+                                    <table class="table">
+                                        <tr>
+                                            <th>姓名</th>
+                                            <th>邮箱</th>
+                                            <th>所在组</th>
+                                            <th>问卷数</th>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox">向曦</td>
+                                            <td>406329428@qqcom</td>
+                                            <td>市场组，鸡冻组，移动4G…</td>
+                                            <td>8</td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox">向曦</td>
+                                            <td>406329428@qqcom</td>
+                                            <td>市场组，鸡冻组，移动4G…</td>
+                                            <td>8</td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox">向曦</td>
+                                            <td>406329428@qqcom</td>
+                                            <td>市场组，鸡冻组，移动4G…</td>
+                                            <td>8</td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox">向曦</td>
+                                            <td>406329428@qqcom</td>
+                                            <td>市场组，鸡冻组，移动4G…</td>
+                                            <td>8</td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox">向曦</td>
+                                            <td>406329428@qqcom</td>
+                                            <td>市场组，鸡冻组，移动4G…</td>
+                                            <td>8</td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox">向曦</td>
+                                            <td>406329428@qqcom</td>
+                                            <td>市场组，鸡冻组，移动4G…</td>
+                                            <td>8</td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox">向曦</td>
+                                            <td>406329428@qqcom</td>
+                                            <td>市场组，鸡冻组，移动4G…</td>
+                                            <td>8</td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox">向曦</td>
+                                            <td>406329428@qqcom</td>
+                                            <td>市场组，鸡冻组，移动4G…</td>
+                                            <td>8</td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox">向曦</td>
+                                            <td>406329428@qqcom</td>
+                                            <td>市场组，鸡冻组，移动4G…</td>
+                                            <td>8</td>
+                                        </tr>
+
+                                    </table>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="tab2">3</div>
+                                <div role="tabpanel" class="tab-pane" id="tab3">4</div>
+                                <div role="tabpanel" class="tab-pane" id="tab4">5</div>
+                                <div role="tabpanel" class="tab-pane" id="tab5">5</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/spectrum.js"></script>

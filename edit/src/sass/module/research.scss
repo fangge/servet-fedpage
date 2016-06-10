@@ -210,64 +210,7 @@
     height: 282px;
   }
 
-  #add-new-reseach .modal-dialog {
-    width: 930px;
-    margin-top: 130px;
-  }
 
-  .modal-content {
-    background: #fff;
-    -webkit-border-radius: 10px;
-    -o-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-  }
-
-  .modal-header {
-    position: relative;
-    padding: 14px;
-    height: 48px;
-    line-height: 48px;
-    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.08);
-    box-shadow: 0 1px 1px 0 rgba(0,0,0,.08);
-  }
-
-  #add-group .close, #add-new-reseach .close, #copy-reseach .close {
-    position: absolute;
-    margin: 0;
-    opacity: 1;
-    filter: alpha(opacity=100);
-    top: 20px;
-    left: 21px;
-    font-size: 13px;
-    color: #2bb7c5;
-    text-shadow: none;
-    font-weight: normal;
-  }
-
-  #add-group .confirm, #copy-reseach .confirm {
-    position: absolute;
-    padding: 0;
-    line-height: 1;
-    top: 20px;
-    right: 21px;
-    font-size: 13px;
-    background: none;
-    color: #2bb7c5;
-    text-shadow: none;
-  }
-
-  .modal-title {
-    text-align: center;
-  }
-
-  .modal-body {
-    padding: 0;
-    -webkit-border-radius: 0 0 10px 10px;
-    -o-border-radius: 0 0 10px 10px;
-    -moz-border-radius: 0 0 10px 10px;
-    border-radius: 0 0 10px 10px;
-  }
 
   #copy-reseach .modal-body {
     padding: 55px 28px 0;
@@ -987,4 +930,70 @@
     height: 52px;
     background: url('../slice/icon_top_message.png') no-repeat;
   }
+}
+
+#add-new-reseach .modal-dialog {
+  width: 930px;
+  margin-top: 130px;
+}
+
+.modal-content {
+  background: #fff;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.modal-header {
+  position: relative;
+  padding: 14px;
+  height: 48px;
+  line-height: 48px;
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.08);
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,.08);
+}
+
+#add-group .close, #add-new-reseach .close, #copy-reseach .close,#add-new-reseach .edit-save {
+  position: absolute;
+  margin: 0;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  top: 18px;
+  left: 21px;
+  font-size: 13px;
+  color: #2bb7c5;
+  text-shadow: none;
+  font-weight: normal;
+}
+#add-new-reseach .edit-save{
+  left:auto;
+  right:20px;
+  line-height: 1;
+  background: none;
+}
+
+#add-group .confirm, #copy-reseach .confirm {
+  position: absolute;
+  padding: 0;
+  line-height: 1;
+  top: 20px;
+  right: 21px;
+  font-size: 13px;
+  background: none;
+  color: #2bb7c5;
+  text-shadow: none;
+}
+
+.modal-title {
+  text-align: center;
+}
+
+.modal-body {
+  padding: 0;
+  -webkit-border-radius: 0 0 10px 10px;
+  -o-border-radius: 0 0 10px 10px;
+  -moz-border-radius: 0 0 10px 10px;
+  border-radius: 0 0 10px 10px;
+  overflow: hidden;
 }
