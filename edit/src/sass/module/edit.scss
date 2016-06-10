@@ -130,6 +130,7 @@ a{
   height: 65px;
   line-height: 65px;
   text-align: center;
+  letter-spacing: 10px;
   color: #fff;
   font-size: 24px;
   border:1px solid rgba(255, 255, 255, 0.2);
@@ -182,6 +183,7 @@ a{
   font-size: 24px;
   line-height: 24px;
   text-align: center;
+  letter-spacing: 5px;
 }
 .icon-pc{
   display: inline-block;
@@ -651,4 +653,108 @@ textarea:focus {
   font-size: 14px;
   line-height: 21px;
   color: #fff;
+}
+
+/* end */
+.result-btn {
+  margin-top: 30px;
+  width: 178px;
+  height: 48px;
+  line-height: 48px;
+  font-size: 20px;
+  color: #fff;
+  background: #2bb7c5;
+  opacity: 0.3;
+  text-align: center;
+  border-radius: 50%;
+
+  a {
+    display: block;
+    color: #fff; 
+    text-decoration: none; }
+
+  &:hover {
+    background: #05d3e8;
+    opacity: 1; }
+}
+
+/* 上传概念图 */
+.edit-col-cont13 {
+  padding-top: 130px; }
+.pic-upload {
+  padding-top: 0;
+  margin-top: 0;
+
+  .upload-img {
+    margin-top: 55px;
+    margin-bottom: 55px; }
+
+  .upload_desc {
+    margin-left: 57px; }
+}
+
+/* 附加任务 */
+.edit-col-cont12 {
+  padding-top: 200px; 
+
+  .edit-intro {
+    width: auto;
+    text-align: center; }
+}
+
+/* 产品建议 */
+.edit-col-cont11 {
+  padding-top: 100px;
+
+  .edit-area {
+
+    textarea {
+      border: none;
+      background: #000;
+      opacity: .6;
+      width: 535px;
+      height: 220px;
+      margin: 0 auto;
+      display: block;
+      padding: 20px;
+      color: #1dafed;
+      outline: none;
+      border-radius: 20px;
+      overflow: auto;       
+    }
+  }
+}
+
+/* 购买测试 */
+.edit-col-cont10 {
+  padding-top: 190px;}
+.edit-task-addr {
+  text-align: center;
+  width: 600px;
+  margin: 0 auto;
+  color: #fff;
+
+  .input-group {
+    margin-bottom: 5px;
+    input {
+      width: 485px;
+      border-radius: 20px;
+      border: none;
+      padding: 9px 10px;
+      background: #000;
+      margin-left: 20px;
+      opacity: .6;
+    }
+  }
+}
+.add-task-addr-btn {
+  margin-top: 15px;
+  cursor: default;
+
+  i {
+    position: relative;
+    top: 2px;
+    font-style: normal;
+    font-size: 24px;
+  }
 }
