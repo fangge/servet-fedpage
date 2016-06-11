@@ -43,7 +43,7 @@
       <div class="row">
         <!--左侧{-->
         <aside class="sidebar">
-          <ul class="nav-btn">
+          <ul class="nav-btn" id="left-nav">
             <li><a href=""><i class="nav-icon1"><em></em></i>描述题</a></li>
             <li><a href=""><i class="nav-icon2"><em></em></i>单选题（文字）</a></li>
             <li><a href=""><i class="nav-icon3"><em></em></i>单选题（图片）</a></li>
@@ -142,9 +142,7 @@
                         <i class="icon-edit"></i>
                         欢迎参与调查
                     </div>
-                    <p class="edit-intro">
-                        这是一次关于中国互联网产品发展状况的调查，你的手机里到底装了哪些神奇好用的APP，哪些APP占据了你你一屏的位置，哪些APP是你使用频率最高的手机应用。
-                    </p>
+                    <textarea class="edit-intro">这是一次关于中国互联网产品发展状况的调查，你的手机里到底装了哪些神奇好用的APP，哪些APP占据了你你一屏的位置，哪些APP是你使用频率最高的手机应用。</textarea>
                 </div>
             </div>
             <!--}start-->
@@ -162,9 +160,9 @@
                     <div class="logic-tip">逻辑跳转</div>
                 </div>
                 <div class="edit-col-cont edit-col-cont2">
-                    <i class="icon-pc"></i><i class="icon-arrow"></i><textarea class="edit-title2">你在什么时候使用手机最频繁?</textarea>
+                    <textarea class="edit-title2">你在什么时候使用手机最频繁?</textarea>
                     <a href="" class="edit-btn">点击编辑</a>
-                    <div class="itemset">
+                    <div class="itemset clearfix">
                         <div class="item">
                             <label>
                                 <input type="radio" name="radio-test">
@@ -236,7 +234,7 @@
                 <div class="edit-col-cont edit-col-cont2">
                     <textarea class="edit-title2">你在什么时候使用手机最频繁?</textarea>
                     <a href="" class="edit-btn">点击编辑</a>
-                    <div class="itemset">
+                    <div class="itemset clearfix">
                         <label class="item">
                             <input type="checkbox">
                             <div class="item_cell">
@@ -415,33 +413,41 @@
                 <div class="edit-col-cont edit-col-cont4">
                    <textarea class="edit-title2">你在什么时候使用手机最频繁?</textarea>
                     <a href="" class="edit-btn">点击编辑</a>
-                    <div class="edit-table clearfix">
-                        <div class="table_column">
-                            <span>Apple <a class="icon-delete2"></a></span>
-                            <span>Sumsung <a class="icon-delete2"></a></span>
-                            <span>Huawei <a class="icon-delete2"></a></span>
-                        </div>
-                        <div class="table_main">
+                    <div class="edit-table clearfix" id="edit-table">
+
+                        <div class="table_main clearfix">
                             <table>
                                 <tr>
-                                    <th>大屏幕<a class="icon-delete2"></a></th>
+                                    <th></th>
                                     <th>超长待机<a class="icon-delete2"></a></th>
                                     <th>大屏幕<a class="icon-delete2"></a></th>
                                     <th>超长待机<a class="icon-delete2"></a></th>
+                                    <th>超长待机<a class="icon-delete2"></a></th>
+                                    <th>超长待机<a class="icon-delete2"></a></th>
+                                    <th>超长待机<a class="icon-delete2"></a></th>
                                 </tr>
                                 <tr>
+                                    <td class="table_column">Apple <a class="icon-delete2"></a></td>
                                     <td><label class="table_input"><input type="radio"><span></span></label></td>
                                     <td><label class="table_input"><input type="radio"><span></span></label></td>
-                                    <td><label class="table_input"><input type="radio"><span></span></label></td>
-                                    <td><label class="table_input"><input type="radio"><span></span></label></td>
-                                </tr>
-                                <tr>
                                     <td><label class="table_input"><input type="radio"><span></span></label></td>
                                     <td><label class="table_input"><input type="radio"><span></span></label></td>
                                     <td><label class="table_input"><input type="radio"><span></span></label></td>
                                     <td><label class="table_input"><input type="radio"><span></span></label></td>
                                 </tr>
                                 <tr>
+                                    <td class="table_column">Apple <a class="icon-delete2"></a></td>
+                                    <td><label class="table_input"><input type="radio"><span></span></label></td>
+                                    <td><label class="table_input"><input type="radio"><span></span></label></td>
+                                    <td><label class="table_input"><input type="radio"><span></span></label></td>
+                                    <td><label class="table_input"><input type="radio"><span></span></label></td>
+                                    <td><label class="table_input"><input type="radio"><span></span></label></td>
+                                    <td><label class="table_input"><input type="radio"><span></span></label></td>
+                                </tr>
+                                <tr>
+                                    <td class="table_column">Apple <a class="icon-delete2"></a></td>
+                                    <td><label class="table_input"><input type="radio"><span></span></label></td>
+                                    <td><label class="table_input"><input type="radio"><span></span></label></td>
                                     <td><label class="table_input"><input type="radio"><span></span></label></td>
                                     <td><label class="table_input"><input type="radio"><span></span></label></td>
                                     <td><label class="table_input"><input type="radio"><span></span></label></td>
@@ -449,7 +455,7 @@
                                 </tr>
                             </table>
                             <a class="add-table add-row">+</a>
-                            <a class="add-table add-col">+</a>
+                            <!--<a class="add-table add-col">+</a>-->
                         </div>
                     </div>
                 </div>
@@ -579,8 +585,8 @@
                     <div class="logic-tip">逻辑跳转</div>
                 </div>
                 <div class="edit-col-cont edit-col-cont12">
-                    <p class="edit-title2">附加任务</p>
-                    <p class="edit-intro">接下来需要你花几分钟时间来完成一些任务测试题，是一些基本的购物流程操作。</p>
+                    <textarea class="edit-title2">你在什么时候使用手机最频繁?</textarea>
+                    <textarea class="edit-intro">接下来需要你花几分钟时间来完成一些任务测试题，是一些基本的购物流程操作。</textarea>
                 </div>
             </div>
             <!--}附加任务-->
@@ -598,7 +604,7 @@
                     <div class="logic-tip">逻辑跳转</div>
                 </div>
                 <div class="edit-col-cont edit-col-cont13">
-                    <p class="edit-title2">这是一款新产品的概念方案图，请点击查看后回答后续问题</p>
+                    <textarea class="edit-title2">你在什么时候使用手机最频繁?</textarea>
                     <div class="upload pic-upload">
                         <div class="upload-img">
                             <span>+</span><br>图片
@@ -621,9 +627,7 @@
                         <i class="icon-edit"></i>
                         感谢参与调查
                     </div>
-                    <p class="edit-intro">
-                        这是一次关于中国互联网产品发展状况的调查，你的手机里到底装了哪些神奇好用的APP，哪些APP占据了你你一屏的位置，哪些APP是你使用频率最高的手机应用。
-                    </p>
+                    <textarea class="edit-intro">这是一次关于中国互联网产品发展状况的调查，你的手机里到底装了哪些神奇好用的APP，哪些APP占据了你你一屏的位置，哪些APP是你使用频率最高的手机应用。</textarea>
                     <div class="result-btn">
                         <a href="#">查看结果</a>
                     </div>
@@ -751,6 +755,7 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/spectrum.js"></script>
+    <script src="js/jquery.nicescroll.js"></script>
     <script>
       $("#flat").spectrum({
         preferredFormat: "hex6",
@@ -770,6 +775,15 @@
           $(".dropdownInput input").val($(this).html());
           $(".dropdownInput_list").stop().animate({"opacity":0},100);
       })
+        $('#left-nav').niceScroll({
+            cursorwidth:"8px",
+            autohidemode:false,
+            cursorcolor:'#90979c'
+        })
+        $('#edit-table').niceScroll({
+            cursorborder:0,
+            cursorcolor:'rgba(0, 0, 0, 0.4)'
+        });
     </script>
   </body>
 </html>
