@@ -4,12 +4,10 @@ $(function(){
 	var totlePage=$(".page").length-1;
 	$('body').bind('mousewheel', function(event, delta, deltaX, deltaY) {
 		if (delta==-1 && nowPage<totlePage) {
-			nowPage++;
+			next();
 		}else if(delta==1 && nowPage>0){
-			nowPage--;
+			prev();
 		}
-		
-		$(".wrap").stop().animate({"top":-nowPage*100+"%"},300);
 		
 		if(nowPage>0){
 			$(".go").removeClass("start_go");
@@ -17,6 +15,18 @@ $(function(){
 			$(".go").addClass("start_go");
 		}
 	});
+	
+	//切换到下一页
+	function next(){
+		nowPage++;
+		$(".wrap").stop().animate({"top":-nowPage*100+"%"},300);
+	}
+	
+	//切换到上一页
+	function prev(){
+		nowPage--;
+		$(".wrap").stop().animate({"top":-nowPage*100+"%"},300);
+	}
 	
 	//表情
 	$(".mood_icon").click(function(){

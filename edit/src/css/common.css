@@ -7,6 +7,7 @@
 /* line 7, D:/servet-fedpage/edit/src/sass/module/header.scss */
 .navbar {
   height: 52px;
+  -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3);
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3);
 }
 
@@ -73,9 +74,10 @@
 .navbar-right-btn1 {
   width: 56px;
   height: 31px;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   border: 1px solid #3d92c7;
+  -webkit-border-radius: 31px;
+  -moz-border-radius: 31px;
   border-radius: 31px;
   text-align: center;
   line-height: 31px;
@@ -413,7 +415,6 @@
   width: 177px;
   height: 26px;
   margin: 0 auto;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   border-radius: 26px;
   border: 1px solid #8b8b8b;
@@ -509,6 +510,7 @@ License: MIT
 /* line 25, D:/servet-fedpage/edit/src/sass/module/spectrum.scss */
 .sp-container,
 .sp-container * {
+  -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
 }
@@ -634,7 +636,6 @@ License: MIT
   -webkit-user-select: none;
   -moz-user-select: -moz-none;
   -o-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
@@ -671,6 +672,11 @@ License: MIT
 /* Gradients for hue, saturation and value instead of images.  Not pretty... but it works */
 /* line 154, D:/servet-fedpage/edit/src/sass/module/spectrum.scss */
 .sp-sat {
+  background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#FFF), to(rgba(204, 154, 129, 0)));
+  background-image: -webkit-linear-gradient(left, #FFF, rgba(204, 154, 129, 0));
+  background-image: -moz-linear-gradient(left, #fff, rgba(204, 154, 129, 0));
+  background-image: -o-linear-gradient(left, #fff, rgba(204, 154, 129, 0));
+  background-image: -ms-linear-gradient(left, #fff, rgba(204, 154, 129, 0));
   background-image: linear-gradient(to right, #fff, rgba(204, 154, 129, 0));
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType = 1, startColorstr=#FFFFFFFF, endColorstr=#00CC9A81)";
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType = 1, startColorstr='#FFFFFFFF', endColorstr='#00CC9A81');
@@ -678,6 +684,11 @@ License: MIT
 
 /* line 164, D:/servet-fedpage/edit/src/sass/module/spectrum.scss */
 .sp-val {
+  background-image: -webkit-gradient(linear, 0 100%, 0 0, from(#000000), to(rgba(204, 154, 129, 0)));
+  background-image: -webkit-linear-gradient(bottom, #000000, rgba(204, 154, 129, 0));
+  background-image: -moz-linear-gradient(bottom, #000, rgba(204, 154, 129, 0));
+  background-image: -o-linear-gradient(bottom, #000, rgba(204, 154, 129, 0));
+  background-image: -ms-linear-gradient(bottom, #000, rgba(204, 154, 129, 0));
   background-image: linear-gradient(to top, #000, rgba(204, 154, 129, 0));
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00CC9A81, endColorstr=#FF000000)";
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00CC9A81', endColorstr='#FF000000');
@@ -685,6 +696,11 @@ License: MIT
 
 /* line 175, D:/servet-fedpage/edit/src/sass/module/spectrum.scss */
 .sp-hue {
+  background: -moz-linear-gradient(top, #ff0000 0%, #ffff00 17%, #00ff00 33%, #00ffff 50%, #0000ff 67%, #ff00ff 83%, #ff0000 100%);
+  background: -ms-linear-gradient(top, #ff0000 0%, #ffff00 17%, #00ff00 33%, #00ffff 50%, #0000ff 67%, #ff00ff 83%, #ff0000 100%);
+  background: -o-linear-gradient(top, #ff0000 0%, #ffff00 17%, #00ff00 33%, #00ffff 50%, #0000ff 67%, #ff00ff 83%, #ff0000 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff0000), color-stop(0.17, #ffff00), color-stop(0.33, #00ff00), color-stop(0.5, #00ffff), color-stop(0.67, #0000ff), color-stop(0.83, #ff00ff), to(#ff0000));
+  background: -webkit-linear-gradient(top, #ff0000 0%, #ffff00 17%, #00ff00 33%, #00ffff 50%, #0000ff 67%, #ff00ff 83%, #ff0000 100%);
   background: linear-gradient(to bottom, #ff0000 0%, #ffff00 17%, #00ff00 33%, #00ffff 50%, #0000ff 67%, #ff00ff 83%, #ff0000 100%);
 }
 
@@ -808,6 +824,7 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
 /* line 263, D:/servet-fedpage/edit/src/sass/module/spectrum.scss */
 .sp-container, .sp-container button, .sp-container input, .sp-color, .sp-hue, .sp-clear {
   font: normal 12px "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
@@ -1008,6 +1025,10 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
 /* line 422, D:/servet-fedpage/edit/src/sass/module/spectrum.scss */
 .sp-container button {
   background-color: #eeeeee;
+  background-image: -webkit-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -moz-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -ms-linear-gradient(top, #eeeeee, #cccccc);
+  background-image: -o-linear-gradient(top, #eeeeee, #cccccc);
   background-image: linear-gradient(to bottom, #eeeeee, #cccccc);
   border: 1px solid #ccc;
   border-bottom: 1px solid #bbb;
@@ -1024,6 +1045,10 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
 /* line 440, D:/servet-fedpage/edit/src/sass/module/spectrum.scss */
 .sp-container button:hover {
   background-color: #dddddd;
+  background-image: -webkit-linear-gradient(top, #dddddd, #bbbbbb);
+  background-image: -moz-linear-gradient(top, #dddddd, #bbbbbb);
+  background-image: -ms-linear-gradient(top, #dddddd, #bbbbbb);
+  background-image: -o-linear-gradient(top, #dddddd, #bbbbbb);
   background-image: linear-gradient(to bottom, #dddddd, #bbbbbb);
   border: 1px solid #bbb;
   border-bottom: 1px solid #999;
@@ -1035,6 +1060,8 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
 .sp-container button:active {
   border: 1px solid #aaa;
   border-bottom: 1px solid #888;
+  -webkit-box-shadow: inset 0 0 5px 2px #aaaaaa, 0 1px 0 0 #eeeeee;
+  -moz-box-shadow: inset 0 0 5px 2px #aaaaaa, 0 1px 0 0 #eeeeee;
   -ms-box-shadow: inset 0 0 5px 2px #aaaaaa, 0 1px 0 0 #eeeeee;
   -o-box-shadow: inset 0 0 5px 2px #aaaaaa, 0 1px 0 0 #eeeeee;
   box-shadow: inset 0 0 5px 2px #aaaaaa, 0 1px 0 0 #eeeeee;
@@ -1161,6 +1188,8 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   display: inline-block;
   width: 30px;
   height: 30px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
   -o-border-radius: 15px;
   border-radius: 15px;
 }
@@ -1178,6 +1207,8 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   margin: 7px 0 8px;
   padding: 15px 13px;
   background: #f3f0f7;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
   -o-border-radius: 10px;
   border-radius: 10px;
 }
@@ -1270,6 +1301,8 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   display: inline-block;
   width: 80px;
   height: 80px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
   -o-border-radius: 40px;
   border-radius: 40px;
 }
@@ -1380,7 +1413,9 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   text-align: center;
   color: #fff;
   background: #33babe;
+  -webkit-border-radius: 25px;
   -o-border-radius: 25px;
+  -moz-border-radius: 25px;
   border-radius: 25px;
 }
 
@@ -1422,10 +1457,6 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
 }
 
 /* line 295, D:/servet-fedpage/edit/src/sass/module/research.scss */
-.research #copy-name::-moz-selection {
-  color: #fff;
-  background: #3399ff;
-}
 .research #copy-name::selection {
   color: #fff;
   background: #3399ff;
@@ -1460,7 +1491,9 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   background: #fff;
   vertical-align: middle;
   color: #bcc0c7;
+  -webkit-border-radius: 3px;
   -o-border-radius: 3px;
+  -moz-border-radius: 3px;
   border-radius: 3px;
   border: 1px solid #ccd2d6;
   outline: none;
@@ -1472,7 +1505,9 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   vertical-align: middle;
   border: 1px solid #ccd2d6;
   color: #4b5668;
+  -webkit-border-radius: 18px;
   -o-border-radius: 18px;
+  -moz-border-radius: 18px;
   border-radius: 18px;
   background: transparent;
 }
@@ -1501,7 +1536,9 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   background-color: #f0f3f7;
   border: 0;
   outline: none;
+  -webkit-border-radius: 3px;
   -o-border-radius: 3px;
+  -moz-border-radius: 3px;
   border-radius: 3px;
 }
 
@@ -1607,7 +1644,9 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   margin-right: 18px;
   vertical-align: middle;
   background: #fff;
+  -webkit-border-radius: 3px;
   -o-border-radius: 3px;
+  -moz-border-radius: 3px;
   border-radius: 3px;
 }
 
@@ -1690,6 +1729,8 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   margin-right: 10px;
   width: 28px;
   height: 28px;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
   -o-border-radius: 14px;
   border-radius: 14px;
 }
@@ -1791,6 +1832,8 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   text-indent: 35px;
   padding-right: 26px;
   color: #fff;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
   -o-border-radius: 15px;
   border-radius: 15px;
   background: url("../img/icon_list_item_09.png") 26px center no-repeat;
@@ -1815,6 +1858,7 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
 .research .list-detail {
   width: 344px;
   height: 144px;
+  -webkit-box-shadow: 2px -2px 4px 0 rgba(0, 0, 0, 0.08);
   box-shadow: 2px -2px 4px 0 rgba(0, 0, 0, 0.08);
 }
 
@@ -1825,6 +1869,7 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   width: 200px;
   height: 144px;
   line-height: 144px;
+  -webkit-box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.08);
   box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.08);
 }
 
@@ -1918,6 +1963,8 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   height: 22px;
   background: #f7941e;
   border: 2px solid #e9eff3;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
   -o-border-radius: 12px;
   border-radius: 12px;
   font-size: 12px;
@@ -1945,6 +1992,8 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   margin-left: 5px;
   width: 7px;
   height: 7px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
 }
@@ -2015,6 +2064,8 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   margin-right: 5px;
   width: 20px;
   height: 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
   -o-border-radius: 10px;
   border-radius: 10px;
 }
@@ -2053,6 +2104,7 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
 /* line 857, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .reseach-tab .reseach-tab-left {
   -wekbit-border-radius: 15px 0 0 15px;
+  -moz-border-radius: 15px 0 0 15px;
   -o-border-radius: 15px 0 0 15px;
   border-radius: 15px 0 0 15px;
 }
@@ -2060,6 +2112,7 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
 /* line 864, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .research .reseach-tab .reseach-tab-right {
   -wekbit-border-radius: 0 15px 15px 0;
+  -moz-border-radius: 0 15px 15px 0;
   -o-border-radius: 0 15px 15px 0;
   border-radius: 0 15px 15px 0;
 }
@@ -2149,7 +2202,9 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
 /* line 940, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .modal-content {
   background: #fff;
+  -webkit-border-radius: 10px;
   -o-border-radius: 10px;
+  -moz-border-radius: 10px;
   border-radius: 10px;
 }
 
@@ -2159,6 +2214,7 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
   padding: 14px;
   height: 48px;
   line-height: 48px;
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.08);
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.08);
 }
 
@@ -2205,7 +2261,9 @@ See http://bgrins.github.io/spectrum/themes/ for instructions.
 /* line 992, D:/servet-fedpage/edit/src/sass/module/research.scss */
 .modal-body {
   padding: 0;
+  -webkit-border-radius: 0 0 10px 10px;
   -o-border-radius: 0 0 10px 10px;
+  -moz-border-radius: 0 0 10px 10px;
   border-radius: 0 0 10px 10px;
   overflow: hidden;
 }
@@ -2218,10 +2276,9 @@ a:hover {
 
 /* line 8, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .edit-col {
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
-  width: 85%;
-  height: 550px;
+  width: 90%;
+  min-height: 550px;
   margin: 0 auto 34px;
   position: relative;
 }
@@ -2461,7 +2518,7 @@ a:hover {
   line-height: 24px;
   text-align: center;
   letter-spacing: 5px;
-  width: 50%;
+  width: 85%;
   margin: 0 auto 20px;
   background: none;
   height: 30px;
@@ -2509,30 +2566,30 @@ a:hover {
 
 /* line 222, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .itemset {
-  width: 650px;
+  width: 95%;
   margin: 0 auto;
 }
 
-/* line 226, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 227, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .item {
   position: relative;
   float: left;
   margin: 0 10px 15px 10px;
 }
 
-/* line 230, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 231, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .item label {
   margin: 0;
 }
 
-/* line 235, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 236, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .item input[type="radio"], .item input[type="checkbox"] {
   position: absolute;
   top: -9999px;
   left: -9999px;
 }
 
-/* line 239, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 240, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .item_cell {
   padding: 1px;
   border-radius: 5px;
@@ -2540,7 +2597,7 @@ a:hover {
   overflow: hidden;
 }
 
-/* line 244, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 245, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .item_img {
   display: block;
   width: 140px;
@@ -2549,7 +2606,7 @@ a:hover {
   border-top-right-radius: 5px;
 }
 
-/* line 250, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 251, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .item_text {
   width: 140px;
   position: relative;
@@ -2562,7 +2619,7 @@ a:hover {
   border-bottom-right-radius: 5px;
 }
 
-/* line 260, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 261, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .item_text input {
   width: 100%;
   height: 100%;
@@ -2573,7 +2630,7 @@ a:hover {
   text-align: center;
 }
 
-/* line 270, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 271, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .item_text:before {
   content: "";
   position: absolute;
@@ -2583,7 +2640,7 @@ a:hover {
   margin: auto;
 }
 
-/* line 277, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 278, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 input[type="radio"] + .item_cell .item_text:before {
   width: 13px;
   height: 13px;
@@ -2591,7 +2648,7 @@ input[type="radio"] + .item_cell .item_text:before {
   background-size: 13px;
 }
 
-/* line 282, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 283, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 input[type="checkbox"] + .item_cell .item_text:before {
   width: 11px;
   height: 11px;
@@ -2599,25 +2656,25 @@ input[type="checkbox"] + .item_cell .item_text:before {
   background-size: 11px;
 }
 
-/* line 287, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 288, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 input:checked + .item_cell {
   box-shadow: 0 0 0 2px #28e8fd;
 }
 
-/* line 289, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 290, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 input[type="radio"]:checked + .item_cell .item_text:before,
 input[type="checkbox"]:checked + .item_cell .item_text:before {
   background-position: 0 0;
 }
 
-/* line 292, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 293, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .item .zoom {
   position: absolute;
   bottom: 9px;
   right: 3px;
 }
 
-/* line 296, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 297, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .zoom {
   width: 18px;
   height: 18px;
@@ -2625,7 +2682,7 @@ input[type="checkbox"]:checked + .item_cell .item_text:before {
   background-size: contain;
 }
 
-/* line 301, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 302, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .add-radio {
   display: block;
   width: 140px;
@@ -2639,7 +2696,7 @@ input[type="checkbox"]:checked + .item_cell .item_text:before {
   cursor: pointer;
 }
 
-/* line 313, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 314, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .order {
   position: absolute;
   left: 20px;
@@ -2649,25 +2706,22 @@ input[type="checkbox"]:checked + .item_cell .item_text:before {
   font-size: 14px;
 }
 
-/* line 321, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 322, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .tgl {
   display: none;
-}
-
-/* line 322, D:/servet-fedpage/edit/src/sass/module/edit.scss */
-.tgl ::-moz-selection, .tgl :after::-moz-selection, .tgl :before::-moz-selection, .tgl + .tgl-btn::-moz-selection, .tgl::-moz-selection, .tgl:after::-moz-selection, .tgl:before::-moz-selection {
-  background: 0 0;
 }
 
 /* line 323, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .tgl ::-moz-selection, .tgl :after::-moz-selection, .tgl :before::-moz-selection, .tgl + .tgl-btn::-moz-selection, .tgl::-moz-selection, .tgl:after::-moz-selection, .tgl:before::-moz-selection {
   background: 0 0;
 }
+
+/* line 324, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .tgl ::selection, .tgl :after::selection, .tgl :before::selection, .tgl + .tgl-btn::selection, .tgl::selection, .tgl:after::selection, .tgl:before::selection {
   background: 0 0;
 }
 
-/* line 324, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 325, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .tgl + .tgl-btn {
   outline: 0;
   display: block;
@@ -2677,7 +2731,7 @@ input[type="checkbox"]:checked + .item_cell .item_text:before {
   cursor: pointer;
 }
 
-/* line 325, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 326, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .tgl + .tgl-btn:after, .tgl + .tgl-btn:before {
   position: relative;
   display: block;
@@ -2688,42 +2742,44 @@ input[type="checkbox"]:checked + .item_cell .item_text:before {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
 }
 
-/* line 326, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 327, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .tgl + .tgl-btn:after {
   left: -3px;
 }
 
-/* line 327, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 328, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .tgl + .tgl-btn:before {
   display: none;
 }
 
-/* line 328, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 329, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .tgl:checked + .tgl-btn:after {
   left: 50%;
 }
 
-/* line 329, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 330, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .tgl-light + .tgl-btn {
   background: #f0f0f0;
   border-radius: 12px;
   padding: 2px;
+  -webkit-transition: all .4s ease;
   transition: all .4s ease;
 }
 
-/* line 330, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 331, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .tgl-light + .tgl-btn:after {
   border-radius: 50%;
   background: #fff;
+  -webkit-transition: all .2s ease;
   transition: all .2s ease;
 }
 
-/* line 331, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 332, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .tgl-light:checked + .tgl-btn {
   background: #42c0f4;
 }
 
-/* line 332, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 333, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .tg-list-item {
   float: right;
   margin-top: 5px;
@@ -2731,14 +2787,14 @@ input[type="checkbox"]:checked + .item_cell .item_text:before {
 }
 
 /*满意度*/
-/* line 338, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 339, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .mood {
   width: 450px;
   height: 104px;
   margin: 60px auto 0;
 }
 
-/* line 342, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 343, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .mood_icon {
   float: left;
   width: 64px;
@@ -2748,37 +2804,37 @@ input[type="checkbox"]:checked + .item_cell .item_text:before {
   background-size: contain;
 }
 
-/* line 350, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 351, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .mood_icon:last-child {
   margin-right: 0;
 }
 
-/* line 352, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 353, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .mood_icon_1 {
   background-image: url(../img/mood_1.png);
 }
 
-/* line 354, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 355, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .mood_icon_2 {
   background-image: url(../img/mood_2.png);
 }
 
-/* line 356, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 357, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .mood_icon_3 {
   background-image: url(../img/mood_3.png);
 }
 
-/* line 358, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 359, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .mood_icon_4 {
   background-image: url(../img/mood_4.png);
 }
 
-/* line 360, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 361, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .mood_icon_5 {
   background-image: url(../img/mood_5.png);
 }
 
-/* line 362, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 363, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .mood_icon_selected {
   margin: 0 20px;
   opacity: 1;
@@ -2786,18 +2842,19 @@ input[type="checkbox"]:checked + .item_cell .item_text:before {
   transform: scale(1.4);
   -webkit-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
+  -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
 
 /* 心形 */
-/* line 373, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 374, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .heart {
   width: 474px;
   height: 54px;
   margin: 60px auto 0;
 }
 
-/* line 377, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 378, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .heart_icon {
   float: left;
   margin: 0 21px;
@@ -2806,23 +2863,23 @@ input[type="checkbox"]:checked + .item_cell .item_text:before {
   background: url(../img/heart.png) 100% 0 no-repeat;
 }
 
-/* line 383, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 384, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .heart_icon:last-child {
   margin-right: 0;
 }
 
-/* line 385, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 386, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .heart_icon_selected {
   background-position: 0 0;
 }
 
-/* line 387, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 388, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .edit-col-cont3 {
   padding-top: 100px;
 }
 
 /* 垂直打分 */
-/* line 392, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 393, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .points {
   color: #fff;
   position: relative;
@@ -2835,23 +2892,23 @@ input[type="checkbox"]:checked + .item_cell .item_text:before {
   left: -28px;
 }
 
-/* line 403, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 404, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .points_good, .points_bad {
   position: absolute;
   left: 0;
 }
 
-/* line 406, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 407, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .points_good {
   top: 0;
 }
 
-/* line 408, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 409, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .points_bad {
   bottom: 0;
 }
 
-/* line 410, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 411, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .points_num {
   float: left;
   height: 332px;
@@ -2859,7 +2916,7 @@ input[type="checkbox"]:checked + .item_cell .item_text:before {
   padding-right: 21px;
 }
 
-/* line 415, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 416, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .points_num span {
   display: block;
   line-height: 21px;
@@ -2867,19 +2924,19 @@ input[type="checkbox"]:checked + .item_cell .item_text:before {
   opacity: 0.5;
 }
 
-/* line 421, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 422, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .points_num span:last-child {
   margin-bottom: 0;
 }
 
-/* line 423, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 424, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 span.points_num_select {
   opacity: 1;
   font-size: 18px;
   color: #fff;
 }
 
-/* line 427, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 428, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .points_bar {
   position: relative;
   float: left;
@@ -2889,7 +2946,7 @@ span.points_num_select {
   background-size: 100% 100%;
 }
 
-/* line 434, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 435, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .points_bar_handler {
   position: absolute;
   top: 0;
@@ -2899,13 +2956,14 @@ span.points_num_select {
   margin-top: -9px;
   margin-left: -23px;
   border-radius: 23px;
+  background: -webkit-linear-gradient(15deg, #d7d7d7 0%, #fff 100%);
   background: linear-gradient(75deg, #d7d7d7 0%, #fff 100%);
   opacity: 0.9;
   box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.2);
 }
 
 /* 满意度 */
-/* line 449, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 450, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .satisfaction {
   width: 186px;
   margin: 0 auto;
@@ -2913,7 +2971,7 @@ span.points_num_select {
   color: #fff;
 }
 
-/* line 455, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 456, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .satisfaction_item {
   position: relative;
   height: 45px;
@@ -2923,7 +2981,7 @@ span.points_num_select {
   padding-right: 60px;
 }
 
-/* line 462, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 463, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .satisfaction_item:after {
   content: "";
   position: absolute;
@@ -2937,71 +2995,70 @@ span.points_num_select {
   background-size: 45px;
 }
 
-/* line 473, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 474, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .satisfaction_item:nth-child(1):after {
   content: "1";
   background-position: 0 0px;
 }
 
-/* line 476, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 477, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .satisfaction_item:nth-child(2):after {
   content: "2";
   background-position: 0 -45px;
 }
 
-/* line 479, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 480, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .satisfaction_item:nth-child(3):after {
   content: "3";
   background-position: 0 -90px;
 }
 
-/* line 482, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 483, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .satisfaction_item:nth-child(4):after {
   content: "4";
   background-position: 0 -135px;
 }
 
-/* line 485, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 486, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .satisfaction_item:nth-child(5):after {
   content: "5";
   background-position: 0 -180px;
 }
 
 /* 表格 */
-/* line 490, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 491, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .edit-table {
   color: #fff;
   overflow-x: scroll;
   overflow-y: visible;
-  height: 354px;
+  min-height: 354px;
 }
 
-/* line 495, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 496, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .edit-table td, .edit-table th {
   text-align: center;
 }
 
-/* line 498, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 499, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .table_column {
   float: left;
   width: 104px;
   padding-top: 53px;
 }
 
-/* line 502, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 503, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .table_column span {
   display: block;
   height: 68px;
   line-height: 68px;
   text-align: right;
   padding-right: 15px;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   font-size: 13px;
   position: relative;
 }
 
-/* line 511, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 512, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .table_column span .icon-delete2 {
   position: absolute;
   left: 6px;
@@ -3010,34 +3067,33 @@ span.points_num_select {
   cursor: pointer;
 }
 
-/* line 519, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 520, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .table_column span:hover .icon-delete2 {
   display: block;
 }
 
-/* line 524, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 525, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .table_main {
   position: relative;
   float: left;
 }
 
-/* line 530, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 531, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .table_main table {
   border-collapse: separate;
   border-spacing: 1px;
 }
 
-/* line 534, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 535, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .table_main th {
   height: 42px;
   position: relative;
   overflow: visible;
   padding-top: 10px;
-  -moz-box-sizing: initial;
   box-sizing: initial;
 }
 
-/* line 540, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 541, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .table_main th .icon-delete2 {
   position: absolute;
   left: 50%;
@@ -3047,33 +3103,35 @@ span.points_num_select {
   cursor: pointer;
 }
 
-/* line 549, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 550, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .table_main th:hover .icon-delete2 {
   display: block;
 }
 
-/* line 554, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 555, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .table_main td {
   height: 68px;
   min-width: 160px;
   background: rgba(0, 0, 0, 0.3);
   text-align: center;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
   border-radius: 5px;
 }
 
-/* line 562, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 563, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .table_main td label {
   margin-bottom: 0;
 }
 
-/* line 566, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 567, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .table_input input {
   position: absolute;
   top: -9999px;
   left: -9999px;
 }
 
-/* line 570, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 571, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .table_input span {
   display: inline-block;
   width: 13px;
@@ -3082,12 +3140,12 @@ span.points_num_select {
   background-size: 26px 13px;
 }
 
-/* line 576, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 577, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .table_input input:checked + span {
   background-position: 0 0;
 }
 
-/* line 578, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 579, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .icon-delete2 {
   display: inline-block;
   width: 17px;
@@ -3095,13 +3153,15 @@ span.points_num_select {
   background: url(../slice/icon_close_btn.png) no-repeat;
 }
 
-/* line 582, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 583, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .add-table {
   display: block;
   height: 68px;
   width: 160px;
   background: rgba(0, 0, 0, 0.3);
   text-align: center;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
   border-radius: 5px;
   line-height: 68px;
   color: #fff;
@@ -3109,39 +3169,38 @@ span.points_num_select {
   position: absolute;
 }
 
-/* line 596, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 597, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .add-row {
   left: 0;
   bottom: -68px;
 }
 
-/* line 600, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 601, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .add-col {
   right: -160px;
   top: 54px;
 }
 
 /* 下拉提示输入框 */
-/* line 605, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 606, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 input[type="text"]:focus,
 textarea:focus {
   box-shadow: 0 0 0 1px #28e8fd;
 }
 
-/* line 608, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 609, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .dropdownInput input, .dropdownInput_list li {
   width: 380px;
   height: 42px;
   line-height: 42px;
   padding: 0 18px;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   font-size: 13px;
   background: rgba(0, 0, 0, 0.3);
   color: #fff;
 }
 
-/* line 618, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 619, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .dropdownInput {
   position: relative;
   width: 380px;
@@ -3149,7 +3208,7 @@ textarea:focus {
   padding-top: 0px;
 }
 
-/* line 623, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 624, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .dropdownInput input {
   position: absolute;
   top: 0;
@@ -3159,7 +3218,7 @@ textarea:focus {
   border: none;
 }
 
-/* line 630, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 631, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .dropdownInput_list {
   opacity: 0;
   padding-top: 42px;
@@ -3170,18 +3229,18 @@ textarea:focus {
   overflow: hidden;
 }
 
-/* line 638, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 639, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .dropdownInput_list li.selected {
   background: #28e8fd;
 }
 
-/* line 640, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 641, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .dropdownInput_list li:hover {
   background: #28e8fd;
 }
 
 /* 上传 */
-/* line 644, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 645, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .upload {
   padding-top: 12px;
   width: 260px;
@@ -3189,7 +3248,7 @@ textarea:focus {
   margin-top: 75px;
 }
 
-/* line 649, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 650, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .upload_btn {
   position: relative;
   width: 222px;
@@ -3200,7 +3259,7 @@ textarea:focus {
   margin-bottom: 40px;
 }
 
-/* line 657, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 658, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .upload_btn input {
   position: absolute;
   top: 0;
@@ -3210,7 +3269,7 @@ textarea:focus {
   opacity: 0;
 }
 
-/* line 664, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 665, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .upload_btn:after {
   content: "";
   position: absolute;
@@ -3224,7 +3283,7 @@ textarea:focus {
   background: url(../slice/add.png) no-repeat;
 }
 
-/* line 673, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 674, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .upload_desc {
   font-size: 14px;
   line-height: 21px;
@@ -3232,7 +3291,7 @@ textarea:focus {
 }
 
 /* end */
-/* line 680, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 681, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .result-btn {
   margin-top: 30px;
   width: 178px;
@@ -3246,61 +3305,61 @@ textarea:focus {
   border-radius: 50%;
 }
 
-/* line 692, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 693, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .result-btn a {
   display: block;
   color: #fff;
   text-decoration: none;
 }
 
-/* line 697, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 698, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .result-btn:hover {
   background: #05d3e8;
   opacity: 1;
 }
 
 /* 上传概念图 */
-/* line 703, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 704, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .edit-col-cont13 {
   padding-top: 130px;
 }
 
-/* line 705, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 706, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .pic-upload {
   padding-top: 0;
   margin-top: 0;
 }
 
-/* line 709, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 710, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .pic-upload .upload-img {
   margin-top: 55px;
   margin-bottom: 55px;
 }
 
-/* line 713, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 714, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .pic-upload .upload_desc {
   margin-left: 57px;
 }
 
 /* 附加任务 */
-/* line 718, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 719, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .edit-col-cont12 {
   padding-top: 200px;
 }
 
-/* line 721, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 722, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .edit-col-cont12 .edit-intro {
   width: auto;
   text-align: center;
 }
 
 /* 产品建议 */
-/* line 727, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 728, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .edit-col-cont11 {
   padding-top: 100px;
 }
 
-/* line 732, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 733, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .edit-col-cont11 .edit-area textarea {
   border: none;
   background: #000;
@@ -3317,12 +3376,12 @@ textarea:focus {
 }
 
 /* 购买测试 */
-/* line 750, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 751, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .edit-col-cont10 {
   padding-top: 190px;
 }
 
-/* line 752, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 753, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .edit-task-addr {
   text-align: center;
   width: 600px;
@@ -3330,12 +3389,12 @@ textarea:focus {
   color: #fff;
 }
 
-/* line 758, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 759, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .edit-task-addr .input-group {
   margin-bottom: 5px;
 }
 
-/* line 760, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 761, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .edit-task-addr .input-group input {
   width: 485px;
   border-radius: 20px;
@@ -3346,13 +3405,13 @@ textarea:focus {
   opacity: .6;
 }
 
-/* line 771, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 772, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .add-task-addr-btn {
   margin-top: 15px;
   cursor: default;
 }
 
-/* line 775, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 776, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .add-task-addr-btn i {
   position: relative;
   top: 2px;
@@ -3360,13 +3419,13 @@ textarea:focus {
   font-size: 24px;
 }
 
-/* line 782, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 783, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .modal-search-col {
   height: 40px;
   line-height: 40px;
 }
 
-/* line 787, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 788, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .modal-search-input {
   width: 174px;
   height: 28px;
@@ -3374,6 +3433,8 @@ textarea:focus {
   padding-left: 32px;
   background: #f0f3f7;
   border: 0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
   border-radius: 5px;
   float: right;
   margin-right: 20px;
@@ -3382,7 +3443,7 @@ textarea:focus {
   margin-top: 6px;
 }
 
-/* line 803, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 804, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .modal-icon-search {
   display: block;
   width: 16px;
@@ -3393,7 +3454,7 @@ textarea:focus {
   top: 11px;
 }
 
-/* line 811, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 812, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .modal-left-nav a {
   display: block;
   color: #4b5668;
@@ -3403,7 +3464,7 @@ textarea:focus {
   text-indent: 25px;
 }
 
-/* line 822, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 823, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .modal-left-table th {
   height: 37px;
   line-height: 37px;
@@ -3413,7 +3474,7 @@ textarea:focus {
   background: #f0f3f7;
 }
 
-/* line 830, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 831, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .modal-left-table td {
   height: 37px;
   line-height: 37px;
@@ -3424,24 +3485,24 @@ textarea:focus {
   border-left: 0;
 }
 
-/* line 840, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 841, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .border-show {
   border-top: 1px solid #e5e5e5;
 }
 
-/* line 844, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 845, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .modal-content .col-md-9 {
   padding-left: 0;
   margin-left: -1px;
   margin-top: -1px;
 }
 
-/* line 850, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 851, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 .modal-right-cont {
   border-left: 1px solid #f0f3f7;
 }
 
-/* line 853, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 854, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 #mobile-show {
   width: 315px;
   height: 618px;
@@ -3452,7 +3513,7 @@ textarea:focus {
   overflow: hidden;
 }
 
-/* line 855, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 856, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 #mobile-show .modal-dialog, #mobile-show .modal-header, #mobile-show .modal-body {
   width: 315px;
   padding: 0;
@@ -3460,14 +3521,14 @@ textarea:focus {
   height: auto;
 }
 
-/* line 868, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 869, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 #mobile-show .mobile-bar {
   width: 315px;
   height: 61px;
   background: url(../slice/mobile-bar.png) no-repeat;
 }
 
-/* line 873, D:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 874, D:/servet-fedpage/edit/src/sass/module/edit.scss */
 #mobile-show iframe {
   height: 557px;
   width: 315px;
@@ -3528,4 +3589,5 @@ button {
   background: #e9eff3;
   overflow-x: hidden;
 }
+
 /*# sourceMappingURL=common.css.map */
