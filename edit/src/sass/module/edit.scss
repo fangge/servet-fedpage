@@ -6,7 +6,10 @@ a{
   }
 }
 
-
+input{
+  background: none;
+  border:0;
+}
 .edit-col{
   box-sizing: border-box;
   width: 90%;
@@ -245,6 +248,12 @@ a{
   label{
     margin: 0;
   }
+  .icon-delete2{
+    position: absolute;
+    right:-9px;
+    top:-9px;
+    z-index: 60;
+  }
 }
 .item:nth-child(even) {}
 .item input[type="radio"],.item input[type="checkbox"] {
@@ -255,7 +264,25 @@ a{
   padding: 1px;
   border-radius: 5px;
   width: 140px;
-  overflow: hidden; }
+  overflow: hidden;
+  &:hover{
+    &:after{
+      display: block;
+    }
+  }
+  &:after{
+    display: none;
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 136px;
+    top:0;
+    left:0;
+    background: rgba(0, 0, 0, 0.6) url(../img/icon-edit.png) no-repeat 56px 59px;
+    z-index: 50;
+    cursor:pointer;
+  }
+}
 .item_img {
   display: block;
   width: 140px;
@@ -416,8 +443,13 @@ input[type="checkbox"]:checked + .item_cell .item_text:before {
   left: -28px;
 }
 .points_good, .points_bad {
+  min-width: 55px;
+  border: 0;
+  background: none;
   position: absolute;
-  left: 0; }
+  right: 74px;
+  text-align: right;
+}
 .points_good {
   top: 0; }
 .points_bad {
@@ -459,7 +491,57 @@ span.points_num_select{
   background: linear-gradient(75deg, #d7d7d7 0%, #fff 100%);
   opacity: 0.9;
   box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.2); }
-
+/* 文字答案选项 */
+.answer {
+  display: block;
+  width: 400px;
+  margin: 0 auto 11px; }
+.answer input {
+  position: absolute;
+  top: -9999px;
+  left: -9999px; }
+.answer_cell {
+  position: relative;
+  height: 48px;
+  border-radius: 24px;
+  padding-left: 52px;
+  background: rgba(0, 0, 0, 0.5);
+  input{
+    position: static;
+  }
+}
+.answer_cell:before {
+  content: "";
+  position: absolute;
+  left: 12px;
+  top: 0;
+  bottom: 0;
+  margin: auto; }
+.answer_text {
+  display: block;
+  //padding-right: 20px;
+  height: 48px;
+  line-height: 45px;
+  font-size: 14px;
+  color: #fff;
+  background: none;
+  border:0;
+}
+input[type="radio"] + .answer_cell:before {
+  width: 13px;
+  height: 13px;
+  background: url(../img/radio.png) 0 100% no-repeat;
+  background-size: 13px; }
+input[type="checkbox"] + .answer_cell:before {
+  width: 11px;
+  height: 11px;
+  background: url(../img/cb.png) 0 100% no-repeat;
+  background-size: 11px; }
+input:checked + .answer_cell {
+  box-shadow: 0 0 0 1px #28e8fd; }
+input[type="radio"]:checked + .answer_cell:before,
+input[type="checkbox"]:checked + .answer_cell:before {
+  background-position: 0 0; }
 /* 满意度 */
 .satisfaction {
   width: 186px;
@@ -473,7 +555,12 @@ span.points_num_select{
   line-height: 45px;
   margin-bottom: 24px;
   text-align: right;
-  padding-right: 60px; }
+  padding-right: 60px;
+  input{
+    text-align: right;
+    width: 78px;
+  }
+}
 .satisfaction_item:after {
   content: "";
   position: absolute;
@@ -509,9 +596,11 @@ color: #fff;
 td,th{
   text-align: center;
 }
-
+  th input{
+    width: 171px;
+    text-align: center;
+  }
 }
-
 
 .table_main {
   position: relative;
@@ -525,6 +614,10 @@ td,th{
     box-sizing: border-box;
     font-size: 13px;
     position: relative;
+    input{
+      width: 84px;
+      text-align: right;
+    }
     .icon-delete2{
       position: absolute;
       left: 6px;
@@ -705,7 +798,7 @@ textarea:focus {
 
 /* end */
 .result-btn {
-  margin-top: 30px;
+  margin: 30px auto 0;
   width: 178px;
   height: 48px;
   line-height: 48px;
@@ -714,8 +807,7 @@ textarea:focus {
   background: #2bb7c5;
   opacity: 0.3;
   text-align: center;
-  border-radius: 50%;
-
+  border-radius: 50px;
   a {
     display: block;
     color: #fff; 
