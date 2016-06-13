@@ -16,6 +16,17 @@ input{
   min-height: 550px;
   margin: 0 auto 34px;
   position: relative;
+  &:after{
+    content: '';
+    position: absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: .5;
+  }
   &.cur{
     border:2px solid #15afff;
   }
