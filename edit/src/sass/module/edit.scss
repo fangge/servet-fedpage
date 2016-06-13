@@ -268,8 +268,8 @@ input{
 .item:nth-child(even) {}
 .item input[type="radio"],.item input[type="checkbox"] {
   position: absolute;
-  top: -9999px;
-  left: -9999px; }
+  opacity: 0;
+}
 .item_cell {
   padding: 1px;
   border-radius: 5px;
@@ -507,10 +507,13 @@ span.points_num_select{
   display: block;
   width: 400px;
   margin: 0 auto 11px; }
-.answer input {
-  position: absolute;
-  top: -9999px;
-  left: -9999px; }
+.answer  {
+  input[type="radio"],input[type="checkbox"]{
+    position: absolute;
+    opacity: 0;
+  }
+
+}
 .answer_cell {
   position: relative;
   height: 48px;

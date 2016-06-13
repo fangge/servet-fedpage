@@ -2663,8 +2663,7 @@ input {
 /* line 269, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .item input[type="radio"], .item input[type="checkbox"] {
   position: absolute;
-  top: -9999px;
-  left: -9999px;
+  opacity: 0;
 }
 
 /* line 273, E:/servet-fedpage/edit/src/sass/module/edit.scss */
@@ -3070,14 +3069,13 @@ span.points_num_select {
   margin: 0 auto 11px;
 }
 
-/* line 510, E:/servet-fedpage/edit/src/sass/module/edit.scss */
-.answer input {
+/* line 511, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+.answer input[type="radio"], .answer input[type="checkbox"] {
   position: absolute;
-  top: -9999px;
-  left: -9999px;
+  opacity: 0;
 }
 
-/* line 514, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 517, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .answer_cell {
   position: relative;
   height: 48px;
@@ -3086,12 +3084,12 @@ span.points_num_select {
   background: rgba(0, 0, 0, 0.5);
 }
 
-/* line 520, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 523, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .answer_cell input {
   position: static;
 }
 
-/* line 523, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 526, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .answer_cell .icon-delete2 {
   display: none;
   position: absolute;
@@ -3099,12 +3097,12 @@ span.points_num_select {
   top: 16px;
 }
 
-/* line 530, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 533, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .answer_cell:hover .icon-delete2 {
   display: block;
 }
 
-/* line 535, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 538, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .answer_cell:before {
   content: "";
   position: absolute;
@@ -3114,7 +3112,7 @@ span.points_num_select {
   margin: auto;
 }
 
-/* line 542, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 545, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .answer_text {
   display: block;
   width: 290px;
@@ -3126,12 +3124,12 @@ span.points_num_select {
   border: 0;
 }
 
-/* line 552, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 555, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .answer_text:focus, .answer_text:active, .answer_text:hover {
   outline: 0;
 }
 
-/* line 556, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 559, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 input[type="radio"] + .answer_cell:before {
   width: 13px;
   height: 13px;
@@ -3139,7 +3137,7 @@ input[type="radio"] + .answer_cell:before {
   background-size: 13px;
 }
 
-/* line 561, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 564, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 input[type="checkbox"] + .answer_cell:before {
   width: 11px;
   height: 11px;
@@ -3147,19 +3145,19 @@ input[type="checkbox"] + .answer_cell:before {
   background-size: 11px;
 }
 
-/* line 566, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 569, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 input:checked + .answer_cell {
   box-shadow: 0 0 0 1px #28e8fd;
 }
 
-/* line 568, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 571, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 input[type="radio"]:checked + .answer_cell:before,
 input[type="checkbox"]:checked + .answer_cell:before {
   background-position: 0 0;
 }
 
 /* 满意度 */
-/* line 572, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 575, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .satisfaction {
   width: 186px;
   margin: 0 auto;
@@ -3167,7 +3165,7 @@ input[type="checkbox"]:checked + .answer_cell:before {
   color: #fff;
 }
 
-/* line 578, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 581, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .satisfaction_item {
   position: relative;
   height: 45px;
@@ -3177,13 +3175,13 @@ input[type="checkbox"]:checked + .answer_cell:before {
   padding-right: 60px;
 }
 
-/* line 585, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 588, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .satisfaction_item input {
   text-align: right;
   width: 78px;
 }
 
-/* line 590, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 593, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .satisfaction_item:after {
   content: "";
   position: absolute;
@@ -3197,62 +3195,62 @@ input[type="checkbox"]:checked + .answer_cell:before {
   background-size: 45px;
 }
 
-/* line 601, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 604, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .satisfaction_item:nth-child(1):after {
   content: "1";
   background-position: 0 0px;
 }
 
-/* line 604, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 607, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .satisfaction_item:nth-child(2):after {
   content: "2";
   background-position: 0 -45px;
 }
 
-/* line 607, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 610, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .satisfaction_item:nth-child(3):after {
   content: "3";
   background-position: 0 -90px;
 }
 
-/* line 610, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 613, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .satisfaction_item:nth-child(4):after {
   content: "4";
   background-position: 0 -135px;
 }
 
-/* line 613, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 616, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .satisfaction_item:nth-child(5):after {
   content: "5";
   background-position: 0 -180px;
 }
 
 /* 表格 */
-/* line 618, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 621, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .edit-table {
   color: #fff;
   overflow-x: scroll;
   min-height: 354px;
 }
 
-/* line 622, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 625, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .edit-table td, .edit-table th {
   text-align: center;
 }
 
-/* line 625, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 628, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .edit-table th input {
   width: 171px;
   text-align: center;
 }
 
-/* line 631, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 634, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .table_main {
   position: relative;
   width: 100%;
 }
 
-/* line 634, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 637, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .table_main td.table_column {
   min-width: 104px;
   height: 68px;
@@ -3266,13 +3264,13 @@ input[type="checkbox"]:checked + .answer_cell:before {
   background: none;
 }
 
-/* line 643, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 646, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .table_main td.table_column input {
   width: 84px;
   text-align: right;
 }
 
-/* line 647, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 650, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .table_main td.table_column .icon-delete2 {
   position: absolute;
   left: 6px;
@@ -3281,19 +3279,19 @@ input[type="checkbox"]:checked + .answer_cell:before {
   cursor: pointer;
 }
 
-/* line 655, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 658, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .table_main td.table_column:hover .icon-delete2 {
   display: block;
 }
 
-/* line 662, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 665, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .table_main table {
   border-collapse: separate;
   border-spacing: 1px;
   position: relative;
 }
 
-/* line 666, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 669, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .table_main table::after {
   content: '+';
   display: block;
@@ -3310,7 +3308,7 @@ input[type="checkbox"]:checked + .answer_cell:before {
   top: 54px;
 }
 
-/* line 684, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 687, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .table_main th {
   height: 42px;
   position: relative;
@@ -3320,7 +3318,7 @@ input[type="checkbox"]:checked + .answer_cell:before {
   box-sizing: initial;
 }
 
-/* line 690, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 693, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .table_main th .icon-delete2 {
   position: absolute;
   left: 50%;
@@ -3330,12 +3328,12 @@ input[type="checkbox"]:checked + .answer_cell:before {
   cursor: pointer;
 }
 
-/* line 699, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 702, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .table_main th:hover .icon-delete2 {
   display: block;
 }
 
-/* line 704, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 707, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .table_main td {
   height: 68px;
   min-width: 160px;
@@ -3344,19 +3342,19 @@ input[type="checkbox"]:checked + .answer_cell:before {
   border-radius: 5px;
 }
 
-/* line 712, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 715, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .table_main td label {
   margin-bottom: 0;
 }
 
-/* line 716, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 719, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .table_input input {
   position: absolute;
   top: -9999px;
   left: -9999px;
 }
 
-/* line 720, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 723, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .table_input span {
   display: inline-block;
   width: 13px;
@@ -3365,12 +3363,12 @@ input[type="checkbox"]:checked + .answer_cell:before {
   background-size: 26px 13px;
 }
 
-/* line 726, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 729, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .table_input input:checked + span {
   background-position: 0 0;
 }
 
-/* line 728, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 731, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .icon-delete2 {
   display: inline-block;
   width: 17px;
@@ -3378,7 +3376,7 @@ input[type="checkbox"]:checked + .answer_cell:before {
   background: url(../slice/icon_close_btn.png) no-repeat;
 }
 
-/* line 732, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 735, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .add-table {
   display: block;
   height: 68px;
@@ -3392,20 +3390,20 @@ input[type="checkbox"]:checked + .answer_cell:before {
   position: absolute;
 }
 
-/* line 746, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 749, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .add-row {
   left: 104px;
   bottom: -68px;
 }
 
 /* 下拉提示输入框 */
-/* line 751, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 754, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 input[type="text"]:focus,
 textarea:focus {
   box-shadow: 0 0 0 1px #28e8fd;
 }
 
-/* line 754, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 757, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .dropdownInput input, .dropdownInput_list li {
   width: 380px;
   height: 42px;
@@ -3418,7 +3416,7 @@ textarea:focus {
   color: #fff;
 }
 
-/* line 764, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 767, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .dropdownInput {
   position: relative;
   width: 380px;
@@ -3426,7 +3424,7 @@ textarea:focus {
   padding-top: 0px;
 }
 
-/* line 769, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 772, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .dropdownInput input {
   position: absolute;
   top: 0;
@@ -3436,7 +3434,7 @@ textarea:focus {
   border: none;
 }
 
-/* line 776, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 779, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .dropdownInput_list {
   opacity: 0;
   padding-top: 42px;
@@ -3447,18 +3445,18 @@ textarea:focus {
   overflow: hidden;
 }
 
-/* line 784, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 787, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .dropdownInput_list li.selected {
   background: #28e8fd;
 }
 
-/* line 786, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 789, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .dropdownInput_list li:hover {
   background: #28e8fd;
 }
 
 /* 上传 */
-/* line 790, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 793, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .upload {
   padding-top: 12px;
   width: 260px;
@@ -3466,7 +3464,7 @@ textarea:focus {
   margin-top: 75px;
 }
 
-/* line 795, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 798, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .upload_btn {
   position: relative;
   width: 222px;
@@ -3477,7 +3475,7 @@ textarea:focus {
   margin-bottom: 40px;
 }
 
-/* line 803, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 806, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .upload_btn input {
   position: absolute;
   top: 0;
@@ -3487,7 +3485,7 @@ textarea:focus {
   opacity: 0;
 }
 
-/* line 810, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 813, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .upload_btn:after {
   content: "";
   position: absolute;
@@ -3501,7 +3499,7 @@ textarea:focus {
   background: url(../slice/add.png) no-repeat;
 }
 
-/* line 819, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 822, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .upload_desc {
   font-size: 14px;
   line-height: 21px;
@@ -3509,7 +3507,7 @@ textarea:focus {
 }
 
 /* end */
-/* line 826, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 829, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .result-btn {
   margin: 30px auto 0;
   width: 178px;
@@ -3523,55 +3521,55 @@ textarea:focus {
   border-radius: 50px;
 }
 
-/* line 837, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 840, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .result-btn a {
   display: block;
   color: #fff;
   text-decoration: none;
 }
 
-/* line 842, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 845, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .result-btn:hover {
   background: #05d3e8;
   opacity: 1;
 }
 
 /* 上传概念图 */
-/* line 848, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 851, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .edit-col-cont13 {
   padding-top: 130px;
 }
 
-/* line 850, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 853, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .pic-upload {
   padding-top: 0;
   margin-top: 0;
 }
 
-/* line 854, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 857, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .pic-upload .upload-img {
   margin-top: 55px;
   margin-bottom: 55px;
 }
 
-/* line 858, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 861, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .pic-upload .upload_desc {
   margin-left: 57px;
 }
 
 /* 附加任务 */
-/* line 863, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 866, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .edit-col-cont12 {
   padding-top: 200px;
 }
 
 /* 产品建议 */
-/* line 868, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 871, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .edit-col-cont11 {
   padding-top: 100px;
 }
 
-/* line 873, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 876, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .edit-col-cont11 .edit-area textarea {
   border: none;
   background: #000;
@@ -3588,13 +3586,13 @@ textarea:focus {
 }
 
 /* 购买测试 */
-/* line 891, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 894, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .edit-col-cont10 {
   margin-top: 190px;
   background: rgba(0, 0, 0, 0.4);
 }
 
-/* line 894, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 897, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .edit-task-addr {
   padding-bottom: 113px;
   text-align: center;
@@ -3603,12 +3601,12 @@ textarea:focus {
   color: #fff;
 }
 
-/* line 901, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 904, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .edit-task-addr .input-group {
   margin-bottom: 5px;
 }
 
-/* line 903, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 906, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .edit-task-addr .input-group input {
   width: 485px;
   border-radius: 20px;
@@ -3620,13 +3618,13 @@ textarea:focus {
   outline: none;
 }
 
-/* line 915, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 918, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .add-task-addr-btn {
   margin-top: 15px;
   cursor: default;
 }
 
-/* line 919, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 922, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .add-task-addr-btn i {
   position: relative;
   top: 2px;
@@ -3634,18 +3632,18 @@ textarea:focus {
   font-size: 24px;
 }
 
-/* line 926, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 929, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .add-task-addr-btn button {
   background: transparent;
 }
 
-/* line 930, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 933, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .modal-search-col {
   height: 40px;
   line-height: 40px;
 }
 
-/* line 935, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 938, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .modal-search-input {
   width: 174px;
   height: 28px;
@@ -3661,7 +3659,7 @@ textarea:focus {
   margin-top: 6px;
 }
 
-/* line 951, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 954, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .modal-icon-search {
   display: block;
   width: 16px;
@@ -3672,7 +3670,7 @@ textarea:focus {
   top: 11px;
 }
 
-/* line 959, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 962, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .modal-left-nav a {
   display: block;
   color: #4b5668;
@@ -3682,7 +3680,7 @@ textarea:focus {
   text-indent: 25px;
 }
 
-/* line 970, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 973, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .modal-left-table th {
   height: 37px;
   line-height: 37px;
@@ -3692,7 +3690,7 @@ textarea:focus {
   background: #f0f3f7;
 }
 
-/* line 978, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 981, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .modal-left-table td {
   height: 37px;
   line-height: 37px;
@@ -3703,24 +3701,24 @@ textarea:focus {
   border-left: 0;
 }
 
-/* line 988, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 991, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .border-show {
   border-top: 1px solid #e5e5e5;
 }
 
-/* line 992, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 995, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .modal-content .col-md-9 {
   padding-left: 0;
   margin-left: -1px;
   margin-top: -1px;
 }
 
-/* line 998, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 1001, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .modal-right-cont {
   border-left: 1px solid #f0f3f7;
 }
 
-/* line 1010, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 1013, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 #mobile-show .modal-dialog, #mobile-show .modal-header, #mobile-show .modal-body {
   width: 315px;
   padding: 0;
@@ -3728,26 +3726,26 @@ textarea:focus {
   height: auto;
 }
 
-/* line 1017, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 1020, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 #mobile-show .mobile-bar {
   width: 315px;
   height: 61px;
   background: url(../slice/mobile-bar.png) no-repeat;
 }
 
-/* line 1022, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 1025, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 #mobile-show iframe {
   height: 557px;
   width: 315px;
   overflow: hidden;
 }
 
-/* line 1028, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 1031, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 #add-new-reseach .modal-content {
   overflow: hidden;
 }
 
-/* line 1032, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 1035, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .add-answer {
   display: block;
   width: 400px;
@@ -3762,7 +3760,7 @@ textarea:focus {
   margin: 0 auto;
 }
 
-/* line 1045, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 1048, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .other-answer {
   width: 400px;
   margin: 15px auto 0;
@@ -3770,13 +3768,13 @@ textarea:focus {
   color: #c1bebc;
 }
 
-/* line 1051, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 1054, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .music-list {
   width: 787px;
   margin: 30px auto;
 }
 
-/* line 1054, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 1057, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .music-list li {
   height: 32px;
   width: 787px;
@@ -3786,29 +3784,29 @@ textarea:focus {
   padding-right: 10px;
 }
 
-/* line 1061, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 1064, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .music-list li.cur-muisc {
   background: #e8e9f1;
 }
 
-/* line 1063, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 1066, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .music-list li.cur-muisc .music-on {
   display: inline-block;
 }
 
-/* line 1069, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 1072, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .music-title {
   color: #4b5668;
   font-size: 14px;
   float: left;
 }
 
-/* line 1074, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 1077, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .music-size, .music-time {
   margin-right: 20px;
 }
 
-/* line 1077, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 1080, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .music-on {
   width: 19px;
   height: 16px;
@@ -3819,7 +3817,7 @@ textarea:focus {
   margin-right: 20px;
 }
 
-/* line 1084, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 1087, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .music-btn {
   display: inline-block;
   width: 20px;
@@ -3828,42 +3826,42 @@ textarea:focus {
   top: 4px;
 }
 
-/* line 1091, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 1094, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .pause {
   background: url(../slice/pause.png) no-repeat;
 }
 
-/* line 1094, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 1097, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .play {
   background: url(../slice/play.png) no-repeat;
 }
 
-/* line 1097, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 1100, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .background-list-wrap {
   height: 360px;
   overflow: hidden;
   overflow-y: scroll;
 }
 
-/* line 1102, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 1105, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .background-list {
   width: 790px;
   margin: 30px -15px 0 auto;
 }
 
-/* line 1105, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 1108, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .background-list li {
   float: left;
   margin: 0 15px 15px 0;
 }
 
-/* line 1109, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 1112, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .background-list li.selected a {
   border: 5px solid #00ddf3;
   border-radius: 5px;
 }
 
-/* line 1116, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 1119, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .background-list li a {
   display: block;
   width: 100px;
@@ -3875,29 +3873,29 @@ textarea:focus {
   overflow: hidden;
 }
 
-/* line 1125, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 1128, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .background-list li a img {
   display: block;
   width: 100%;
   height: 100%;
 }
 
-/* line 1131, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 1134, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .background-list li .default {
   background: #fff;
 }
 
-/* line 1138, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 1141, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 #music-modal .modal-content, #background-modal .modal-content {
   background: #f0f3f7;
 }
 
-/* line 1141, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 1144, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 #music-modal .modal-header, #background-modal .modal-header {
   background: #fff;
 }
 
-/* line 1145, E:/servet-fedpage/edit/src/sass/module/edit.scss */
+/* line 1148, E:/servet-fedpage/edit/src/sass/module/edit.scss */
 .icon-laugh {
   display: block;
   width: 46px;
