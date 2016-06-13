@@ -19,7 +19,8 @@ module.exports = function(grunt) {
         ejs_static = require('grunt-adiejs-static/lib/ejs_static'),
         _ = require('grunt-adiejs-static/node_modules/underscore'),
         middleware_directory = require('grunt-contrib-connect/node_modules/connect/lib/middleware/directory'),
-        accepts = require('grunt-contrib-connect/node_modules/connect/node_modules/compression/node_modules/accepts'),
+        //accepts = require('grunt-contrib-connect/node_modules/connect/node_modules/compression/node_modules/accepts'),
+        accepts = require('accepts'),
         url = require('url');
 
     var renderTpl = function (req, res, next){
@@ -96,7 +97,7 @@ module.exports = function(grunt) {
             site_src: {
                 options: {
                     hostname: ipAddress,
-                    port: 1020,
+                    port: 1024,
                     base: ['src/'],
                     livereload: true,
                     open: true, //打开默认浏览器
@@ -111,7 +112,7 @@ module.exports = function(grunt) {
             site_dest: {
                 options: {
                     hostname: ipAddress,
-                    port: 1021,
+                    port: 1025,
                     base: ['dest/'],
                     livereload: true,
                     keepalive: true, //保持sever不退出
@@ -192,7 +193,7 @@ module.exports = function(grunt) {
             },
             livereload: {
                 options: {
-                    livereload: true
+                    livereload: 1137
                 },
                 files: ['src/*.html', 'src/css/*.css', 'src/js/*.js', 'src/tpl/*.ejs', 'src/data/*.json']
             }

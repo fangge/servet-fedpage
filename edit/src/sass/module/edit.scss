@@ -509,6 +509,17 @@ span.points_num_select{
   input{
     position: static;
   }
+  .icon-delete2{
+    display: none;
+    position: absolute;
+    right:16px;
+    top:16px;
+  }
+  &:hover{
+    .icon-delete2{
+      display: block
+    }
+  }
 }
 .answer_cell:before {
   content: "";
@@ -519,6 +530,7 @@ span.points_num_select{
   margin: auto; }
 .answer_text {
   display: block;
+  width: 290px;
   //padding-right: 20px;
   height: 48px;
   line-height: 45px;
@@ -526,6 +538,9 @@ span.points_num_select{
   color: #fff;
   background: none;
   border:0;
+  &:focus,&:active,&:hover{
+    outline: 0;
+  }
 }
 input[type="radio"] + .answer_cell:before {
   width: 13px;
@@ -989,4 +1004,22 @@ textarea:focus {
   height: 618-61px;
   width: 315px;
   overflow: hidden;
+}
+#add-new-reseach{
+  .modal-content{
+    overflow: hidden;
+  }
+}
+.add-answer{
+  display: block;
+  width: 400px;
+  height: 48px;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  line-height: 48px;
+  border: 2px dashed #fff;
+  border-radius: 48px;
+  cursor: pointer;
+  margin: 0 auto;
 }
