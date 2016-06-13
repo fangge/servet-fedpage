@@ -3659,6 +3659,14 @@ textarea:focus {
   margin: 0 auto;
 }
 
+/* line 1026, F:/yyproject/servet-fedpage/edit/src/sass/module/edit.scss */
+.other-answer {
+  width: 400px;
+  margin: 15px auto 0;
+  font-size: 14px;
+  color: #c1bebc;
+}
+
 /* line 17, F:/yyproject/servet-fedpage/edit/src/sass/common.scss */
 body {
   padding-top: 52px;
