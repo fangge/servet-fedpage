@@ -31,9 +31,9 @@
         <a class="topic" title="新建" data-toggle="modal" data-target="#add-new-reseach"></a>
         <div class="navbar-right">
           <a href="" class="navbar-right-btn navbar-right-btn1">发布</a>
-          <a href="" class="navbar-right-btn navbar-right-btn2">测试</a>
+          <a href="" class="navbar-right-btn navbar-right-btn2" data-toggle="modal" data-target="#delete-reseach">测试</a>
           <a href="" class="navbar-right-btn navbar-right-btn3 g-thide">设置</a>
-          <a href="" class="navbar-right-btn navbar-right-btn4 g-thide">音乐</a>
+          <a class="navbar-right-btn navbar-right-btn4 g-thide"   data-toggle="modal" data-target="#music-modal">音乐</a>
         </div>
       </div>
     </header>
@@ -109,12 +109,11 @@
               <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                 <div class="panel-body">
                   <ul class="set-bg">
-                    <li role="presentation" class="active"><a href="#setcolor" aria-controls="setcolor" role="tab" data-toggle="tab" class="set-bg1"><i class="icon-setcolor">设置颜色</i></a></li>
-                    <li role="presentation"><a href="#setbg" aria-controls="setbg" role="tab" data-toggle="tab"  class="set-bg2"><i class="icon-setbg">设置图片</i></a></li>
+                    <li class="active"><a class="set-bg1"><i class="icon-setcolor">设置颜色</i></a></li>
+                    <li ><a class="set-bg2"    data-toggle="modal" data-target="#background-modal"><i class="icon-setbg">设置图片</i></a></li>
                   </ul>
                   <div class="tab-content">
-                    <div role="tabpanel" class="tab-pane active" id="setcolor"><input type='text' id="flat" /></div>
-                    <div role="tabpanel" class="tab-pane" id="setbg"></div>
+                    <div class="tab-pane active" id="setcolor"><input type='text' id="flat" /></div>
                   </div>
 
                 </div>
@@ -126,6 +125,7 @@
         <!--列表开始-->
         <section class="main">
             <input type="text" class="edit-name" placeholder="请添加问卷名称">
+
             <!--start{-->
             <div class="edit-col cur" style="background: url(img/bg.jpg) no-repeat;background-size:cover ">
                 <span class="edit-col-num">0</span>
@@ -652,7 +652,9 @@
                             <span>任务结束地址</span>
                             <input type="text">
                         </div>
-                        <div class="add-task-addr-btn"><i>+</i> 添加任务结束地址</div>
+                        <div class="add-task-addr-btn">
+                            <button><i>+</i> 添加任务结束地址</button>
+                        </div>
                     </div>                    
                 </div>
             </div>
@@ -745,8 +747,10 @@
          </section>
       </div>
     </div>
-    <div class="modal fade" id="mobile-show" role="dialog">
-        <div class="modal-dialog">
+
+    <!--弹层{-->
+    <div class="modal fade" id="mobile-show" tabindex="-1" role="dialog" aria-labelledby="mobile-show">
+        <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <div class="mobile-bar"></div>
@@ -756,10 +760,132 @@
                 </div>
             </div>
         </div>
-
     </div>
+    <div class="modal fade modal-panel" id="music-modal" tabindex="-1" role="dialog" aria-labelledby="music-modal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">取消</span></button>
+                    <button type="button" class="edit-save" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">确定</span></button>
+                    <h4 class="modal-title">背景音乐</h4>
+                </div>
+                <div class="modal-body">
+                    <ul class="music-list">
+                        <li>
+                            <span class="music-title">Wrong Club (Club Mix by The Super Criticals) .mp3</span>
+                            <i class="music-on"></i>
+                            <span class="music-size">0KB</span>
+                            <span class="music-time">00：00</span>
+                            <a class="music-btn pause"></a>
+                        </li>
+                        <li class="cur-muisc">
+                            <span class="music-title">Wrong Club (Club Mix by The Super Criticals) .mp3</span>
+                            <i class="music-on"></i>
+                            <span class="music-size">579KB</span>
+                            <span class="music-time">02：56</span>
+                            <a class="music-btn play"></a>
+                        </li>
+                        <li>
+                            <span class="music-title">Wrong Club (Club Mix by The Super Criticals) .mp3</span>
+                            <i class="music-on"></i>
+                            <span class="music-size">0KB</span>
+                            <span class="music-time">00：00</span>
+                            <a class="music-btn pause"></a>
+                        </li>
+                        <li>
+                            <span class="music-title">Wrong Club (Club Mix by The Super Criticals) .mp3</span>
+                            <i class="music-on"></i>
+                            <span class="music-size">579KB</span>
+                            <span class="music-time">02：56</span>
+                            <a class="music-btn play"></a>
+                        </li>
+                        <li>
+                            <span class="music-title">Wrong Club (Club Mix by The Super Criticals) .mp3</span>
+                            <i class="music-on"></i>
+                            <span class="music-size">0KB</span>
+                            <span class="music-time">00：00</span>
+                            <a class="music-btn pause"></a>
+                        </li>
+                        <li>
+                            <span class="music-title">Wrong Club (Club Mix by The Super Criticals) .mp3</span>
+                            <i class="music-on"></i>
+                            <span class="music-size">579KB</span>
+                            <span class="music-time">02：56</span>
+                            <a class="music-btn play"></a>
+                        </li>
+                        <li>
+                            <span class="music-title">Wrong Club (Club Mix by The Super Criticals) .mp3</span>
+                            <i class="music-on"></i>
+                            <span class="music-size">0KB</span>
+                            <span class="music-time">00：00</span>
+                            <a class="music-btn pause"></a>
+                        </li>
+                        <li>
+                            <span class="music-title">Wrong Club (Club Mix by The Super Criticals) .mp3</span>
+                            <i class="music-on"></i>
+                            <span class="music-size">579KB</span>
+                            <span class="music-time">02：56</span>
+                            <a class="music-btn play"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade modal-panel" id="background-modal" tabindex="-1" role="dialog" aria-labelledby="background-modal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">取消</span></button>
+                    <button type="button" class="edit-save" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">确定</span></button>
+                    <h4 class="modal-title">背景选择</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="background-list-wrap">
+                        <ul class="background-list clearfix">
+                            <li><a class="default">默认背景</a></li>
+                            <li><a><img src="" alt=""></a></li>
+                            <li class="selected"><a><img src="" alt=""></a></li>
+                            <li><a><img src="" alt=""></a></li>
+                            <li><a><img src="" alt=""></a></li>
+                            <li><a><img src="" alt=""></a></li>
+                            <li><a><img src="" alt=""></a></li>
+                            <li><a><img src="" alt=""></a></li>
+                            <li><a><img src="" alt=""></a></li>
+                            <li><a><img src="" alt=""></a></li>
+                            <li><a><img src="" alt=""></a></li>
+                            <li><a><img src="" alt=""></a></li>
+                            <li><a><img src="" alt=""></a></li>
+                            <li><a><img src="" alt=""></a></li>
+                            <li><a><img src="" alt=""></a></li>
+                            <li><a><img src="" alt=""></a></li>
+                            <li><a><img src="" alt=""></a></li>
+                            <li><a><img src="" alt=""></a></li>
+                            <li><a><img src="" alt=""></a></li>
+                            <li><a><img src="" alt=""></a></li>
+                            <li><a><img src="" alt=""></a></li>
+                            <li><a><img src="" alt=""></a></li>
+                            <li><a><img src="" alt=""></a></li>
+                            <li><a><img src="" alt=""></a></li>
+                            <li><a><img src="" alt=""></a></li>
+                            <li><a><img src="" alt=""></a></li>
+                            <li><a><img src="" alt=""></a></li>
+                            <li><a><img src="" alt=""></a></li>
+                            <li><a><img src="" alt=""></a></li>
+                            <li><a><img src="" alt=""></a></li>
+                            <li><a><img src="" alt=""></a></li>
+                            <li><a><img src="" alt=""></a></li>
+                            <li><a><img src="" alt=""></a></li>
+                            <li><a><img src="" alt=""></a></li>
+                            <li><a><img src="" alt=""></a></li>
+                        </ul>
+                    </div>
 
-    <div class="modal fade" id="add-new-reseach" tabindex="-1" role="dialog" aria-labelledby="new-reseach-label">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade modal-panel" id="add-new-reseach" tabindex="-1" role="dialog" aria-labelledby="new-reseach-label">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -860,6 +986,21 @@
             </div>
         </div>
     </div>
+    <div class="modal fade" id="delete-reseach" tabindex="-1" role="dialog" aria-labelledby="delete-reseach-panel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <i class="icon-laugh"></i>
+                    <p class="delete-tips">如果你的问卷需要“保密”<br>
+                        可先去问卷设置哦~！</p>
+                    <button>确定</button>
+                    <i data-dismiss="modal" class="delete-close-btn"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--}弹层-->
+
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/spectrum.js"></script>

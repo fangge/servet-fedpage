@@ -26,6 +26,7 @@
         </div>
         <div class="navbar-right">
           <button class="navbar-message"></button>
+          <button class="navbar-logout" data-toggle="modal" data-target="#logout-comfirm"></button>
           <div class="right-side">
             <ul class="right-side-tab clx">
               <li class="active" data-show="#note-cont">批注</li>
@@ -128,6 +129,7 @@
             </div>
             <p class="user-name">旧天堂</p>
             <p class="user-description">中国电信资深用户体验设计师SUPA荣誉会员...</p>
+            <a class="user-mes-edit" href="#"></a>
           </div>
           <div class="group">
             <div class="group-header">群组<button class="add-group-btn" data-toggle="modal" data-target="#add-group"></button></div>                         
@@ -183,7 +185,12 @@
                   </div>
                 </div>
                 <div class="part-b clx">
-                  <div class="seach-panel"><input id="seach-input" type="text" placeholder="搜索"></div>
+                  <div class="seach-panel">
+                    <div class="seach-form">                      
+                      <input id="seach-input" type="text" placeholder="搜索">
+                      <i class="icon-seach"></i>
+                    </div>
+                  </div>
                   <div class="seach-content">
                     <div class="seach-group">
                       <div class="seach-group-name group-name-sel">健康研究小组</div>
@@ -333,10 +340,15 @@
                 <div class="list-img">
                   <img src="img/survey_01.png" alt="">
                   <div class="list-img-hover">
-                    <button class="icon-report"></button>
-                    <button class="icon-copy" data-title="互联网行业调查" data-toggle="modal" data-target="#copy-reseach"></button>
-                    <button class="icon-delete" data-toggle="modal" data-target="#delete-reseach"></button>
-                    <button class="icon-stop"></button>
+                    <div class="list-edit-reseach">
+                      <button class="icon-edit-btn"></button>
+                    </div>
+                    <div class="list-orders">
+                      <button class="icon-report"></button>
+                      <button class="icon-copy" data-title="互联网行业调查" data-toggle="modal" data-target="#copy-reseach"></button>
+                      <button class="icon-delete" data-toggle="modal" data-target="#delete-reseach"></button>
+                      <button class="icon-stop"></button>
+                    </div>                    
                   </div>
                 </div>                
                 <div class="list-detail-des">
@@ -357,10 +369,15 @@
                 <div class="list-img">
                   <img src="img/survey_02.png" alt="">
                   <div class="list-img-hover">
-                    <button class="icon-report"></button>
-                    <button class="icon-copy" data-title="健康硬件产品研究1" data-toggle="modal" data-target="#copy-reseach"></button>
-                    <button class="icon-delete" data-toggle="modal" data-target="#delete-reseach"></button>
-                    <button class="icon-stop"></button>
+                    <div class="list-edit-reseach">
+                      <button class="icon-edit-btn"></button>
+                    </div>
+                    <div class="list-orders">
+                      <button class="icon-report"></button>
+                      <button class="icon-copy" data-title="互联网行业调查" data-toggle="modal" data-target="#copy-reseach"></button>
+                      <button class="icon-delete" data-toggle="modal" data-target="#delete-reseach"></button>
+                      <button class="icon-stop"></button>
+                    </div> 
                   </div>
                 </div>                
                 <div class="list-detail-des">
@@ -382,10 +399,15 @@
                 <div class="list-img">
                   <img src="img/survey_03.png" alt="">
                   <div class="list-img-hover">
-                    <button class="icon-report"></button>
-                    <button class="icon-copy" data-title="金融软件产品研究" data-toggle="modal" data-target="#copy-reseach"></button>
-                    <button class="icon-delete" data-toggle="modal" data-target="#delete-reseach"></button>
-                    <button class="icon-stop"></button>
+                    <div class="list-edit-reseach">
+                      <button class="icon-edit-btn"></button>
+                    </div>
+                    <div class="list-orders">
+                      <button class="icon-report"></button>
+                      <button class="icon-copy" data-title="互联网行业调查" data-toggle="modal" data-target="#copy-reseach"></button>
+                      <button class="icon-delete" data-toggle="modal" data-target="#delete-reseach"></button>
+                      <button class="icon-stop"></button>
+                    </div> 
                   </div>
                 </div>                
                 <div class="list-detail-des">
@@ -406,10 +428,15 @@
                 <div class="list-img">
                   <img src="img/survey_04.png" alt="">
                   <div class="list-img-hover">
-                    <button class="icon-report"></button>
-                    <button class="icon-copy" data-title="2016艺术家生存报告" data-toggle="modal" data-target="#copy-reseach"></button>
-                    <button class="icon-delete" data-toggle="modal" data-target="#delete-reseach"></button>
-                    <button class="icon-stop"></button>
+                    <div class="list-edit-reseach">
+                      <button class="icon-edit-btn"></button>
+                    </div>
+                    <div class="list-orders">
+                      <button class="icon-report"></button>
+                      <button class="icon-copy" data-title="互联网行业调查" data-toggle="modal" data-target="#copy-reseach"></button>
+                      <button class="icon-delete" data-toggle="modal" data-target="#delete-reseach"></button>
+                      <button class="icon-stop"></button>
+                    </div> 
                   </div>
                 </div>                
                 <div class="list-detail-des">
@@ -430,10 +457,15 @@
                 <div class="list-img">
                   <img src="img/survey_05.png" alt="">
                   <div class="list-img-hover">
-                    <button class="icon-report"></button>
-                    <button class="icon-copy" data-title="健康硬件产品研究2" data-toggle="modal" data-target="#copy-reseach"></button>
-                    <button class="icon-delete" data-toggle="modal" data-target="#delete-reseach"></button>
-                    <button class="icon-stop"></button>
+                    <div class="list-edit-reseach">
+                      <button class="icon-edit-btn"></button>
+                    </div>
+                    <div class="list-orders">
+                      <button class="icon-report"></button>
+                      <button class="icon-copy" data-title="互联网行业调查" data-toggle="modal" data-target="#copy-reseach"></button>
+                      <button class="icon-delete" data-toggle="modal" data-target="#delete-reseach"></button>
+                      <button class="icon-stop"></button>
+                    </div> 
                   </div>
                 </div>                
                 <div class="list-detail-des">
@@ -481,23 +513,55 @@
         </div>
       </div>
     </div>
+    <!-- 退出确认Modal -->
+    <div class="modal fade" id="logout-comfirm" tabindex="-1" role="dialog" aria-labelledby="logout-comfirm-panel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">                      
+          <div class="modal-body">
+            <i class="icon-uptriangle"></i>
+            <button>退出登录</button>            
+          </div>                
+        </div>
+      </div>
+    </div>
     
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script>
       $(function(){ 
+        /*右部*/
+        $('.navbar-message').on('mouseover', function(){          
+          $('.right-side').show();
+        }).on('mouseout', function(){
+          $('.right-side').hide();
+        });
+        $('.right-side').on('mouseover', function(){          
+          $('.navbar-message').addClass('navbar-message-hover');
+          $(this).show();
+        }).on('mouseout', function(){
+          $(this).hide();
+          $('.navbar-message').removeClass('navbar-message-hover');
+        });
+        var $li = $('.right-side-tab li');
+        $li.on('click', function(){
+          $($(this).attr('data-show')).show().siblings().hide();
+          if(!$(this).hasClass('active')) {
+            $(this).addClass('active').siblings().removeClass('active');
+          }          
+        });
+
+        /*问卷复制*/
         var $copyItem = $('.icon-copy'),
             $copyInput = $('#copy-name');
         
         $copyItem.on('click', function(){          
           $copyInput.val($(this).attr('data-title') + '(复制1)');
         });
-
         $copyInput.on('click', function(){
           $(this).select();
         });
-        
 
+        /*左部*/        
         $(document).on('click', '.display-btn', function(e){
           
           if($(this).parent('.group-member').hasClass('group-selected')){
@@ -509,32 +573,22 @@
             $(this).next().slideDown("slow");
           }
         });         
-
         var $ele = $('.seach-group-name');
-
         $ele.on('click', function(e) {
           if(!$(this).hasClass('group-name-sel')) {
             $(this).addClass('group-name-sel').siblings().removeClass('group-name-sel');
           }
         });
 
+        /*问卷模板*/
         var $button = $('.reseach-tab button');
-
         $button.on('click', function(){
           $($(this).attr('data-show')).show().siblings().hide();
           if(!$(this).hasClass('reseach-tab-sel')) {
             $(this).addClass('reseach-tab-sel').siblings().removeClass('reseach-tab-sel');
           }          
         });
-
-        var $li = $('.right-side-tab li');
-
-        $li.on('click', function(){
-          $($(this).attr('data-show')).show().siblings().hide();
-          if(!$(this).hasClass('active')) {
-            $(this).addClass('active').siblings().removeClass('active');
-          }          
-        });
+        
       });
     </script>
   </body>
