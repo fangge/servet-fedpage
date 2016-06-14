@@ -68,17 +68,38 @@
               </div>
               <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                 <div class="panel-body">
-                  <ul class="theme">
-                    <li><a href=""><img src="" alt="">
-                      <p>艺术</p>
-                    </a></li>
-                    <li><a href=""><img src="" alt="">
-                      <p>风景</p>
-                    </a></li>
-                    <li><a href=""><img src="" alt="">
-                      <p>抽象</p>
-                    </a></li>
-                  </ul>
+                    <div class="theme-wrap">
+                        <ul class="theme">
+                            <li><a href=""><img src="" alt="">
+                                <p>艺术</p>
+                            </a></li>
+                            <li><a href=""><img src="" alt="">
+                                <p>风景</p>
+                            </a></li>
+                            <li><a href=""><img src="" alt="">
+                                <p>抽象</p>
+                            </a></li>
+                            <li><a href=""><img src="" alt="">
+                                <p>艺术</p>
+                            </a></li>
+                            <li><a href=""><img src="" alt="">
+                                <p>风景</p>
+                            </a></li>
+                            <li><a href=""><img src="" alt="">
+                                <p>抽象</p>
+                            </a></li>
+                            <li><a href=""><img src="" alt="">
+                                <p>艺术</p>
+                            </a></li>
+                            <li><a href=""><img src="" alt="">
+                                <p>风景</p>
+                            </a></li>
+                            <li><a href=""><img src="" alt="">
+                                <p>抽象</p>
+                            </a></li>
+                        </ul>
+                    </div>
+
                 </div>
               </div>
             </div>
@@ -436,6 +457,7 @@
                         <div class="heart_icon"></div>
                     </div>
                 </div>
+
             </div>
             <!--}心形-->
             <!--满意度{-->
@@ -477,6 +499,13 @@
                         </div>
                     </div>
                 </div>
+                <div class="order">
+                    选项随机顺序
+                    <span class='tg-list-item'>
+                        <input class='tgl tgl-light' id='cb1' type='checkbox'>
+                        <label class='tgl-btn' for='cb1'></label>
+                    </span>
+                </div>
             </div>
             <!--}满意度-->
             <!--满意度{-->
@@ -502,6 +531,13 @@
                         <div class="satisfaction_item"><input type="text" value="不满意"></div>
                         <div class="satisfaction_item"><input type="text" value="非常不满意"></div>
                     </div>
+                </div>
+                <div class="order">
+                    选项随机顺序
+                    <span class='tg-list-item'>
+                        <input class='tgl tgl-light' id='cb1' type='checkbox'>
+                        <label class='tgl-btn' for='cb1'></label>
+                    </span>
                 </div>
             </div>
             <!--}满意度-->
@@ -563,7 +599,7 @@
                                 </tr>
                             </table>
                             <a class="add-table add-row">+</a>
-                            <!--<a class="add-table add-col">+</a>-->
+                            <a class="add-table add-col">+</a>
                         </div>
                     </div>
                 </div>
@@ -1033,6 +1069,7 @@
             cursorborder:0,
             cursorcolor:'rgba(0, 0, 0, 0.4)'
         });
+      $('.add-col').css('left',$('.table_main').find('table').width()+1)
     </script>
   </body>
 </html>

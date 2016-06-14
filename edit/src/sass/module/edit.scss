@@ -666,23 +666,23 @@ td,th{
   border-collapse: separate;
   border-spacing: 1px;
   position: relative;
-  &::after{
-    content:'+';
-    display: block;
-    height: 68px;
-    width: 160px;
-    background: rgba(0, 0, 0, 0.3);
-    text-align: center;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    line-height: 68px;
-    color: #fff;
-    font-size: 28px;
-    position: absolute;
-    right: -160px;
-    top: 54px;
-  }
+  //&::after{
+  //  content:'+';
+  //  display: block;
+  //  height: 68px;
+  //  width: 160px;
+  //  background: rgba(0, 0, 0, 0.3);
+  //  text-align: center;
+  //  -webkit-border-radius: 5px;
+  //  -moz-border-radius: 5px;
+  //  border-radius: 5px;
+  //  line-height: 68px;
+  //  color: #fff;
+  //  font-size: 28px;
+  //  position: absolute;
+  //  right: -160px;
+  //  top: 54px;
+  //}
   }
 .table_main th {
   height: 42px;
@@ -735,7 +735,7 @@ td,th{
 .add-table{
   display: block;
   height: 68px;
-  width: 160px;
+  width: 174px;
   background: rgba(0, 0, 0, 0.3);
   text-align: center;
   -webkit-border-radius: 5px;
@@ -749,6 +749,10 @@ td,th{
 .add-row{
   left: 104px;
   bottom: -68px;
+}
+.add-col{
+
+    top: 54px;
 }
 /* 下拉提示输入框 */
 input[type="text"]:focus,
