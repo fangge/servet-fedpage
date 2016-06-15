@@ -717,9 +717,7 @@ td,th{
   }
 }
 .table_input input {
-  position: absolute;
-  top: -9999px;
-  left: -9999px; }
+  opacity: 0}
 .table_input span {
   display: inline-block;
   width: 13px;
@@ -1155,4 +1153,12 @@ position: relative;
   position: absolute;
   top: 83px;
   left: 42px;
+}
+.order-score{
+  .tg-list-item{
+    display: inline-block;
+    float:none;
+    position: relative;
+    top: 5px;
+  }
 }

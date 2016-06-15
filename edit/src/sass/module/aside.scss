@@ -82,6 +82,12 @@
 .nav-icon12 em{
   @include navsprite(20px,22px,'icon-12.png');
 }
+.nav-icon13 em{
+  @include navsprite(18px,10px,'icon-13.png');
+}
+.nav-icon14 em{
+  @include navsprite(14px,17px,'icon-14.png');
+}
 
 
 .right-nav{
@@ -147,7 +153,7 @@
 .theme-wrap{
   padding: 0 20px;
   width: 174px;
-  height: 200px;
+  height: 335px;
   overflow: hidden;
   overflow-y: scroll;
   margin: 0 auto;
@@ -232,4 +238,55 @@
 }
 .icon-setbg{
   @include navsprite(16px,14px,'image.png')
+}
+.topic-aside{
+  li{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom:12px;
+    width: 154px;
+    span{
+      display: inline-block;
+    }
+    select{
+      color: #4b5668;
+      font-size: 12px;
+      width: 51px;
+      height: 30px;
+      line-height: 30px;
+    }
+  }
+}
+.topic-title{
+  color: #4b5668;
+  font-size: 12px;
+  width: 72px;
+}
+.align{
+  float:right;
+  a{
+    display: block;
+    float:left;
+    width: 27px;
+    height: 25px;
+    &.cur{
+      background: #cbcecf;
+    }
+    i{
+      display: block;
+      position: relative;
+      top: 8px;
+      left: 6px;
+    }
+  }
+}
+.align-icon1 i{
+  @include navsprite(14px,11px,'tleft.png')
+}
+.align-icon2 i{
+  @include navsprite(14px,11px,'tcenter.png')
+}
+.align-icon3 i{
+  @include navsprite(14px,11px,'tright.png')
 }
