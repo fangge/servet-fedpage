@@ -53,7 +53,7 @@ $answerNormalTextWidth: 216px;
 .answer{
   display: block;
   width: $answerNormalTextWidth;
-  margin: 0 auto 11px;
+  margin: 0 auto 12px;
   input{
     position: absolute;
     top: -9999px;
@@ -502,6 +502,8 @@ $uploadInputHeight: 38px;
 /* textarea */
 $textareaWidth: 267px;
 $textareaHeight: 159px;
+$textareaWidthSmall: 216px;
+$textareaHeightSmall: 144px;
 .textarea{
   padding-top: 7px;
   width: $textareaWidth;
@@ -519,6 +521,14 @@ $textareaHeight: 159px;
     font-size: 20px;
     margin-bottom: 12px;
     text-align-last: auto;
+  }
+  &_small{
+    width: $textareaWidthSmall;
+    padding-top: 0;
+    textarea{
+      height: $textareaHeightSmall;
+      font-size: 13px;
+    }
   }
 }
 
@@ -566,9 +576,9 @@ $bigpicImgHeight: 248px;
   position: absolute;
   right: 0;
   left: 0;
+  bottom: 0;
   background-color: rgba(0,0,0,0.8);
-  bottom: $bottomBarHeight;
-  padding-bottom: 13px;
+  padding-bottom: 31px;
   &_text{
   padding: 10px 14px 0;
   font-size: 16px;

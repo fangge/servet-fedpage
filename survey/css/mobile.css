@@ -118,7 +118,7 @@ textarea {
 .answer {
   display: block;
   width: 216px;
-  margin: 0 auto 11px; }
+  margin: 0 auto 12px; }
   .answer input {
     position: absolute;
     top: -9999px;
@@ -502,6 +502,12 @@ textarea {
     margin-bottom: 12px;
     -moz-text-align-last: auto;
          text-align-last: auto; }
+  .textarea_small {
+    width: 216px;
+    padding-top: 0; }
+    .textarea_small textarea {
+      height: 144px;
+      font-size: 13px; }
 
 /* 纯文本 */
 .puretext {
@@ -540,9 +546,9 @@ textarea {
   position: absolute;
   right: 0;
   left: 0;
+  bottom: 0;
   background-color: rgba(0, 0, 0, 0.8);
-  bottom: 28px;
-  padding-bottom: 13px; }
+  padding-bottom: 31px; }
   .bottomaction_text {
     padding: 10px 14px 0;
     font-size: 16px;
@@ -634,6 +640,9 @@ textarea {
   bottom: 0;
   left: 0; }
 
+.wrap {
+  overflow: hidden; }
+
 .page {
   -webkit-transform: translate3d(0, 100%, 0);
           transform: translate3d(0, 100%, 0);
@@ -646,11 +655,29 @@ textarea {
   overflow: hidden; }
   .page_in {
     -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-    overflow-y: auto; }
+            transform: translate3d(0, 0, 0); }
   .page_out {
     -webkit-transform: translate3d(0, -100%, 0);
             transform: translate3d(0, -100%, 0); }
+  .page:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: -webkit-linear-gradient(bottom, #000 0%, transparent 128px);
+    background: linear-gradient(0deg, #000 0%, transparent 128px);
+    z-index: -1; }
+
+.long {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  overflow-y: auto; }
 
 .center {
   position: absolute;
@@ -699,7 +726,7 @@ textarea {
   right: 0;
   height: 28px;
   line-height: 28px;
-  background: rgba(0, 0, 0, 0.5); }
+  background: rgba(0, 0, 0, 0.2); }
   .bottom .step {
     float: left;
     font-size: 14px;
