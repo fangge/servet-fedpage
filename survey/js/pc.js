@@ -1,8 +1,8 @@
 $(function(){
-	//页面滚动
 	var nowPage=0;
 	var totlePage=$(".page").length-1;
-	$('body').bind('mousewheel', function(event, delta, deltaX, deltaY) {
+	//页面滚动
+	$('.mousewheel').bind('mousewheel', function(event, delta, deltaX, deltaY) {
 		if (delta==-1 && nowPage<totlePage) {
 			next();
 		}else if(delta==1 && nowPage>0){
@@ -16,6 +16,17 @@ $(function(){
 		}
 	});
 	
+	//点击切换
+	$(".go").click(function(){
+		next();
+		if(nowPage>0){
+			$(".go").removeClass("start_go");
+		}else{
+			$(".go").addClass("start_go");
+		}
+	})
+	
+	
 	//切换到下一页
 	function next(){
 		nowPage++;
@@ -27,6 +38,23 @@ $(function(){
 		nowPage--;
 		$(".wrap").stop().animate({"top":-nowPage*100+"%"},300);
 	}
+	
+	$('.center_wrap').bind('mousewheel', function(event, delta, deltaX, deltaY) {
+		var height=parseInt($(this).css("height"))-parseInt($(this).parent().css("height"));
+		var top=parseInt($(this).css("top"));
+		if(top>-height && deltaY<0){
+			$(this).css("top",top+deltaY*50+"px");
+		}
+		
+		if(top<0 && deltaY>0){
+			$(this).css("top",top+deltaY*50+"px");
+		}
+
+		console.log(top,height,deltaY,parseInt($(this).css("height")),parseInt($(this).parent().css("height")));
+	});
+	
+	
+	
 	
 	//表情
 	$(".mood_icon").click(function(){
@@ -95,6 +123,20 @@ $(function(){
         $(".dropdownInput input").val($(this).html());
 		$(".dropdownInput_list").stop().animate({"opacity":0},100);
 	})
+	
+	//输入框
+	$("textarea").focus(function(){
+		$(this).text("");
+	});
+	
+	//音乐开关
+	$(".music").click(function(){
+		if($(this).hasClass("music_off")){
+			$(this).removeClass("music_off");
+		}else{
+			$(this).addClass("music_off");
+		}
+	});
 
 	
 });
