@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>问卷设置记录</title>
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible"content="IE=Edge"/>
+<meta name="renderer"content="webkit"/>
+<meta name="viewport"content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="format-detection"content="telephone=no"/>
+<link rel="stylesheet"href="../css/Que-record.css">
+</head>
+<body>
+<div class="wrap">
+<h3>2016年用户最喜欢的APP</h3>
+<h2>问卷发布记录</h2>
+<div class="records">
+<div class="record">
+<div class="time">
+<div class="border"><div class="circle"></div></div>
+<div class="minute"><p>刚刚</p></div>
+</div>
+<div class="detail">
+<div class="form">由微信发布</div>
+</div>
+</div>
+
+<div class="record">
+<div class="time">
+<div class="border"><div class="circle"></div></div>
+<div class="minute"><p>刚刚</p></div>
+</div>
+<div class="detail">
+<div class="form">由新浪微博发布</div>
+<div class="content">Survet邀请你参加《用户最喜欢的ＡＰＰ》调查，需要花费你3分钟.保密性等方面尽可能地提高用户的代码安全，同时也希望大家能充分利用上述功能来提高团队的管理效率以及代码安全性。如遇到任何问题可在站内 feedback 联系我们。</div>
+</div>
+</div>
+
+<div class="record">
+<div class="time">
+<div class="border"><div class="circle"></div></div>
+<div class="minute"><p>刚刚</p></div>
+</div>
+<div class="detail">
+<div class="form">由新浪微博发布</div>
+<div class="content">Survet邀请你参加<span class="bule">《用户最喜欢的APP》</span>调查，需要花费你3分<span class="gray">钟.保密性等方面尽可能地提</span>高用户的代码安全，同时也希望大家能充分利用上述功能来提高团队的管理效率以及代码安全性。如遇到任何问题可在站内 feedback 联系我们。</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<script charset="utf-8" type="text/javascript" src="../js/jquery.min.js"></script>
+<script>
+$(function(){
+	$(".record").each(function(index){
+    	$(".time").eq(index).css("height",$(this).height());
+  });
+});
+</script>
+</body>
+</html>

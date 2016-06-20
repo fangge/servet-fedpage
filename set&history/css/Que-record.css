@@ -1,0 +1,57 @@
+@charset "UTF-8";
+/*
+*
+* reset, 全局设定, 变量
+*
+*/
+/* vars */
+/* #reset */
+body, dl, dd, h1, h2, h3, h4, h5, h6, p, pre, form, fieldset, legend {margin: 0; }
+ul, ol, fieldset {margin: 0;padding: 0; }
+th, td {padding: 0; }
+table {font-size: inherit;border-collapse: collapse; }
+fieldset, img {border: none; }
+ul, ol, li {list-style: none; }
+h1, h2, h3, h4 {font-size: 18px;font-weight: normal; }
+input, textarea, select, button {font-size: inherit;font-family: inherit; }
+a, a:hover {text-decoration: none; }
+:focus {outline: none; }
+
+/* vars */
+/*base*/
+html, body {
+  height: 100%;
+  font-size: 12px;
+  line-height: 1;
+  font-family: "Microsoft Yahei",SimSun, Arial, sans-serif;
+  font-size:14px; 
+  color:#929ea6;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-font-size-adjust: none;
+  -webkit-overflow-scrolling: touch;
+  -webkit-font-smoothing: antialiased;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+
+a {color: #fff; }
+
+body{width:100%; background:url(../images/Survet.png) 15px 10px no-repeat;}
+.wrap{margin:0 auto; padding-top:70px; width:800px; height:auto; color:#4b5668; font-family:"Microsoft yahei";}
+.wrap h3{font-size:14px; color:#929ea6; text-align:center;}
+.wrap h2{margin-top:12px; font-size:24px; text-align:center;}
+.records{margin-top:60px;}
+.record{width:100%; height:auto; overflow:hidden;}
+.time{float:left;  margin-left:110px; margin-right:60px; width:75px; height:100%;}
+.minute{position:relative; float:right;  width:41px; height:100%; text-align:right; font-weight:bold;}
+.minute p{position:absolute; bottom:0; right:0;}
+.border{position:relative; float:right; margin-left:24px; width:9px; height:100%; background:url(../images/line.jpg) repeat-y;}
+.circle{position:absolute; bottom:0; width:9px; height:9px; background:url(../images/dian.jpg) no-repeat;}
+.detail{float:right; width:555px; margin-top:45px;}
+.detail .content{margin-top:18px; color:#4f6a7b; line-height:22px;}
+.bule{color:#33cccc;}
+.gray{color:#999999;}
+

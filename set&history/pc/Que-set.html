@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>问卷设置</title>
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible"content="IE=Edge"/>
+<meta name="renderer"content="webkit"/>
+<meta name="viewport"content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="format-detection"content="telephone=no"/>
+<link rel="stylesheet"href="../css/Que-set.css">
+<link rel="stylesheet" href="../css/daterangepicker.css" />
+</head>
+<body>
+<div class="wrap">
+<h2>问卷设置</h2>
+<h3>问卷分享</h3>
+<div class="message">
+<div class="types">
+<div class="type"><div class="box"><input type="checkbox" class="checkbox"/></div><p>全组</p></div>
+<div class="type"><div class="box"><input type="checkbox" class="checkbox"/></div><p>全组</p></div>
+<div class="type"><div class="box"><input type="checkbox" class="checkbox"/></div><p>全组</p></div>
+<div class="type"><div class="box"><input type="checkbox" class="checkbox"/></div><p>全组</p></div>
+<div class="type"><div class="box"><input type="checkbox" class="checkbox"/></div><p>全组</p></div>
+<div class="type"><div class="box"><input type="checkbox" class="checkbox"/></div><p>全组</p></div>
+<div class="type"><div class="box"><input type="checkbox" class="checkbox"/></div><p>全组</p></div>
+</div>
+<div class="lists">
+<table>
+<tr><td><div class="box"><input type="checkbox" class="checkbox"/></div><p>全组</p></td><td>加入时间：2016.10.23</td><td>问卷数：8</td></tr>
+<tr><td><div class="box"><input type="checkbox" class="checkbox"/></div><p>全组</p></td><td>加入时间：2016.10.23</td><td>问卷数：8</td></tr>
+<tr><td><div class="box"><input type="checkbox" class="checkbox"/></div><p>全组</p></td><td>加入时间：2016.10.23</td><td>问卷数：8</td></tr>
+<tr><td><div class="box"><input type="checkbox" class="checkbox"/></div><p>全组</p></td><td>加入时间：2016.10.23</td><td>问卷数：8</td></tr>
+<tr><td><div class="box"><input type="checkbox" class="checkbox"/></div><p>全组</p></td><td>加入时间：2016.10.23</td><td>问卷数：8</td></tr>
+<tr><td><div class="box"><input type="checkbox" class="checkbox"/></div><p>全组</p></td><td>加入时间：2016.10.23</td><td>问卷数：8</td></tr>
+<tr><td><div class="box"><input type="checkbox" class="checkbox"/></div><p>全组</p></td><td>加入时间：2016.10.23</td><td>问卷数：8</td></tr>
+<tr><td><div class="box"><input type="checkbox" class="checkbox"/></div><p>全组</p></td><td>加入时间：2016.10.23</td><td>问卷数：8</td></tr>
+<tr><td><div class="box"><input type="checkbox" class="checkbox"/></div><p>全组</p></td><td>加入时间：2016.10.23</td><td>问卷数：8</td></tr>
+<tr><td><div class="box"><input type="checkbox" class="checkbox"/></div><p>全组</p></td><td>加入时间：2016.10.23</td><td>问卷数：8</td></tr>
+</table>
+</div>
+</div>
+
+<h3>问卷分享</h3>
+<div class="dealine">
+<table>
+<tr class="tr1"><td class="td1">截止时间：</td><td>4.17~5.30<span>(15天后)</span></td></tr>
+<tr><td>截止人数：</td><td><div class="border">500</div></td></tr>
+</table>
+</div>
+
+<div class="copyright"></div>
+</div>
+
+<div class="bg"></div>
+<div class="time_wrap">
+选择时间段: <input id="date-range0" size="30" value=""> 
+<a href="javascript:void(0)" class="sumbit">点击读取时间</a>
+</div>
+
+
+
+<script charset="utf-8" type="text/javascript" src="../js/jquery.min.js"></script>
+<script src="../js/moment.min.js"></script>
+<script src="../js/jquery.daterangepicker.js"></script>
+<script>
+$(function(){
+	$(".record").each(function(index){
+    	$(".time").eq(index).css("height",$(this).height());
+  	});
+	
+	$(".types .checkbox").change(function(){
+		if($(this).parent().parent().hasClass("cur")){
+			$(this).parent().parent().removeClass("cur");
+		}else{
+			$(this).parent().parent().addClass("cur");
+		}
+	});
+	
+	$(".lists .checkbox").change(function(){
+		if($(this).parent().parent().parent().hasClass("cur")){
+			$(this).parent().parent().parent().removeClass("cur");
+		}else{
+			$(this).parent().parent().parent().addClass("cur");
+		}
+	});
+	
+	$(".bg").click(function(){
+		$(".bg,.time_wrap").hide();
+	});
+	
+	$(".sumbit").click(function(){
+		alert($("#date-range0").attr("value"));
+	});
+	
+	
+	$.dateRangePickerLanguages['custom'] = 
+	{
+		'selected': 'Choosed:',
+		'days': 'Days',
+		'apply': 'Close',
+		'week-1' : 'Mon',
+		'week-2' : 'Tue',
+		'week-3' : 'Wed',
+		'week-4' : 'Thu',
+		'week-5' : 'Fri',
+		'week-6' : 'Sat',
+		'week-7' : 'Sun',
+		'month-name': ['January','February','March','April','May','June','July','August','September','October','November','December'],
+		'shortcuts' : 'Shortcuts',
+		'past': 'Past',
+		'7days' : '7days',
+		'14days' : '14days',
+		'30days' : '30days',
+		'previous' : 'Previous',
+		'prev-week' : 'Week',
+		'prev-month' : 'Month',
+		'prev-quarter' : 'Quarter',
+		'prev-year' : 'Year',
+		'less-than' : 'Date range should longer than %d days',
+		'more-than' : 'Date range should less than %d days',
+		'default-more' : 'Please select a date range longer than %d days',
+		'default-less' : 'Please select a date range less than %d days',
+		'default-range' : 'Please select a date range between %d and %d days',
+		'default-default': 'This is costom language'
+	};
+	
+	$('#date-range0').dateRangePicker();
+});
+</script>
+
+</body>
+</html>
