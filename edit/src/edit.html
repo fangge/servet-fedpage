@@ -37,10 +37,26 @@
                 </div>
                 <div class="edit-col-comment"><i class="icon-comment"></i>3</div>
                 <div class="edit-col-cont edit-col-cont1">
-                    <div class="upload-img">
+                    <div class="upload-img" style="display: none;">
                         <span>+</span><br>LOGO
                         <input type="file" />
                     </div>
+                    <!--上传后{-->
+                    <div class="itemset clearfix upload-suc">
+                        <div class="item">
+                            <i class="icon-delete2"></i>
+                            <label>
+                                <input type="radio" name="radio-test">
+                                <div class="item_cell">
+                                    <img src="img/pic.jpg" alt="" class="item_img"></span>
+                                    <div class="item_text"><input type="text" value="文案文案文案"></div>
+                                    <a class="item_cell_edit"></a>
+                                </div>
+                            </label>
+                            <div class="zoom" onClick="alert('点击缩放跟选中选项分离')"></div>
+                        </div>
+                    </div>
+                    <!--}上传后-->
                     <div class="edit-title">
                         <i class="icon-edit"></i>
                         <textarea>欢迎参与调查</textarea>
@@ -66,6 +82,7 @@
                                 <div class="item_cell">
                                     <img src="img/pic.jpg" alt="" class="item_img"></span>
                                     <div class="item_text"><input type="text" value="文案文案文案"></div>
+                                    <a class="item_cell_edit"></a>
                                 </div>
                             </label>
                             <div class="zoom" onClick="alert('点击缩放跟选中选项分离')"></div>
@@ -77,6 +94,7 @@
                                 <div class="item_cell">
                                     <img src="img/pic.jpg" alt="" class="item_img"></span>
                                     <div class="item_text"><input type="text" value="文案文案文案"></div>
+                                    <a class="item_cell_edit"></a>
                                 </div>
                             </label>
                             <div class="zoom" onClick="alert('点击缩放跟选中选项分离')"></div>
@@ -88,6 +106,7 @@
                                 <div class="item_cell">
                                     <img src="img/pic.jpg" alt="" class="item_img"></span>
                                     <div class="item_text"><input type="text" value="文案文案文案"></div>
+                                    <a class="item_cell_edit"></a>
                                 </div>
                             </label>
                             <div class="zoom" onClick="alert('点击缩放跟选中选项分离')"></div>
@@ -99,6 +118,7 @@
                                 <div class="item_cell">
                                     <img src="img/pic.jpg" alt="" class="item_img"></span>
                                     <div class="item_text"><input type="text" value="文案文案文案"></div>
+                                    <a class="item_cell_edit"></a>
                                 </div>
                             </label>
                             <div class="zoom" onClick="alert('点击缩放跟选中选项分离')"></div>
@@ -134,6 +154,7 @@
                             <div class="item_cell">
                                 <img src="img/pic.jpg" alt="" class="item_img"></span>
                                 <div class="item_text"><input type="text" value="文案文案文案"></div>
+                                <a class="item_cell_edit"></a>
                             </div>
                         </label>
                         <label class="item">
@@ -142,6 +163,7 @@
                             <div class="item_cell">
                                 <img src="img/pic.jpg" alt="" class="item_img"></span>
                                 <div class="item_text"><input type="text" value="文案文案文案"></div>
+                                <a class="item_cell_edit"></a>
                             </div>
                         </label>
                         <label class="item">
@@ -150,6 +172,7 @@
                             <div class="item_cell">
                                 <img src="img/pic.jpg" alt="" class="item_img"></span>
                                 <div class="item_text"><input type="text" value="文案文案文案"></div>
+                                <a class="item_cell_edit"></a>
                             </div>
                         </label>
                         <label class="item">
@@ -158,6 +181,7 @@
                             <div class="item_cell">
                                 <img src="img/pic.jpg" alt="" class="item_img"></span>
                                 <div class="item_text"><input type="text" value="文案文案文案"></div>
+                                <a class="item_cell_edit"></a>
                             </div>
                         </label>
                         <div class="item">
@@ -436,7 +460,7 @@
                     <a href="" class="edit-btn">点击编辑</a>
                     <div class="dropdownInput">
                         <input type="text" value="南京">
-                        <ul class="dropdownInput_list" style="opacity: 0;">
+                        <ul class="dropdownInput_list">
                             <li class="selected">南京</li>
                             <li>南昌</li>
                             <li>南昌</li>
@@ -530,10 +554,26 @@
                 <div class="edit-col-cont edit-col-cont13">
                     <textarea class="edit-title2">你在什么时候使用手机最频繁?</textarea>
                     <div class="upload pic-upload">
-                        <div class="upload-img">
+                        <div class="upload-img" style="display: none">
                             <span>+</span><br>图片
                             <input type="file" />
-                        </div>                        
+                        </div>
+                        <!--上传后{-->
+                        <div class="itemset clearfix upload-suc">
+                            <div class="item">
+                                <i class="icon-delete2"></i>
+                                <label>
+                                    <input type="radio" name="radio-test">
+                                    <div class="item_cell">
+                                        <img src="img/pic.jpg" alt="" class="item_img"></span>
+                                        <div class="item_text"><input type="text" value="文案文案文案"></div>
+                                        <a class="item_cell_edit"></a>
+                                    </div>
+                                </label>
+                                <div class="zoom" onClick="alert('点击缩放跟选中选项分离')"></div>
+                            </div>
+                        </div>
+                        <!--}上传后-->
                         <p class="upload_desc">上传格式仅限: jpg, bmp<br>大小不能超过5M</p>
                     </div>
                 </div>
@@ -832,14 +872,17 @@
       });
       //输入框聚焦
       $(".dropdownInput input").click(function(){
-          $(".dropdownInput_list").stop().animate({"opacity":1},100);
+          $(".dropdownInput_list").show().niceScroll({
+              cursorborder:0,
+              cursorcolor:'rgba(0, 0, 0, 0.4)'
+          });
       })
 
       $(".dropdownInput_list li").click(function(){
           $(".dropdownInput_list li").removeClass("selected");
           $(this).addClass("selected");
           $(".dropdownInput input").val($(this).html());
-          $(".dropdownInput_list").stop().animate({"opacity":0},100);
+          $(".dropdownInput_list").hide();
       })
         $('#left-nav').niceScroll({
             cursorwidth:"8px",
@@ -850,8 +893,9 @@
             cursorborder:0,
             cursorcolor:'rgba(0, 0, 0, 0.4)'
         });
-        $('#logic-page-scroll').niceScroll({
+        $('.logic-page-scroll-bar').niceScroll({
             cursorborder:0,
+            autohidemode:false,
             cursorcolor:'rgba(0, 0, 0, 0.4)'
         });
       $('.add-col').css('left',$('.table_main').find('table').width()+1)

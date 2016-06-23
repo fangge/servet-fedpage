@@ -19,8 +19,8 @@ module.exports = function(grunt) {
         ejs_static = require('grunt-adiejs-static/lib/ejs_static'),
         _ = require('grunt-adiejs-static/node_modules/underscore'),
         middleware_directory = require('grunt-contrib-connect/node_modules/connect/lib/middleware/directory'),
-        //accepts = require('grunt-contrib-connect/node_modules/connect/node_modules/compression/node_modules/accepts'),
-        accepts = require('accepts'),
+        accepts = require('grunt-contrib-connect/node_modules/connect/node_modules/compression/node_modules/accepts'),
+        //accepts = require('accepts'),
         url = require('url');
 
     var renderTpl = function (req, res, next){

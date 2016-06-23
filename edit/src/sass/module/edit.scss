@@ -218,7 +218,8 @@ input{
   left:24px;
   ul{
     background: rgba(0, 0, 0, 0.50);
-    height: 211px;
+    max-height: 211px;
+    min-height: 30px;
     overflow: hidden;
     overflow-y: scroll;
   }
@@ -263,6 +264,7 @@ input{
     border-top-left-radius: 26px;
     border-bottom-left-radius: 26px;
     position: relative;
+    cursor:pointer;
     i{
       display: inline-block;
       @include navsprite(8px,4px,'page-down.png');
@@ -270,18 +272,29 @@ input{
       left:9px;
       top:11px;
     }
+    &:hover{
+      i{
+        opacity: .5;
+      }
+    }
   }
   .logic-page-up{
     width: 23px;
     border-top-right-radius: 26px;
     border-bottom-right-radius: 26px;
     position: relative;
+    cursor:pointer;
     i{
       display: inline-block;
       @include navsprite(8px,4px,'page-up.png');
       position: absolute;
       right:9px;
       top:11px;
+    }
+    &:hover{
+      i{
+        opacity: .5;
+      }
     }
   }
   .logic-page-num{
@@ -364,14 +377,15 @@ input{
   border-radius: 5px;
   width: 140px;
   overflow: hidden;
+
   &:hover{
-    &:after{
+    .item_cell_edit{
       display: block;
     }
   }
-  &:after{
+}
+.item_cell_edit{
     display: none;
-    content:"";
     position: absolute;
     width: 100%;
     height: 136px;
@@ -380,9 +394,7 @@ input{
     background: rgba(0, 0, 0, 0.6) url(../img/icon-edit.png) no-repeat 56px 59px;
     z-index: 50;
     cursor:pointer;
-  }
 }
-
 .item_img {
   display: block;
   width: 140px;
@@ -868,13 +880,15 @@ textarea:focus {
   border-radius: 21px;
   border: none; }
 .dropdownInput_list {
-  opacity:0;
+  display: none;
   padding-top:42px;
-  height:210px;
-  float:left;
+  min-height:210px;
+  max-height:338px;
   background: rgba(0, 0, 0, 0.5);
   border-radius: 21px;
-  overflow: hidden; }
+  overflow: hidden;
+  overflow-y: scroll;
+}
 .dropdownInput_list li.selected {
   background: #28e8fd; }
 .dropdownInput_list li:hover{
@@ -1250,4 +1264,8 @@ position: relative;
     position: relative;
     top: 5px;
   }
+}
+.upload-suc{
+  width: 140px;
+  margin: 0 auto;
 }
