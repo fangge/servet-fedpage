@@ -2778,7 +2778,7 @@ input {
 }
 
 /* line 276, E:/servet-fedpage/edit/src/sass/module/edit.scss */
-.logic-page .logic-page-down:hover i {
+.logic-page .logic-page-down.pagehov i {
   opacity: .5;
 }
 
@@ -2803,7 +2803,7 @@ input {
 }
 
 /* line 295, E:/servet-fedpage/edit/src/sass/module/edit.scss */
-.logic-page .logic-page-up:hover i {
+.logic-page .logic-page-up.pagehov i {
   opacity: .5;
 }
 
