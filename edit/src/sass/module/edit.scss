@@ -384,6 +384,16 @@ input{
     }
   }
 }
+.item_cell2{
+  width: 245px;
+  .item_cell_edit{
+    height: 325px;
+  }
+  .item_img {
+    width: 245px;
+    height: 325px;
+  }
+}
 .item_cell_edit{
     display: none;
     position: absolute;
@@ -1267,5 +1277,9 @@ position: relative;
 }
 .upload-suc{
   width: 140px;
+  margin: 0 auto;
+}
+.upload-suc2{
+  width: 245px;
   margin: 0 auto;
 }
