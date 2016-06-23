@@ -18,7 +18,10 @@ $(function(){
 	
 	//点击切换
 	$(".go").click(function(){
-		next();
+		if(nowPage<parseInt($(".page").size())-1){
+			next();
+		}
+		
 		if(nowPage>0){
 			$(".go").removeClass("start_go");
 		}else{
@@ -50,7 +53,7 @@ $(function(){
 			$(this).css("top",top+deltaY*50+"px");
 		}
 
-		console.log(top,height,deltaY,parseInt($(this).css("height")),parseInt($(this).parent().css("height")));
+		//console.log(top,height,deltaY,parseInt($(this).css("height")),parseInt($(this).parent().css("height")));
 	});
 	
 	

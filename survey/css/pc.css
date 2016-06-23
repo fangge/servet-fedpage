@@ -411,7 +411,6 @@ textarea {
   padding: 0 18px;
   box-sizing: border-box;
   font-size: 13px;
-  background:rgba(0, 0, 0, 0.3);
   color: #fff; }
 
 .dropdownInput {
@@ -712,7 +711,7 @@ textarea {
 }
 
 .go {
-  position:relatvie;
+  position:fixed;
   bottom: 0px;
   right: 0;
   left: 0;
@@ -722,12 +721,12 @@ textarea {
   height:45px;
   background:url(../images/pc/btn_next.png) no-repeat;
   background-size: 100%;
-  z-index:1;}
+  z-index:999;}
 
 .start_go{
   bottom:0px;
   width: 454px;
-  height: 320px;
+  height: 260px;
   background: url(../images/pc/go.png) 0 0 no-repeat;
 }
 
