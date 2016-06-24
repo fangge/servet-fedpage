@@ -298,9 +298,14 @@ textarea {
     .points_num span {
       display: block;
       line-height: 18px;
-      margin-bottom: 10px; }
+      margin-bottom: 10px;
+      font-size: 12px;
+      opacity: 0.5; }
       .points_num span:last-child {
         margin-bottom: 0; }
+      .points_num span.selected {
+        font-size: 18px;
+        opacity: 1; }
   .points_bar {
     position: relative;
     float: left;
@@ -333,7 +338,10 @@ textarea {
     line-height: 36px;
     margin-bottom: 24px;
     text-align: right;
-    padding-right: 57px; }
+    padding-right: 57px;
+    opacity: 0.5; }
+    .satisfaction_item_selected {
+      opacity: 1; }
     .satisfaction_item:after {
       content: "";
       position: absolute;

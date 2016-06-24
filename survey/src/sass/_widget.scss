@@ -282,8 +282,14 @@ $pointsBarHandlerSize: 36px;
       display: block;
       line-height: $pointsTextLineHeight;
       margin-bottom: $pointsNumMarginBottom;
+      font-size: 12px;
+      opacity: 0.5;
       &:last-child{
         margin-bottom: 0;
+      }
+      &.selected{
+        font-size: 18px;
+        opacity: 1;
       }
     }
   }
@@ -323,6 +329,10 @@ $satisfactionHeight: 36px;
     margin-bottom: 24px;
     text-align: right;
     padding-right: 57px;
+    opacity: 0.5;
+    &_selected{
+      opacity: 1;
+    }
     &:after{
       content:"";
       position: absolute;
