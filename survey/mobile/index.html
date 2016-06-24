@@ -19,16 +19,14 @@
 	每一个page为一页，背景图写在div.page上面的style为了方便套数据
 	 -->
 	<div class="page start page_in" style="background-image:url(../images/mbg0.jpg)">
-		<!-- page里内容较多时，用long包住,使得内容滚动可见 -->
-		<div class="long">
-			<div class="logo">Survet</div>
-			<h1>欢迎参与调查</h1>
-			<p>这是一次关于中国互联网产品发展状况的调查，你的手机里到底装了哪些神奇好用的APP，哪些APP占据了你你一屏的位置.</p>
-			<p>已经有 47656 位用户完成调查<br>平均用时 30 分钟<br>答完奖励 10 积分</p>
-			<div class="friend">
-				<img src="../images/head.png" alt="" class="friend_avatar">
-				<p class="friend_msg">这个调查很有趣，可以知道自己和别人有什么不同</p>
-			</div>		
+		<div class="gradientbottom"></div>
+		<div class="logo">Survet</div>
+		<h1>欢迎参与调查</h1>
+		<p>这是一次关于中国互联网产品发展状况的调查，你的手机里到底装了哪些神奇好用的APP，哪些APP占据了你你一屏的位置.</p>
+		<p>已经有 47656 位用户完成调查<br>平均用时 30 分钟<br>答完奖励 10 积分</p>
+		<div class="friend">
+			<img src="../images/head.png" alt="" class="friend_avatar">
+			<p class="friend_msg">这个调查很有趣，可以知道自己和别人有什么不同</p>
 		</div>
 	</div>
 	<div class="page" style="background-image:url(../images/mbg0.jpg)">
@@ -372,8 +370,6 @@
 	</div>
 
 	<div class="page end" style="background-image:url(../images/mbg0.jpg)">
-		<!-- page里内容较多时，用long包住,使得内容滚动可见 -->
-		<div class="long">
 			<h2 class="title">感谢参与调查</h2>
 			<p class="desc">这是一次关于中国互联网产品发展状况的调查，你的手机里到底装了哪些神奇好用的APP，哪些APP占据了你你一屏的位置，哪些APP是你使用频率最高的手机应用。</p>
 			<p class="state">你是第 47656 位完成调查的用户<br>用时 30 分钟</p>
@@ -381,7 +377,6 @@
 			<a href="" class="btn">查看结果</a>
 
 			<div class="signup">点击注册，可累计30几份&gt;</div>
-		</div>
 	</div>
 </div>
 <div class="bottom">
@@ -432,33 +427,6 @@
 </div>
 
 <script>
-// 页面切换示例
-var go = document.querySelector(".go"), 
-	now = 0,
-	pages = document.querySelectorAll(".page"),
-	length = pages.length;
-function next(){
-	var pagenow = pages[now],
-			pagenext = pages[now+1];
-	pagenow.classList.add("page_out");
-	pagenow.classList.remove("page_in");
-	pagenext.classList.add("page_in");
-	now++;
-}
-function prev(){
-	var pagenow = pages[now],
-			pageprev = pages[now-1];
-			console.log(pagenow)
-			console.log(pageprev)
-	pagenow.classList.remove("page_in");
-	pageprev.classList.add("page_in");
-	pageprev.classList.remove("page_out");
-	now--;
-}
-go.addEventListener("click",function(){
-	next();
-})
-
 // 左上角星星动画示例
 function starAnim(currentX, currentY){
 	// 传入点击事件对象拿到的坐标

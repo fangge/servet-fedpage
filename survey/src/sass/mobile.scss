@@ -4,48 +4,21 @@
 @import "_widget";
 
 /* 框架 */
-.wrap,.page {
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-}
 .wrap{
-	overflow: hidden;
+	height: 100%;
 }
 .page {
-	transform: translate3d(0, 100%, 0);
-	transition: transform 0.2s;
-	background: center center no-repeat;
-	background-size: cover;
+	position: relative;
+	min-height: 100%;
 	overflow: hidden;
-	&_in {
-		transform: translate3d(0, 0, 0);
-	}
-	&_out {
-		transform: translate3d(0, -100%, 0);
-	}
-	&:before{
-		content:"";
-		position: absolute;
+	.gradientbottom{
+		position: fixed;
 		top: 0;
 		right: 0;
 		bottom: 0;
 		left: 0;
     background: linear-gradient(0deg, #000 0%, rgba(0,0,0,0) 128px);
-		z-index: -1;
 	}
-}
-.long{
-	// 页面内容较长时用的
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	overflow: hidden;
-	overflow-y: auto;
 }
 .center{
 	// 用来居中
@@ -56,7 +29,7 @@
 	transform:translate(0,-50%);
 }
 .go {
-	position: absolute;
+	position: fixed;
 	bottom: 40px;
 	right: 0;
 	left: 0;

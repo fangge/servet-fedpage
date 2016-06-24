@@ -633,51 +633,21 @@ textarea {
             transform: scale(1); }
 
 /* 框架 */
-.wrap, .page {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0; }
-
 .wrap {
-  overflow: hidden; }
+  height: 100%; }
 
 .page {
-  -webkit-transform: translate3d(0, 100%, 0);
-          transform: translate3d(0, 100%, 0);
-  -webkit-transition: -webkit-transform 0.2s;
-  transition: -webkit-transform 0.2s;
-  transition: transform 0.2s;
-  transition: transform 0.2s, -webkit-transform 0.2s;
-  background: center center no-repeat;
-  background-size: cover;
+  position: relative;
+  min-height: 100%;
   overflow: hidden; }
-  .page_in {
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0); }
-  .page_out {
-    -webkit-transform: translate3d(0, -100%, 0);
-            transform: translate3d(0, -100%, 0); }
-  .page:before {
-    content: "";
-    position: absolute;
+  .page .gradientbottom {
+    position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     background: -webkit-linear-gradient(bottom, #000 0%, transparent 128px);
-    background: linear-gradient(0deg, #000 0%, transparent 128px);
-    z-index: -1; }
-
-.long {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  overflow: hidden;
-  overflow-y: auto; }
+    background: linear-gradient(0deg, #000 0%, transparent 128px); }
 
 .center {
   position: absolute;
@@ -688,7 +658,7 @@ textarea {
           transform: translate(0, -50%); }
 
 .go {
-  position: absolute;
+  position: fixed;
   bottom: 40px;
   right: 0;
   left: 0;
