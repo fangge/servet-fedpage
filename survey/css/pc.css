@@ -628,7 +628,9 @@ textarea {
   -webkit-transition: opacity 0.4s, -webkit-transform 0.4s;
   transition: opacity 0.4s, -webkit-transform 0.4s;
   transition: opacity 0.4s, transform 0.4s;
-  transition: opacity 0.4s, transform 0.4s, -webkit-transform 0.4s; }
+  transition: opacity 0.4s, transform 0.4s, -webkit-transform 0.4s;
+  z-index: 9999;
+}
   .imgpopup_img {
     position: absolute;
     top: 50%;
