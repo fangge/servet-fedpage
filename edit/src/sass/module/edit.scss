@@ -297,6 +297,7 @@ input{
       }
     }
   }
+
   .logic-page-num{
     width:38px;
     text-align: center;
@@ -1252,7 +1253,7 @@ position: relative;
   }
 }
 
-#music-modal,#background-modal{
+#music-modal,#background-modal,#logic-modal{
   .modal-content{
     background: #f0f3f7;
   }
@@ -1282,4 +1283,71 @@ position: relative;
 .upload-suc2{
   width: 245px;
   margin: 0 auto;
+}
+.logic-title{
+  color: #4b5668;
+  font-size: 14px;
+  padding-left:68px;
+  font-weight: 600;
+  margin-top:25px;
+  i{
+    display: block;
+    float:left;
+    margin-right:15px;
+  }
+}
+.icon-out{
+  @include navsprite(16px,16px,'icon-out.png');
+}
+.icon-in{
+  @include navsprite(16px,16px,'icon-in.png');
+}
+.icon-show{
+  @include navsprite(18px,12px,'icon-show.png');
+}
+.icon-arrow2{
+  display: inline-block;
+  @include navsprite(63px,10px,'arrow2.png');
+  float:left;
+  margin: 10px 15px 0;
+}
+.logic-btn{
+  float:right;
+  color: #2bb7c5;
+  font-size: 14px;
+  margin-right:30px;
+  margin-top: 28px;
+  font-weight:600;
+  &:hover{
+    color: #2bb7c5;
+  }
+}
+.logic-bar{
+  padding-left:100px;
+  margin-bottom:15px;
+  position: relative;
+  max-width:775px;
+  select{
+    height: 34px;
+    line-height: 34px;
+    border:1px solid #a9b3be;
+    background: #fff;
+    text-indent: 16px;
+    float:left;
+    margin-right:-1px;
+  }
+  .logic-select1{
+    width: 233px;
+  }
+  .logic-select2{
+    width: 99px;
+  }
+  .logic-select3{
+    width: 250px;
+  }
+  .icon-delete2{
+    position: absolute;
+    right:-20px;
+    top:8px;
+  }
 }
