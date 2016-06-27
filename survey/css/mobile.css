@@ -657,6 +657,9 @@ textarea {
     background: -webkit-linear-gradient(bottom, #000 0%, transparent 128px);
     background: linear-gradient(0deg, #000 0%, transparent 128px); }
 
+.layouttop {
+  margin: 40% auto 0; }
+
 .center {
   position: absolute;
   top: 50%;
