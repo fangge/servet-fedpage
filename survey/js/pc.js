@@ -52,8 +52,6 @@ $(function(){
 		if(top<0 && deltaY>0){
 			$(this).css("top",top+deltaY*50+"px");
 		}
-
-		//console.log(top,height,deltaY,parseInt($(this).css("height")),parseInt($(this).parent().css("height")));
 	});
 	
 	
@@ -117,14 +115,14 @@ $(function(){
 	
 	//输入框聚焦
 	$(".dropdownInput input").click(function(){
-		$(".dropdownInput_list").stop().animate({"opacity":1},100);
+		$(".dropdownInput_list").css("display","block");
 	})
 	
 	$(".dropdownInput_list li").click(function(){
 		$(".dropdownInput_list li").removeClass("selected");									   
 		$(this).addClass("selected");
         $(".dropdownInput input").val($(this).html());
-		$(".dropdownInput_list").stop().animate({"opacity":0},100);
+		$(".dropdownInput_list").css("display","none");
 	})
 	
 	//输入框
