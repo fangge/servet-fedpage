@@ -19,13 +19,6 @@ $resultBottomSignUpHeight: 50px;
 	padding: 32px 16px 15px 44px;
 	font-size: 20px;
 }
-.subtitle{
-	font-size: 13px;
-	line-height: 16px;
-	margin-left: 44px;
-	margin-bottom: 7px;
-	margin-top: 15px;
-}
 .desc{
 	font-size: 13px;
 	line-height: 20px;
@@ -39,6 +32,13 @@ $resultBottomSignUpHeight: 50px;
 		&_num{
 			margin-right: 8px;
 		}
+	}
+	&_subtitle{
+		font-size: 13px;
+		line-height: 16px;
+		margin-left: 44px;
+		margin-bottom: 7px;
+		margin-top: 15px;
 	}
 }
 .ratebar{

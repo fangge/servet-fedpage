@@ -93,6 +93,11 @@ a {
   .question_title {
     font-size: 18px;
     margin-bottom:26px;}
+  .question_subtitle {
+    font-size: 16px;
+    margin-top: 26px;
+    margin-bottom:14px;
+    margin-left: 46px;}
     .question_title_num {
 	  display:block;
 	  float:left;
