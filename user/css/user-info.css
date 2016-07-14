@@ -229,6 +229,9 @@ body {
     margin-left: -462.5px;
     margin-top: -234px; }
 
+.m-dialog-content {
+  position: relative; }
+
 .m-dialog-header {
   padding-top: 7px;
   background: #fff;
@@ -347,3 +350,14 @@ body {
   font-size: 14px;
   color: #fff;
   text-align: center; }
+
+.u-upload-preview-original {
+  position: absolute;
+  top: 28px;
+  left: 105px;
+  width: 450px;
+  height: 360px; }
+  .u-upload-preview-original img {
+    display: block;
+    width: 100%;
+    height: 100%; }

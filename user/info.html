@@ -56,7 +56,7 @@
         </div>
 
         <!-- 上传图片弹窗 -->
-        <div class="m-dialog m-dialog-large f-hide">
+        <div class="m-dialog m-dialog-large">
             <div class="m-dialog-header">
                 <button class="u-left-btn">取消</button>
                 <button class="u-right-btn">确定</button>
@@ -64,6 +64,8 @@
             </div>
             <div class="m-dialog-content">
                 <label for="upload" class="u-upload-range">选择图片</label>
+                <!-- 选择完以后取消掉下面的f-hide类，然后插入一个img就可以了 -->
+                <div class="u-upload-preview-original f-hide"></div>
                 <input type="file" name="upload" id="upload" class="u-upload-file">
                 <div class="m-upload-preview">
                     <p class="u-preview-title">预览105*105</p>
