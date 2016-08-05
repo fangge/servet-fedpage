@@ -182,7 +182,7 @@ body {
     vertical-align: top; }
   .m-info-item .u-input {
     height: 40px;
-    border: 1px solid #fff;
+    border: 1px solid #b5b5b5;
     text-indent: 10px;
     width: 234px;
     color: #4b5668;
@@ -245,7 +245,8 @@ body {
     height: 42px;
     font-size: 13px;
     color: #2bb7c5;
-    cursor: pointer; }
+    cursor: pointer;
+    font-family: tahoma, arial, Hiragino Sans GB, WenQuanYi Micro Hei, \5FAE\8F6F\96C5\9ED1, \5B8B\4F53, sans-serif; }
   .m-dialog-header .u-left-btn {
     float: left;
     padding-left: 22px; }

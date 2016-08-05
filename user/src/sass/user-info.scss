@@ -128,7 +128,7 @@ body {
 
     .u-input {
         height: 40px;
-        border: 1px solid #fff;
+        border: 1px solid #b5b5b5;
         text-indent: 10px;
         width: 234px;
         color: #4b5668;
@@ -208,6 +208,7 @@ body {
         font-size: 13px;
         color: #2bb7c5;
         cursor: pointer;
+        font-family: $global-font-family;
     }
 
     .u-left-btn {
