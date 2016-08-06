@@ -857,6 +857,7 @@ textarea {
   .start .logo_img{
     display: block;
     max-height: 100%;
+    max-width: 100%;
     margin: 0 auto;
   }
   .start h1 {
