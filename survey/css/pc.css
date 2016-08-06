@@ -865,7 +865,8 @@ textarea {
 	width:800px;
     line-height: 35px;
     font-size: 14px;
-    margin: 0 auto; }
+    margin: 0 auto; 
+	text-align:center;}
   .start p.intro{
 	margin-bottom:40px;}
   .start .friend {
@@ -923,7 +924,7 @@ textarea {
     font-size: 14px;
     line-height: 55px;
     margin: 0 auto;
-    text-align: left; }
+    text-align: center; }
   .end .desc{
 	  margin-top:35px;}
   .end .state {

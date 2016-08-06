@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 
 @import "_base";
 @import "_widget";
@@ -162,7 +162,7 @@
 		margin-bottom: 16px;
 	}
 	p{
-		line-height: 24px;
+text-align: center;		line-height: 24px;
 		font-size: 13px;
 		margin:0 $startPaddingHorizontal 14px;
 	}
@@ -212,7 +212,7 @@
 		font-size: 13px;
 		line-height: 25px;
 		margin: 0 35px 26px;
-		text-align: left;
+		text-align: center;
 	}
 	.state{
 		font-size: 13px;

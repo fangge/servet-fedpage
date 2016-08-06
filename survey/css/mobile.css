@@ -803,7 +803,8 @@ textarea {
   .start p {
     line-height: 24px;
     font-size: 13px;
-    margin: 0 34px 14px; }
+    margin: 0 34px 14px; 
+	text-align:center;}
   .start .friend {
     position: relative;
     margin: 42px 34px;
@@ -846,7 +847,7 @@ textarea {
     font-size: 13px;
     line-height: 25px;
     margin: 0 35px 26px;
-    text-align: left; }
+    text-align: center; }
   .end .state {
     font-size: 13px;
     line-height: 25px; }
