@@ -11,6 +11,8 @@
 	position: relative;
 	min-height: 100%;
 	overflow: hidden;
+	background: 0 0 no-repeat;
+	background-size: cover;
 	.gradientbottom{
 		position: fixed;
 		top: 0;
@@ -149,11 +151,14 @@
 	.logo{
 		display: block;
 		margin: 68px auto 45px;
-		width: 53px;
-		height: 109px;
-		text-indent: -9999px;
-		background: url(../images/logo.png) 0 0 no-repeat;
-		background-size: contain;
+		width: 100px;
+		height: 100px;
+		overflow: hidden;
+		&_img{
+			display: block;
+			max-height: 100%;
+			margin: 0 auto;
+		}
 	}
 	h1{
 		font-size: 20px;

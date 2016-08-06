@@ -647,7 +647,9 @@ textarea {
 .page {
   position: relative;
   min-height: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  background: 0 0 no-repeat;
+  background-size: cover; }
   .page .gradientbottom {
     position: fixed;
     top: 0;
@@ -790,21 +792,23 @@ textarea {
   .start .logo {
     display: block;
     margin: 68px auto 45px;
-    width: 53px;
-    height: 109px;
-    text-indent: -9999px;
-    background: url(../images/logo.png) 0 0 no-repeat;
-    background-size: contain; }
+    width: 100px;
+    height: 100px;
+    overflow: hidden; }
+    .start .logo_img {
+      display: block;
+      max-height: 100%;
+      margin: 0 auto; }
   .start h1 {
     font-size: 20px;
     line-height: 20px;
     text-align: center;
     margin-bottom: 16px; }
   .start p {
+    text-align: center;
     line-height: 24px;
     font-size: 13px;
-    margin: 0 34px 14px; 
-	text-align:center;}
+    margin: 0 34px 14px; }
   .start .friend {
     position: relative;
     margin: 42px 34px;
