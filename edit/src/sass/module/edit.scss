@@ -12,9 +12,9 @@ input{
 }
 .edit-col{
   box-sizing: border-box;
-  width: 90%;
+  width: 96%;
   min-height: 550px;
-  margin: 0 auto 34px;
+  margin: 0 0 34px;
   position: relative;
   &:after{
     content: '';
@@ -137,30 +137,43 @@ input{
   letter-spacing: 10px;
   color: #fff;
   font-size: 24px;
-  border:1px solid rgba(255, 255, 255, 0.2);
   position: relative;
   margin: 34px auto 20px;
-  textarea{
-    border: 0;
-    resize: none;
+  input{
     background: none;
     position: absolute;
     width: 100%;
-    height: 69px;
+    height: 70px;
+    line-height: 70px;
     top:0;
     left:0;
     z-index: 10;
     text-align: center;
+    box-sizing: border-box;
+    outline: 0!important;
+    border:1px solid rgba(255, 255, 255, 0);
+    &:hover{
+      border:1px solid rgba(255, 255, 255, 0.2);
+    }
+    &:focus{
+      border:1px solid rgba(255, 255, 255, 0.2);
+    }
+    &:focus + .icon-edit{
+      display: block;
+    }
+    &:hover + .icon-edit{
+      display: block;
+    }
   }
   .icon-edit{
     position: absolute;
-    display: block;
     width: 13px;
     height: 13px;
     background: url(../slice/edit.png) no-repeat;
     top:0;
     left:0;
     z-index: 12;
+    display: none;
   }
 }
 .edit-intro{
@@ -172,10 +185,15 @@ input{
   line-height: 30px;
   width: 458px;
   margin: 0 auto;
-  border:0;
   min-height:110px;
+  outline: 0;
+  box-sizing: border-box;
+  border:1px solid rgba(255, 255, 255, 0);
   &::-webkit-input-placeholder{
     color: rgba(255, 255, 255, 0.81)
+  }
+  &:hover{
+    border:1px solid rgba(255, 255, 255, 0.2);
   }
 }
 .logic-area{
@@ -350,7 +368,7 @@ input{
   }
 }
 .itemset {
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
 }
 
@@ -450,7 +468,10 @@ input[type="checkbox"] + .item_cell .item_text:before {
   background: url(../img/cb.png) 0 100% no-repeat;
   background-size: 11px; }
 input:checked + .item_cell {
-  box-shadow: 0 0 0 2px #28e8fd; }
+  //box-shadow: 0 0 0 2px #28e8fd;
+  outline: 0;
+  border:1px solid rgba(255, 255, 255, 0.2);
+}
 input[type="radio"]:checked + .item_cell .item_text:before,
 input[type="checkbox"]:checked + .item_cell .item_text:before {
   background-position: 0 0; }
@@ -573,6 +594,10 @@ input[type="checkbox"]:checked + .item_cell .item_text:before {
   position: absolute;
   right: 74px;
   text-align: right;
+  &:hover,&:focus{
+    outline: 0;
+    border:1px solid rgba(255, 255, 255, 0.2);
+  }
 }
 .points_good {
   top: 0; }
@@ -680,7 +705,10 @@ input[type="checkbox"] + .answer_cell:before {
   background: url(../img/cb.png) 0 100% no-repeat;
   background-size: 11px; }
 input:checked + .answer_cell {
-  box-shadow: 0 0 0 1px #28e8fd; }
+  //box-shadow: 0 0 0 1px #28e8fd;
+  outline: 0;
+  border:1px solid rgba(255, 255, 255, 0.2);
+}
 input[type="radio"]:checked + .answer_cell:before,
 input[type="checkbox"]:checked + .answer_cell:before {
   background-position: 0 0; }
@@ -866,9 +894,12 @@ td,th{
     top: 54px;
 }
 /* 下拉提示输入框 */
-input[type="text"]:focus,
-textarea:focus {
-  box-shadow: 0 0 0 1px #28e8fd; }
+input[type="text"]:focus,input[type="text"]:hover,
+textarea:focus,textarea:hover {
+  //box-shadow: 0 0 0 1px #28e8fd;
+  outline: 0;
+  border:1px solid rgba(255, 255, 255, 0.2);
+}
 .dropdownInput input, .dropdownInput_list li {
   width:380px;
   height: 42px;
@@ -1128,10 +1159,14 @@ textarea:focus {
   //margin-top:-309px;
   //overflow: hidden;
   .modal-dialog,.modal-header,.modal-body{
-    width: 315px;
+    width: 317px;
     padding: 0;
     background: none;
     height: auto;
+  }
+  .modal-body{
+    position: relative;
+    height: 618-61px;
   }
 }
 #mobile-show .mobile-bar{
@@ -1143,6 +1178,11 @@ textarea:focus {
   height: 618-61px;
   width: 315px;
   overflow: hidden;
+  border-bottom-left-radius:10px;
+  border-bottom-right-radius:10px;
+  position: absolute;
+  top:0;
+  left:0;
 }
 #add-new-reseach{
   .modal-content{
@@ -1260,6 +1300,8 @@ position: relative;
   }
   .modal-header{
     background: #fff;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
   }
 }
 .icon-laugh{
