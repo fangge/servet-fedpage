@@ -850,11 +850,16 @@ textarea {
   .start .logo {
     display: block;
     margin: 20px auto 40px;
-    width: 80px;
-    height: 155px;
-    text-indent: -9999px;
-    background: url(../images/logo.png) 0 0 no-repeat;
-    background-size: contain; }
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+  }
+  .start .logo_img{
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
   .start h1 {
     font-size: 24px;
     line-height: 24px;
