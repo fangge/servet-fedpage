@@ -17,21 +17,21 @@
   overflow: hidden;
   overflow-y:scroll;
   li{
-    width: 165px;
-    height: 60px;
+    width: 170px;
+    height: 56px;
     margin-left: 6px;
     a{
       display: block;
       padding-left:25px;
       color: #4b5668;
       font-size: 12px;
-      height: 60px;
-      line-height: 60px;
+      height: 56px;
+      line-height: 56px;
       border-radius:4px;
       @include ani;
       &:hover{
         text-decoration: none;
-        box-shadow: 0 0 10px #70ACFF;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
       }
       i{
         display: inline-block;
