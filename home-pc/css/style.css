@@ -51,11 +51,11 @@ a{text-decoration:none;outline: none;color:#000;cursor:pointer;}
 /*第一屏开始*/
 .topbar{position: relative;}
 .topbar a:hover{color:#33babe;}
-.logo{float:left;margin-left:10px;margin-top:20px;}
-.link{float:left;display:inline-block;color:#fff;font-size:14px;margin-right:60px;margin-top:39px;}
+.logo{float:left;margin-left:10px;margin-top:27px;}
+.link{float:left;display:inline-block;color:#fff;font-size:14px;margin-right:60px;margin-top:38px;line-height: 29px;}
 .link-font1{margin-left:215px;}
-.reg{float:left;display:inline-block;width:62px;height:29px;line-height:29px;margin-left:126px;margin-top:39px;color:#fff;font-size:14px;}
-.login{float:left;display:inline-block;width:62px;height:29px;line-height:29px;margin-left:9px;margin-top:39px;border:1px #33babe solid; border-radius: 13px;color:#33babe;font-size:14px;}
+.reg{float:left;display:inline-block;width:62px;height:29px;line-height:29px;margin-left:126px;margin-top:32px;color:#fff;font-size:14px;}
+.login{float:left;display:inline-block;width:62px;height:29px;line-height:29px;margin-left:9px;margin-top:29px;border:1px #33babe solid; border-radius: 13px;color:#33babe;font-size:14px;}
 .login:hover{color:#49dfe3;border:1px #49dfe3 solid;}
 .theme{width:420px;position: absolute;left:420px;top:218px;}
 .theme .font1{color:#ffffff;font-family: "Seravek";font-size:74px;line-height:88px;font-weight: lighter;}
@@ -112,7 +112,7 @@ a{text-decoration:none;outline: none;color:#000;cursor:pointer;}
 
 /*底部*/
 .footer .logo{margin-top:30px;}
-.copyright{float:right;height:16px;line-height:16px;margin-top:50px;}
+.copyright{float:right;height:16px;line-height:16px;margin-top:49px;}
 .copyright .font1{color:#929ea6;font-size:13px;font-family: "Seravek";margin-right:8px;}
 .copyright .font2{color:#ffffff;font-size:13px;font-family: "Adobe 黑体 Std";}
 /*底部*/
