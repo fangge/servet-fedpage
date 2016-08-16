@@ -364,7 +364,8 @@ textarea {
 
 /* 表格 */
 .table {
-  margin-top:100px;
+  width:484px;
+  margin:100px auto;
   padding-right:105px;
   overflow: hidden; }
   .table_column {
@@ -380,7 +381,9 @@ textarea {
       box-sizing: border-box;
       font-size: 13px; }
   .table_main {
-    overflow: hidden; }
+	width:380px;
+	height:206px;
+	}
     .table_main table {
       border-collapse: separate;
       border-spacing: 1px;
