@@ -649,7 +649,8 @@ textarea {
   min-height: 100%;
   overflow: hidden;
   background: 0 0 no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
   .page .gradientbottom {
     position: fixed;
     top: 0;
