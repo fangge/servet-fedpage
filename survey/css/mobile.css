@@ -121,8 +121,7 @@ textarea {
   margin: 0 auto 12px; }
   .answer input {
     position: absolute;
-    top: -9999px;
-    left: -9999px; }
+    opacity: 0; }
   .answer_cell {
     position: relative;
     height: 38px;
@@ -173,8 +172,7 @@ textarea {
     margin-right: 0; }
   .item input {
     position: absolute;
-    top: -9999px;
-    left: -9999px; }
+    opacity: 0; }
   .item_cell {
     padding: 1px;
     border-radius: 5px;
@@ -401,6 +399,7 @@ textarea {
       background: rgba(0, 0, 0, 0.3);
       text-align: center; }
   .table_input {
+    position: relative;
     display: block;
     height: 100%; }
     .table_input:before {
@@ -412,8 +411,11 @@ textarea {
       vertical-align: middle; }
     .table_input input {
       position: absolute;
-      top: -9999px;
-      left: -9999px; }
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      visibility: hidden; }
     .table_input span {
       display: inline-block;
       vertical-align: middle;
