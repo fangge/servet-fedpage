@@ -395,18 +395,25 @@ textarea {
       min-width: 125px;
       background: rgba(0, 0, 0, 0.3);
       text-align: center; }
+	 .table_main lable{
+	  width:100%; 
+	  height:100%;
+	  display:block; }
   .table_input input {
     position: absolute;
     top: -9999px;
-    left: -9999px; }
+    left: -9999px; 
+	visibility:hidden;
+	}
   .table_input span {
     display: inline-block;
-    width: 13px;
-    height: 13px;
-    background: url(../images/tableradio.png) 100% 0 no-repeat;
-    background-size: 26px 13px; }
+    width: 100%;
+    height: 100%;
+    background: url(../images/tableradio_off.png) center 18px no-repeat;
+	background-size:14%;}
   .table_input input:checked + span {
-    background-position: 0 0; }
+    background: url(../images/tableradio_on.png) center 18px no-repeat;
+	background-size:14%; }
 
 /* 下拉提示输入框 */
 .dropdownInput input, .dropdownInput_list li {
