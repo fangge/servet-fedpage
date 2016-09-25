@@ -55,13 +55,13 @@ The `sprites` mixin generates identical output to the CSS template
 
 .icon-email {
   background-image: url(../images/sprite.png);
-  background-position: -76px 0px;
+  background-position: -76px -38px;
   width: 34px;
   height: 34px; }
 
 .icon-eye {
   background-image: url(../images/sprite.png);
-  background-position: -90px -76px;
+  background-position: -114px 0px;
   width: 18px;
   height: 9px; }
 
@@ -79,19 +79,25 @@ The `sprites` mixin generates identical output to the CSS template
 
 .icon-pen {
   background-image: url(../images/sprite.png);
-  background-position: -114px 0px;
+  background-position: -114px -13px;
   width: 13px;
   height: 11px; }
 
+.icon-search {
+  background-image: url(../images/sprite.png);
+  background-position: -90px -76px;
+  width: 16px;
+  height: 17px; }
+
 .icon-sina {
   background-image: url(../images/sprite.png);
-  background-position: -76px -38px;
+  background-position: 0px -76px;
   width: 34px;
   height: 34px; }
 
 .icon-sms {
   background-image: url(../images/sprite.png);
-  background-position: 0px -76px;
+  background-position: -76px 0px;
   width: 34px;
   height: 34px; }
 
@@ -701,21 +707,22 @@ a {
 
 .m-pop-list {
   position: fixed;
-  width: 675px;
-  height: 415px;
+  width: 935px;
+  height: 580px;
   top: 50%;
   left: 50%;
-  margin-left: -337.5px;
-  margin-top: -207.5px;
+  margin-left: -467.5px;
+  margin-top: -290px;
   border-radius: 10px;
   overflow: hidden;
   background: #fff; }
   .m-pop-list .u-pop-list-header {
     position: relative;
-    height: 45px; }
+    height: 48px;
+    border-bottom: solid 1px #dae0e4; }
     .m-pop-list .u-pop-list-header h1 {
       height: 100%;
-      font: 16px/45px tahoma, arial, Hiragino Sans GB, WenQuanYi Micro Hei, \5FAE\8F6F\96C5\9ED1, \5B8B\4F53, sans-serif;
+      font: 16px/48px tahoma, arial, Hiragino Sans GB, WenQuanYi Micro Hei, \5FAE\8F6F\96C5\9ED1, \5B8B\4F53, sans-serif;
       text-align: center;
       color: #4b5668; }
     .m-pop-list .u-pop-list-header a {
@@ -729,64 +736,173 @@ a {
       right: 75px; }
     .m-pop-list .u-pop-list-header .send {
       right: 18px; }
-  .m-pop-list .u-pop-list-center {
-    width: 100%; }
-    .m-pop-list .u-pop-list-center tr {
-      width: 100%;
-      border-bottom: solid 1px #f0f3f7; }
-      .m-pop-list .u-pop-list-center tr input[type="checkbox"] {
-        display: block;
-        width: 15px;
-        height: 15px;
-        margin: 0 auto;
-        background: #2bb7c5;
-        cursor: pointer; }
-      .m-pop-list .u-pop-list-center tr th {
-        height: 40px;
-        background: #f0f3f7;
-        font: 13px tahoma, arial, Hiragino Sans GB, WenQuanYi Micro Hei, \5FAE\8F6F\96C5\9ED1, \5B8B\4F53, sans-serif;
-        color: #929ea6;
-        text-align: left;
-        text-indent: 38px; }
-      .m-pop-list .u-pop-list-center tr .first {
-        width: 10%; }
-      .m-pop-list .u-pop-list-center tr .second {
-        width: 40%; }
-      .m-pop-list .u-pop-list-center tr .third {
-        width: 50%; }
-  .m-pop-list .u-pop-list-content {
-    width: 100%;
-    height: 327px;
-    overflow-x: hidden;
-    overflow-y: scroll; }
-    .m-pop-list .u-pop-list-content table {
-      width: 100%; }
-      .m-pop-list .u-pop-list-content table tr {
-        width: 100%;
-        border-bottom: solid 1px #f0f3f7; }
-        .m-pop-list .u-pop-list-content table tr input[type="checkbox"] {
-          display: block;
-          width: 15px;
-          height: 15px;
-          margin: 0 auto;
-          background: #2bb7c5;
-          cursor: pointer; }
-        .m-pop-list .u-pop-list-content table tr td {
-          height: 33px;
-          font: 13px tahoma, arial, Hiragino Sans GB, WenQuanYi Micro Hei, \5FAE\8F6F\96C5\9ED1, \5B8B\4F53, sans-serif;
+  .m-pop-list .u-pop-list-main .u-left {
+    float: left;
+    width: 253px;
+    height: 530px;
+    border-right: solid 1px #dae0e4;
+    overflow: auto; }
+    .m-pop-list .u-pop-list-main .u-left .u-left-list {
+      overflow-y: scroll; }
+      .m-pop-list .u-pop-list-main .u-left .u-left-list .search {
+        position: relative;
+        width: 253px;
+        height: 37px;
+        border-bottom: solid 1px #dae0e4;
+        font-size: 13px; }
+        .m-pop-list .u-pop-list-main .u-left .u-left-list .search input {
+          padding: 12px 18px 12px 25px;
+          width: 210px;
+          height: 13px;
+          border: none;
+          outline: none;
+          color: #c0cbd2; }
+        .m-pop-list .u-pop-list-main .u-left .u-left-list .search::after {
+          content: '';
+          position: absolute;
+          top: 8px;
+          right: 25px;
+          width: 16px;
+          height: 17px;
+          background: url(../images/icon-search.png) no-repeat; }
+      .m-pop-list .u-pop-list-main .u-left .u-left-list .list {
+        overflow: hidden; }
+        .m-pop-list .u-pop-list-main .u-left .u-left-list .list h1 {
+          position: relative;
+          width: 100%;
+          height: 40px;
           color: #4b5668;
-          text-align: left;
-          text-indent: 38px; }
-        .m-pop-list .u-pop-list-content table tr .first {
-          width: 10%;
-          text-indent: 0; }
-        .m-pop-list .u-pop-list-content table tr .second {
-          width: 40%;
-          border-right: solid 1px #f0f3f7; }
-        .m-pop-list .u-pop-list-content table tr .third {
-          width: 50%; }
-      .m-pop-list .u-pop-list-content table .hover td {
-        color: #2bb7c5; }
+          font-size: 13px;
+          text-indent: 25px;
+          line-height: 40px;
+          background-color: #ebeef0;
+          cursor: pointer;
+          z-index: 10; }
+          .m-pop-list .u-pop-list-main .u-left .u-left-list .list h1::after {
+            content: '';
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            width: 8px;
+            height: 8px;
+            background-color: #757778;
+            -webkit-transition: all .3s ease-in-out;
+            -webkit-transform: rotate(-45deg);
+            -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%); }
+          .m-pop-list .u-pop-list-main .u-left .u-left-list .list h1.on::after {
+            -webkit-transform: rotate(45deg); }
+        .m-pop-list .u-pop-list-main .u-left .u-left-list .list .main {
+          width: 100%;
+          height: 0;
+          padding: 5px 0;
+          -webkit-transition: all .3s ease-in-out;
+          opacity: 0;
+          overflow: hidden; }
+          .m-pop-list .u-pop-list-main .u-left .u-left-list .list .main.on {
+            height: 100%;
+            opacity: 1; }
+          .m-pop-list .u-pop-list-main .u-left .u-left-list .list .main dl {
+            margin: 0;
+            width: 100%; }
+            .m-pop-list .u-pop-list-main .u-left .u-left-list .list .main dl dt {
+              position: relative;
+              width: 100%;
+              height: 30px;
+              font-size: 13px;
+              line-height: 30px;
+              text-indent: 40px;
+              color: #4b5668;
+              cursor: pointer; }
+              .m-pop-list .u-pop-list-main .u-left .u-left-list .list .main dl dt::before {
+                content: '';
+                position: absolute;
+                width: 11px;
+                height: 11px;
+                top: 9px;
+                left: 25px;
+                background: url(../images/icon-open.png) no-repeat; }
+            .m-pop-list .u-pop-list-main .u-left .u-left-list .list .main dl dd {
+              margin: 0;
+              width: 100%;
+              height: 27px;
+              font-size: 12px;
+              line-height: 27px;
+              text-indent: 25px;
+              background: #fff;
+              cursor: pointer;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis; }
+              .m-pop-list .u-pop-list-main .u-left .u-left-list .list .main dl dd:hover {
+                background: #f3f6f8; }
+            .m-pop-list .u-pop-list-main .u-left .u-left-list .list .main dl.tree dt.on::before {
+              background: url(../images/icon-close.png) no-repeat; }
+            .m-pop-list .u-pop-list-main .u-left .u-left-list .list .main dl.tree dt.on ~ dd {
+              display: block; }
+            .m-pop-list .u-pop-list-main .u-left .u-left-list .list .main dl.tree dd {
+              display: none;
+              text-indent: 40px; }
+          .m-pop-list .u-pop-list-main .u-left .u-left-list .list .main .blue {
+            display: block;
+            width: 100%;
+            height: 30px;
+            font-size: 13px;
+            color: #2bb7c5;
+            text-indent: 25px;
+            line-height: 30px; }
+  .m-pop-list .u-pop-list-main .u-right {
+    float: left;
+    width: 680px;
+    height: 530px;
+    background: #fff; }
+    .m-pop-list .u-pop-list-main .u-right .u-right-title {
+      width: 100%;
+      height: 60px;
+      font-size: 13px;
+      line-height: 80px;
+      text-indent: 30px;
+      color: #4b5668; }
+    .m-pop-list .u-pop-list-main .u-right .u-right-main {
+      width: 100%;
+      height: 470px;
+      overflow: auto; }
+      .m-pop-list .u-pop-list-main .u-right .u-right-main .list {
+        width: 100%;
+        overflow-y: scroll; }
+        .m-pop-list .u-pop-list-main .u-right .u-right-main .list .box {
+          float: left;
+          position: relative;
+          width: 47px;
+          height: 60px;
+          margin: 0 30px 30px 30px; }
+          .m-pop-list .u-pop-list-main .u-right .u-right-main .list .box .headimg {
+            position: absolute;
+            width: 38px;
+            height: 38px;
+            top: 6px;
+            left: 0;
+            border-radius: 38px;
+            overflow: hidden; }
+            .m-pop-list .u-pop-list-main .u-right .u-right-main .list .box .headimg img {
+              border-radius: 38px; }
+          .m-pop-list .u-pop-list-main .u-right .u-right-main .list .box p {
+            position: absolute;
+            width: 38px;
+            bottom: 0;
+            left: 0;
+            font-size: 12px;
+            text-align: center;
+            color: #4b5668;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis; }
+          .m-pop-list .u-pop-list-main .u-right .u-right-main .list .box .close {
+            position: absolute;
+            width: 13px;
+            height: 13px;
+            top: 0;
+            right: 0;
+            background: url(../images/icon-headimg-close.png) no-repeat; }
 
 .m-pop-qrcode {
   position: fixed;

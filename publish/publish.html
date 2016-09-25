@@ -166,7 +166,7 @@
         </div>
         <div class="u-copyright"></div>
     </div>
-    <div class="g-pop j-pop" id="j-pop-list">
+    <!-- <div class="g-pop j-pop" id="j-pop-list">
         <div class="m-pop-list">
             <div class="u-pop-list-header">
                 <h1>选择要发送的名单</h1>
@@ -241,6 +241,118 @@
                 </table>
             </div>
         </div>
+    </div> -->
+    <div class="g-pop j-pop" id="j-pop-list">
+        <div class="m-pop-list">
+            <div class="u-pop-list-header">
+                <h1>选择要发送的名单</h1>
+                <a href="javascript:;" class="cancle j-close">取消</a>
+                <a href="javascript:;" class="send">发送</a>
+            </div>
+            <div class="u-pop-list-main">
+                <div class="u-left">
+                    <div class="u-left-list">
+                        <div class="search">
+                            <input  type="text" placeholder="查找联系人">
+                        </div>
+                        <div class="list">
+                            <h1 class="on j-pop-list">最近联系人</h1>
+                            <div class="main on j-pop-listContent">
+                                <dl>
+                                    <dd>suddenlyliu(suddenlyliu@qq.com)fffffffsdfaf</dd>
+                                    <dd>laiel(aliel@qq.com)</dd>
+                                    <dd>26545514@qq.com</dd>
+                                    <dd>覆水彬郎(6565568@sina.com)</dd>
+                                </dl>
+                                <a class="blue" href="javascript:;">查看更多</a>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <h1 class="on j-pop-list">导入的联系人</h1>
+                            <div class="main on j-pop-listContent">
+                                <a class="blue" href="javascript:;">导入联系人</a>
+                                <dl class="tree">
+                                    <dt class="on j-dl-list">survet开发小组</dt>
+                                    <dd>suddenlyliu(suddenlyliu@qq.com)fffffffsdfaf</dd>
+                                    <dd>laiel(aliel@qq.com)</dd>
+                                    <dd>26545514@qq.com</dd>
+                                    <dd>覆水彬郎(6565568@sina.com)</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <h1 class="on j-pop-list">群组</h1>
+                            <div class="main on j-pop-listContent">
+                                <a class="blue" href="javascript:;">导入联系人</a>
+                                <dl class="tree">
+                                    <dt class="on j-dl-list">消费者研究</dt>
+                                    <dd>suddenlyliu(suddenlyliu@qq.com)fffffffsdfaf</dd>
+                                    <dd>laiel(aliel@qq.com)</dd>
+                                    <dd>26545514@qq.com</dd>
+                                    <dd>覆水彬郎(6565568@sina.com)</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="u-right">
+                    <h1 class="u-right-title">选中的联系人名单</h1>
+                    <div class="u-right-main">
+                        <div class="list">
+                            <div class="box">
+                                <div class="headimg">
+                                    <img src="images/headimg.png">
+                                </div>
+                                <p>laielfds</p>
+                                <a class="close" href="javascript:;"></a>
+                            </div>
+                            <div class="box">
+                                <div class="headimg">
+                                    <img src="images/headimg.png">
+                                </div>
+                                <p>laielfds</p>
+                                <a class="close" href="javascript:;"></a>
+                            </div>
+                            <div class="box">
+                                <div class="headimg">
+                                    <img src="images/headimg.png">
+                                </div>
+                                <p>laielfds</p>
+                                <a class="close" href="javascript:;"></a>
+                            </div>
+                            <div class="box">
+                                <div class="headimg">
+                                    <img src="images/headimg.png">
+                                </div>
+                                <p>laielfds</p>
+                                <a class="close" href="javascript:;"></a>
+                            </div>
+                            <div class="box">
+                                <div class="headimg">
+                                    <img src="images/headimg.png">
+                                </div>
+                                <p>laielfds</p>
+                                <a class="close" href="javascript:;"></a>
+                            </div>
+                            <div class="box">
+                                <div class="headimg">
+                                    <img src="images/headimg.png">
+                                </div>
+                                <p>laielfds</p>
+                                <a class="close" href="javascript:;"></a>
+                            </div>
+                            <div class="box">
+                                <div class="headimg">
+                                    <img src="images/headimg.png">
+                                </div>
+                                <p>laielfds</p>
+                                <a class="close" href="javascript:;"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="g-pop j-pop" id="j-pop-qrcode">
         <div class="m-pop-qrcode">
@@ -306,10 +418,27 @@
             $('.j-pop').each(function() {
                 var $this = $(this),
                     $popIe = $('#j-pop-ie');;
-                $this.on('click', '.j-close', function() {
+                $this
+                .on('click', '.j-close', function() {
                     if($this.hasClass('on')) {
                         $this.removeClass('on');
                         $popIe.removeClass('on');
+                    }
+                })
+                .on('click.list.title', '.j-pop-list', function() {
+                    if ($(this).hasClass('on')) {
+                        $(this).removeClass('on');
+                        $(this).next().removeClass('on');
+                    } else {
+                        $(this).addClass('on');
+                        $(this).next().addClass('on');
+                    }
+                })
+                .on('click.dlList.title', '.j-dl-list', function() {
+                    if ($(this).hasClass('on')) {
+                        $(this).removeClass('on');
+                    } else {
+                        $(this).addClass('on');                    
                     }
                 });
             });

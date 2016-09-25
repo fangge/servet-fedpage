@@ -208,23 +208,24 @@
 
 .m-pop-list {
     position: fixed;
-    width: 675px;
-    height: 415px;
+    width: 935px;
+    height: 580px;
     top: 50%;
     left: 50%;
-    margin-left: -675 / 2 + px;
-    margin-top: -415 / 2 + px;
+    margin-left: -935 / 2 + px;
+    margin-top: -580 / 2 + px;
     border-radius: 10px;
     overflow: hidden;
     background: #fff;
 
     .u-pop-list-header {
         position: relative;
-        height: 45px;
+        height: 48px;
+        border-bottom: solid 1px #dae0e4;
 
         h1 {
             height: 100%;
-            font: 16px/45px $global-font-family;
+            font: 16px/48px $global-font-family;
             text-align: center;
             color: #4b5668;
         }
@@ -250,97 +251,245 @@
 
     }
 
-    .u-pop-list-center {
-        width: 100%;
+    .u-pop-list-main {
+        .u-left {
+            float: left;
+            width: 253px;
+            height: 530px;
+            border-right: solid 1px #dae0e4;
+            overflow: auto;
 
-        tr {
-            width: 100%;
-            border-bottom: solid 1px #f0f3f7;
+            .u-left-list {
+                overflow-y: scroll;
 
-            input[type="checkbox"] {
-                display: block;
-                width: 15px;
-                height: 15px;
-                margin: 0 auto;
-                background: #2bb7c5;
-                cursor: pointer;
-            }
+                .search {
+                    position: relative;
+                    width: 253px;
+                    height: 37px;
+                    border-bottom: solid 1px #dae0e4;
+                    font-size: 13px;
 
-            th {
-                height: 40px;
-                background: #f0f3f7;
-                font: 13px $global-font-family;
-                color: #929ea6;
-                text-align: left;
-                text-indent: 38px;
-            }
+                    input {
+                        padding: 12px 18px 12px 25px;
+                        width: 210px;
+                        height: 13px;
+                        border: none;
+                        outline: none;
+                        color: #c0cbd2;
+                    }
 
-            .first {
-                width: 10%;
-            }
-            
-            .second {
-                width: 40%;
-            }
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        top: 8px;
+                        right: 25px;
+                        width: 16px;
+                        height: 17px;
+                        background: url(../images/icon-search.png) no-repeat;
+                    }
+                }
 
-            .third {
-                width: 50%;
+                .list {
+                    overflow: hidden;
+
+                    h1 {
+                        position: relative;
+                        width: 100%;
+                        height: 40px;
+                        color: #4b5668;
+                        font-size: 13px;
+                        text-indent: 25px;
+                        line-height: 40px;
+                        background-color: #ebeef0;
+                        cursor: pointer;
+                        z-index: 10;
+
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            top: 15px;
+                            right: 20px;
+                            width: 8px;
+                            height: 8px;
+                            background-color: #757778;
+                            -webkit-transition: all .3s ease-in-out;
+                            -webkit-transform: rotate(-45deg);
+                            -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%);
+                        }
+
+                        &.on {
+                            &::after  {
+                                -webkit-transform: rotate(45deg);
+                            }
+                        }
+                    }
+
+                    .main {
+                        // display: none;
+                        width: 100%;
+                        height: 0;
+                        padding: 5px 0;
+                        // -webkit-transform: translateY(-100%);
+                        -webkit-transition: all .3s ease-in-out;
+                        opacity: 0;
+                        overflow: hidden;
+
+                        &.on {
+                            // display: block;
+                            // -webkit-transform: translateY(0);
+                            height: 100%;
+                            opacity: 1;
+                        }
+
+                        dl {
+                            margin: 0;
+                            width: 100%;
+
+                            dt {
+                                position: relative;
+                                width: 100%;
+                                height: 30px;
+                                font-size: 13px;
+                                line-height: 30px;
+                                text-indent: 40px;
+                                color: #4b5668;
+                                cursor: pointer;
+
+                                &::before {
+                                    content: '';
+                                    position: absolute;
+                                    width: 11px;
+                                    height: 11px;
+                                    top: 9px;
+                                    left: 25px;
+                                    background: url(../images/icon-open.png) no-repeat;
+                                }
+                            }
+
+                            dd {
+                                margin: 0;
+                                width: 100%;
+                                height: 27px;
+                                font-size: 12px;
+                                line-height: 27px;
+                                text-indent: 25px;
+                                background: #fff;
+                                cursor: pointer;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+
+                                &:hover {
+                                    background: #f3f6f8;
+                                }
+                            }
+
+                            &.tree {
+                                dt {
+                                    &.on::before {
+                                        background: url(../images/icon-close.png) no-repeat;
+                                    }
+
+                                    &.on~dd {
+                                        display: block;
+                                    }
+                                }
+
+                                dd {
+                                    display: none;
+                                    text-indent: 40px;
+                                }
+                            }
+                        }
+
+                        .blue {
+                            display: block;
+                            width: 100%;
+                            height: 30px;
+                            font-size: 13px;
+                            color: #2bb7c5;
+                            text-indent: 25px;
+                            line-height: 30px;
+                        }
+
+                    }
+                }
             }
         }
-    }
 
-    .u-pop-list-content {
-        width: 100%;
-        height: 327px;
-        overflow-x: hidden;
-        overflow-y: scroll;
+        .u-right {
+            float: left;
+            width: 680px;
+            height: 530px;
+            background: #fff;
 
-        table {
-            width: 100%;
-
-            tr {
+            .u-right-title {
                 width: 100%;
-                border-bottom: solid 1px #f0f3f7;
-
-                input[type="checkbox"] {
-                    display: block;
-                    width: 15px;
-                    height: 15px;
-                    margin: 0 auto;
-                    background: #2bb7c5;
-                    cursor: pointer;
-                }
-
-                td {
-                    height: 33px;
-                    font: 13px $global-font-family;
-                    color: #4b5668;
-                    text-align: left;
-                    text-indent: 38px;
-                }
-
-                .first {
-                    width: 10%;
-                    text-indent: 0;
-                }
-
-                .second {
-                    width: 40%;
-                    border-right: solid 1px #f0f3f7;
-                }
-                
-                .third {
-                    width: 50%;
-                }
+                height: 60px;
+                font-size: 13px;
+                line-height: 80px;
+                text-indent: 30px;
+                color: #4b5668;
             }
 
-            .hover {
-                td {
-                    color: #2bb7c5;
+            .u-right-main {
+                width: 100%;
+                height: 470px;
+                overflow: auto;
+
+                .list {
+                    width: 100%;
+                    // height: 100%;
+                    overflow-y: scroll;
+
+                    .box {
+                        float: left;
+                        position: relative;
+                        width: 47px;
+                        height: 60px;
+                        margin: 0 30px 30px 30px;
+
+                        .headimg {
+                            position: absolute;
+                            width: 38px;
+                            height: 38px;
+                            top: 6px;
+                            left: 0;
+                            border-radius: 38px;
+                            overflow: hidden;
+
+                            img {
+                                border-radius: 38px;
+                            }
+                        }
+
+                        p {
+                            position: absolute;
+                            width: 38px;
+                            bottom: 0;
+                            left: 0;
+                            font-size: 12px;
+                            text-align: center;
+                            color: #4b5668;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+
+                        .close {
+                            position: absolute;
+                            width: 13px;
+                            height: 13px;
+                            top: 0;
+                            right: 0;
+                            background: url(../images/icon-headimg-close.png) no-repeat;
+                        }
+                    }
                 }
             }
         }
     }
+
 }
 
 .m-pop-qrcode {
