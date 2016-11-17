@@ -1,0 +1,26 @@
+                 // CSS Sprites切片样式
+                 
+                 %banner1 {
+                 width: pxrem(1080px);
+                 height: pxrem(763px);
+                 background-image: url(../img/banner1.jpg);
+                 background-repeat: no-repeat;
+                 background-size:100%;
+                 }
+                 
+                 %banner2 {
+                 width: pxrem(1080px);
+                 height: pxrem(362px);
+                 background-image: url(../img/banner2.jpg);
+                 background-repeat: no-repeat;
+                 background-size:100%;
+                 }
+                 
+                 %logo {
+                 width: pxrem(300px);
+                 height: pxrem(138px);
+                 background-image: url(../img/logo.png);
+                 background-repeat: no-repeat;
+                 background-size:100%;
+                 }
+                 

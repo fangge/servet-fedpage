@@ -27,3 +27,5 @@ gulp 对应文件夹名字  ==> gulp passport 即监听passport里面的
     9. servey_list 已答问卷列表
     10. tow_dimension&answer_paper 二维、单个用户答卷
     11. set&history 问卷设置和发送历史
+    12. about-pc 关于我们pc版
+    13. about-mobi 关于我们手机版

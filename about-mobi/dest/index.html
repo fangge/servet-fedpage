@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <script>
+        !function(){var a="@charset \"utf-8\";html{color:#000;background:#fff;overflow-y:scroll;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}html *{outline:0;-webkit-text-size-adjust:none;-webkit-tap-highlight-color:rgba(0,0,0,0)}html,body{font-family:sans-serif}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{margin:0;padding:0}input,select,textarea{font-size:100%}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}abbr,acronym{border:0;font-variant:normal}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:500}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:500}q:before,q:after{content:''}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a:hover{text-decoration:underline}ins,a{text-decoration:none}",b=document.createElement("style");if(document.getElementsByTagName("head")[0].appendChild(b),b.styleSheet)b.styleSheet.disabled||(b.styleSheet.cssText=a);else try{b.innerHTML=a}catch(c){b.innerText=a}}();!function(a,b){function c(){var b=f.getBoundingClientRect().width;b/i>540&&(b=540*i);var c=b/10;f.style.fontSize=c+"px",k.rem=a.rem=c}var d,e=a.document,f=e.documentElement,g=e.querySelector('meta[name="viewport"]'),h=e.querySelector('meta[name="flexible"]'),i=0,j=0,k=b.flexible||(b.flexible={});if(g){console.warn("将根据已有的meta标签来设置缩放比例");var l=g.getAttribute("content").match(/initial\-scale=([\d\.]+)/);l&&(j=parseFloat(l[1]),i=parseInt(1/j))}else if(h){var m=h.getAttribute("content");if(m){var n=m.match(/initial\-dpr=([\d\.]+)/),o=m.match(/maximum\-dpr=([\d\.]+)/);n&&(i=parseFloat(n[1]),j=parseFloat((1/i).toFixed(2))),o&&(i=parseFloat(o[1]),j=parseFloat((1/i).toFixed(2)))}}if(!i&&!j){var p=(a.navigator.appVersion.match(/android/gi),a.navigator.appVersion.match(/iphone/gi)),q=a.devicePixelRatio;i=p?q>=3&&(!i||i>=3)?3:q>=2&&(!i||i>=2)?2:1:1,j=1/i}if(f.setAttribute("data-dpr",i),!g)if(g=e.createElement("meta"),g.setAttribute("name","viewport"),g.setAttribute("content","initial-scale="+j+", maximum-scale="+j+", minimum-scale="+j+", user-scalable=no"),f.firstElementChild)f.firstElementChild.appendChild(g);else{var r=e.createElement("div");r.appendChild(g),e.write(r.innerHTML)}a.addEventListener("resize",function(){clearTimeout(d),d=setTimeout(c,300)},!1),a.addEventListener("pageshow",function(a){a.persisted&&(clearTimeout(d),d=setTimeout(c,300))},!1),"complete"===e.readyState?e.body.style.fontSize=12*i+"px":e.addEventListener("DOMContentLoaded",function(){e.body.style.fontSize=12*i+"px"},!1),c(),k.dpr=a.dpr=i,k.refreshRem=c,k.rem2px=function(a){var b=parseFloat(a)*this.rem;return"string"==typeof a&&a.match(/rem$/)&&(b+="px"),b},k.px2rem=function(a){var b=parseFloat(a)/this.rem;return"string"==typeof a&&a.match(/px$/)&&(b+="rem"),b}}(window,window.lib||(window.lib={}));
+    </script>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+    <meta name="apple-itunes-app" content="app-id=" />
+    <link rel="apple-touch-icon" sizes="114x114" href="" />
+    <title></title>
+    <meta name="front-end" content="MrF">
+    <link href="css/index.css" rel="stylesheet">
+</head>
+<body>
+<div class="col col1">
+    <a href="">首页</a>
+    <a href="">关于我们</a>
+</div>
+<div class="col col2">
+    <h2>我们所做的</h2>
+    <p>
+        赛问网是新生代的在线调查网站，致力于全新的在线调查体验，让设计问卷和参与调查成为一种乐趣！赛问网能帮助你几分钟之内，就能设计出一份精美、有趣的调查问卷，你的问卷不再是被访者的负担！
+    </p>
+</div>
+<div class="col col3">
+    <h2>丰富的问卷设计</h2>
+    <p>赛问网可支持多种题型，包括：单选题、多选题、矩阵题、填空题、上传题、打分题等常用题型，还提供满意、概念卡、城市题等特色题型，而且还将持续增加新颖题型，让你的调查更有趣！
+    </p>
+</div>
+<div class="col col4">
+    <h2>联系我们</h2>
+    <p>目前赛问网的各项功能全部免费，我们热切期待您能反馈使用过程的感受，包括碰到的bug、优化建议、期待的新功能，以及您的惊喜或者不快，欢迎留言或发邮件至邮箱：
+        hello@survetchina.com
+    </p>
+    <form action="">
+        <div class="input-box">
+            <input type="text" placeholder="标题" class="input1">
+            <input type="text" placeholder="您的联系方式">
+        </div>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <input type="button" value="提交" class="submit">
+    </form>
+</div>
+<footer class="footer">
+    <div class="footer-item">
+        <img class="logo" src="img/logo.png"/>
+        <p class="copyright">
+            <span class="font font1">@2016  All right reserved  Survet.com</span>
+            <span class="font font2">粤ICP备24553</span>
+            <span class="font font3">服务协议</span>
+        </p>
+    </div>
+</footer>
+<script src="http://assets.dwstatic.com/common/lib/zepto/1.1.6/zepto.min.js"></script>
+
+</body>
+</html>
