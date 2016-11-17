@@ -19,7 +19,7 @@
     @include font-dpr(45px);
     line-height: 1.8;
     margin: 0 auto;
-    width: pxrem(774px);
+    width: pxrem(780px);
   }
 }
 .col1{
@@ -81,3 +81,7 @@
 .copyright .font1{}
 .copyright .font2{}
 .copyright .font3{margin-top:pxrem(88px);margin-bottom: pxrem(50px)}
+
+
+.tip{position: fixed;bottom:0;left:0;width: 100%;height:pxrem(132px);background: rgba(43, 183, 197, 0.9);text-align: center;color: #fff;@include font-dpr(45px);line-height: pxrem(132px);z-index: 999}
+.tip-close{display: block;@extend %popclose;position: absolute;right:.75rem;top:.45rem;}
