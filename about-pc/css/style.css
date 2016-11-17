@@ -1,0 +1,109 @@
+@charset "utf-8";
+/*
+ * somei 2016 05
+ */
+
+/* Reset
+================================================================================================= */
+html{background: #fff}
+body{color:#000;font-size:12px;line-height:2em;cursor:default;}
+body{font-family:"Microsoft Yahei",simsun,arial,sans-serif;}
+h1,h2,h3{font-size:100%;}
+body,h1,h2,h3,h4,ul,li,p,img,div{margin:0;padding:0;border:0;}
+img{margin:0;line-height:normal;}
+em,i{font-style:normal;text-decoration:none}
+ul{list-style:none;}
+table{border-collapse:collapse;border-spacing:0;}
+
+/* Base Used
+================================================================================================= */
+a{text-decoration:none;outline: none;color:#000;cursor:pointer;}
+.fl{float: left;_display: inline}
+.fr{float: right;_display: inline}
+.cs-clear{+zoom:1;}
+.cs-clear:before,
+.cs-clear:after{clear:both;content:".";font-size:0;display:block;height:0;overflow:hidden;visibility:hidden;}
+.mt110{margin-top:110px;}
+.mt30{margin-top:30px;}
+.mt100{margin-top:100px;}
+
+/* Commonly Used
+================================================================================================= */
+/*.fp-tableCell{  vertical-align: top;}*/
+.box{width:100%;min-width:960px;text-align: center;position: relative;}
+.item,.footer-item{width:960px;margin:0 auto;position: relative;}
+
+.screen1{background:url(../img/bg-screen1.jpg) no-repeat top center;background-size:cover }
+.screen6{background:#ffffff;}
+.screen2{background:#f8f8f8 url(../img/banner3.jpg) no-repeat center  0;}
+
+.screen1 .item{height:180px;}
+.screen6 .item{height:209px;padding: 135px 0}
+.screen2 .item{height: 276px;padding-top:224px;}
+.footer{width:100%;height:109px;background:#1a1c27;}
+
+/*第一屏开始*/
+.topbar{position: relative;width: 100%;height: 102px;}
+.topbar .item{height:102px;line-height: 102px;}
+.topbar a:hover{color:#33babe;}
+.logo{float:left;margin-left:10px;margin-top:27px;}
+.link{float:right;display:inline-block;color:#474747;font-size:14px;margin-right:40px;margin-top:38px;line-height: 29px;}
+
+.reg{float:right;display:inline-block;width:62px;height:29px;line-height:29px;margin-top:38px;color:#474747;font-size:14px;}
+.login{text-align:center;float:right;display:inline-block;width:62px;height:29px;line-height:29px;margin-left:9px;margin-top:35px;border:1px #33babe solid; border-radius: 13px;color:#33babe;font-size:14px;}
+.login:hover{color:#49dfe3;border:1px #49dfe3 solid;}
+.theme{width:420px;position: absolute;left:420px;top:218px;}
+.theme .font1{color:#ffffff;font-family: "Seravek";font-size:74px;line-height:88px;font-weight: lighter;}
+.theme .font2{color:#ffffff;font-family: "PingFang SC";font-size:30px;height:116px;line-height:98px;font-weight:lighter;}
+.free-reg{width:227px;height:50px;display: inline-block;background: url(../img/btn-reg.png) no-repeat;
+	filter: alpha(opacity=100);-moz-opacity:1;-khtml-opacity:1;opacity:1;
+}
+.free-reg:hover{filter: alpha(opacity=90);-moz-opacity:0.9;-khtml-opacity:0.9;opacity:0.9;}
+/*第一屏结束*/
+
+
+/*第六屏开始*/
+.screen6 .font1{font-family: "PingFang SC";font-weight: lighter;padding-top:75px;font-size: 33px;color:#4b5668;}
+.screen6 .font2{font-family: "PingFang SC";font-weight: lighter;margin-top:40px;font-size: 14px;color:#4f6a7b;}
+.screen6 .free-reg{margin-top:69px;}
+.screen6 .banner2{float:left;display: block;margin-right:50px;margin-bottom: 135px;}
+.screen6 h2{margin: 0 0 36px;color: #4b5668;  font-size: 33px;text-align: left;}
+.screen6 p{text-align: left;color: #3d3d3d;font-size: 13px; line-height: 33px;}
+.screen2 h2{margin: 0 0 36px;color: #4b5668;  font-size: 33px;}
+.screen2 p{color: #3d3d3d;font-size: 13px; width: 640px;margin: 0 auto;line-height: 30px;}
+.screen3 h2{margin: 92px 0 36px;color: #4b5668;  font-size: 33px;text-align: left;}
+.screen3 p{text-align: left;color: #3d3d3d;font-size: 13px; line-height: 33px;}
+/*第六屏结束*/
+.input-box{
+	height: 42px;
+	margin-top: 45px;
+}
+.input-box input {display: block;width: 466px;  height:42px; box-sizing: border-box;border: 1px solid #cbcbcb;background: none;line-height: 42px;padding-left: 18px;color: #a9a9a9;font-size: 13px;float:left;}
+.input1{margin-right:26px}
+textarea{
+	border: 1px solid #cbcbcb;
+	width: 100%;
+	box-sizing: border-box;
+	height: 112px;
+	resize: none;
+	color: #a9a9a9;font-size: 13px;
+	margin:20px 0;
+}
+.submit{
+	display: block;
+	width: 100px;
+	height: 42px;
+	line-height: 42px;
+	text-align: center;
+	font-size: 13px;
+	color: #fff;
+	background: #f7931e;
+	border: 0;
+	margin-bottom: 116px;
+}
+/*底部*/
+.footer .logo{margin-top:30px;}
+.copyright{float:right;height:16px;line-height:16px;margin-top:49px;}
+.copyright .font1{color:#929ea6;font-size:13px;font-family: "Seravek";margin-right:8px;}
+.copyright .font2{color:#ffffff;font-size:13px;font-family: "Adobe 黑体 Std";}
+/*底部*/
