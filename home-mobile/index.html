@@ -94,20 +94,23 @@
 			</div>
 		</div>
 	</div>
+
+	<div class="tip">为保证使用体验，请在PC上注册使用<a class="tip-close"></a></div>
 	<script>
-	$(document).ready(function() {  
-		setHeight("screen1",1080,1855);
-		setHeight("screen2",1080,1162);
-		setHeight("screen3",1080,1936);
-		setHeight("screen4",1080,1446);
-		setHeight("screen5",1080,1326);
-		setHeight("screen6-item",972,1344);
-	}); 
-	function setHeight(className,wImg,hImg){
-		var obj=$("."+className);
-		var w=obj.width();
-		obj.css("height",w*hImg/wImg);
-	}
+		$(document).ready(function() {
+			setHeight("screen1",1080,1855);
+			setHeight("screen2",1080,1162);
+			setHeight("screen3",1080,1936);
+			setHeight("screen4",1080,1446);
+			setHeight("screen5",1080,1326);
+			setHeight("screen6-item",972,1344);
+			$('.tip-close').on('touchstart',function(){$('.tip').hide()})
+		});
+		function setHeight(className,wImg,hImg){
+			var obj=$("."+className);
+			var w=obj.width();
+			obj.css("height",w*hImg/wImg);
+		}
 
 	</script>
 </body>

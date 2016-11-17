@@ -52,10 +52,10 @@ a{text-decoration:none;outline: none;color:#000;cursor:pointer;}
 .topbar{position: relative;}
 .topbar a:hover{color:#33babe;}
 .logo{float:left;margin-left:10px;margin-top:27px;}
-.link{float:left;display:inline-block;color:#fff;font-size:14px;margin-right:60px;margin-top:38px;line-height: 29px;}
-.link-font1{margin-left:215px;}
-.reg{float:left;display:inline-block;width:62px;height:29px;line-height:29px;margin-left:126px;margin-top:35px;color:#fff;font-size:14px;}
-.login{float:left;display:inline-block;width:62px;height:29px;line-height:29px;margin-left:9px;margin-top:33px;border:1px #33babe solid; border-radius: 13px;color:#33babe;font-size:14px;}
+.link{float:right;display:inline-block;color:#fff;font-size:14px;margin-right:40px;margin-top:38px;line-height: 29px;}
+
+.reg{float:right;display:inline-block;width:62px;height:29px;line-height:29px;margin-top:35px;color:#fff;font-size:14px;}
+.login{float:right;display:inline-block;width:62px;height:29px;line-height:29px;margin-left:9px;margin-top:33px;border:1px #33babe solid; border-radius: 13px;color:#33babe;font-size:14px;}
 .login:hover{color:#49dfe3;border:1px #49dfe3 solid;}
 .theme{width:420px;position: absolute;left:420px;top:218px;}
 .theme .font1{color:#ffffff;font-family: "Seravek";font-size:74px;line-height:88px;font-weight: lighter;}
