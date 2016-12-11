@@ -932,7 +932,30 @@
     float: left;
     width: 50px;
     height: 52px;
-    background: url('../slice/icon_top_message.png') no-repeat;
+    position: relative;
+    background: none;
+    i{
+      width: 16px;
+      height: 15px;
+      background: url('../slice/icon_top_message.png') no-repeat;
+      position: absolute;
+      top:20px;
+      left:17px;
+    }
+    em{
+      display: none;
+    }
+    &.navbar-message-news{
+      em{
+        display: block;
+        width: 6px;
+        height: 6px;
+        position: absolute;
+        background: url('../slice/icon_top_message-icon.png') no-repeat;
+        right:11px;
+        top:14px;
+      }
+    }
   }
 
   .navbar-logout {
@@ -944,8 +967,8 @@
     background: url('../slice/icon_top_logout.png') no-repeat;
   }
 
-  .navbar-message:hover, .navbar-message-hover {
-    background: url('../slice/icon_top_message_hover.png') no-repeat;
+  .navbar-message:hover{
+    background-color: #4B2A81;
   }
 
   .navbar-logout:hover {
